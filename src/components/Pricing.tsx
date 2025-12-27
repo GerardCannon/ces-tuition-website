@@ -4,46 +4,49 @@ import { Check } from '@phosphor-icons/react'
 
 const pricingTiers = [
   {
-    name: 'Individual',
+    name: 'Silver',
     price: 'Custom',
-    description: 'Perfect for focused one-on-one learning',
+    description: 'Foundational support for beginners',
     features: [
-      'Personalized curriculum',
-      'Flexible scheduling',
-      'Progress reports',
-      'One subject focus',
-      'Monthly assessments',
+      'Provide foundational support',
+      'Excellent for beginners who need basic skill-building',
+      'Focus on core concepts',
+      'Tailored lessons to support classroom performance',
+      'Exam preparation using past papers',
+      'Adaptive to individual learning styles',
+      'Build confidence through structured, syllabus-aligned sessions',
     ],
     cta: 'Get Started',
     popular: false,
   },
   {
-    name: 'Standard',
+    name: 'Gold',
     price: 'Custom',
-    description: 'Ideal for comprehensive subject support',
+    description: 'Advanced guidance for higher grades',
     features: [
-      'Everything in Individual',
-      'Multiple subjects',
-      'Priority scheduling',
-      'Weekly progress updates',
-      'Parent consultations',
-      'Study materials included',
+      'Everything in Silver',
+      'Offer advanced guidance for intermediate students aiming for higher grades',
+      'Emphasize on exam techniques',
+      'Real-life applications',
+      'Progressive difficulty in questioning',
+      'Substantial tutoring experience',
+      'Foster strong student relationships',
+      'Target-specific improvements',
     ],
     cta: 'Get Started',
     popular: true,
   },
   {
-    name: 'Premium',
+    name: 'Platinum',
     price: 'Custom',
-    description: 'Complete academic excellence package',
+    description: 'Elite coaching for top achievers',
     features: [
-      'Everything in Standard',
-      'Unlimited subjects',
-      'Exam prep resources',
-      'Daily support availability',
-      'College counseling',
-      'Advanced learning tools',
-      '24/7 online resources',
+      'Everything in Gold',
+      'Deliver elite, comprehensive coaching for top achievers',
+      'Cater to complex needs',
+      'Demonstrate excellence in student experience, policy, and pass rates',
+      'Specialized learning strategies',
+      'Excellence at achieving the highest performance targets',
     ],
     cta: 'Get Started',
     popular: false,
@@ -56,10 +59,10 @@ export function Pricing() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Flexible Programs
+            Our Tutor Tiers
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-            Choose the learning plan that best fits your educational goals. All programs include expert instruction and personalized support.
+            Choose the tier that best fits your academic goals. From foundational support to elite coaching, we have experienced tutors ready to help you succeed.
           </p>
         </div>
 
