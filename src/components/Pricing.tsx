@@ -117,7 +117,7 @@ export function Pricing() {
                     : 'bg-primary hover:bg-primary/90 text-primary-foreground w-full font-medium tracking-wide'
                 }
               >
-                <a href="https://app.cestuition.com">{tier.cta}</a>
+                <a href="https://app.cestuition.com/register">{tier.cta}</a>
               </Button>
             </Card>
           ))}

@@ -34,7 +34,7 @@ export function Hero() {
               size="lg"
               className="bg-accent hover:bg-accent/90 text-accent-foreground font-medium tracking-wide text-lg px-8 transition-transform hover:scale-105"
             >
-              <a href="https://app.cestuition.com" className="flex items-center gap-2">
+              <a href="https://app.cestuition.com/register" className="flex items-center gap-2">
                 Start Learning Today
                 <ArrowRight weight="bold" />
               </a>
