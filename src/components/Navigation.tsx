@@ -55,7 +55,7 @@ export function Navigation() {
               asChild
               className="bg-accent hover:bg-accent/90 text-accent-foreground font-medium tracking-wide"
             >
-              <a href="https://app.cestuition.com">Get Started</a>
+              <a href="https://app.cestuition.com">Portal Log in</a>
             </Button>
           </div>
 
@@ -85,7 +85,7 @@ export function Navigation() {
               asChild
               className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-medium tracking-wide"
             >
-              <a href="https://app.cestuition.com">Get Started</a>
+              <a href="https://app.cestuition.com">Portal Log in</a>
             </Button>
           </div>
         </div>
