@@ -5,7 +5,6 @@ import { Check } from '@phosphor-icons/react'
 const pricingTiers = [
   {
     name: 'Silver',
-    price: 'Custom',
     description: 'Foundational support for beginners',
     features: [
       'Provide foundational support',
@@ -16,12 +15,11 @@ const pricingTiers = [
       'Adaptive to individual learning styles',
       'Build confidence through structured, syllabus-aligned sessions',
     ],
-    cta: 'Get Started',
+    cta: 'Enquire Now',
     popular: false,
   },
   {
     name: 'Gold',
-    price: 'Custom',
     description: 'Advanced guidance for higher grades',
     features: [
       'Everything in Silver',
@@ -33,12 +31,11 @@ const pricingTiers = [
       'Foster strong student relationships',
       'Target-specific improvements',
     ],
-    cta: 'Get Started',
+    cta: 'Enquire Now',
     popular: true,
   },
   {
     name: 'Platinum',
-    price: 'Custom',
     description: 'Elite coaching for top achievers',
     features: [
       'Everything in Gold',
@@ -48,7 +45,7 @@ const pricingTiers = [
       'Specialized learning strategies',
       'Excellence at achieving the highest performance targets',
     ],
-    cta: 'Get Started',
+    cta: 'Enquire Now',
     popular: false,
   },
 ]
@@ -86,16 +83,8 @@ export function Pricing() {
                 <h3 className="text-2xl font-bold text-foreground mb-2">
                   {tier.name}
                 </h3>
-                <p className="text-muted-foreground mb-4">
+                <p className="text-muted-foreground">
                   {tier.description}
-                </p>
-                <div className="flex items-baseline gap-2">
-                  <span className="text-4xl font-bold text-foreground">
-                    {tier.price}
-                  </span>
-                </div>
-                <p className="text-sm text-muted-foreground mt-2">
-                  Contact us for personalized pricing
                 </p>
               </div>
 
