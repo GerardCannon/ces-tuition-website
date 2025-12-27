@@ -55,20 +55,20 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <Envelope size={20} className="flex-shrink-0 mt-1" />
-                <a href="mailto:info@cestuition.com" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  info@cestuition.com
+                <a href="mailto:Gerard@CannonEducationSolutions.com" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  Gerard@CannonEducationSolutions.com
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <Phone size={20} className="flex-shrink-0 mt-1" />
-                <a href="tel:+1234567890" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  +1 (234) 567-890
+                <a href="tel:+971585041916" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  +971 585 04 1916
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin size={20} className="flex-shrink-0 mt-1" />
                 <span className="text-primary-foreground/80">
-                  123 Education Street<br />Singapore
+                  Sharjah Media City<br />Sharjah, UAE
                 </span>
               </li>
             </ul>

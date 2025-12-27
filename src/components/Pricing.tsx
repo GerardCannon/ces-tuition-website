@@ -56,7 +56,7 @@ export function Pricing() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Our Tutor Tiers
+            Our Tutors
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
             Choose the tier that best fits your academic goals. From foundational support to elite coaching, we have experienced tutors ready to help you succeed.
