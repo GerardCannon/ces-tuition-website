@@ -1,5 +1,6 @@
 import { Envelope, Phone, MapPin } from '@phosphor-icons/react'
 import { Separator } from '@/components/ui/separator'
+import { Logo } from '@/components/Logo'
 
 export function Footer() {
   return (
@@ -7,7 +8,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div>
-            <h3 className="text-2xl font-bold mb-4">CES Tuition</h3>
+            <Logo className="text-primary-foreground mb-4" />
             <p className="text-primary-foreground/80 leading-relaxed">
               Empowering students to achieve academic excellence through personalized, expert tutoring.
             </p>
