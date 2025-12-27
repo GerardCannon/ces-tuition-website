@@ -1,25 +1,35 @@
-import { CheckCircle, Star, TrendUp, Users } from '@phosphor-icons/react'
+import { CheckCircle, Star, TrendUp, Users, Gift, ChartLine } from '@phosphor-icons/react'
 
 const features = [
   {
     icon: CheckCircle,
-    title: 'Qualified Instructors',
+    title: 'Experienced Tutors',
     description: 'Our tutors are experienced educators with proven track records and subject matter expertise.',
   },
   {
     icon: Star,
     title: 'Proven Results',
-    description: 'Consistent improvement in grades, test scores, and student confidence across all programs.',
+    description: 'Consistent improvement in grades, test scores and increased student confidence across all subjects.',
   },
   {
     icon: TrendUp,
     title: 'Adaptive Learning',
-    description: 'Curriculum that evolves with each student, addressing strengths and targeting areas for growth.',
+    description: 'Tutoring that evolves with each student, addressing strengths and targeting areas for growth.',
   },
   {
     icon: Users,
     title: 'Parent Partnership',
     description: 'Regular communication and progress updates to keep families informed and engaged.',
+  },
+  {
+    icon: Gift,
+    title: 'Referral Program',
+    description: 'Regular free lessons earned through our referral program.',
+  },
+  {
+    icon: ChartLine,
+    title: 'Tuition Portal',
+    description: "Keep in the loop on your child's progress and manage their lessons.",
   },
 ]
 
@@ -36,7 +46,7 @@ export function Features() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {features.map((feature, index) => (
             <div key={index} className="flex gap-6">
               <div className="flex-shrink-0">
