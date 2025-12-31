@@ -23,7 +23,7 @@ const features = [
   },
   {
     icon: Gift,
-    title: 'Referral Program',
+    title: 'Free Lessons',
     description: 'Regular free lessons earned through our referral program.',
   },
   {
