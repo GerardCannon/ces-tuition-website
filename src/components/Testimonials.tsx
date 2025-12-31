@@ -12,7 +12,7 @@ const testimonials = [
   {
     name: 'Michael Roberts',
     role: 'University Student',
-    content: 'The exam preparation program was instrumental in my success. The tutors knew exactly how to break down complex concepts and prepare me for the challenges ahead. I scored in the top 10% of my cohort.',
+    content: 'The exam preparation program was instrumental in my success. The tutors knew exactly how to break down complex concepts and prepare me for the challenges ahead. I scored in the top 10% of my class.',
     initials: 'MR',
   },
   {
