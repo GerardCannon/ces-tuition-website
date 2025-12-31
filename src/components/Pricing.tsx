@@ -41,7 +41,6 @@ const pricingTiers = [
       'Everything in Gold',
       'Deliver elite, comprehensive coaching for top achievers',
       'Cater to complex needs',
-      'Demonstrate excellence in student experience, policy, and pass rates',
       'Specialized learning strategies',
       'Excellence at achieving the highest performance targets',
     ],
