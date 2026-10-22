@@ -80,10 +80,10 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-primary-foreground/80 text-sm">
           <p>© {new Date().getFullYear()} CES Tuition. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-primary-foreground transition-colors">
+            <a href="https://app.cestuition.com/privacy-policy" className="hover:text-primary-foreground transition-colors">
               Privacy Policy
             </a>
-            <a href="#" className="hover:text-primary-foreground transition-colors">
+            <a href="https://app.cestuition.com/eula" className="hover:text-primary-foreground transition-colors">
               Terms of Service
             </a>
             <a href="https://app.cestuition.com" className="hover:text-primary-foreground transition-colors font-medium">
