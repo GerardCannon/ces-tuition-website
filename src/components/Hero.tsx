@@ -2,8 +2,6 @@ import { Button } from '@/components/ui/button'
 import { Star, WhatsappLogo } from '@phosphor-icons/react'
 import { whatsappUrl } from '@/lib/whatsapp'
 
-const REVIEWS_URL = 'https://www.myprivatetutor.ae/teacher/11899167/gerard'
-
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-primary text-primary-foreground">
@@ -36,17 +34,10 @@ export function Hero() {
                   <Star key={i} size={16} weight="fill" aria-hidden="true" />
                 ))}
               </span>
-              <a
-                href={REVIEWS_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-semibold underline underline-offset-4 hover:opacity-90"
-              >
+              <span className="font-semibold">
                 38 five-star reviews on MyPrivateTutor
-              </a>
+              </span>
             </span>
-            <span className="hidden sm:inline" aria-hidden="true">·</span>
-            <span className="font-semibold">From AED 250 per hour</span>
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center items-center pt-2">

@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { Check } from '@phosphor-icons/react'
+import { whatsappUrl } from '@/lib/whatsapp'
 
 const pricingTiers = [
   {
@@ -41,8 +42,10 @@ export function Pricing() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6">
             Pricing
           </h2>
-          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-            Lessons start from <span className="font-semibold text-foreground">AED 250 per hour</span>. The rate depends on the level and the subject. We confirm it before the first lesson.
+          <p className="text-lg md:text-xl leading-relaxed">
+            <a href={whatsappUrl()} className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">
+              Message us on WhatsApp for prices
+            </a>
           </p>
         </div>
 
