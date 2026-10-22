@@ -45,8 +45,6 @@ export function Hero() {
                 38 five-star reviews on MyPrivateTutor
               </a>
             </span>
-            <span className="hidden sm:inline" aria-hidden="true">·</span>
-            <span className="font-semibold">From AED 250 per hour</span>
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center items-center pt-2">
