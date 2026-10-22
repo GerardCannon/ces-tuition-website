@@ -1,8 +1,6 @@
 import { Card } from '@/components/ui/card'
 import { Avatar, AvatarFallback } from '@/components/ui/avatar'
-import { ArrowSquareOut, Star } from '@phosphor-icons/react'
-
-const REVIEWS_URL = 'https://www.myprivatetutor.ae/teacher/11899167/gerard'
+import { Star } from '@phosphor-icons/react'
 
 const testimonials = [
   {
@@ -55,19 +53,9 @@ export function Testimonials() {
           <div className="flex justify-center mb-4">
             <Stars size={28} label="Rated 5 out of 5 stars" />
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground text-balance">
             38 five-star reviews on MyPrivateTutor
           </h2>
-          <a
-            href={REVIEWS_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 text-base sm:text-lg font-semibold text-primary underline-offset-4 hover:underline"
-          >
-            Read all 38 reviews
-            <ArrowSquareOut size={20} weight="bold" aria-hidden="true" />
-            <span className="sr-only"> (opens in a new tab)</span>
-          </a>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-start">
