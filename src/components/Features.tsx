@@ -1,64 +1,64 @@
-import { CheckCircle, Star, TrendUp, Users, Gift, ChartLine } from '@phosphor-icons/react'
+import { ChatCircle, DeviceMobile, Gift, GraduationCap, Star, Users } from '@phosphor-icons/react'
 
 const features = [
   {
-    icon: CheckCircle,
-    title: 'Experienced Tutors',
-    description: 'Our tutors are experienced educators with proven track records and subject matter expertise.',
+    icon: GraduationCap,
+    title: 'UK-trained specialists',
+    description: 'Subject specialists who teach UK, IB and American curricula.',
   },
   {
     icon: Star,
-    title: 'Proven Results',
-    description: 'Consistent improvement in grades, test scores and increased student confidence across all subjects.',
-  },
-  {
-    icon: TrendUp,
-    title: 'Adaptive Learning',
-    description: 'Tutoring that evolves with each student, addressing strengths and targeting areas for growth.',
+    title: '38 five-star reviews',
+    description: 'Parents and students have left 38 five-star reviews on MyPrivateTutor.',
   },
   {
     icon: Users,
-    title: 'Parent Partnership',
-    description: 'Regular communication and progress updates to keep families informed and engaged.',
+    title: 'Parent updates',
+    description: 'We keep parents informed about how lessons are going.',
+  },
+  {
+    icon: DeviceMobile,
+    title: 'Tuition portal',
+    description: "Follow your child's progress and manage lessons in the CES portal.",
   },
   {
     icon: Gift,
-    title: 'Free Lessons',
-    description: 'Regular free lessons earned through our referral program.',
+    title: 'Referral programme',
+    description: 'Ask us about our referral programme.',
   },
   {
-    icon: ChartLine,
-    title: 'Tuition Portal',
-    description: "Keep in the loop on your child's progress and manage their lessons.",
+    icon: ChatCircle,
+    title: 'Live online',
+    description: 'Lessons are live online, for families in every emirate.',
   },
 ]
 
 export function Features() {
   return (
-    <section id="features" className="py-20 md:py-28 bg-muted/30">
+    <section id="features" className="py-16 md:py-24 bg-muted/30 scroll-mt-24">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Why Choose CES Tuition
+        <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">
+            Why families choose CES Tuition
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-            We combine educational excellence with personalized attention to deliver results that matter.
+            One-to-one online lessons, with progress you can follow in the tuition portal.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-          {features.map((feature, index) => (
-            <div key={index} className="flex gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-12">
+          {features.map((feature) => (
+            <div key={feature.title} className="flex gap-5">
               <div className="flex-shrink-0">
-                <div className="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center">
-                  <feature.icon size={32} weight="duotone" className="text-secondary" />
+                <div className="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center">
+                  <feature.icon size={28} weight="duotone" className="text-accent" aria-hidden="true" />
                 </div>
               </div>
               <div className="flex-1">
-                <h3 className="text-2xl font-bold text-foreground mb-3">
+                <h3 className="text-xl font-bold text-foreground mb-2">
                   {feature.title}
                 </h3>
-                <p className="text-lg text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed">
                   {feature.description}
                 </p>
               </div>

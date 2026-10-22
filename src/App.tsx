@@ -4,7 +4,9 @@ import { Services } from '@/components/Services'
 import { Features } from '@/components/Features'
 import { Pricing } from '@/components/Pricing'
 import { Testimonials } from '@/components/Testimonials'
+import { EnquiryForm } from '@/components/EnquiryForm'
 import { Footer } from '@/components/Footer'
+import { WhatsAppBar } from '@/components/WhatsAppBar'
 
 function App() {
   return (
@@ -15,7 +17,9 @@ function App() {
       <Features />
       <Pricing />
       <Testimonials />
+      <EnquiryForm />
       <Footer />
+      <WhatsAppBar />
     </div>
   )
 }
