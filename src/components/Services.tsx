@@ -1,5 +1,34 @@
 import { Card } from '@/components/ui/card'
-import { ChalkboardTeacher, Exam, GlobeHemisphereWest } from '@phosphor-icons/react'
+import { ChalkboardTeacher, Exam } from '@phosphor-icons/react'
+
+function IbGlobe() {
+  return (
+    <svg
+      viewBox="0 0 64 64"
+      width="32"
+      height="32"
+      aria-hidden="true"
+      className="block"
+    >
+      <defs>
+        <clipPath id="ces-ib-globe">
+          <circle cx="32" cy="32" r="28.2" />
+        </clipPath>
+      </defs>
+      <circle cx="32" cy="32" r="29" fill="#166CB0" />
+      <g clipPath="url(#ces-ib-globe)" fill="#2EA468">
+        <path d="M30 29 L26 30 L23 33 L20 36 L18 40 L21 43 L24 45 L26 49 L29 53 L32 56 L35 53 L37 48 L36 43 L38 40 L42 36 L45 33.5 L42 31 L37 29.5 L33 28 L30 29 Z" />
+        <path d="M26 19 L23 16 L22 13 L25 11 L28 9 L30 6 L32.5 5 L34.5 8 L33 11 L36 13 L37.5 16 L35 18 L33.5 19 L33 23 L30.5 24.5 L29.5 21 L28 18 L26 19 Z" />
+        <path d="M16 12.2 L18.2 11 L20.2 12.2 L20.4 15.2 L18.2 16.8 L16.2 15.4 Z" />
+        <path d="M13.6 13.6 L15.2 13 L16 15 L14.8 16.2 L13.6 15 Z" />
+        <path d="M48 34 L51 36 L51.5 40 L48.5 41 L47 37 Z" />
+        <path d="M40.5 48 L42.2 50 L41.6 54.5 L40 53 L39.6 49.5 Z" />
+        <path d="M7.5 39 L11 37.5 L14 42 L13.5 50 L10.5 55 L7.2 50 L6.5 44 Z" />
+      </g>
+      <circle cx="32" cy="32" r="29" fill="none" stroke="#0C3A60" strokeWidth="1.75" />
+    </svg>
+  )
+}
 
 function UkFlag() {
   return (
@@ -54,7 +83,7 @@ const services = [
   {
     title: 'IB',
     description: 'Lessons for students taking the International Baccalaureate.',
-    graphic: <GlobeHemisphereWest size={28} weight="duotone" className={iconClass} aria-hidden="true" />,
+    graphic: <IbGlobe />,
   },
   {
     title: 'American curriculum',
