@@ -1,61 +1,61 @@
 import { Card } from '@/components/ui/card'
-import { BookOpen, Users, ChalkboardTeacher, Certificate, TrendUp, Clock } from '@phosphor-icons/react'
+import { BookOpen, ChalkboardTeacher, Exam, GlobeHemisphereWest, GraduationCap, Student } from '@phosphor-icons/react'
 
 const services = [
   {
     icon: BookOpen,
-    title: 'Subject Mastery',
-    description: 'Comprehensive tutoring across mathematics, sciences, languages, and humanities with expert instructors.',
+    title: 'GCSE and IGCSE',
+    description: 'Live online lessons for GCSE and IGCSE courses, with a subject specialist.',
   },
   {
-    icon: Users,
-    title: 'Small Group Classes',
-    description: 'Interactive learning in small groups that foster collaboration while maintaining personalized attention.',
+    icon: GraduationCap,
+    title: 'A-level',
+    description: 'Subject support for A-level courses, including exam practice.',
+  },
+  {
+    icon: Student,
+    title: 'IB',
+    description: 'Lessons for students taking the International Baccalaureate.',
+  },
+  {
+    icon: GlobeHemisphereWest,
+    title: 'American curriculum',
+    description: 'Online tuition for students following an American curriculum.',
   },
   {
     icon: ChalkboardTeacher,
-    title: 'One-on-One Tutoring',
-    description: 'Personalized sessions tailored to individual learning styles, pace, and academic goals.',
+    title: 'One-to-one lessons',
+    description: 'Individual live online lessons, paced for your child.',
   },
   {
-    icon: Certificate,
-    title: 'Exam Preparation',
-    description: 'Targeted preparation for standardized tests, entrance exams, and crucial academic assessments.',
-  },
-  {
-    icon: TrendUp,
-    title: 'Progress Tracking',
-    description: 'Regular assessments and detailed reports to monitor improvement and adjust learning strategies.',
-  },
-  {
-    icon: Clock,
-    title: 'Flexible Scheduling',
-    description: 'Convenient session times that work around busy student and family schedules.',
+    icon: Exam,
+    title: 'Exam preparation',
+    description: 'Past-paper practice for the assessments on your child’s course.',
   },
 ]
 
 export function Services() {
   return (
-    <section id="services" className="py-20 md:py-28 bg-background">
+    <section id="services" className="py-16 md:py-24 bg-background scroll-mt-24">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Our Services
+        <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">
+            Curricula we teach
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-            Comprehensive educational support designed to meet diverse learning needs and unlock every student's potential.
+            UK, IB and American curricula, taught live online for families across the UAE.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          {services.map((service) => (
             <Card
-              key={index}
-              className="p-8 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-border bg-card"
+              key={service.title}
+              className="p-6 md:p-8 border-border bg-card"
             >
               <div className="flex flex-col gap-4">
                 <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center">
-                  <service.icon size={28} weight="duotone" className="text-accent" />
+                  <service.icon size={28} weight="duotone" className="text-accent" aria-hidden="true" />
                 </div>
                 <h3 className="text-xl font-bold text-foreground">
                   {service.title}

@@ -1,23 +1,20 @@
-# ✨ Welcome to Your Spark Template!
-You've just launched your brand-new Spark Template Codespace — everything’s fired up and ready for you to explore, build, and create with Spark!
+# CES Tuition
 
-This template is your blank canvas. It comes with a minimal setup to help you get started quickly with Spark development.
+Marketing site for [CES Tuition](https://www.cestuition.com/), online tuition for families in the UAE. UK-trained subject specialists teach GCSE, IGCSE, A-level, IB and American curricula.
 
-🚀 What's Inside?
-- A clean, minimal Spark environment
-- Pre-configured for local development
-- Ready to scale with your ideas
-  
-🧠 What Can You Do?
+The site is a static React app. Enquiry buttons open WhatsApp with a pre-filled message. There is no form backend.
 
-Right now, this is just a starting point — the perfect place to begin building and testing your Spark applications.
+## Develop
 
-🧹 Just Exploring?
-No problem! If you were just checking things out and don’t need to keep this code:
+```bash
+npm install
+npm run dev
+```
 
-- Simply delete your Spark.
-- Everything will be cleaned up — no traces left behind.
+## Publish
 
-📄 License For Spark Template Resources 
+GitHub Actions deploys this site to GitHub Pages when `main` is updated. Merging to `main` publishes www.cestuition.com. Preview changes on a pull request before merging.
 
-The Spark Template files and resources from GitHub are licensed under the terms of the MIT license, Copyright GitHub, Inc.
+## Not in this repo
+
+Tutor photos, the trade licence number, an `@cestuition.com` email address, analytics IDs, and separate curriculum pages are still to be added. Privacy Policy and Terms of Service link to the existing pages on [app.cestuition.com](https://app.cestuition.com).
