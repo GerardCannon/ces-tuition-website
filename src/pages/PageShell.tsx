@@ -82,6 +82,9 @@ export function PageShell({
               <div className="text-base sm:text-lg md:text-xl text-white leading-relaxed max-w-2xl mx-auto space-y-4">
                 {lede}
               </div>
+              <p className="text-base sm:text-lg text-white leading-relaxed">
+                Book a free 30-minute trial lesson on WhatsApp.
+              </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center items-center pt-2">
                 <Button
                   asChild

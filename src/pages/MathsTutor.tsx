@@ -1,5 +1,6 @@
 import { Card } from '@/components/ui/card'
 import { FaqSection, PageSection, PageShell, type FaqItem, type PageCrumb } from '@/pages/PageShell.tsx'
+import { offeredSubjects } from '@/pages/subjects.ts'
 
 export const mathsCrumbs: PageCrumb[] = [
   { name: 'Home', path: '/' },
@@ -30,11 +31,11 @@ export const mathsFaqs: FaqItem[] = [
   },
   {
     question: 'How long is a maths lesson, and how do we arrange a time?',
-    answer: 'Lesson length and how times are arranged for families in the UAE are not published on this page: [Confirm: lesson length] [Confirm: how lesson times are arranged]. Message us on WhatsApp with the year group and the specification code if you know it.',
+    answer: 'A free 30-minute trial lesson is booked on WhatsApp. The length of a regular lesson, and how times are arranged for families in the UAE, are not published on this page: [Confirm: lesson length] [Confirm: how lesson times are arranged]. Message us on WhatsApp with the year group and the specification code if you know it.',
   },
   {
     question: 'Who teaches the maths?',
-    answer: 'A UK-trained subject specialist teaches the lesson one-to-one. Names and qualifications are not listed on this page: [Tutor name, subject, qualifications].',
+    answer: 'A UK-trained subject specialist teaches the lesson one-to-one. Names are not listed on this page: [Tutor name, subject, qualifications].',
   },
 ]
 
@@ -73,14 +74,18 @@ export function MathsTutor() {
             <a href="/curricula/british/" className="font-semibold underline underline-offset-4 hover:text-white/80">
               British curriculum tutor
             </a>
-            {' '}covers GCSE, IGCSE and A-level more broadly, and how the exam boards differ.
+            {' '}covers GCSE, IGCSE and A-level more broadly, and how the exam boards differ. IB is also offered.{' '}
+            <a href="/#services" className="font-semibold underline underline-offset-4 hover:text-white/80">
+              See the curricula
+            </a>
+            .
           </p>
         </>
       }
       ctaTitle="Ask about a maths tutor"
       ctaBody={
         <p>
-          Message us on WhatsApp with the year group and the specification code if you have it. This page does not store the message. [Confirm: mathematics specifications offered]
+          Book a free 30-minute trial lesson on WhatsApp, and send the year group and the specification code if you have it. This page does not store the message. [Confirm: mathematics specifications offered]
         </p>
       }
       whatsappDetails={whatsappDetails}
@@ -123,10 +128,13 @@ export function MathsTutor() {
           Lessons are live and one-to-one, for families in every emirate, including Dubai and Abu Dhabi. They are paced for the student. Exam preparation includes past-paper practice for the assessments on the student’s course.
         </p>
         <p>
-          We keep parents informed about how lessons are going. You can follow progress and manage lessons in the CES portal. The registered office is Sharjah Media City (Shams), in Sharjah. The lesson itself is live online.
+          We keep parents informed about how lessons are going. Parents can track progress in the CES parent app. The registered office is Sharjah Media City (Shams), in Sharjah. The lesson itself is live online.
         </p>
         <p>
-          A UK-trained subject specialist teaches the lesson. This page does not name the tutor. [Tutor name, subject, qualifications]
+          A UK-trained subject specialist teaches the lesson. This page does not name individual subject specialists. [Tutor name, subject, qualifications]
+        </p>
+        <p>
+          At IGCSE and GCSE, the subjects offered are {offeredSubjects}. This page is about Maths.
         </p>
         <p>
           These details are not published here:

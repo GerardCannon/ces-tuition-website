@@ -1,5 +1,6 @@
 import { Card } from '@/components/ui/card'
 import { FaqSection, PageSection, PageShell, type FaqItem, type PageCrumb } from '@/pages/PageShell.tsx'
+import { offeredSubjects } from '@/pages/subjects.ts'
 
 export const britishCrumbs: PageCrumb[] = [
   { name: 'Home', path: '/' },
@@ -24,16 +25,16 @@ export const britishFaqs: FaqItem[] = [
     answer: 'The boards families usually ask about are Cambridge, Pearson Edexcel, AQA and OCR. An OCR GCSE is not the same qualification as a Cambridge IGCSE. The boards CES Tuition currently teaches are not confirmed on this page: [Confirm: boards offered].',
   },
   {
-    question: 'Are the tutors UK-trained?',
-    answer: 'Lessons are taught by UK-trained subject specialists. Individual names and qualifications are not published on this page: [Tutor name, subject, qualifications].',
+    question: 'Are lessons taught by UK-trained subject specialists?',
+    answer: 'Yes. Lessons are taught by UK-trained subject specialists. Names are not published on this page: [Tutor name, subject, qualifications].',
   },
   {
     question: 'How do online lessons work for a family in the UAE?',
-    answer: 'Lessons are live and one-to-one, across all emirates. Parents can follow progress in the CES portal, and we keep parents informed about how lessons are going. Lesson length, the video tool and how times are arranged are not published on this page: [Confirm: lesson length] [Confirm: how lesson times are arranged] [Confirm: the video tool used for live lessons].',
+    answer: 'Lessons are live and one-to-one, across all emirates. Parents can track progress in the CES parent app, and we keep parents informed about how lessons are going. A free 30-minute trial lesson is booked on WhatsApp. Lesson length, the video tool and how times are arranged are not published on this page: [Confirm: lesson length] [Confirm: how lesson times are arranged] [Confirm: the video tool used for live lessons].',
   },
   {
     question: 'Do you teach A-level as well as IGCSE?',
-    answer: 'CES Tuition teaches A-level as well as GCSE and IGCSE. The A-level subjects currently offered are not listed on this page: [Confirm: A-level subjects offered].',
+    answer: `CES Tuition teaches A-level as well as GCSE and IGCSE. The subjects offered at GCSE, IGCSE and A-level are ${offeredSubjects}.`,
   },
 ]
 
@@ -71,7 +72,7 @@ export function BritishCurriculum() {
       ctaTitle="Ask about a British curriculum tutor"
       ctaBody={
         <p>
-          Message us on WhatsApp with the subject, the year group and the exam board if you know it. This page does not store the message. [Confirm: boards offered]
+          Book a free 30-minute trial lesson on WhatsApp, and send the subject, the year group and the exam board if you know it. This page does not store the message. [Confirm: boards offered]
         </p>
       }
       whatsappDetails={whatsappDetails}
@@ -87,7 +88,7 @@ export function BritishCurriculum() {
           A-level is usually taught over two years after GCSE or IGCSE. In England the A-level is linear: the exams that decide the grade are at the end of the course. An AS in that system is a separate qualification, and its result does not contribute to the A-level grade. Cambridge International AS & A Level can be taken in stages, and an AS can contribute to the A Level. Pearson’s International A Level is organised in units as well.
         </p>
         <p>
-          CES Tuition teaches GCSE, IGCSE and A-level live online. The boards and the A-level subjects on the current timetable are not listed here. [Confirm: boards offered] [Confirm: A-level subjects offered]
+          CES Tuition teaches GCSE, IGCSE and A-level live online. The subjects offered at GCSE, IGCSE and A-level are {offeredSubjects}. The exam boards are not confirmed on this page. [Confirm: boards offered]
         </p>
       </PageSection>
 
@@ -117,19 +118,26 @@ export function BritishCurriculum() {
 
       <PageSection title="UK-trained subject specialists">
         <p>
-          Lessons are taught by UK-trained subject specialists. That is how CES Tuition teaches GCSE, IGCSE and A-level, and the same description is used on this site for IB and American curricula.
+          Lessons are taught by UK-trained subject specialists.
         </p>
         <p>
-          This page does not name tutors or list qualifications. [Tutor name, subject, qualifications]
+          This page does not name individual subject specialists. [Tutor name, subject, qualifications]
         </p>
         <p>
-          We keep parents informed about how lessons are going. You can follow progress and manage lessons in the CES portal.
+          We keep parents informed about how lessons are going. Parents can track progress in the CES parent app.
+        </p>
+        <p>
+          IB is also offered.{' '}
+          <a href="/#services" className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">
+            See the curricula
+          </a>
+          .
         </p>
       </PageSection>
 
       <PageSection title="How online one-to-one lessons work" muted>
         <p>
-          Lessons are live and one-to-one, for families in every emirate. A student in Dubai, Abu Dhabi, Sharjah or elsewhere in the UAE joins online with the tutor.
+          Lessons are live and one-to-one, for families in every emirate. A student in Dubai, Abu Dhabi, Sharjah or elsewhere in the UAE joins online with a subject specialist.
         </p>
         <p>
           The registered office is Sharjah Media City (Shams), in Sharjah. Teaching is live online rather than in a classroom at that address.
