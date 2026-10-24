@@ -10,11 +10,11 @@ export const britishCrumbs: PageCrumb[] = [
 export const britishFaqs: FaqItem[] = [
   {
     question: 'What does a British curriculum tutor cover?',
-    answer: 'GCSE, IGCSE and A-level, with Edexcel, Cambridge and Oxford. CES Tuition teaches these live online, one-to-one, for families across the UAE.',
+    answer: 'GCSE, IGCSE and A-level, with Edexcel, Cambridge and OxfordAQA. CES Tuition teaches these live online, one-to-one, for families across the UAE.',
   },
   {
     question: 'Do you have an IGCSE tutor for Dubai?',
-    answer: 'Lessons are live online, so a student in Dubai has a one-to-one lesson in the same way as a student in any other emirate. The boards are Edexcel, Cambridge and Oxford. Send the subject and year group on WhatsApp.',
+    answer: 'Lessons are live online, so a student in Dubai has a one-to-one lesson in the same way as a student in any other emirate. The boards are Edexcel, Cambridge and OxfordAQA. Send the subject and year group on WhatsApp.',
   },
   {
     question: 'What is the difference between GCSE and IGCSE?',
@@ -22,7 +22,7 @@ export const britishFaqs: FaqItem[] = [
   },
   {
     question: 'Which exam boards can you teach?',
-    answer: 'Edexcel, Cambridge and Oxford.',
+    answer: 'Edexcel, Cambridge and OxfordAQA.',
   },
   {
     question: 'Are lessons taught by UK-trained subject specialists?',
@@ -34,7 +34,7 @@ export const britishFaqs: FaqItem[] = [
   },
   {
     question: 'Do you teach A-level as well as IGCSE?',
-    answer: `CES Tuition teaches A-level as well as GCSE and IGCSE, with Edexcel, Cambridge and Oxford. The subjects offered at GCSE, IGCSE and A-level are ${offeredSubjects}.`,
+    answer: `CES Tuition teaches A-level as well as GCSE and IGCSE, with Edexcel, Cambridge and OxfordAQA. The subjects offered at GCSE, IGCSE and A-level are ${offeredSubjects}.`,
   },
 ]
 
@@ -48,8 +48,8 @@ const boards = [
     body: 'Cambridge publishes Cambridge IGCSE and Cambridge International AS & A Level. International schools, including many in the UAE, enter students for these qualifications. Cambridge IGCSE Mathematics uses Core and Extended, not Foundation and Higher.',
   },
   {
-    title: 'Oxford',
-    body: 'Oxford is the third board CES Tuition teaches, for the same GCSE, IGCSE and A-level subjects as Edexcel and Cambridge.',
+    title: 'OxfordAQA',
+    body: 'OxfordAQA is the third board CES Tuition teaches, for the same GCSE, IGCSE and A-level subjects as Edexcel and Cambridge.',
   },
 ]
 
@@ -62,13 +62,13 @@ export function BritishCurriculum() {
       title="British curriculum tutor for families in the UAE"
       lede={
         <p>
-          CES Tuition is a British curriculum tutor for families across the UAE, including an IGCSE tutor for students in Dubai. Lessons are one-to-one and live online, with a UK-trained subject specialist, for GCSE, IGCSE and A-level with Edexcel, Cambridge and Oxford.
+          CES Tuition is a British curriculum tutor for families across the UAE, including an IGCSE tutor for students in Dubai. Lessons are one-to-one and live online, with a UK-trained subject specialist, for GCSE, IGCSE and A-level with Edexcel, Cambridge and OxfordAQA.
         </p>
       }
       ctaTitle="Ask about a British curriculum tutor"
       ctaBody={
         <p>
-          Book a free 30-minute trial lesson on WhatsApp, and send the subject, the year group and whether the board is Edexcel, Cambridge or Oxford. This page does not store the message.
+          Book a free 30-minute trial lesson on WhatsApp, and send the subject, the year group and whether the board is Edexcel, Cambridge or OxfordAQA. This page does not store the message.
         </p>
       }
       whatsappDetails={whatsappDetails}
@@ -84,7 +84,7 @@ export function BritishCurriculum() {
           A-level is usually taught over two years after GCSE or IGCSE. In England the A-level is linear: the exams that decide the grade are at the end of the course. An AS in that system is a separate qualification, and its result does not contribute to the A-level grade. Cambridge International AS & A Level can be taken in stages, and an AS can contribute to the A Level. Edexcel’s International A Level is organised in units as well.
         </p>
         <p>
-          CES Tuition teaches GCSE, IGCSE and A-level live online with Edexcel, Cambridge and Oxford. The subjects offered are {offeredSubjects}.
+          CES Tuition teaches GCSE, IGCSE and A-level live online with Edexcel, Cambridge and OxfordAQA. The subjects offered are {offeredSubjects}.
         </p>
       </PageSection>
 
@@ -103,7 +103,7 @@ export function BritishCurriculum() {
         }
       >
         <p>
-          The exam boards are Edexcel, Cambridge and Oxford.
+          The exam boards are Edexcel, Cambridge and OxfordAQA.
         </p>
       </PageSection>
 
@@ -149,7 +149,7 @@ export function BritishCurriculum() {
           <a href="/igcse-gcse-maths-tutor/" className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">
             IGCSE and GCSE maths tutor
           </a>
-          {' '}covers IGCSE, GCSE and A-level Maths with Edexcel, Cambridge and Oxford.
+          {' '}covers IGCSE, GCSE and A-level Maths with Edexcel, Cambridge and OxfordAQA.
         </p>
       </PageSection>
 

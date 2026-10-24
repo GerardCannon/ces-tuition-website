@@ -11,7 +11,7 @@ export const mathsCrumbs: PageCrumb[] = [
 export const mathsFaqs: FaqItem[] = [
   {
     question: 'Do you tutor GCSE maths for students in Dubai?',
-    answer: 'Yes. GCSE and IGCSE Maths lessons are live online and one-to-one, including for students in Dubai, with Edexcel, Cambridge and Oxford. A-level Maths is taught in the same way.',
+    answer: 'Yes. GCSE and IGCSE Maths lessons are live online and one-to-one, including for students in Dubai, with Edexcel, Cambridge and OxfordAQA. A-level Maths is taught in the same way.',
   },
   {
     question: 'Can an online maths tutor teach a student in Abu Dhabi?',
@@ -45,8 +45,8 @@ const boards = [
     body: 'Cambridge IGCSE Mathematics uses Core and Extended rather than Foundation and Higher. Extended includes the Core content and goes further. A-level Maths follows the Cambridge International course.',
   },
   {
-    title: 'Oxford',
-    body: 'Oxford is taught for IGCSE, GCSE and A-level Maths, in one-to-one lessons with a UK-trained subject specialist.',
+    title: 'OxfordAQA',
+    body: 'OxfordAQA is taught for IGCSE, GCSE and A-level Maths, in one-to-one lessons with a UK-trained subject specialist.',
   },
 ]
 
@@ -60,7 +60,7 @@ export function MathsTutor() {
       lede={
         <>
           <p>
-            CES Tuition is an online maths tutor for families in Abu Dhabi, Dubai and the other emirates. Lessons are one-to-one and live online, with a UK-trained subject specialist, for IGCSE, GCSE and A-level Maths with Edexcel, Cambridge and Oxford.
+            CES Tuition is an online maths tutor for families in Abu Dhabi, Dubai and the other emirates. Lessons are one-to-one and live online, with a UK-trained subject specialist, for IGCSE, GCSE and A-level Maths with Edexcel, Cambridge and OxfordAQA.
           </p>
           <p>
             <a href="/curricula/british/" className="font-semibold underline underline-offset-4 hover:text-white/80">
@@ -77,7 +77,7 @@ export function MathsTutor() {
       ctaTitle="Ask about a maths tutor"
       ctaBody={
         <p>
-          Book a free 30-minute trial lesson on WhatsApp, and send the year group and whether the board is Edexcel, Cambridge or Oxford. This page does not store the message.
+          Book a free 30-minute trial lesson on WhatsApp, and send the year group and whether the board is Edexcel, Cambridge or OxfordAQA. This page does not store the message.
         </p>
       }
       whatsappDetails={whatsappDetails}
@@ -96,7 +96,7 @@ export function MathsTutor() {
         }
       >
         <p>
-          Maths is taught at IGCSE, GCSE and A-level. The boards are Edexcel, Cambridge and Oxford.
+          Maths is taught at IGCSE, GCSE and A-level. The boards are Edexcel, Cambridge and OxfordAQA.
         </p>
         <p>
           At IGCSE and GCSE, the subjects offered are {offeredSubjects}. This page is about Maths, including A-level Maths.
@@ -129,7 +129,7 @@ export function MathsTutor() {
           A UK-trained subject specialist teaches the lesson. A free 30-minute trial lesson is booked on WhatsApp.
         </p>
         <p>
-          Send the year group on WhatsApp, and say whether the board is Edexcel, Cambridge or Oxford. This website does not store the enquiry. For the wider British curriculum, see the{' '}
+          Send the year group on WhatsApp, and say whether the board is Edexcel, Cambridge or OxfordAQA. This website does not store the enquiry. For the wider British curriculum, see the{' '}
           <a href="/curricula/british/" className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">
             British curriculum tutor
           </a>
