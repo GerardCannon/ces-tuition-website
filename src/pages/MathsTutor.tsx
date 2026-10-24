@@ -11,50 +11,42 @@ export const mathsCrumbs: PageCrumb[] = [
 export const mathsFaqs: FaqItem[] = [
   {
     question: 'Do you tutor GCSE maths for students in Dubai?',
-    answer: 'GCSE and IGCSE mathematics lessons are live online and one-to-one, including for students in Dubai. The specifications CES Tuition currently teaches are not confirmed on this page: [Confirm: mathematics specifications offered].',
+    answer: 'Yes. GCSE and IGCSE Maths lessons are live online and one-to-one, including for students in Dubai, with Edexcel, Cambridge and Oxford. A-level Maths is taught in the same way.',
   },
   {
     question: 'Can an online maths tutor teach a student in Abu Dhabi?',
-    answer: 'Lessons are live online for families in every emirate, including Abu Dhabi. The student joins from home. The video tool is not named on this page: [Confirm: the video tool used for live lessons].',
+    answer: 'Yes. Lessons are live online for families in every emirate, including Abu Dhabi. The student joins a subject specialist on CES’s own online whiteboard.',
   },
   {
     question: 'What is the difference between Foundation and Higher?',
-    answer: 'Foundation is the tier whose highest grade is 5. Higher is aimed at grades 9 to 4. England GCSE Mathematics and Pearson Edexcel International GCSE Mathematics A (4MA1) use these tiers. The student sits every paper at one tier. Cambridge IGCSE Mathematics does not use these names. It uses Core and Extended.',
+    answer: 'Foundation is the tier whose highest grade is 5. Higher is aimed at grades 9 to 4, and a result just below grade 4 can be awarded grade 3. Edexcel uses these tiers for GCSE and International GCSE Maths. The student sits every paper at one tier. Cambridge IGCSE Mathematics does not use these names. It uses Core and Extended.',
   },
   {
     question: 'What is the difference between Core and Extended?',
-    answer: 'Core and Extended are the Cambridge IGCSE tiers. On specification 0580, Core candidates are eligible for grades C to G and Extended candidates are eligible for grades A* to E. On specification 0980, Core candidates are eligible for grades 5 to 1 and Extended candidates are eligible for grades 9 to 3. Extended includes the Core content and goes further.',
-  },
-  {
-    question: 'Which specification codes should I look for?',
-    answer: 'Common codes are Cambridge 0580 and 0980, Pearson Edexcel International GCSE 4MA1 and 4MB1, Pearson Edexcel GCSE 1MA1, AQA 8300 and OCR J560. The code is usually on the school specification, a past paper or the textbook. Send it on WhatsApp if you have it. [Confirm: mathematics specifications offered]',
+    answer: 'Core and Extended are the Cambridge tiers for IGCSE Mathematics. Extended includes the Core content and goes further. Where the course is graded A* to G, Core candidates are eligible for grades C to G and Extended candidates are eligible for grades A* to E. Where it is graded 9 to 1, Core candidates are eligible for grades 5 to 1 and Extended candidates are eligible for grades 9 to 3.',
   },
   {
     question: 'How long is a maths lesson, and how do we arrange a time?',
-    answer: 'A free 30-minute trial lesson is booked on WhatsApp. The length of a regular lesson, and how times are arranged for families in the UAE, are not published on this page: [Confirm: lesson length] [Confirm: how lesson times are arranged]. Message us on WhatsApp with the year group and the specification code if you know it.',
+    answer: 'A lesson is 1 or 2 hours. Lesson times are scheduled through the CES parent app. A free 30-minute trial lesson is booked on WhatsApp.',
   },
   {
     question: 'Who teaches the maths?',
-    answer: 'A UK-trained subject specialist teaches the lesson one-to-one. Names are not listed on this page: [Tutor name, subject, qualifications].',
+    answer: 'A UK-trained subject specialist teaches the lesson one-to-one.',
   },
 ]
 
-const specifications = [
+const boards = [
   {
-    title: 'Cambridge IGCSE Mathematics, 0580 and 0980',
-    body: 'Cambridge IGCSE Mathematics (0580) is the syllabus for exams in 2025, 2026 and 2027. It is graded A* to G. Candidates are entered for Core or Extended. Core candidates are eligible for grades C to G. Extended candidates are eligible for grades A* to E. Extended content includes the Core content plus further material. Each route has two papers: one where a calculator is not allowed, and one where a scientific calculator is required. Cambridge IGCSE (9 to 1) Mathematics (0980) uses the same Core and Extended idea for exams in those years. Core candidates are eligible for grades 5 to 1. Extended candidates are eligible for grades 9 to 3. Cambridge also publishes International Mathematics (0607) and Additional Mathematics (0606). Those are separate syllabuses from 0580 and 0980.',
+    title: 'Edexcel',
+    body: 'Edexcel GCSE and International GCSE Maths use Foundation and Higher. A-level Maths is taught one-to-one as well.',
   },
   {
-    title: 'Pearson Edexcel, 4MA1, 4MB1 and 1MA1',
-    body: 'Pearson Edexcel International GCSE Mathematics A is specification 4MA1, graded 9 to 1, with Foundation and Higher. Foundation targets grades 5 to 1. Higher targets grades 9 to 4, and a grade 3 can be awarded. A calculator may be used in both papers. Pearson Edexcel International GCSE Mathematics B is specification 4MB1. It is linear and offered at Higher tier only, targeted at grades 9 to 4, with a grade 3 allowed. It has no Foundation tier. Pearson Edexcel GCSE (9 to 1) Mathematics, the England GCSE, is specification 1MA1. Foundation is grades 1 to 5. Higher is grades 4 to 9, with a grade 3 allowed. Students sit three papers at the same tier. Paper 1 does not allow a calculator. Papers 2 and 3 do.',
+    title: 'Cambridge',
+    body: 'Cambridge IGCSE Mathematics uses Core and Extended rather than Foundation and Higher. Extended includes the Core content and goes further. A-level Maths follows the Cambridge International course.',
   },
   {
-    title: 'AQA GCSE Mathematics, 8300',
-    body: 'AQA GCSE Mathematics is specification 8300. It is an England GCSE, graded 9 to 1. Foundation is grades 1 to 5 and Higher is grades 4 to 9. A result just below grade 4 on Higher can be awarded grade 3. Students take three question papers, all at the same tier, in the same exam series. AQA does not use the Cambridge names Core and Extended for this qualification.',
-  },
-  {
-    title: 'OCR GCSE Mathematics, J560',
-    body: 'OCR GCSE (9 to 1) Mathematics is specification J560. Foundation entry is J560F, papers 1, 2 and 3, for grades 5 to 1. Higher entry is J560H, papers 4, 5 and 6, for grades 9 to 4. A result just below grade 4 on Higher can be awarded grade 3. This is an England GCSE. It is not a Cambridge IGCSE.',
+    title: 'Oxford',
+    body: 'Oxford is taught for IGCSE, GCSE and A-level Maths, in one-to-one lessons with a UK-trained subject specialist.',
   },
 ]
 
@@ -68,13 +60,13 @@ export function MathsTutor() {
       lede={
         <>
           <p>
-            CES Tuition is an online maths tutor for families in Abu Dhabi, Dubai and the other emirates. Lessons are one-to-one and live online, with a UK-trained subject specialist, for IGCSE and GCSE mathematics.
+            CES Tuition is an online maths tutor for families in Abu Dhabi, Dubai and the other emirates. Lessons are one-to-one and live online, with a UK-trained subject specialist, for IGCSE, GCSE and A-level Maths with Edexcel, Cambridge and Oxford.
           </p>
           <p>
             <a href="/curricula/british/" className="font-semibold underline underline-offset-4 hover:text-white/80">
               British curriculum tutor
             </a>
-            {' '}covers GCSE, IGCSE and A-level more broadly, and how the exam boards differ. IB is also offered.{' '}
+            {' '}covers GCSE, IGCSE and A-level more broadly. IB is also offered.{' '}
             <a href="/#services" className="font-semibold underline underline-offset-4 hover:text-white/80">
               See the curricula
             </a>
@@ -85,41 +77,41 @@ export function MathsTutor() {
       ctaTitle="Ask about a maths tutor"
       ctaBody={
         <p>
-          Book a free 30-minute trial lesson on WhatsApp, and send the year group and the specification code if you have it. This page does not store the message. [Confirm: mathematics specifications offered]
+          Book a free 30-minute trial lesson on WhatsApp, and send the year group and whether the board is Edexcel, Cambridge or Oxford. This page does not store the message.
         </p>
       }
       whatsappDetails={whatsappDetails}
     >
       <PageSection
-        title="Mathematics specifications by exam board"
+        title="IGCSE, GCSE and A-level Maths"
         extra={
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {specifications.map((spec) => (
-              <Card key={spec.title} className="p-6 md:p-8 border-border bg-card">
-                <h3 className="text-xl font-bold text-foreground mb-3">{spec.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{spec.body}</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {boards.map((board) => (
+              <Card key={board.title} className="p-6 md:p-8 border-border bg-card">
+                <h3 className="text-xl font-bold text-foreground mb-3">{board.title}</h3>
+                <p className="text-muted-foreground leading-relaxed">{board.body}</p>
               </Card>
             ))}
           </div>
         }
       >
         <p>
-          The code printed on a school specification, a textbook or an exam paper identifies the course. The codes below are published specification codes. They are not a statement of which ones CES Tuition is teaching. [Confirm: mathematics specifications offered]
+          Maths is taught at IGCSE, GCSE and A-level. The boards are Edexcel, Cambridge and Oxford.
+        </p>
+        <p>
+          At IGCSE and GCSE, the subjects offered are {offeredSubjects}. This page is about Maths, including A-level Maths.
         </p>
       </PageSection>
 
       <PageSection title="Foundation and Higher, Core and Extended" muted>
         <p>
-          England GCSE Mathematics, and Pearson Edexcel International GCSE Mathematics A (4MA1), use Foundation and Higher. Foundation’s highest grade is 5. Higher is aimed at grades 9 to 4. On the England specifications a result just below grade 4 on Higher can be awarded grade 3, and Pearson states the same allowance for 4MA1 and for Mathematics B (4MB1).
+          Edexcel GCSE and International GCSE Maths use Foundation and Higher. Foundation’s highest grade is 5. Higher is aimed at grades 9 to 4, and a result just below grade 4 on Higher can be awarded grade 3.
         </p>
         <p>
           A student is entered for one tier and sits every paper at that tier. The tiers overlap around grades 4 and 5, so a student expected to land in that range can be entered either way. The school’s entry decides the tier. Changing tier changes the papers.
         </p>
         <p>
-          Cambridge IGCSE Mathematics does not use Foundation and Higher. It uses Core and Extended. On 0580, Core leads to grades C to G and Extended leads to grades A* to E. On 0980, Core leads to grades 5 to 1 and Extended leads to grades 9 to 3. Extended includes every Core topic and adds more. A student is entered for one route.
-        </p>
-        <p>
-          Pearson Edexcel International GCSE Mathematics B (4MB1) has neither a Foundation tier nor a Core route. The specification is Higher tier only.
+          Cambridge IGCSE Mathematics does not use Foundation and Higher. It uses Core and Extended. Where the course is graded A* to G, Core leads to grades C to G and Extended leads to grades A* to E. Where it is graded 9 to 1, Core leads to grades 5 to 1 and Extended leads to grades 9 to 3. Extended includes every Core topic and adds more. A student is entered for one route.
         </p>
       </PageSection>
 
@@ -128,25 +120,16 @@ export function MathsTutor() {
           Lessons are live and one-to-one, for families in every emirate, including Dubai and Abu Dhabi. They are paced for the student. Exam preparation includes past-paper practice for the assessments on the student’s course.
         </p>
         <p>
-          We keep parents informed about how lessons are going. Parents can track progress in the CES parent app. The registered office is Sharjah Media City (Shams), in Sharjah. The lesson itself is live online.
+          A lesson is 1 or 2 hours. Lesson times are scheduled through the CES parent app. Lessons run live on CES’s own online whiteboard.
         </p>
         <p>
-          A UK-trained subject specialist teaches the lesson. This page does not name individual subject specialists. [Tutor name, subject, qualifications]
+          We keep parents informed about how lessons are going. Parents can track progress in the CES parent app. The registered office is Sharjah Media City (Shams), in Sharjah.
         </p>
         <p>
-          At IGCSE and GCSE, the subjects offered are {offeredSubjects}. This page is about Maths.
+          A UK-trained subject specialist teaches the lesson. A free 30-minute trial lesson is booked on WhatsApp.
         </p>
         <p>
-          These details are not published here:
-        </p>
-        <ul className="list-disc pl-6 space-y-2">
-          <li>[Confirm: mathematics specifications offered]</li>
-          <li>[Confirm: lesson length]</li>
-          <li>[Confirm: how lesson times are arranged]</li>
-          <li>[Confirm: the video tool used for live lessons]</li>
-        </ul>
-        <p>
-          Send the year group, and the specification code if you know it, on WhatsApp. This website does not store the enquiry. For the wider British curriculum, see the{' '}
+          Send the year group on WhatsApp, and say whether the board is Edexcel, Cambridge or Oxford. This website does not store the enquiry. For the wider British curriculum, see the{' '}
           <a href="/curricula/british/" className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">
             British curriculum tutor
           </a>

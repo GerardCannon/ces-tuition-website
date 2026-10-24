@@ -10,50 +10,46 @@ export const britishCrumbs: PageCrumb[] = [
 export const britishFaqs: FaqItem[] = [
   {
     question: 'What does a British curriculum tutor cover?',
-    answer: 'GCSE, IGCSE and A-level. CES Tuition teaches these live online, one-to-one, for families across the UAE. The exam boards we currently teach are not confirmed on this page: [Confirm: boards offered].',
+    answer: 'GCSE, IGCSE and A-level, with Edexcel, Cambridge and Oxford. CES Tuition teaches these live online, one-to-one, for families across the UAE.',
   },
   {
     question: 'Do you have an IGCSE tutor for Dubai?',
-    answer: 'Lessons are live online, so a student in Dubai has a one-to-one lesson in the same way as a student in any other emirate. Send the subject, year group and exam board on WhatsApp. [Confirm: boards offered]',
+    answer: 'Lessons are live online, so a student in Dubai has a one-to-one lesson in the same way as a student in any other emirate. The boards are Edexcel, Cambridge and Oxford. Send the subject and year group on WhatsApp.',
   },
   {
     question: 'What is the difference between GCSE and IGCSE?',
-    answer: 'GCSE is the qualification used in England, Wales and Northern Ireland. In England it is graded 9 to 1. IGCSE is the international version. Cambridge IGCSE and Pearson Edexcel International GCSE are the ones international schools use most often. Some specifications are graded 9 to 1, and some Cambridge IGCSEs are graded A* to G.',
+    answer: 'GCSE is the qualification used in England, Wales and Northern Ireland. In England it is graded 9 to 1. IGCSE is the international version. Cambridge IGCSE and the Edexcel International GCSE are widely used by international schools. Some specifications are graded 9 to 1, and some Cambridge IGCSEs are graded A* to G.',
   },
   {
     question: 'Which exam boards can you teach?',
-    answer: 'The boards families usually ask about are Cambridge, Pearson Edexcel, AQA and OCR. An OCR GCSE is not the same qualification as a Cambridge IGCSE. The boards CES Tuition currently teaches are not confirmed on this page: [Confirm: boards offered].',
+    answer: 'Edexcel, Cambridge and Oxford.',
   },
   {
     question: 'Are lessons taught by UK-trained subject specialists?',
-    answer: 'Yes. Lessons are taught by UK-trained subject specialists. Names are not published on this page: [Tutor name, subject, qualifications].',
+    answer: 'Yes. Lessons are taught by UK-trained subject specialists.',
   },
   {
     question: 'How do online lessons work for a family in the UAE?',
-    answer: 'Lessons are live and one-to-one, across all emirates. Parents can track progress in the CES parent app, and we keep parents informed about how lessons are going. A free 30-minute trial lesson is booked on WhatsApp. Lesson length, the video tool and how times are arranged are not published on this page: [Confirm: lesson length] [Confirm: how lesson times are arranged] [Confirm: the video tool used for live lessons].',
+    answer: 'Lessons are live and one-to-one, across all emirates, on CES’s own online whiteboard. A lesson is 1 or 2 hours, and lesson times are scheduled through the CES parent app. Parents can track progress in the CES parent app, and we keep parents informed about how lessons are going. A free 30-minute trial lesson is booked on WhatsApp.',
   },
   {
     question: 'Do you teach A-level as well as IGCSE?',
-    answer: `CES Tuition teaches A-level as well as GCSE and IGCSE. The subjects offered at GCSE, IGCSE and A-level are ${offeredSubjects}.`,
+    answer: `CES Tuition teaches A-level as well as GCSE and IGCSE, with Edexcel, Cambridge and Oxford. The subjects offered at GCSE, IGCSE and A-level are ${offeredSubjects}.`,
   },
 ]
 
 const boards = [
   {
+    title: 'Edexcel',
+    body: 'Edexcel awards GCSE, International GCSE and A-level. On its mathematics courses, GCSE and International GCSE use Foundation and Higher.',
+  },
+  {
     title: 'Cambridge',
-    body: 'Cambridge Assessment International Education publishes Cambridge IGCSE and Cambridge International AS & A Level. International schools, including many in the UAE, enter students for these qualifications. Cambridge IGCSE Mathematics uses Core and Extended, not Foundation and Higher.',
+    body: 'Cambridge publishes Cambridge IGCSE and Cambridge International AS & A Level. International schools, including many in the UAE, enter students for these qualifications. Cambridge IGCSE Mathematics uses Core and Extended, not Foundation and Higher.',
   },
   {
-    title: 'Pearson Edexcel',
-    body: 'Pearson awards England GCSEs and International GCSEs, and England A-levels and International A-levels, under the Edexcel name. On its mathematics courses, GCSE and International GCSE Mathematics A use Foundation and Higher.',
-  },
-  {
-    title: 'AQA',
-    body: 'AQA is an England exam board. Schools that follow the England curriculum use its GCSE and A-level specifications. AQA GCSE Mathematics uses Foundation and Higher.',
-  },
-  {
-    title: 'OCR',
-    body: 'OCR (Oxford, Cambridge and RSA) is an England exam board. An OCR GCSE is not a Cambridge IGCSE. The two qualifications come from related organisations and use different specifications. OCR GCSE Mathematics uses Foundation and Higher.',
+    title: 'Oxford',
+    body: 'Oxford is the third board CES Tuition teaches, for the same GCSE, IGCSE and A-level subjects as Edexcel and Cambridge.',
   },
 ]
 
@@ -66,13 +62,13 @@ export function BritishCurriculum() {
       title="British curriculum tutor for families in the UAE"
       lede={
         <p>
-          CES Tuition is a British curriculum tutor for families across the UAE, including an IGCSE tutor for students in Dubai. Lessons are one-to-one and live online, with a UK-trained subject specialist, for GCSE, IGCSE and A-level.
+          CES Tuition is a British curriculum tutor for families across the UAE, including an IGCSE tutor for students in Dubai. Lessons are one-to-one and live online, with a UK-trained subject specialist, for GCSE, IGCSE and A-level with Edexcel, Cambridge and Oxford.
         </p>
       }
       ctaTitle="Ask about a British curriculum tutor"
       ctaBody={
         <p>
-          Book a free 30-minute trial lesson on WhatsApp, and send the subject, the year group and the exam board if you know it. This page does not store the message. [Confirm: boards offered]
+          Book a free 30-minute trial lesson on WhatsApp, and send the subject, the year group and whether the board is Edexcel, Cambridge or Oxford. This page does not store the message.
         </p>
       }
       whatsappDetails={whatsappDetails}
@@ -82,13 +78,13 @@ export function BritishCurriculum() {
           GCSE means General Certificate of Secondary Education. In England it is the qualification most students take at the end of Year 11, and it is graded 9 to 1. Wales and Northern Ireland have their own GCSE arrangements, so the papers a student sits depend on the school and the exam board.
         </p>
         <p>
-          IGCSE means International GCSE. Cambridge uses the name Cambridge IGCSE. Pearson uses Pearson Edexcel International GCSE. International schools use these qualifications, and many schools in the UAE do. The grade scale depends on the specification. Some use 9 to 1. Some Cambridge IGCSEs use A* to G.
+          IGCSE means International GCSE. Cambridge uses the name Cambridge IGCSE. Edexcel uses the Edexcel International GCSE. International schools use these qualifications, and many schools in the UAE do. The grade scale depends on the course. Some use 9 to 1. Some Cambridge IGCSEs use A* to G.
         </p>
         <p>
-          A-level is usually taught over two years after GCSE or IGCSE. In England the A-level is linear: the exams that decide the grade are at the end of the course. An AS in that system is a separate qualification, and its result does not contribute to the A-level grade. Cambridge International AS & A Level can be taken in stages, and an AS can contribute to the A Level. Pearson’s International A Level is organised in units as well.
+          A-level is usually taught over two years after GCSE or IGCSE. In England the A-level is linear: the exams that decide the grade are at the end of the course. An AS in that system is a separate qualification, and its result does not contribute to the A-level grade. Cambridge International AS & A Level can be taken in stages, and an AS can contribute to the A Level. Edexcel’s International A Level is organised in units as well.
         </p>
         <p>
-          CES Tuition teaches GCSE, IGCSE and A-level live online. The subjects offered at GCSE, IGCSE and A-level are {offeredSubjects}. The exam boards are not confirmed on this page. [Confirm: boards offered]
+          CES Tuition teaches GCSE, IGCSE and A-level live online with Edexcel, Cambridge and Oxford. The subjects offered are {offeredSubjects}.
         </p>
       </PageSection>
 
@@ -96,32 +92,24 @@ export function BritishCurriculum() {
         title="Exam boards"
         muted
         extra={
-          <>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {boards.map((board) => (
-                <Card key={board.title} className="p-6 md:p-8 border-border bg-card">
-                  <h3 className="text-xl font-bold text-foreground mb-3">{board.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{board.body}</p>
-                </Card>
-              ))}
-            </div>
-            <p className="max-w-3xl mt-8 text-lg text-muted-foreground leading-relaxed">
-              Ask us which of these boards we can cover for your child. [Confirm: boards offered]
-            </p>
-          </>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {boards.map((board) => (
+              <Card key={board.title} className="p-6 md:p-8 border-border bg-card">
+                <h3 className="text-xl font-bold text-foreground mb-3">{board.title}</h3>
+                <p className="text-muted-foreground leading-relaxed">{board.body}</p>
+              </Card>
+            ))}
+          </div>
         }
       >
         <p>
-          Four boards come up most often when a family asks for a British curriculum tutor. The notes below describe the qualifications. They are not a list of what CES Tuition is teaching this term.
+          The exam boards are Edexcel, Cambridge and Oxford.
         </p>
       </PageSection>
 
       <PageSection title="UK-trained subject specialists">
         <p>
           Lessons are taught by UK-trained subject specialists.
-        </p>
-        <p>
-          This page does not name individual subject specialists. [Tutor name, subject, qualifications]
         </p>
         <p>
           We keep parents informed about how lessons are going. Parents can track progress in the CES parent app.
@@ -137,19 +125,17 @@ export function BritishCurriculum() {
 
       <PageSection title="How online one-to-one lessons work" muted>
         <p>
-          Lessons are live and one-to-one, for families in every emirate. A student in Dubai, Abu Dhabi, Sharjah or elsewhere in the UAE joins online with a subject specialist.
+          Lessons are live and one-to-one, for families in every emirate. A student in Dubai, Abu Dhabi, Sharjah or elsewhere in the UAE joins a subject specialist on CES’s own online whiteboard.
+        </p>
+        <p>
+          A lesson is 1 or 2 hours. Lesson times are scheduled through the CES parent app. Parents can track progress there as well.
         </p>
         <p>
           The registered office is Sharjah Media City (Shams), in Sharjah. Teaching is live online rather than in a classroom at that address.
         </p>
         <p>
-          Exam preparation on this site includes past-paper practice, and lessons are paced for the student. Three practical details are not published here:
+          Exam preparation on this site includes past-paper practice, and lessons are paced for the student. A free 30-minute trial lesson is booked on WhatsApp.
         </p>
-        <ul className="list-disc pl-6 space-y-2">
-          <li>[Confirm: lesson length]</li>
-          <li>[Confirm: how lesson times are arranged]</li>
-          <li>[Confirm: the video tool used for live lessons]</li>
-        </ul>
         <p>
           To ask about a place, send the curriculum, subject and year group on WhatsApp. This website does not store the enquiry.
         </p>
@@ -157,13 +143,13 @@ export function BritishCurriculum() {
 
       <PageSection title="IGCSE and GCSE mathematics">
         <p>
-          Mathematics has its own specification codes and tiers. Foundation and Higher are not the same thing as Cambridge Core and Extended.
+          Mathematics is one of the subjects offered at IGCSE, GCSE and A-level. Foundation and Higher are not the same thing as Cambridge Core and Extended.
         </p>
         <p>
           <a href="/igcse-gcse-maths-tutor/" className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">
             IGCSE and GCSE maths tutor
           </a>
-          {' '}covers the Cambridge, Pearson Edexcel, AQA and OCR mathematics specifications, including which codes use which tier.
+          {' '}covers IGCSE, GCSE and A-level Maths with Edexcel, Cambridge and Oxford.
         </p>
       </PageSection>
 
