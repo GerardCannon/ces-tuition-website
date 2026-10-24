@@ -12,8 +12,8 @@ export const britishFaqs: FaqItem[] = [
     answer: 'Message us on WhatsApp and we’ll arrange a free 30-minute trial lesson. After that, we’ll set you up on our app, where you can monitor your child’s progress.',
   },
   {
-    question: 'We don’t live in Dubai. Can my child still have lessons?',
-    answer: 'Yes. All our lessons are online, so families join us from every emirate.',
+    question: 'We don’t live in the UAE. Can my child still have lessons?',
+    answer: 'Yes. All our lessons are online, so families join us from the UK, Europe and all over Asia.',
   },
   {
     question: 'Which exam boards do you cover?',
