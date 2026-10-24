@@ -9,12 +9,16 @@ export const mathsCrumbs: PageCrumb[] = [
 
 export const mathsFaqs: FaqItem[] = [
   {
-    question: 'Which exam boards do you cover for maths?',
-    answer: 'Edexcel, Cambridge and OxfordAQA. OxfordAQA offers International GCSE and International AS and A-level maths.',
+    question: 'How do we book a lesson?',
+    answer: 'Message us on WhatsApp and we’ll arrange a free 30-minute trial lesson. After that, we’ll set you up on our app, where you can monitor your child’s progress.',
   },
   {
-    question: 'Do you teach A-level maths as well?',
-    answer: 'Yes. A-level maths is offered alongside IGCSE and GCSE maths.',
+    question: 'Which exam boards do you cover for maths?',
+    answer: 'We teach Edexcel, Cambridge and OxfordAQA maths courses. OxfordAQA offers International GCSE and International AS and A-level maths.',
+  },
+  {
+    question: 'Do you teach A-level maths?',
+    answer: 'Yes. We teach A-level maths as well as IGCSE and GCSE maths.',
   },
 ]
 
@@ -33,6 +37,8 @@ const boards = [
   },
 ]
 
+const linkClass = 'font-semibold text-foreground underline underline-offset-4 hover:text-primary'
+
 const whatsappDetails = 'I would like to ask about maths lessons for my child.'
 
 export function MathsTutor() {
@@ -42,35 +48,44 @@ export function MathsTutor() {
       title="IGCSE, GCSE and A-level maths tutor in the UAE"
       lede={
         <p>
-          Maths is often the subject a parent worries about first. Lessons follow the course your child’s school is teaching, whether they need to catch up or want to feel ready for the paper.
+          Maths is often the subject parents worry about most. Our lessons follow the course your child is studying at school, whether they need to catch up or want to aim for a higher grade.
         </p>
       }
       ctaTitle="Tell us about your child"
       ctaBody={
         <p>
-          Send the year group and the board. We’ll reply on WhatsApp.
+          Send us your child’s year group and exam board on WhatsApp, and we’ll get back to you.
         </p>
       }
       whatsappDetails={whatsappDetails}
     >
-      <PageSection title="What your child gets">
+      <PageSection title="Our lessons">
         <p>
-          Your child works one-to-one, live, with a UK-trained subject specialist, on our own online whiteboard. A lesson is 1 or 2 hours. You book the time in the CES parent app, and the same app is where you see how your child is getting on.
+          Your child has one-to-one maths lessons with our UK-trained subject specialists on our interactive online whiteboard.
         </p>
         <p>
-          We stay with the topics the school is on. If algebra has gone wrong, or exam questions are where the marks are slipping, that’s where the lesson starts. A gap from an earlier year is worth closing before the class moves on.
+          Our whiteboard replicates an in-person lesson, as we share a fully interactive digital school copybook with each student.
         </p>
         <p>
-          You don’t need to be confident with the maths yourself. Tell us what the school has said, or what your child finds hardest, and the lesson can start there. Your child can stop and ask when a step doesn’t make sense. A wrong answer is often one step in a longer method, and we stay with that step until it’s clear.
+          Lessons typically last one or two hours, as you prefer.
+        </p>
+        <p>
+          To get started, simply message us on WhatsApp and we’ll arrange a free trial lesson, so we can put your mind at ease.
+        </p>
+        <p>
+          We focus on the topics your child is covering at school. If they’re struggling with algebra, or losing marks on exam questions, that’s where we start. If there are gaps from earlier years, we’ll help fill them before the class moves on.
+        </p>
+        <p>
+          You don’t need to be confident with maths yourself. Just tell us what the school has said, or which topics your child finds hardest. Your child can ask questions at any point, and we’ll go through each step of a method until it makes sense.
         </p>
       </PageSection>
 
       <PageSection title="What to tell us" muted>
         <p>
-          The year group and the exam board are the useful details. If you already know which paper the school has entered, include that too. If you don’t, we can still begin, and you can confirm it with the school afterwards.
+          It helps to know your child’s year group and exam board. If you know which paper they’ll sit, let us know that too. If not, that’s fine: we can start lessons and work it out together.
         </p>
         <p>
-          A move to a new school in the UAE often means the class is already midway through a topic. Say if that’s the case. The first lesson can pick up the work in front of your child, rather than restarting the year.
+          If your child has recently changed school, their new class may be partway through a topic. If so, let us know and we’ll pick up from where the class is, rather than starting from the beginning.
         </p>
       </PageSection>
 
@@ -88,26 +103,19 @@ export function MathsTutor() {
         }
       >
         <p>
-          The school’s board decides the course. These are the three we teach for maths.
+          We teach maths courses from Edexcel, Cambridge and OxfordAQA.
         </p>
       </PageSection>
 
       <PageSection title="Foundation, Higher, Core and Extended">
         <p>
-          GCSE maths is entered as Foundation or Higher. Cambridge IGCSE maths uses Core or Extended instead. Ask the school which paper your child is on, and the lessons will follow that.
-        </p>
-        <p>
-          You might hear these names at a parents’ evening and wonder which one matters. It’s simply the paper your child will sit. That label is all we need, and if the school is changing it, just let us know.
+          GCSE and International GCSE maths papers are set at two levels, called Foundation and Higher. Cambridge IGCSE maths uses Core and Extended instead. You may hear these terms at parents’ evening; they simply describe which paper your child will sit. If you know which one it is, tell us and we’ll prepare your child for that paper.
         </p>
       </PageSection>
 
       <PageSection title="Other subjects" muted>
         <p>
-          If you need a subject other than maths, the{' '}
-          <a href="/curricula/british/" className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">
-            British curriculum page
-          </a>
-          {' '}sets out what we offer. The IB is there too.
+          We teach many other subjects as well as maths. See our <a href="/curricula/british/" className={linkClass}>British curriculum page</a> for more, or ask us on WhatsApp. We also teach the IB.
         </p>
       </PageSection>
 
