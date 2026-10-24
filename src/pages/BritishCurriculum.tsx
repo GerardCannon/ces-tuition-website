@@ -1,6 +1,5 @@
 import { Card } from '@/components/ui/card'
 import { FaqSection, PageSection, PageShell, type FaqItem, type PageCrumb } from '@/pages/PageShell.tsx'
-import { offeredSubjects } from '@/pages/subjects.ts'
 
 export const britishCrumbs: PageCrumb[] = [
   { name: 'Home', path: '/' },
@@ -9,20 +8,24 @@ export const britishCrumbs: PageCrumb[] = [
 
 export const britishFaqs: FaqItem[] = [
   {
+    question: 'How do we book a lesson?',
+    answer: 'Message us on WhatsApp and we’ll arrange a free 30-minute trial lesson. After that, we’ll set you up on our app, where you can monitor your child’s progress.',
+  },
+  {
+    question: 'We don’t live in Dubai. Can my child still have lessons?',
+    answer: 'Yes. All our lessons are online, so families join us from every emirate.',
+  },
+  {
     question: 'Which exam boards do you cover?',
-    answer: 'Edexcel, Cambridge and OxfordAQA. OxfordAQA offers International GCSE and International AS and A-level.',
+    answer: 'We teach Edexcel, Cambridge and OxfordAQA courses. OxfordAQA offers International GCSE and International AS and A-level.',
   },
   {
     question: 'What’s the difference between GCSE and IGCSE?',
-    answer: 'GCSE is the exam used in British schools. IGCSE is the international version that many schools in the UAE use. Your child’s school decides which one they sit.',
+    answer: 'GCSEs are taken by students in UK schools. The IGCSE is the international version, used by many schools in the UAE. Your child’s school decides which one they take.',
   },
   {
-    question: 'Do you offer A-level as well?',
-    answer: 'Yes. A-level is offered in the same subjects as IGCSE and GCSE.',
-  },
-  {
-    question: 'We’re not in Dubai. Can my child still join?',
-    answer: 'Yes. Families join from every emirate.',
+    question: 'Do you also teach A-level?',
+    answer: 'Yes. We teach A-level in a wide range of subjects, as well as GCSE and IGCSE.',
   },
 ]
 
@@ -41,57 +44,64 @@ const boards = [
   },
 ]
 
+const linkClass = 'font-semibold text-foreground underline underline-offset-4 hover:text-primary'
+
 const whatsappDetails = 'I would like to ask about British curriculum lessons for my child.'
 
 export function BritishCurriculum() {
   return (
     <PageShell
       crumbs={britishCrumbs}
-      title="British curriculum lessons for families in the UAE"
+      title="British curriculum tuition for families in the UAE"
       lede={
         <p>
-          Many families in the UAE follow the British curriculum. If one subject is slipping, or your child wants to feel more confident in it, we can help.
+          Many families in the UAE follow the British curriculum. If your child is finding a subject difficult, or simply wants to feel more confident, we can help.
         </p>
       }
       ctaTitle="Tell us about your child"
       ctaBody={
         <p>
-          Send the subject and the year group. We’ll reply on WhatsApp.
+          Send us your child’s subject and year group on WhatsApp, and we’ll get back to you.
         </p>
       }
       whatsappDetails={whatsappDetails}
     >
-      <PageSection title="What your child gets">
+      <PageSection title="Our lessons">
         <p>
-          Your child works one-to-one, live, with a UK-trained subject specialist, on our own online whiteboard. A lesson is 1 or 2 hours. You book the time in the CES parent app, and the same app is where you see how your child is getting on.
+          Your child has one-to-one lessons with our UK-trained subject specialists on our interactive online whiteboard.
         </p>
         <p>
-          Some families come to us after a grade has dipped. Others want their child to feel calmer about the work before a school test. The lesson follows what your child is doing at school, rather than a separate course.
+          Our whiteboard replicates an in-person lesson, as we share a fully interactive digital school copybook with each student.
         </p>
         <p>
-          Lessons work alongside school, not instead of it. If your child has homework they can’t get started on, that piece of work can be where the lesson begins.
+          Lessons typically last one or two hours, as you prefer.
+        </p>
+        <p>
+          To get started, simply message us on WhatsApp and we’ll arrange a free trial lesson, so we can put your mind at ease.
+        </p>
+        <p>
+          Lessons typically follow what your child is learning at school. Some parents come to us after a disappointing grade; others want their child to feel better prepared for an upcoming test, or simply to get ready for the end-of-year exams.
+        </p>
+        <p>
+          If your child is stuck on a piece of homework, we’ll always start by working through it together.
         </p>
       </PageSection>
 
       <PageSection title="Where to begin" muted>
         <p>
-          You don’t need a plan for every subject. Start with the one that’s on your mind. A child who’s comfortable in English and stuck in physics only needs physics.
+          You don’t need to plan every subject at once. Start with the one that concerns you most.
         </p>
         <p>
-          If you’ve just moved to the UAE, or your child has changed school, the new class may already be a few topics ahead. Mention that when you write to us, and the first lesson can start from the gap.
+          If you’ve recently moved to the UAE or changed school, your child may find the new class is ahead in some areas. If so, let us know and we’ll help them catch up.
         </p>
         <p>
-          It helps if you know the subject, the year group and the exam board. If the board isn’t on a recent report, the school can tell you. That’s enough for a useful reply.
+          When you message us, it helps to tell us the subject, your child’s year group and the exam board. If you’re not sure of the board, your child’s school will be able to tell you, or we can work it out together.
         </p>
       </PageSection>
 
       <PageSection title="Subjects">
         <p>
-          At IGCSE, GCSE and A-level the subjects are {offeredSubjects}. The IB is offered as well. You can see it alongside the other pathways on our{' '}
-          <a href="/#services" className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">
-            home page
-          </a>
-          .
+          We teach a wide range of subjects at IGCSE, GCSE and A-level, including Maths, English, Biology, Chemistry, Physics, Economics, Business Studies and Computer Science. If your child’s subject isn’t listed, just ask us. We also teach the IB, which you can find with our other curricula on our <a href="/" className={linkClass}>home page</a>.
         </p>
       </PageSection>
 
@@ -109,17 +119,13 @@ export function BritishCurriculum() {
         }
       >
         <p>
-          Tell us which board the school uses. These are the three we teach.
+          We teach courses from Edexcel, Cambridge and OxfordAQA.
         </p>
       </PageSection>
 
-      <PageSection title="If the subject is maths" muted>
+      <PageSection title="Maths" muted>
         <p>
-          Maths has a few extra choices, depending on the board and the paper the school has entered. There’s a separate page for{' '}
-          <a href="/igcse-gcse-maths-tutor/" className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">
-            IGCSE, GCSE and A-level maths
-          </a>
-          .
+          Maths has a few extra options, such as different levels of exam paper, depending on the exam board. You can read more on our <a href="/igcse-gcse-maths-tutor/" className={linkClass}>IGCSE, GCSE and A-level maths page</a>.
         </p>
       </PageSection>
 

@@ -137,8 +137,8 @@ export const routes: SiteRoute[] = [
     path: '/curricula/british/',
     sitemap: true,
     head: socialHead({
-      title: 'British curriculum lessons in the UAE | CES Tuition',
-      description: 'One-to-one GCSE, IGCSE and A-level lessons for families in the UAE.',
+      title: 'British curriculum tuition in the UAE | CES Tuition',
+      description: 'One-to-one online lessons for GCSE, IGCSE and A-level students across the UAE, with UK-trained subject specialists.',
       path: '/curricula/british/',
       jsonLd: faqAndBreadcrumbJsonLd(britishFaqs, britishCrumbs, canonicalUrl),
     }),
@@ -150,7 +150,7 @@ export const routes: SiteRoute[] = [
     sitemap: true,
     head: socialHead({
       title: 'IGCSE, GCSE and A-level maths tutor in the UAE | CES Tuition',
-      description: 'One-to-one maths lessons for IGCSE, GCSE and A-level, for families across the UAE.',
+      description: 'One-to-one online maths lessons for IGCSE, GCSE and A-level students across the UAE.',
       path: '/igcse-gcse-maths-tutor/',
       jsonLd: faqAndBreadcrumbJsonLd(mathsFaqs, mathsCrumbs, canonicalUrl),
     }),
