@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react'
 import { Card } from '@/components/ui/card'
 import { ChalkboardTeacher, Exam } from '@phosphor-icons/react'
 
@@ -74,11 +75,20 @@ function UsFlag() {
 
 const iconClass = 'text-accent'
 
-const services = [
+const services: {
+  title: string
+  description: string
+  graphic: ReactNode
+  links?: { href: string; label: string }[]
+}[] = [
   {
     title: 'UK curriculum: GCSE, IGCSE and A-level',
     description: 'Live online lessons for GCSE, IGCSE and A-level courses with a subject specialist, including exam practice.',
     graphic: <UkFlag />,
+    links: [
+      { href: '/curricula/british/', label: 'British curriculum tutor' },
+      { href: '/igcse-gcse-maths-tutor/', label: 'IGCSE and GCSE maths tutor' },
+    ],
   },
   {
     title: 'IB',
@@ -137,6 +147,17 @@ export function Services() {
                 <p className="text-muted-foreground leading-relaxed">
                   {service.description}
                 </p>
+                {service.links ? (
+                  <ul className="space-y-1.5 text-sm">
+                    {service.links.map((link) => (
+                      <li key={link.href}>
+                        <a href={link.href} className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">
+                          {link.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
               </div>
             </Card>
           ))}
