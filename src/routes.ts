@@ -137,8 +137,8 @@ export const routes: SiteRoute[] = [
     path: '/curricula/british/',
     sitemap: true,
     head: socialHead({
-      title: 'British Curriculum Tutor in the UAE | IGCSE Tutor Dubai | CES Tuition',
-      description: 'British curriculum tutor for families in the UAE, and an IGCSE tutor for Dubai. GCSE, IGCSE and A-level, live online with UK-trained subject specialists.',
+      title: 'British curriculum lessons in the UAE | CES Tuition',
+      description: 'One-to-one GCSE, IGCSE and A-level lessons for families in the UAE.',
       path: '/curricula/british/',
       jsonLd: faqAndBreadcrumbJsonLd(britishFaqs, britishCrumbs, canonicalUrl),
     }),
@@ -149,8 +149,8 @@ export const routes: SiteRoute[] = [
     path: '/igcse-gcse-maths-tutor/',
     sitemap: true,
     head: socialHead({
-      title: 'GCSE Maths Tutor Dubai | Online Maths Tutor Abu Dhabi | CES Tuition',
-      description: 'GCSE maths tutor for Dubai and an online maths tutor for Abu Dhabi. IGCSE and GCSE mathematics, live online with a UK-trained subject specialist.',
+      title: 'IGCSE, GCSE and A-level maths tutor in the UAE | CES Tuition',
+      description: 'One-to-one maths lessons for IGCSE, GCSE and A-level, for families across the UAE.',
       path: '/igcse-gcse-maths-tutor/',
       jsonLd: faqAndBreadcrumbJsonLd(mathsFaqs, mathsCrumbs, canonicalUrl),
     }),
