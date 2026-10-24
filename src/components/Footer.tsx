@@ -11,7 +11,7 @@ const quickLinks = [
   { label: 'Enquire', href: '#enquire' },
 ]
 
-export function Footer() {
+export function Footer({ sectionBase = '' }: { sectionBase?: string }) {
   return (
     <footer className="bg-primary text-primary-foreground pb-24 md:pb-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
@@ -28,7 +28,7 @@ export function Footer() {
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.href}>
-                  <a href={link.href} className="text-primary-foreground hover:underline underline-offset-4">
+                  <a href={`${sectionBase}${link.href}`} className="text-primary-foreground hover:underline underline-offset-4">
                     {link.label}
                   </a>
                 </li>
