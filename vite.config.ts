@@ -10,8 +10,12 @@ const projectRoot = process.env.PROJECT_ROOT || import.meta.dirname
 // sparkPlugin() is intentionally not used. Its runtime-wrapper generateBundle
 // step emits proxy.js and package.json into dist, and this site does not import
 // the Spark runtime. createIconImportProxy() is the piece the pages still use.
+//
+// `npm run build` runs this config twice: a client build into dist/, then an
+// SSR build of src/entry-server.tsx into .ssr-build/. scripts/prerender.mjs
+// renders each route into dist. The client build is the GitHub Pages shell.
 // https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(({ isSsrBuild }) => ({
   plugins: [
     react(),
     tailwindcss(),
@@ -26,12 +30,18 @@ export default defineConfig({
   server: {
     port: 5000,
   },
+  ssr: isSsrBuild ? { noExternal: true } : undefined,
   build: {
-    rollupOptions: {
-      input: {
-        main: resolve(projectRoot, 'index.html'),
-        notFound: resolve(projectRoot, '404.html'),
-      },
-    },
+    outDir: isSsrBuild ? '.ssr-build' : 'dist',
+    emptyOutDir: true,
+    ...(isSsrBuild
+      ? {}
+      : {
+          rollupOptions: {
+            input: {
+              main: resolve(projectRoot, 'index.html'),
+            },
+          },
+        }),
   },
-});
+}));
