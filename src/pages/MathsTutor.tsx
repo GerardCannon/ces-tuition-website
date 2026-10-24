@@ -55,19 +55,19 @@ export function MathsTutor() {
     >
       <PageSection title="What your child gets">
         <p>
-          Your child works one-to-one, live, with a UK-trained subject specialist, on our own online whiteboard. A lesson is 1 or 2 hours. You book the time in the CES parent app, and the same app is where you see how your child’s getting on.
+          Your child works one-to-one, live, with a UK-trained subject specialist, on our own online whiteboard. A lesson is 1 or 2 hours. You book the time in the CES parent app, and the same app is where you see how your child is getting on.
         </p>
         <p>
-          We stay with the topics the school’s on. If algebra’s gone wrong, or exam questions are where the marks are slipping, that’s where the lesson starts. A gap from an earlier year is worth closing before the class moves on.
+          We stay with the topics the school is on. If algebra has gone wrong, or exam questions are where the marks are slipping, that’s where the lesson starts. A gap from an earlier year is worth closing before the class moves on.
         </p>
         <p>
-          You don’t need to be confident with the maths yourself. Tell us what school’s said, or what your child finds hardest, and the lesson can start there. Your child can stop and ask when a step doesn’t make sense. A wrong answer is often one step in a longer method, and we stay with that step until it’s clear.
+          You don’t need to be confident with the maths yourself. Tell us what the school has said, or what your child finds hardest, and the lesson can start there. Your child can stop and ask when a step doesn’t make sense. A wrong answer is often one step in a longer method, and we stay with that step until it’s clear.
         </p>
       </PageSection>
 
       <PageSection title="What to tell us" muted>
         <p>
-          The year group and the exam board are the useful details. If you already know which paper the school’s entered, include that too. If you don’t, we can still begin, and you can confirm it with the school afterwards.
+          The year group and the exam board are the useful details. If you already know which paper the school has entered, include that too. If you don’t, we can still begin, and you can confirm it with the school afterwards.
         </p>
         <p>
           A move to a new school in the UAE often means the class is already midway through a topic. Say if that’s the case. The first lesson can pick up the work in front of your child, rather than restarting the year.
@@ -94,10 +94,10 @@ export function MathsTutor() {
 
       <PageSection title="Foundation, Higher, Core and Extended">
         <p>
-          GCSE maths is entered as Foundation or Higher. Cambridge IGCSE maths uses Core or Extended instead. Ask the school which paper your child’s on, and the lessons will follow that.
+          GCSE maths is entered as Foundation or Higher. Cambridge IGCSE maths uses Core or Extended instead. Ask the school which paper your child is on, and the lessons will follow that.
         </p>
         <p>
-          You might hear these names at a parents’ evening and wonder which one matters. It’s simply the paper your child will sit. That label’s all we need, and if the school’s changing it, just let us know.
+          You might hear these names at a parents’ evening and wonder which one matters. It’s simply the paper your child will sit. That label is all we need, and if the school is changing it, just let us know.
         </p>
       </PageSection>
 
@@ -107,7 +107,7 @@ export function MathsTutor() {
           <a href="/curricula/british/" className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">
             British curriculum page
           </a>
-          {' '}sets out what we offer. The IB’s there too.
+          {' '}sets out what we offer. The IB is there too.
         </p>
       </PageSection>
 
