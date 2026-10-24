@@ -18,7 +18,7 @@ export const britishFaqs: FaqItem[] = [
   },
   {
     question: 'Do you offer A-level as well?',
-    answer: 'Yes. A-level’s offered in the same subjects as IGCSE and GCSE.',
+    answer: 'Yes. A-level is offered in the same subjects as IGCSE and GCSE.',
   },
   {
     question: 'We’re not in Dubai. Can my child still join?',
@@ -63,10 +63,10 @@ export function BritishCurriculum() {
     >
       <PageSection title="What your child gets">
         <p>
-          Your child works one-to-one, live, with a UK-trained subject specialist, on our own online whiteboard. A lesson is 1 or 2 hours. You book the time in the CES parent app, and the same app is where you see how your child’s getting on.
+          Your child works one-to-one, live, with a UK-trained subject specialist, on our own online whiteboard. A lesson is 1 or 2 hours. You book the time in the CES parent app, and the same app is where you see how your child is getting on.
         </p>
         <p>
-          Some families come to us after a grade has dipped. Others want their child to feel calmer about the work before a school test. The lesson follows what your child’s doing at school, rather than a separate course.
+          Some families come to us after a grade has dipped. Others want their child to feel calmer about the work before a school test. The lesson follows what your child is doing at school, rather than a separate course.
         </p>
         <p>
           Lessons work alongside school, not instead of it. If your child has homework they can’t get started on, that piece of work can be where the lesson begins.
@@ -78,7 +78,7 @@ export function BritishCurriculum() {
           You don’t need a plan for every subject. Start with the one that’s on your mind. A child who’s comfortable in English and stuck in physics only needs physics.
         </p>
         <p>
-          If you’ve just moved to the UAE, or your child’s changed school, the new class may already be a few topics ahead. Mention that when you write to us, and the first lesson can start from the gap.
+          If you’ve just moved to the UAE, or your child has changed school, the new class may already be a few topics ahead. Mention that when you write to us, and the first lesson can start from the gap.
         </p>
         <p>
           It helps if you know the subject, the year group and the exam board. If the board isn’t on a recent report, the school can tell you. That’s enough for a useful reply.
@@ -87,7 +87,7 @@ export function BritishCurriculum() {
 
       <PageSection title="Subjects">
         <p>
-          At IGCSE, GCSE and A-level the subjects are {offeredSubjects}. The IB’s offered as well. You can see it alongside the other pathways on our{' '}
+          At IGCSE, GCSE and A-level the subjects are {offeredSubjects}. The IB is offered as well. You can see it alongside the other pathways on our{' '}
           <a href="/#services" className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">
             home page
           </a>
@@ -115,7 +115,7 @@ export function BritishCurriculum() {
 
       <PageSection title="If the subject is maths" muted>
         <p>
-          Maths has a few extra choices, depending on the board and the paper the school’s entered. There’s a separate page for{' '}
+          Maths has a few extra choices, depending on the board and the paper the school has entered. There’s a separate page for{' '}
           <a href="/igcse-gcse-maths-tutor/" className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">
             IGCSE, GCSE and A-level maths
           </a>
