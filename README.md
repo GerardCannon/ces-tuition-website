@@ -48,4 +48,4 @@ The home page `<head>` is the block already in `index.html`, including its JSON-
 
 ## Not in this repo
 
-Tutor photos, the trade licence number, an `@cestuition.com` email address, analytics IDs, and separate curriculum pages are still to be added. Privacy Policy and Terms of Service link to the existing pages on [app.cestuition.com](https://app.cestuition.com).
+Tutor photos, the trade licence number, an `@cestuition.com` email address and analytics IDs are still to be added. The British curriculum page and the IGCSE and GCSE maths page are routes in `src/routes.ts`. Privacy Policy and Terms of Service link to the existing pages on [app.cestuition.com](https://app.cestuition.com).

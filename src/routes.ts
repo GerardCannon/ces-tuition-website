@@ -1,5 +1,8 @@
 import type { ComponentType } from 'react'
+import { faqAndBreadcrumbJsonLd } from './lib/structuredData.ts'
 import { Home } from './pages/Home.tsx'
+import { BritishCurriculum, britishCrumbs, britishFaqs } from './pages/BritishCurriculum.tsx'
+import { MathsTutor, mathsCrumbs, mathsFaqs } from './pages/MathsTutor.tsx'
 import { NotFound } from './pages/NotFound.tsx'
 
 export const SITE_ORIGIN = 'https://www.cestuition.com'
@@ -128,6 +131,30 @@ export const routes: SiteRoute[] = [
       jsonLd: homeJsonLd,
     },
     Page: Home,
+  },
+  {
+    id: 'british-curriculum',
+    path: '/curricula/british/',
+    sitemap: true,
+    head: socialHead({
+      title: 'British Curriculum Tutor in the UAE | IGCSE Tutor Dubai | CES Tuition',
+      description: 'British curriculum tutor for families in the UAE, and an IGCSE tutor for Dubai. GCSE, IGCSE and A-level, live online with UK-trained subject specialists.',
+      path: '/curricula/british/',
+      jsonLd: faqAndBreadcrumbJsonLd(britishFaqs, britishCrumbs, canonicalUrl),
+    }),
+    Page: BritishCurriculum,
+  },
+  {
+    id: 'igcse-gcse-maths-tutor',
+    path: '/igcse-gcse-maths-tutor/',
+    sitemap: true,
+    head: socialHead({
+      title: 'GCSE Maths Tutor Dubai | Online Maths Tutor Abu Dhabi | CES Tuition',
+      description: 'GCSE maths tutor for Dubai and an online maths tutor for Abu Dhabi. IGCSE and GCSE mathematics, live online with a UK-trained subject specialist.',
+      path: '/igcse-gcse-maths-tutor/',
+      jsonLd: faqAndBreadcrumbJsonLd(mathsFaqs, mathsCrumbs, canonicalUrl),
+    }),
+    Page: MathsTutor,
   },
   {
     id: 'not-found',
