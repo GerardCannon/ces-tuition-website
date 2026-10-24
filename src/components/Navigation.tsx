@@ -11,7 +11,7 @@ const navLinks = [
   { label: 'Reviews', href: '#testimonials' },
 ]
 
-export function Navigation() {
+export function Navigation({ sectionBase = '' }: { sectionBase?: string }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   function closeMenu() {
@@ -32,7 +32,7 @@ export function Navigation() {
             {navLinks.map((link) => (
               <a
                 key={link.href}
-                href={link.href}
+                href={`${sectionBase}${link.href}`}
                 className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
               >
                 {link.label}
@@ -76,7 +76,7 @@ export function Navigation() {
             {navLinks.map((link) => (
               <a
                 key={link.href}
-                href={link.href}
+                href={`${sectionBase}${link.href}`}
                 className="block text-foreground hover:text-primary transition-colors duration-200 font-medium py-3"
                 onClick={closeMenu}
               >
