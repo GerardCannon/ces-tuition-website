@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { Check } from '@phosphor-icons/react'
+import { useAnalyticsPage, whatsappClick } from '@/lib/goatcounter'
 import { useWhatsappLink } from '@/lib/whatsapp'
 
 const pricingTiers = [
@@ -36,6 +37,7 @@ const pricingTiers = [
 
 export function Pricing() {
   const whatsappHref = useWhatsappLink()
+  const page = useAnalyticsPage()
   return (
     <section id="pricing" className="py-16 md:py-24 bg-background scroll-mt-24">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -44,7 +46,7 @@ export function Pricing() {
             Pricing
           </h2>
           <p className="text-lg md:text-xl leading-relaxed">
-            <a href={whatsappHref()} className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">
+            <a href={whatsappHref()} {...whatsappClick(page, 'pricing')} className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">
               Message us on WhatsApp for prices
             </a>
           </p>

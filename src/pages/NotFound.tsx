@@ -3,10 +3,12 @@ import { Navigation } from '@/components/Navigation'
 import { Footer } from '@/components/Footer'
 import { WhatsAppBar } from '@/components/WhatsAppBar'
 import { WhatsappLogo } from '@phosphor-icons/react'
+import { useAnalyticsPage, whatsappClick } from '@/lib/goatcounter'
 import { useWhatsappLink } from '@/lib/whatsapp'
 
 export function NotFound() {
   const whatsappHref = useWhatsappLink()
+  const page = useAnalyticsPage()
   return (
     <div className="min-h-screen">
       <Navigation sectionBase="/" />
@@ -39,7 +41,7 @@ export function NotFound() {
                 size="lg"
                 className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold tracking-wide text-base sm:text-lg px-6 h-12 w-full sm:w-auto"
               >
-                <a href={whatsappHref()} className="flex items-center gap-2">
+                <a href={whatsappHref()} {...whatsappClick(page, 'hero')} className="flex items-center gap-2">
                   <WhatsappLogo size={22} weight="fill" aria-hidden="true" />
                   Chat with us on WhatsApp
                 </a>

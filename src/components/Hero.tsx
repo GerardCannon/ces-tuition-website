@@ -1,10 +1,12 @@
 import { Button } from '@/components/ui/button'
 import { WhatsappLogo } from '@phosphor-icons/react'
 import { ReviewMention } from '@/components/ReviewMention'
+import { useAnalyticsPage, whatsappClick } from '@/lib/goatcounter'
 import { useWhatsappLink } from '@/lib/whatsapp'
 
 export function Hero() {
   const whatsappHref = useWhatsappLink()
+  const page = useAnalyticsPage()
   return (
     <section className="relative overflow-hidden bg-primary text-primary-foreground">
       <div className="absolute inset-0 opacity-10 pointer-events-none" aria-hidden="true">
@@ -37,7 +39,7 @@ export function Hero() {
               size="lg"
               className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold tracking-wide text-base sm:text-lg px-6 h-12 w-full sm:w-auto"
             >
-              <a href={whatsappHref()} className="flex items-center gap-2">
+              <a href={whatsappHref()} {...whatsappClick(page, 'hero')} className="flex items-center gap-2">
                 <WhatsappLogo size={22} weight="fill" aria-hidden="true" />
                 Chat with us on WhatsApp
               </a>

@@ -16,6 +16,15 @@ export function EnquiryForm() {
       `Subject: ${String(data.get('subject') || '').trim()}`,
       `Year group: ${String(data.get('yearGroup') || '').trim()}`,
     ].join('\n')
+    try {
+      window.goatcounter?.count?.({
+        path: 'whatsapp-home-form',
+        title: 'WhatsApp click: home form',
+        event: true,
+      })
+    } catch {
+      // A blocked script must not stop WhatsApp from opening.
+    }
     window.location.href = whatsappHref(details)
   }
 
