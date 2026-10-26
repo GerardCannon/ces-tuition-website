@@ -95,7 +95,7 @@ export function MathsTutor() {
 
       <PageSection title="Other subjects" muted>
         <p>
-          We teach many other subjects as well as maths. See our <a href="/curricula/british/" className={linkClass}>British curriculum page</a> for more, or ask us on WhatsApp. We also teach the IB.
+          We teach many other subjects as well as maths. See our <a href="/curricula/british/" className={linkClass}>British curriculum page</a> for more, or ask us on WhatsApp. We also teach <a href="/ib-maths-tutor/" className={linkClass}>IB maths</a>.
         </p>
       </PageSection>
 

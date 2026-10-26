@@ -96,9 +96,11 @@ export function PageShell({
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight text-balance">
                 {title}
               </h1>
-              <div className="text-base sm:text-lg md:text-xl text-white leading-relaxed max-w-2xl mx-auto space-y-4">
-                {lede}
-              </div>
+              {lede ? (
+                <div className="text-base sm:text-lg md:text-xl text-white leading-relaxed max-w-2xl mx-auto space-y-4">
+                  {lede}
+                </div>
+              ) : null}
               <p className="text-base sm:text-lg text-white leading-relaxed">
                 Book a free 30-minute trial lesson on WhatsApp.
               </p>

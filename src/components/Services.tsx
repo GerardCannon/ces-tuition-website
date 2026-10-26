@@ -97,6 +97,10 @@ const services: {
     href: '/curricula/ib/',
     description: 'Lessons for students taking the International Baccalaureate.',
     graphic: <IbGlobe />,
+    links: [
+      { href: '/curricula/ib/', label: 'IB tutor' },
+      { href: '/ib-maths-tutor/', label: 'IB maths tutor' },
+    ],
   },
   {
     title: 'American curriculum',
