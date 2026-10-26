@@ -1,3 +1,5 @@
+import type { ServiceInfo } from '../lib/structuredData.ts'
+
 export const britishCrumbs = [
   { name: 'Home', path: '/' },
   { name: 'British curriculum', path: '/curricula/british/' },
@@ -25,3 +27,10 @@ export const britishFaqs = [
     answer: 'Yes. We teach A-level in a wide range of subjects, as well as GCSE and IGCSE.',
   },
 ]
+
+export const britishService: ServiceInfo = {
+  name: 'British curriculum tuition',
+  serviceType: 'Online British curriculum tuition',
+  description:
+    'Live one-to-one online lessons for GCSE, IGCSE and A-level students following the British curriculum, with UK-trained subject specialists.',
+}

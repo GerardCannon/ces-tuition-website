@@ -1,16 +1,16 @@
 import { pageForRoute } from './lib/goatcounter.tsx'
-import { faqAndBreadcrumbJsonLd } from './lib/structuredData.ts'
+import { AREA_SERVED, faqAndBreadcrumbJsonLd, orgId, serviceNode, withService, type ServiceInfo } from './lib/structuredData.ts'
 import { WHATSAPP_GREETING } from './lib/whatsapp.tsx'
-import { americanCrumbs, americanFaqs } from './pages/americanCurriculumData.ts'
-import { alevelCrumbs, alevelFaqs } from './pages/alevelTutorData.ts'
-import { biologyCrumbs, biologyFaqs } from './pages/biologyTutorData.ts'
-import { britishCrumbs, britishFaqs } from './pages/britishCurriculumData.ts'
-import { chemistryCrumbs, chemistryFaqs } from './pages/chemistryTutorData.ts'
-import { englishCrumbs, englishFaqs } from './pages/englishTutorData.ts'
-import { ibCrumbs, ibFaqs } from './pages/ibCurriculumData.ts'
-import { ibMathsCrumbs, ibMathsFaqs } from './pages/ibMathsTutorData.ts'
-import { mathsCrumbs, mathsFaqs } from './pages/mathsTutorData.ts'
-import { physicsCrumbs, physicsFaqs } from './pages/physicsTutorData.ts'
+import { americanCrumbs, americanFaqs, americanService } from './pages/americanCurriculumData.ts'
+import { alevelCrumbs, alevelFaqs, alevelService } from './pages/alevelTutorData.ts'
+import { biologyCrumbs, biologyFaqs, biologyService } from './pages/biologyTutorData.ts'
+import { britishCrumbs, britishFaqs, britishService } from './pages/britishCurriculumData.ts'
+import { chemistryCrumbs, chemistryFaqs, chemistryService } from './pages/chemistryTutorData.ts'
+import { englishCrumbs, englishFaqs, englishService } from './pages/englishTutorData.ts'
+import { ibCrumbs, ibFaqs, ibService } from './pages/ibCurriculumData.ts'
+import { ibMathsCrumbs, ibMathsFaqs, ibMathsService } from './pages/ibMathsTutorData.ts'
+import { mathsCrumbs, mathsFaqs, mathsService } from './pages/mathsTutorData.ts'
+import { physicsCrumbs, physicsFaqs, physicsService } from './pages/physicsTutorData.ts'
 
 export const SITE_ORIGIN = 'https://www.cestuition.com'
 const OG_IMAGE = `${SITE_ORIGIN}/og-image.jpg`
@@ -93,24 +93,40 @@ export function socialHead(input: {
   }
 }
 
+const homeService: ServiceInfo = {
+  name: 'Online one-to-one tuition',
+  serviceType: 'Online tuition',
+  description:
+    'Live one-to-one online lessons in GCSE, IGCSE, A-level, IB and American curriculum subjects, with UK-trained subject specialists.',
+}
+
 const homeJsonLd: JsonLd = {
   '@context': 'https://schema.org',
-  '@type': ['EducationalOrganization', 'Organization'],
-  name: 'CES Tuition',
-  url: 'https://www.cestuition.com/',
-  logo: 'https://www.cestuition.com/apple-touch-icon.png',
-  email: 'Gerard@CannonEducationSolutions.com',
-  telephone: '+971585041916',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: 'Sharjah Media City',
-    addressLocality: 'Sharjah',
-    addressCountry: 'AE',
-  },
-  areaServed: {
-    '@type': 'Country',
-    name: 'United Arab Emirates',
-  },
+  '@graph': [
+    {
+      '@type': ['EducationalOrganization', 'Organization'],
+      '@id': orgId(canonicalUrl),
+      name: 'CES Tuition',
+      url: canonicalUrl('/'),
+      logo: 'https://www.cestuition.com/apple-touch-icon.png',
+      image: 'https://www.cestuition.com/apple-touch-icon.png',
+      email: 'Gerard@CannonEducationSolutions.com',
+      telephone: '+971585041916',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Sharjah Media City',
+        addressLocality: 'Sharjah',
+        addressCountry: 'AE',
+      },
+      areaServed: AREA_SERVED,
+    },
+    serviceNode(homeService, '/', canonicalUrl),
+    {
+      '@type': 'WebSite',
+      name: 'CES Tuition',
+      url: canonicalUrl('/'),
+    },
+  ],
 }
 
 // Add a page by appending a route. See the README.
@@ -148,7 +164,7 @@ export const routes: SiteRoute[] = [
       title: 'Online British curriculum tutor, Dubai and UAE | CES Tuition',
       description: 'One-to-one online GCSE, IGCSE and A-level lessons for British curriculum students in Dubai, Abu Dhabi and across the UAE. Free 30-minute trial lesson.',
       path: '/curricula/british/',
-      jsonLd: faqAndBreadcrumbJsonLd(britishFaqs, britishCrumbs, canonicalUrl),
+      jsonLd: withService(faqAndBreadcrumbJsonLd(britishFaqs, britishCrumbs, canonicalUrl), britishService, '/curricula/british/', canonicalUrl),
     }),
     whatsappMessage: "Hi Gerard, I'd like to ask about British curriculum tuition for my child.",
   },
@@ -160,7 +176,7 @@ export const routes: SiteRoute[] = [
       title: 'Online IB tutor in Dubai and Abu Dhabi | CES Tuition',
       description: 'One-to-one online lessons for IB MYP and Diploma Programme students in Dubai, Abu Dhabi and across the UAE, with UK-trained subject specialists. Free trial.',
       path: '/curricula/ib/',
-      jsonLd: faqAndBreadcrumbJsonLd(ibFaqs, ibCrumbs, canonicalUrl),
+      jsonLd: withService(faqAndBreadcrumbJsonLd(ibFaqs, ibCrumbs, canonicalUrl), ibService, '/curricula/ib/', canonicalUrl),
     }),
     whatsappMessage: "Hi Gerard, I'd like to ask about IB tuition for my child.",
   },
@@ -172,7 +188,7 @@ export const routes: SiteRoute[] = [
       title: 'SAT prep and American curriculum tutor, Dubai | CES Tuition',
       description: 'One-to-one online lessons for American curriculum students in Dubai, Abu Dhabi and across the UAE, including SAT prep. Free 30-minute trial on WhatsApp.',
       path: '/curricula/american/',
-      jsonLd: faqAndBreadcrumbJsonLd(americanFaqs, americanCrumbs, canonicalUrl),
+      jsonLd: withService(faqAndBreadcrumbJsonLd(americanFaqs, americanCrumbs, canonicalUrl), americanService, '/curricula/american/', canonicalUrl),
     }),
     whatsappMessage: "Hi Gerard, I'd like to ask about American curriculum or SAT tuition for my child.",
   },
@@ -184,7 +200,7 @@ export const routes: SiteRoute[] = [
       title: 'IGCSE, GCSE and A-level maths tutor, Dubai | CES Tuition',
       description: 'One-to-one online maths lessons for IGCSE, GCSE and A-level students in Dubai, Abu Dhabi and across the UAE, with UK-trained subject specialists. Free trial.',
       path: '/igcse-gcse-maths-tutor/',
-      jsonLd: faqAndBreadcrumbJsonLd(mathsFaqs, mathsCrumbs, canonicalUrl),
+      jsonLd: withService(faqAndBreadcrumbJsonLd(mathsFaqs, mathsCrumbs, canonicalUrl), mathsService, '/igcse-gcse-maths-tutor/', canonicalUrl),
     }),
     whatsappMessage: "Hi Gerard, I'd like to ask about IGCSE maths tuition for my child.",
   },
@@ -196,7 +212,7 @@ export const routes: SiteRoute[] = [
       title: 'Online A-level tutor in Dubai and Abu Dhabi | CES Tuition',
       description: 'One-to-one online A-level lessons for Year 12 and 13 students in Dubai, Abu Dhabi and across the UAE, with UK-trained subject specialists. Free trial.',
       path: '/a-level-tutor/',
-      jsonLd: faqAndBreadcrumbJsonLd(alevelFaqs, alevelCrumbs, canonicalUrl),
+      jsonLd: withService(faqAndBreadcrumbJsonLd(alevelFaqs, alevelCrumbs, canonicalUrl), alevelService, '/a-level-tutor/', canonicalUrl),
     }),
     whatsappMessage: "Hi Gerard, I'd like to ask about A-level tuition for my child.",
   },
@@ -208,7 +224,7 @@ export const routes: SiteRoute[] = [
       title: 'Online A-level and IB chemistry tutor, Dubai | CES Tuition',
       description: 'One-to-one online chemistry lessons for GCSE, IGCSE, A-level and IB students in Dubai, Abu Dhabi and across the UAE, with UK-trained subject specialists.',
       path: '/chemistry-tutor/',
-      jsonLd: faqAndBreadcrumbJsonLd(chemistryFaqs, chemistryCrumbs, canonicalUrl),
+      jsonLd: withService(faqAndBreadcrumbJsonLd(chemistryFaqs, chemistryCrumbs, canonicalUrl), chemistryService, '/chemistry-tutor/', canonicalUrl),
     }),
     whatsappMessage: "Hi Gerard, I'd like to ask about chemistry tuition for my child.",
   },
@@ -220,7 +236,7 @@ export const routes: SiteRoute[] = [
       title: 'Online A-level and IB physics tutor, Dubai | CES Tuition',
       description: 'Online one-to-one physics lessons for GCSE, IGCSE, A-level and IB students in Dubai, Abu Dhabi and the wider UAE, with UK-trained subject specialists.',
       path: '/physics-tutor/',
-      jsonLd: faqAndBreadcrumbJsonLd(physicsFaqs, physicsCrumbs, canonicalUrl),
+      jsonLd: withService(faqAndBreadcrumbJsonLd(physicsFaqs, physicsCrumbs, canonicalUrl), physicsService, '/physics-tutor/', canonicalUrl),
     }),
     whatsappMessage: "Hi Gerard, I'd like to ask about physics tuition for my child.",
   },
@@ -232,7 +248,7 @@ export const routes: SiteRoute[] = [
       title: 'Online A-level and IB biology tutor, Dubai | CES Tuition',
       description: 'One-to-one biology lessons, live online, for GCSE, IGCSE, A-level and IB students in Dubai, Abu Dhabi and across the UAE. Free 30-minute trial lesson.',
       path: '/biology-tutor/',
-      jsonLd: faqAndBreadcrumbJsonLd(biologyFaqs, biologyCrumbs, canonicalUrl),
+      jsonLd: withService(faqAndBreadcrumbJsonLd(biologyFaqs, biologyCrumbs, canonicalUrl), biologyService, '/biology-tutor/', canonicalUrl),
     }),
     whatsappMessage: "Hi Gerard, I'd like to ask about biology tuition for my child.",
   },
@@ -244,7 +260,7 @@ export const routes: SiteRoute[] = [
       title: 'Online English tutor in Dubai and Abu Dhabi | CES Tuition',
       description: 'One-to-one online English lessons for GCSE, IGCSE, A-level and IB students in Dubai, Abu Dhabi and across the UAE, with UK-trained subject specialists.',
       path: '/english-tutor/',
-      jsonLd: faqAndBreadcrumbJsonLd(englishFaqs, englishCrumbs, canonicalUrl),
+      jsonLd: withService(faqAndBreadcrumbJsonLd(englishFaqs, englishCrumbs, canonicalUrl), englishService, '/english-tutor/', canonicalUrl),
     }),
     whatsappMessage: "Hi Gerard, I'd like to ask about English tuition for my child.",
   },
@@ -256,7 +272,7 @@ export const routes: SiteRoute[] = [
       title: 'Online IB maths tutor in Dubai and Abu Dhabi | CES Tuition',
       description: 'One-to-one online IB maths lessons for students in Dubai, Abu Dhabi, Sharjah and across the UAE, with UK-trained subject specialists. Free 30-minute trial.',
       path: '/ib-maths-tutor/',
-      jsonLd: faqAndBreadcrumbJsonLd(ibMathsFaqs, ibMathsCrumbs, canonicalUrl),
+      jsonLd: withService(faqAndBreadcrumbJsonLd(ibMathsFaqs, ibMathsCrumbs, canonicalUrl), ibMathsService, '/ib-maths-tutor/', canonicalUrl),
     }),
     whatsappMessage: "Hi Gerard, I'd like to ask about IB maths tuition for my child.",
   },

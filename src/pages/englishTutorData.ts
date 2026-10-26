@@ -1,3 +1,5 @@
+import type { ServiceInfo } from '../lib/structuredData.ts'
+
 export const englishCrumbs = [
   { name: 'Home', path: '/' },
   { name: 'English', path: '/english-tutor/' },
@@ -21,3 +23,10 @@ export const englishFaqs = [
     answer: 'Yes. Enjoying reading is a good start. We help your child turn what they notice into clear written points, backed up with evidence.',
   },
 ]
+
+export const englishService: ServiceInfo = {
+  name: 'English tuition',
+  serviceType: 'Online English tuition',
+  description:
+    'Live one-to-one online English lessons for GCSE, IGCSE, A-level and IB students, with UK-trained subject specialists.',
+}

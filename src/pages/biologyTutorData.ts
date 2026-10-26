@@ -1,3 +1,5 @@
+import type { ServiceInfo } from '../lib/structuredData.ts'
+
 export const biologyCrumbs = [
   { name: 'Home', path: '/' },
   { name: 'Biology', path: '/biology-tutor/' },
@@ -21,3 +23,10 @@ export const biologyFaqs = [
     answer: 'Yes. We can help your child understand what\'s expected and plan their time. The work they hand in is always their own.',
   },
 ]
+
+export const biologyService: ServiceInfo = {
+  name: 'Biology tuition',
+  serviceType: 'Online biology tuition',
+  description:
+    'Live one-to-one online biology lessons for GCSE, IGCSE, A-level and IB students, with UK-trained subject specialists.',
+}
