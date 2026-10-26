@@ -3,6 +3,7 @@ import { AlevelTutor } from './pages/AlevelTutor.tsx'
 import { BiologyTutor } from './pages/BiologyTutor.tsx'
 import { BritishCurriculum } from './pages/BritishCurriculum.tsx'
 import { ChemistryTutor } from './pages/ChemistryTutor.tsx'
+import { EnglishTutor } from './pages/EnglishTutor.tsx'
 import { Home } from './pages/Home.tsx'
 import { IbCurriculum } from './pages/IbCurriculum.tsx'
 import { MathsTutor } from './pages/MathsTutor.tsx'
@@ -21,5 +22,6 @@ export const pages: Record<string, ComponentType> = {
   'chemistry-tutor': ChemistryTutor,
   'physics-tutor': PhysicsTutor,
   'biology-tutor': BiologyTutor,
+  'english-tutor': EnglishTutor,
   'not-found': NotFound,
 }
