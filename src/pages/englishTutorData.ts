@@ -1,0 +1,23 @@
+export const englishCrumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'English', path: '/english-tutor/' },
+]
+
+export const englishFaqs = [
+  {
+    question: 'How do we book a lesson?',
+    answer: 'Message us on WhatsApp and we\'ll arrange a free 30-minute trial lesson. After that, we\'ll set you up on our app, where you can schedule lessons and monitor your child\'s progress.',
+  },
+  {
+    question: 'We don\'t live in the UAE. Can my child still have lessons?',
+    answer: 'Yes. All our lessons are online, so families join us from the UK, Europe and all over Asia.',
+  },
+  {
+    question: 'Which exam boards do you cover?',
+    answer: 'We teach students following Edexcel, Cambridge and OxfordAQA courses.',
+  },
+  {
+    question: 'My child enjoys reading but struggles to write about it. Can you help?',
+    answer: 'Yes. Enjoying reading is a good start. We help your child turn what they notice into clear written points, backed up with evidence.',
+  },
+]

@@ -5,6 +5,7 @@ import { alevelCrumbs, alevelFaqs } from './pages/alevelTutorData.ts'
 import { biologyCrumbs, biologyFaqs } from './pages/biologyTutorData.ts'
 import { britishCrumbs, britishFaqs } from './pages/britishCurriculumData.ts'
 import { chemistryCrumbs, chemistryFaqs } from './pages/chemistryTutorData.ts'
+import { englishCrumbs, englishFaqs } from './pages/englishTutorData.ts'
 import { ibCrumbs, ibFaqs } from './pages/ibCurriculumData.ts'
 import { mathsCrumbs, mathsFaqs } from './pages/mathsTutorData.ts'
 import { physicsCrumbs, physicsFaqs } from './pages/physicsTutorData.ts'
@@ -220,6 +221,18 @@ export const routes: SiteRoute[] = [
       jsonLd: faqAndBreadcrumbJsonLd(biologyFaqs, biologyCrumbs, canonicalUrl),
     }),
     whatsappMessage: "Hi Gerard, I'd like to ask about biology tuition for my child.",
+  },
+  {
+    id: 'english-tutor',
+    path: '/english-tutor/',
+    sitemap: true,
+    head: socialHead({
+      title: 'Online English tutor in the UAE | CES Tuition',
+      description: 'One-to-one online English lessons for GCSE, IGCSE, A-level and IB students across the UAE, with UK-trained subject specialists. Free 30-minute trial lesson.',
+      path: '/english-tutor/',
+      jsonLd: faqAndBreadcrumbJsonLd(englishFaqs, englishCrumbs, canonicalUrl),
+    }),
+    whatsappMessage: "Hi Gerard, I'd like to ask about English tuition for my child.",
   },
   {
     id: 'not-found',
