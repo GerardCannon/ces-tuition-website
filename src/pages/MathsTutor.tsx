@@ -88,6 +88,9 @@ export function MathsTutor() {
         <p>
           GCSE and International GCSE maths papers are set at two levels, called Foundation and Higher. Cambridge IGCSE maths uses Core and Extended instead. You may hear these terms at parents’ evening; they simply describe which paper your child will sit. If you know which one it is, tell us and we’ll prepare your child for that paper.
         </p>
+        <p>
+          If your child is going on to A-level, you can read about our A-level tuition on our <a href="/a-level-tutor/" className={linkClass}>A-level page</a>.
+        </p>
       </PageSection>
 
       <PageSection title="Other subjects" muted>
