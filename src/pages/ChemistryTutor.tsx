@@ -7,7 +7,7 @@ export function ChemistryTutor() {
   return (
     <PageShell
       crumbs={chemistryCrumbs}
-      title="Chemistry tutor for families in the UAE"
+      title="Chemistry tutor for families in Dubai and the UAE"
       lede={
         <p>
           Chemistry builds on itself, so a gap in one topic can make the next one harder. If your child is finding chemistry difficult, or simply wants to feel more confident, we can help.

@@ -7,7 +7,7 @@ export function BiologyTutor() {
   return (
     <PageShell
       crumbs={biologyCrumbs}
-      title="Biology tutor for families in the UAE"
+      title="Biology tutor for families in Dubai and the UAE"
       lede={
         <p>
           Biology covers a lot of ground, and good answers depend on understanding the ideas and using the right words. If your child is finding biology difficult, or simply wants to feel more confident, we can help.

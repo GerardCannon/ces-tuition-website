@@ -75,7 +75,7 @@ export function EnquiryForm({
           name="subject"
           type="text"
           required
-          placeholder="For example, mathematics"
+          placeholder="For example, maths"
           className={fieldClass}
           {...(defaultSubject ? { defaultValue: defaultSubject } : {})}
         />

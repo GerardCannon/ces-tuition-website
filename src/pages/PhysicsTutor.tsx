@@ -7,7 +7,7 @@ export function PhysicsTutor() {
   return (
     <PageShell
       crumbs={physicsCrumbs}
-      title="Physics tutor for families in the UAE"
+      title="Physics tutor for families in Dubai and the UAE"
       lede={
         <p>
           Physics asks students to understand an idea, use maths and explain their answer in words, often in the same question. If your child is finding physics difficult, or simply wants to feel more confident, we can help.

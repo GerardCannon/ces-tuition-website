@@ -23,7 +23,7 @@ export function BritishCurriculum() {
   return (
     <PageShell
       crumbs={britishCrumbs}
-      title="British curriculum tuition for families in the UAE"
+      title="Online British curriculum tuition for families in Dubai and across the UAE"
       lede={
         <p>
           Many families in the UAE follow the British curriculum. If your child is finding a subject difficult, or simply wants to feel more confident, we can help.
