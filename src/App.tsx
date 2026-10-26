@@ -1,15 +1,12 @@
-import type { ComponentType } from 'react'
 import { ErrorBoundary } from 'react-error-boundary'
 import { ErrorFallback } from './ErrorFallback.tsx'
-import { WhatsAppMessageProvider } from './lib/whatsapp.tsx'
 import type { SiteRoute } from './routes.ts'
 
-export function App({ route, Page }: { route: SiteRoute; Page: ComponentType }) {
+export function App({ route }: { route: SiteRoute }) {
+  const Page = route.Page
   return (
     <ErrorBoundary FallbackComponent={ErrorFallback}>
-      <WhatsAppMessageProvider message={route.whatsappMessage}>
-        <Page />
-      </WhatsAppMessageProvider>
+      <Page />
     </ErrorBoundary>
   )
 }

@@ -14,7 +14,7 @@ if (!fs.existsSync(entryPath)) {
 }
 
 const { prerenderManifest } = await import(pathToFileURL(entryPath).href)
-const renderedRoutes = await prerenderManifest()
+const renderedRoutes = prerenderManifest()
 
 const ICON_MARKER = '    <link rel="icon"'
 
@@ -68,32 +68,6 @@ if (!sameJson(home.head.jsonLd, jsonLdValue(sourceHtml, 'index.html'))) {
   throw new Error('The home route JSON-LD in src/routes.ts does not match the script in index.html.')
 }
 
-function inlineStylesheets(html) {
-  const linkRe = /<link\s+[^>]*rel="stylesheet"[^>]*>/g
-  const tags = [...html.matchAll(linkRe)].map((match) => match[0])
-  if (tags.length === 0) throw new Error('Built HTML has no stylesheet to inline')
-  let css = ''
-  const seen = new Set()
-  for (const tag of tags) {
-    const href = tag.match(/href="([^"]+\.css)"/)?.[1]
-    if (!href || /^https?:/i.test(href)) throw new Error(`Refusing to inline stylesheet: ${tag}`)
-    if (seen.has(href)) continue
-    seen.add(href)
-    const file = path.join(distDir, href.replace(/^\//, ''))
-    const relative = path.relative(distDir, file)
-    if (relative.startsWith('..') || path.isAbsolute(relative)) {
-      throw new Error(`Stylesheet escapes dist: ${href}`)
-    }
-    css += fs.readFileSync(file, 'utf8')
-  }
-  if (css.includes('</style')) throw new Error('Built CSS contains a closing style tag')
-  linkRe.lastIndex = 0
-  html = html.replace(linkRe, '')
-  const headEnd = html.indexOf('</head>')
-  if (headEnd < 0) throw new Error('Shell is missing </head>')
-  return `${html.slice(0, headEnd)}    <style>${css}</style>\n${html.slice(headEnd)}`
-}
-
 const pages = renderedRoutes.map((route) => {
   let html = shell
   const htmlTag = '<html lang="en-GB">'
@@ -129,7 +103,7 @@ const pages = renderedRoutes.map((route) => {
   if (!html.includes('<script type="module"')) throw new Error(`${route.id} is missing the client bundle`)
   if (route.html.trim().length === 0) throw new Error(`${route.id} rendered an empty page`)
 
-  return { route, html: inlineStylesheets(html) }
+  return { route, html }
 })
 
 for (const page of pages) {

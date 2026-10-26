@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { List, WhatsappLogo, X } from '@phosphor-icons/react'
 import { Logo } from '@/components/Logo'
-import { useWhatsappLink } from '@/lib/whatsapp'
+import { whatsappUrl } from '@/lib/whatsapp'
 
 const navLinks = [
   { label: 'Curricula', href: '#services' },
@@ -13,7 +13,6 @@ const navLinks = [
 
 export function Navigation({ sectionBase = '' }: { sectionBase?: string }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const whatsappHref = useWhatsappLink()
 
   function closeMenu() {
     setIsMobileMenuOpen(false)
@@ -52,7 +51,7 @@ export function Navigation({ sectionBase = '' }: { sectionBase?: string }) {
               asChild
               className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold"
             >
-              <a href={whatsappHref()} className="flex items-center gap-2">
+              <a href={whatsappUrl()} className="flex items-center gap-2">
                 <WhatsappLogo size={18} weight="fill" aria-hidden="true" />
                 WhatsApp
               </a>
@@ -85,7 +84,7 @@ export function Navigation({ sectionBase = '' }: { sectionBase?: string }) {
               </a>
             ))}
             <a
-              href={whatsappHref()}
+              href={whatsappUrl()}
               className="flex items-center justify-center gap-2 mt-3 min-h-12 rounded-lg bg-accent text-accent-foreground font-semibold"
               onClick={closeMenu}
             >
