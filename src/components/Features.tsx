@@ -4,7 +4,7 @@ const features = [
   {
     icon: GraduationCap,
     title: 'UK-trained specialists',
-    description: 'Subject specialists who teach UK, IB and American curricula.',
+    description: 'Subject specialists who teach the British, IB and American curricula.',
   },
   {
     icon: Star,

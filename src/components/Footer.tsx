@@ -12,6 +12,13 @@ const quickLinks = [
   { label: 'Enquire', href: '#enquire' },
 ]
 
+const curriculaLinks = [
+  { label: 'GCSE and IGCSE', href: '/curricula/british/' },
+  { label: 'A-level', href: '/a-level-tutor/' },
+  { label: 'IB', href: '/curricula/ib/' },
+  { label: 'American curriculum', href: '/curricula/american/' },
+]
+
 export function Footer({ sectionBase = '' }: { sectionBase?: string }) {
   const whatsappHref = useWhatsappLink()
   const page = useAnalyticsPage()
@@ -42,10 +49,13 @@ export function Footer({ sectionBase = '' }: { sectionBase?: string }) {
           <div>
             <p className="font-bold text-lg mb-4">Curricula</p>
             <ul className="space-y-3 text-primary-foreground">
-              <li>GCSE and IGCSE</li>
-              <li>A-level</li>
-              <li>IB</li>
-              <li>American curriculum</li>
+              {curriculaLinks.map((link) => (
+                <li key={link.href}>
+                  <a href={link.href} className="text-primary-foreground hover:underline underline-offset-4">
+                    {link.label}
+                  </a>
+                </li>
+              ))}
               <li>One-to-one lessons</li>
             </ul>
           </div>

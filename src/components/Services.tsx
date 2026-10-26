@@ -83,7 +83,7 @@ const services: {
   links?: { href: string; label: string }[]
 }[] = [
   {
-    title: 'UK curriculum: GCSE, IGCSE and A-level',
+    title: 'British curriculum: GCSE, IGCSE and A-level',
     description: 'Live online lessons for GCSE, IGCSE and A-level courses with a subject specialist, including exam practice.',
     graphic: <UkFlag />,
     links: [
@@ -107,6 +107,9 @@ const services: {
     href: '/curricula/american/',
     description: 'Online tuition for students following an American curriculum.',
     graphic: <UsFlag />,
+    links: [
+      { href: '/curricula/american/', label: 'American curriculum and SAT tutor' },
+    ],
   },
   {
     title: 'One-to-one lessons',
@@ -130,7 +133,7 @@ export function Services() {
           </h2>
           <div className="space-y-4">
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              UK, IB and American curricula, taught live online for families across the UAE.
+              British, IB and American curricula, all taught live online.
             </p>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
               Families in Dubai, Abu Dhabi, Sharjah and across the UAE learn with us online, so there's no travel involved. Every lesson is live and one-to-one with a UK‑trained subject specialist. Because everything is online, families also join us from the UK, Europe and all over Asia.
@@ -175,7 +178,7 @@ export function Services() {
                         </a>
                       </li>
                     ))}
-                    {service.title === 'UK curriculum: GCSE, IGCSE and A-level' ? (
+                    {service.title === 'British curriculum: GCSE, IGCSE and A-level' ? (
                       <li>
                         <a href="/chemistry-tutor/" className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">Chemistry</a>
                         {', '}
