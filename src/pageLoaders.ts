@@ -7,6 +7,7 @@ import { ChemistryTutor } from './pages/ChemistryTutor.tsx'
 import { EnglishTutor } from './pages/EnglishTutor.tsx'
 import { Home } from './pages/Home.tsx'
 import { IbCurriculum } from './pages/IbCurriculum.tsx'
+import { IbMathsTutor } from './pages/IbMathsTutor.tsx'
 import { MathsTutor } from './pages/MathsTutor.tsx'
 import { NotFound } from './pages/NotFound.tsx'
 import { PhysicsTutor } from './pages/PhysicsTutor.tsx'
@@ -25,5 +26,6 @@ export const pages: Record<string, ComponentType> = {
   'physics-tutor': PhysicsTutor,
   'biology-tutor': BiologyTutor,
   'english-tutor': EnglishTutor,
+  'ib-maths-tutor': IbMathsTutor,
   'not-found': NotFound,
 }

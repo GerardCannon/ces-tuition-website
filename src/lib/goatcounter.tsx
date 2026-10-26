@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, type ReactNode } from 'react'
 
-export type WhatsAppPage = 'home' | 'british' | 'ib' | 'american' | 'maths' | 'alevel' | 'chemistry' | 'physics' | 'biology' | 'english' | '404'
+export type WhatsAppPage = 'home' | 'british' | 'ib' | 'ibmaths' | 'american' | 'maths' | 'alevel' | 'chemistry' | 'physics' | 'biology' | 'english' | '404'
 export type WhatsAppPlace = 'header' | 'menu' | 'hero' | 'pricing' | 'form' | 'footer' | 'sticky'
 
 const pageByRouteId: Record<string, WhatsAppPage> = {
@@ -14,6 +14,7 @@ const pageByRouteId: Record<string, WhatsAppPage> = {
   'physics-tutor': 'physics',
   'biology-tutor': 'biology',
   'english-tutor': 'english',
+  'ib-maths-tutor': 'ibmaths',
   'not-found': '404',
 }
 

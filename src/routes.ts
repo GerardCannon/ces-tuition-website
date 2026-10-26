@@ -8,6 +8,7 @@ import { britishCrumbs, britishFaqs } from './pages/britishCurriculumData.ts'
 import { chemistryCrumbs, chemistryFaqs } from './pages/chemistryTutorData.ts'
 import { englishCrumbs, englishFaqs } from './pages/englishTutorData.ts'
 import { ibCrumbs, ibFaqs } from './pages/ibCurriculumData.ts'
+import { ibMathsCrumbs, ibMathsFaqs } from './pages/ibMathsTutorData.ts'
 import { mathsCrumbs, mathsFaqs } from './pages/mathsTutorData.ts'
 import { physicsCrumbs, physicsFaqs } from './pages/physicsTutorData.ts'
 
@@ -246,6 +247,18 @@ export const routes: SiteRoute[] = [
       jsonLd: faqAndBreadcrumbJsonLd(englishFaqs, englishCrumbs, canonicalUrl),
     }),
     whatsappMessage: "Hi Gerard, I'd like to ask about English tuition for my child.",
+  },
+  {
+    id: 'ib-maths-tutor',
+    path: '/ib-maths-tutor/',
+    sitemap: true,
+    head: socialHead({
+      title: 'Online IB maths tutor in Dubai and Abu Dhabi | CES Tuition',
+      description: 'One-to-one online IB maths lessons for students in Dubai, Abu Dhabi, Sharjah and across the UAE, with UK-trained subject specialists. Free 30-minute trial.',
+      path: '/ib-maths-tutor/',
+      jsonLd: faqAndBreadcrumbJsonLd(ibMathsFaqs, ibMathsCrumbs, canonicalUrl),
+    }),
+    whatsappMessage: "Hi Gerard, I'd like to ask about IB maths tuition for my child.",
   },
   {
     id: 'not-found',
