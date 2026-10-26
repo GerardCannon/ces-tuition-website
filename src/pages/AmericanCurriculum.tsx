@@ -7,7 +7,7 @@ export function AmericanCurriculum() {
   return (
     <PageShell
       crumbs={americanCrumbs}
-      title="American curriculum and SAT tuition for families in the UAE"
+      title="American curriculum and SAT tuition for families in Dubai and the UAE"
       lede={
         <p>
           Many families in the UAE choose a school that follows an American curriculum. If your child is finding a subject difficult, is getting ready for the SAT, or simply wants to feel more confident, we can help.

@@ -23,7 +23,7 @@ export function MathsTutor() {
   return (
     <PageShell
       crumbs={mathsCrumbs}
-      title="IGCSE, GCSE and A-level maths tutor in the UAE"
+      title="Online IGCSE, GCSE and A-level maths tutor for families in Dubai and the UAE"
       lede={
         <p>
           Maths is often the subject parents worry about most. Our lessons follow the course your child is studying at school, whether they need to catch up or want to aim for a higher grade.
