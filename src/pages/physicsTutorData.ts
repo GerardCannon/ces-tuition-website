@@ -1,0 +1,23 @@
+export const physicsCrumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'Physics', path: '/physics-tutor/' },
+]
+
+export const physicsFaqs = [
+  {
+    question: 'How do we book a lesson?',
+    answer: 'Message us on WhatsApp and we\'ll arrange a free 30-minute trial lesson. After that, we\'ll set you up on our app, where you can schedule lessons and monitor your child\'s progress.',
+  },
+  {
+    question: 'We don\'t live in the UAE. Can my child still have lessons?',
+    answer: 'Yes. All our lessons are online, so families join us from the UK, Europe and all over Asia.',
+  },
+  {
+    question: 'Which exam boards do you cover?',
+    answer: 'We teach students following Edexcel, Cambridge and OxfordAQA physics courses.',
+  },
+  {
+    question: 'My child understands physics in class but struggles in tests. Can you help?',
+    answer: 'Yes. We work through exam-style questions together and look at where marks are being lost, so your child gets used to what each question is asking for.',
+  },
+]

@@ -2,9 +2,12 @@ import { pageForRoute } from './lib/goatcounter.tsx'
 import { faqAndBreadcrumbJsonLd } from './lib/structuredData.ts'
 import { WHATSAPP_GREETING } from './lib/whatsapp.tsx'
 import { alevelCrumbs, alevelFaqs } from './pages/alevelTutorData.ts'
+import { biologyCrumbs, biologyFaqs } from './pages/biologyTutorData.ts'
 import { britishCrumbs, britishFaqs } from './pages/britishCurriculumData.ts'
+import { chemistryCrumbs, chemistryFaqs } from './pages/chemistryTutorData.ts'
 import { ibCrumbs, ibFaqs } from './pages/ibCurriculumData.ts'
 import { mathsCrumbs, mathsFaqs } from './pages/mathsTutorData.ts'
+import { physicsCrumbs, physicsFaqs } from './pages/physicsTutorData.ts'
 
 export const SITE_ORIGIN = 'https://www.cestuition.com'
 const OG_IMAGE = `${SITE_ORIGIN}/og-image.jpg`
@@ -181,6 +184,42 @@ export const routes: SiteRoute[] = [
       jsonLd: faqAndBreadcrumbJsonLd(alevelFaqs, alevelCrumbs, canonicalUrl),
     }),
     whatsappMessage: "Hi Gerard, I'd like to ask about A-level tuition for my child.",
+  },
+  {
+    id: 'chemistry-tutor',
+    path: '/chemistry-tutor/',
+    sitemap: true,
+    head: socialHead({
+      title: 'A-level and IB chemistry tutor in the UAE | CES Tuition',
+      description: 'One-to-one online chemistry lessons for GCSE, IGCSE, A-level and IB students across the UAE, with UK-trained subject specialists. Free 30-minute trial lesson.',
+      path: '/chemistry-tutor/',
+      jsonLd: faqAndBreadcrumbJsonLd(chemistryFaqs, chemistryCrumbs, canonicalUrl),
+    }),
+    whatsappMessage: "Hi Gerard, I'd like to ask about chemistry tuition for my child.",
+  },
+  {
+    id: 'physics-tutor',
+    path: '/physics-tutor/',
+    sitemap: true,
+    head: socialHead({
+      title: 'A-level and IB physics tutor in the UAE | CES Tuition',
+      description: 'One-to-one online physics lessons for GCSE, IGCSE, A-level and IB students across the UAE, with UK-trained subject specialists. Free 30-minute trial lesson.',
+      path: '/physics-tutor/',
+      jsonLd: faqAndBreadcrumbJsonLd(physicsFaqs, physicsCrumbs, canonicalUrl),
+    }),
+    whatsappMessage: "Hi Gerard, I'd like to ask about physics tuition for my child.",
+  },
+  {
+    id: 'biology-tutor',
+    path: '/biology-tutor/',
+    sitemap: true,
+    head: socialHead({
+      title: 'A-level and IB biology tutor in the UAE | CES Tuition',
+      description: 'One-to-one online biology lessons for GCSE, IGCSE, A-level and IB students across the UAE, with UK-trained subject specialists. Free 30-minute trial lesson.',
+      path: '/biology-tutor/',
+      jsonLd: faqAndBreadcrumbJsonLd(biologyFaqs, biologyCrumbs, canonicalUrl),
+    }),
+    whatsappMessage: "Hi Gerard, I'd like to ask about biology tuition for my child.",
   },
   {
     id: 'not-found',
