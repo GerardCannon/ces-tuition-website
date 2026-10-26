@@ -1,11 +1,12 @@
 import { FormEvent } from 'react'
 import { Button } from '@/components/ui/button'
 import { WhatsappLogo } from '@phosphor-icons/react'
-import { whatsappUrl } from '@/lib/whatsapp'
+import { useWhatsappLink } from '@/lib/whatsapp'
 
 const fieldClass = 'w-full rounded-lg border border-input bg-background px-3 py-2.5 text-base text-foreground outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]'
 
 export function EnquiryForm() {
+  const whatsappHref = useWhatsappLink()
   function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
     const data = new FormData(event.currentTarget)
@@ -15,7 +16,7 @@ export function EnquiryForm() {
       `Subject: ${String(data.get('subject') || '').trim()}`,
       `Year group: ${String(data.get('yearGroup') || '').trim()}`,
     ].join('\n')
-    window.location.href = whatsappUrl(details)
+    window.location.href = whatsappHref(details)
   }
 
   return (
