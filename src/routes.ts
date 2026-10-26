@@ -1,6 +1,7 @@
 import { pageForRoute } from './lib/goatcounter.tsx'
 import { faqAndBreadcrumbJsonLd } from './lib/structuredData.ts'
 import { WHATSAPP_GREETING } from './lib/whatsapp.tsx'
+import { americanCrumbs, americanFaqs } from './pages/americanCurriculumData.ts'
 import { alevelCrumbs, alevelFaqs } from './pages/alevelTutorData.ts'
 import { biologyCrumbs, biologyFaqs } from './pages/biologyTutorData.ts'
 import { britishCrumbs, britishFaqs } from './pages/britishCurriculumData.ts'
@@ -161,6 +162,18 @@ export const routes: SiteRoute[] = [
       jsonLd: faqAndBreadcrumbJsonLd(ibFaqs, ibCrumbs, canonicalUrl),
     }),
     whatsappMessage: "Hi Gerard, I'd like to ask about IB tuition for my child.",
+  },
+  {
+    id: 'american-curriculum',
+    path: '/curricula/american/',
+    sitemap: true,
+    head: socialHead({
+      title: 'American curriculum and SAT tuition, UAE | CES Tuition',
+      description: 'One-to-one online lessons for American curriculum students in the UAE, including SAT preparation, with UK-trained subject specialists. Free 30-minute trial.',
+      path: '/curricula/american/',
+      jsonLd: faqAndBreadcrumbJsonLd(americanFaqs, americanCrumbs, canonicalUrl),
+    }),
+    whatsappMessage: "Hi Gerard, I'd like to ask about American curriculum or SAT tuition for my child.",
   },
   {
     id: 'igcse-gcse-maths-tutor',

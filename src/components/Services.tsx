@@ -100,6 +100,7 @@ const services: {
   },
   {
     title: 'American curriculum',
+    href: '/curricula/american/',
     description: 'Online tuition for students following an American curriculum.',
     graphic: <UsFlag />,
   },
