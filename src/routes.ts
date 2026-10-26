@@ -1,6 +1,7 @@
 import { pageForRoute } from './lib/goatcounter.tsx'
 import { faqAndBreadcrumbJsonLd } from './lib/structuredData.ts'
 import { WHATSAPP_GREETING } from './lib/whatsapp.tsx'
+import { alevelCrumbs, alevelFaqs } from './pages/alevelTutorData.ts'
 import { britishCrumbs, britishFaqs } from './pages/britishCurriculumData.ts'
 import { ibCrumbs, ibFaqs } from './pages/ibCurriculumData.ts'
 import { mathsCrumbs, mathsFaqs } from './pages/mathsTutorData.ts'
@@ -168,6 +169,18 @@ export const routes: SiteRoute[] = [
       jsonLd: faqAndBreadcrumbJsonLd(mathsFaqs, mathsCrumbs, canonicalUrl),
     }),
     whatsappMessage: "Hi Gerard, I'd like to ask about IGCSE maths tuition for my child.",
+  },
+  {
+    id: 'a-level-tutor',
+    path: '/a-level-tutor/',
+    sitemap: true,
+    head: socialHead({
+      title: 'A-level tuition in the UAE | CES Tuition',
+      description: 'One-to-one online A-level lessons for Year 12 and 13 students across the UAE, with UK-trained subject specialists. Book a free 30-minute trial on WhatsApp.',
+      path: '/a-level-tutor/',
+      jsonLd: faqAndBreadcrumbJsonLd(alevelFaqs, alevelCrumbs, canonicalUrl),
+    }),
+    whatsappMessage: "Hi Gerard, I'd like to ask about A-level tuition for my child.",
   },
   {
     id: 'not-found',
