@@ -11,9 +11,8 @@ import {
 } from '@/components/ui/breadcrumb'
 import { Footer } from '@/components/Footer'
 import { Navigation } from '@/components/Navigation'
-import { ReviewMention } from '@/components/ReviewMention'
 import { WhatsAppBar } from '@/components/WhatsAppBar'
-import { useWhatsappLink } from '@/lib/whatsapp'
+import { whatsappUrl } from '@/lib/whatsapp'
 
 export type PageCrumb = { name: string; path: string }
 export type FaqItem = { question: string; answer: string }
@@ -25,6 +24,7 @@ export function PageShell({
   children,
   ctaTitle,
   ctaBody,
+  whatsappDetails,
 }: {
   crumbs: readonly PageCrumb[]
   title: string
@@ -32,8 +32,8 @@ export function PageShell({
   children: ReactNode
   ctaTitle: string
   ctaBody: ReactNode
+  whatsappDetails: string
 }) {
-  const whatsappHref = useWhatsappLink()
   return (
     <div className="min-h-screen">
       <Navigation sectionBase="/" />
@@ -85,14 +85,13 @@ export function PageShell({
               <p className="text-base sm:text-lg text-white leading-relaxed">
                 Book a free 30-minute trial lesson on WhatsApp.
               </p>
-              <ReviewMention>38 five-star reviews</ReviewMention>
               <div className="flex flex-col sm:flex-row gap-3 justify-center items-center pt-2">
                 <Button
                   asChild
                   size="lg"
                   className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold tracking-wide text-base sm:text-lg px-6 h-12 w-full sm:w-auto"
                 >
-                  <a href={whatsappHref()} className="flex items-center gap-2">
+                  <a href={whatsappUrl(whatsappDetails)} className="flex items-center gap-2">
                     <WhatsappLogo size={22} weight="fill" aria-hidden="true" />
                     Chat with us on WhatsApp
                   </a>
@@ -125,7 +124,7 @@ export function PageShell({
               size="lg"
               className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold tracking-wide text-base sm:text-lg px-6 h-12"
             >
-              <a href={whatsappHref()} className="flex items-center gap-2">
+              <a href={whatsappUrl(whatsappDetails)} className="flex items-center gap-2">
                 <WhatsappLogo size={22} weight="fill" aria-hidden="true" />
                 Chat with us on WhatsApp
               </a>
