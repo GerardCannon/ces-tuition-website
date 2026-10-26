@@ -109,6 +109,7 @@ const homeJsonLd: JsonLd = {
       name: 'CES Tuition',
       url: canonicalUrl('/'),
       logo: 'https://www.cestuition.com/apple-touch-icon.png',
+      image: 'https://www.cestuition.com/apple-touch-icon.png',
       email: 'Gerard@CannonEducationSolutions.com',
       telephone: '+971585041916',
       address: {
