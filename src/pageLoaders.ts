@@ -1,4 +1,5 @@
 import type { ComponentType } from 'react'
+import { AmericanCurriculum } from './pages/AmericanCurriculum.tsx'
 import { AlevelTutor } from './pages/AlevelTutor.tsx'
 import { BiologyTutor } from './pages/BiologyTutor.tsx'
 import { BritishCurriculum } from './pages/BritishCurriculum.tsx'
@@ -17,6 +18,7 @@ export const pages: Record<string, ComponentType> = {
   home: Home,
   'british-curriculum': BritishCurriculum,
   ib: IbCurriculum,
+  'american-curriculum': AmericanCurriculum,
   'igcse-gcse-maths-tutor': MathsTutor,
   'a-level-tutor': AlevelTutor,
   'chemistry-tutor': ChemistryTutor,
