@@ -1,3 +1,5 @@
+import type { ServiceInfo } from '../lib/structuredData.ts'
+
 export const ibMathsCrumbs = [
   { name: 'Home', path: '/' },
   { name: 'IB maths', path: '/ib-maths-tutor/' },
@@ -25,3 +27,9 @@ export const ibMathsFaqs = [
     answer: 'Yes. We can help your child understand what\'s expected and plan their time. The work they hand in is always their own.',
   },
 ]
+
+export const ibMathsService: ServiceInfo = {
+  name: 'IB maths tuition',
+  serviceType: 'Online IB maths tuition',
+  description: 'Live one-to-one online IB maths lessons, with UK-trained subject specialists.',
+}

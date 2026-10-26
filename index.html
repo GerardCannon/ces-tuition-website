@@ -27,22 +27,88 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": ["EducationalOrganization", "Organization"],
-      "name": "CES Tuition",
-      "url": "https://www.cestuition.com/",
-      "logo": "https://www.cestuition.com/apple-touch-icon.png",
-      "email": "Gerard@CannonEducationSolutions.com",
-      "telephone": "+971585041916",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Sharjah Media City",
-        "addressLocality": "Sharjah",
-        "addressCountry": "AE"
-      },
-      "areaServed": {
-        "@type": "Country",
-        "name": "United Arab Emirates"
-      }
+      "@graph": [
+        {
+          "@type": [
+            "EducationalOrganization",
+            "Organization"
+          ],
+          "@id": "https://www.cestuition.com/#organization",
+          "name": "CES Tuition",
+          "url": "https://www.cestuition.com/",
+          "logo": "https://www.cestuition.com/apple-touch-icon.png",
+          "email": "Gerard@CannonEducationSolutions.com",
+          "telephone": "+971585041916",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Sharjah Media City",
+            "addressLocality": "Sharjah",
+            "addressCountry": "AE"
+          },
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Dubai"
+            },
+            {
+              "@type": "City",
+              "name": "Abu Dhabi"
+            },
+            {
+              "@type": "City",
+              "name": "Sharjah"
+            },
+            {
+              "@type": "Country",
+              "name": "United Arab Emirates"
+            }
+          ]
+        },
+        {
+          "@type": "Service",
+          "@id": "https://www.cestuition.com/#service",
+          "name": "Online one-to-one tuition",
+          "serviceType": "Online tuition",
+          "description": "Live one-to-one online lessons in GCSE, IGCSE, A-level, IB and American curriculum subjects, with UK-trained subject specialists.",
+          "url": "https://www.cestuition.com/",
+          "provider": {
+            "@id": "https://www.cestuition.com/#organization"
+          },
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Dubai"
+            },
+            {
+              "@type": "City",
+              "name": "Abu Dhabi"
+            },
+            {
+              "@type": "City",
+              "name": "Sharjah"
+            },
+            {
+              "@type": "Country",
+              "name": "United Arab Emirates"
+            }
+          ],
+          "availableChannel": {
+            "@type": "ServiceChannel",
+            "name": "Live online lessons",
+            "description": "Lessons are live, one-to-one and online, so families also join from the UK, Europe and all over Asia."
+          },
+          "offers": {
+            "@type": "Offer",
+            "name": "Free 30-minute trial lesson",
+            "description": "A free 30-minute trial lesson, arranged on WhatsApp."
+          }
+        },
+        {
+          "@type": "WebSite",
+          "name": "CES Tuition",
+          "url": "https://www.cestuition.com/"
+        }
+      ]
     }
     </script>
     <script data-goatcounter="https://cestuition.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

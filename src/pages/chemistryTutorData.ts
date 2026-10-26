@@ -1,3 +1,5 @@
+import type { ServiceInfo } from '../lib/structuredData.ts'
+
 export const chemistryCrumbs = [
   { name: 'Home', path: '/' },
   { name: 'Chemistry', path: '/chemistry-tutor/' },
@@ -21,3 +23,10 @@ export const chemistryFaqs = [
     answer: 'Some topics involve calculations, and we\'ll practise these until your child feels comfortable with them. If maths itself is the worry, have a look at our maths page.',
   },
 ]
+
+export const chemistryService: ServiceInfo = {
+  name: 'Chemistry tuition',
+  serviceType: 'Online chemistry tuition',
+  description:
+    'Live one-to-one online chemistry lessons for GCSE, IGCSE, A-level and IB students, with UK-trained subject specialists.',
+}

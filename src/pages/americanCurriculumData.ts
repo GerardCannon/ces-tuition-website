@@ -1,3 +1,5 @@
+import type { ServiceInfo } from '../lib/structuredData.ts'
+
 export const americanCrumbs = [
   { name: 'Home', path: '/' },
   { name: 'American curriculum', path: '/curricula/american/' },
@@ -21,3 +23,10 @@ export const americanFaqs = [
     answer: "We help with a range of school subjects, such as maths and English. Message us on WhatsApp with your child's subject and grade, and we'll let you know how we can help.",
   },
 ]
+
+export const americanService: ServiceInfo = {
+  name: 'American curriculum and SAT tuition',
+  serviceType: 'Online American curriculum tuition',
+  description:
+    'Live one-to-one online lessons for American curriculum students, including SAT preparation, with UK-trained subject specialists.',
+}

@@ -1,3 +1,5 @@
+import type { ServiceInfo } from '../lib/structuredData.ts'
+
 export const physicsCrumbs = [
   { name: 'Home', path: '/' },
   { name: 'Physics', path: '/physics-tutor/' },
@@ -21,3 +23,10 @@ export const physicsFaqs = [
     answer: 'Yes. We work through exam-style questions together and look at where marks are being lost, so your child gets used to what each question is asking for.',
   },
 ]
+
+export const physicsService: ServiceInfo = {
+  name: 'Physics tuition',
+  serviceType: 'Online physics tuition',
+  description:
+    'Live one-to-one online physics lessons for GCSE, IGCSE, A-level and IB students, with UK-trained subject specialists.',
+}

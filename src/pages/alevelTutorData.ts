@@ -1,3 +1,5 @@
+import type { ServiceInfo } from '../lib/structuredData.ts'
+
 export const alevelCrumbs = [
   { name: 'Home', path: '/' },
   { name: 'British curriculum', path: '/curricula/british/' },
@@ -22,3 +24,10 @@ export const alevelFaqs = [
     answer: 'Yes. We can help your child understand what\'s expected and plan their time. The work they hand in is always their own.',
   },
 ]
+
+export const alevelService: ServiceInfo = {
+  name: 'A-level tuition',
+  serviceType: 'Online A-level tuition',
+  description:
+    'Live one-to-one online A-level lessons for Year 12 and 13 students, with UK-trained subject specialists.',
+}
