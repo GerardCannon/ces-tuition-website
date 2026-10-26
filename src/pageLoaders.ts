@@ -1,8 +1,15 @@
 import type { ComponentType } from 'react'
+import { BritishCurriculum } from './pages/BritishCurriculum.tsx'
+import { Home } from './pages/Home.tsx'
+import { MathsTutor } from './pages/MathsTutor.tsx'
+import { NotFound } from './pages/NotFound.tsx'
 
-export const pageLoaders: Record<string, () => Promise<ComponentType>> = {
-  home: () => import('./pages/Home.tsx').then((module) => module.Home),
-  'british-curriculum': () => import('./pages/BritishCurriculum.tsx').then((module) => module.BritishCurriculum),
-  'igcse-gcse-maths-tutor': () => import('./pages/MathsTutor.tsx').then((module) => module.MathsTutor),
-  'not-found': () => import('./pages/NotFound.tsx').then((module) => module.NotFound),
+// Pages are imported statically. A dynamic import() from the client entry put
+// each page in a chunk that imported main-*.js, and main.tsx awaited that
+// chunk, so the cycle never finished and React never hydrated.
+export const pages: Record<string, ComponentType> = {
+  home: Home,
+  'british-curriculum': BritishCurriculum,
+  'igcse-gcse-maths-tutor': MathsTutor,
+  'not-found': NotFound,
 }

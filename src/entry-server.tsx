@@ -1,15 +1,14 @@
 import { renderToString } from 'react-dom/server'
 import { App } from './App.tsx'
-import { pageLoaders } from './pageLoaders.ts'
+import { pages } from './pageLoaders.ts'
 import { canonicalUrl, routeOutput, routes } from './routes.ts'
 import { renderHead, renderJsonLd } from './renderHead.ts'
 
-export async function prerenderManifest() {
+export function prerenderManifest() {
   const rendered = []
   for (const route of routes) {
-    const loadPage = pageLoaders[route.id]
-    if (!loadPage) throw new Error(`No page loader for ${route.id}`)
-    const Page = await loadPage()
+    const Page = pages[route.id]
+    if (!Page) throw new Error(`No page for ${route.id}`)
     rendered.push({
       id: route.id,
       path: route.path ?? null,
