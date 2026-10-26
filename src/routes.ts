@@ -1,3 +1,4 @@
+import { pageForRoute } from './lib/goatcounter.tsx'
 import { faqAndBreadcrumbJsonLd } from './lib/structuredData.ts'
 import { WHATSAPP_GREETING } from './lib/whatsapp.tsx'
 import { britishCrumbs, britishFaqs } from './pages/britishCurriculumData.ts'
@@ -209,6 +210,8 @@ for (const route of routes) {
   if (!route.whatsappMessage.trim()) {
     throw new Error(`Route ${route.id} needs a WhatsApp message`)
   }
+  // Fail while the route list is loading, before prerender tries to render the page.
+  pageForRoute(route.id)
   const file = outputFile(route)
   if (file.startsWith('/') || file.includes('..')) {
     throw new Error(`Route ${route.id} has an unsafe output path`)
