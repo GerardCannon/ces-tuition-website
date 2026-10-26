@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { List, WhatsappLogo, X } from '@phosphor-icons/react'
 import { Logo } from '@/components/Logo'
+import { bindGoatCounterClicks, useAnalyticsPage, whatsappClick } from '@/lib/goatcounter'
 import { useWhatsappLink } from '@/lib/whatsapp'
 
 const navLinks = [
@@ -14,6 +15,12 @@ const navLinks = [
 export function Navigation({ sectionBase = '' }: { sectionBase?: string }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const whatsappHref = useWhatsappLink()
+  const page = useAnalyticsPage()
+
+  useEffect(() => {
+    if (!isMobileMenuOpen) return
+    bindGoatCounterClicks()
+  }, [isMobileMenuOpen])
 
   function closeMenu() {
     setIsMobileMenuOpen(false)
@@ -52,7 +59,7 @@ export function Navigation({ sectionBase = '' }: { sectionBase?: string }) {
               asChild
               className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold"
             >
-              <a href={whatsappHref()} className="flex items-center gap-2">
+              <a href={whatsappHref()} {...whatsappClick(page, 'header')} className="flex items-center gap-2">
                 <WhatsappLogo size={18} weight="fill" aria-hidden="true" />
                 WhatsApp
               </a>
@@ -86,6 +93,7 @@ export function Navigation({ sectionBase = '' }: { sectionBase?: string }) {
             ))}
             <a
               href={whatsappHref()}
+              {...whatsappClick(page, 'menu')}
               className="flex items-center justify-center gap-2 mt-3 min-h-12 rounded-lg bg-accent text-accent-foreground font-semibold"
               onClick={closeMenu}
             >

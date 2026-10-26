@@ -1,6 +1,7 @@
 import { Envelope, MapPin, Phone, WhatsappLogo } from '@phosphor-icons/react'
 import { Separator } from '@/components/ui/separator'
 import { Logo } from '@/components/Logo'
+import { useAnalyticsPage, whatsappClick } from '@/lib/goatcounter'
 import { WHATSAPP_DISPLAY, useWhatsappLink } from '@/lib/whatsapp'
 
 const quickLinks = [
@@ -13,6 +14,7 @@ const quickLinks = [
 
 export function Footer({ sectionBase = '' }: { sectionBase?: string }) {
   const whatsappHref = useWhatsappLink()
+  const page = useAnalyticsPage()
   return (
     <footer className="bg-primary text-primary-foreground pb-24 md:pb-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
@@ -65,7 +67,7 @@ export function Footer({ sectionBase = '' }: { sectionBase?: string }) {
               </li>
               <li className="flex items-start gap-3">
                 <WhatsappLogo size={20} className="flex-shrink-0 mt-1" aria-hidden="true" />
-                <a href={whatsappHref()} className="text-primary-foreground hover:underline underline-offset-4">
+                <a href={whatsappHref()} {...whatsappClick(page, 'footer')} className="text-primary-foreground hover:underline underline-offset-4">
                   WhatsApp {WHATSAPP_DISPLAY}
                 </a>
               </li>
