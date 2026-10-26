@@ -1,6 +1,7 @@
 import { faqAndBreadcrumbJsonLd } from './lib/structuredData.ts'
 import { WHATSAPP_GREETING } from './lib/whatsapp.tsx'
 import { britishCrumbs, britishFaqs } from './pages/britishCurriculumData.ts'
+import { ibCrumbs, ibFaqs } from './pages/ibCurriculumData.ts'
 import { mathsCrumbs, mathsFaqs } from './pages/mathsTutorData.ts'
 
 export const SITE_ORIGIN = 'https://www.cestuition.com'
@@ -142,6 +143,18 @@ export const routes: SiteRoute[] = [
       jsonLd: faqAndBreadcrumbJsonLd(britishFaqs, britishCrumbs, canonicalUrl),
     }),
     whatsappMessage: "Hi Gerard, I'd like to ask about British curriculum tuition for my child.",
+  },
+  {
+    id: 'ib',
+    path: '/curricula/ib/',
+    sitemap: true,
+    head: socialHead({
+      title: 'IB tuition in the UAE | CES Tuition',
+      description: 'One-to-one online lessons for IB MYP and Diploma Programme students across the UAE, with UK-trained subject specialists.',
+      path: '/curricula/ib/',
+      jsonLd: faqAndBreadcrumbJsonLd(ibFaqs, ibCrumbs, canonicalUrl),
+    }),
+    whatsappMessage: "Hi Gerard, I'd like to ask about IB tuition for my child.",
   },
   {
     id: 'igcse-gcse-maths-tutor',

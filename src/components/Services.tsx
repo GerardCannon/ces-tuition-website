@@ -79,6 +79,7 @@ const services: {
   title: string
   description: string
   graphic: ReactNode
+  href?: string
   links?: { href: string; label: string }[]
 }[] = [
   {
@@ -92,6 +93,7 @@ const services: {
   },
   {
     title: 'IB',
+    href: '/curricula/ib/',
     description: 'Lessons for students taking the International Baccalaureate.',
     graphic: <IbGlobe />,
   },
@@ -142,7 +144,13 @@ export function Services() {
                   {service.graphic}
                 </div>
                 <h3 className="text-xl font-bold text-foreground">
-                  {service.title}
+                  {service.href ? (
+                    <a href={service.href} className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">
+                      {service.title}
+                    </a>
+                  ) : (
+                    service.title
+                  )}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
                   {service.description}
