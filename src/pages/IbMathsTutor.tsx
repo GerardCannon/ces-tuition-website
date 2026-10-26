@@ -8,7 +8,11 @@ export function IbMathsTutor() {
     <PageShell
       crumbs={ibMathsCrumbs}
       title="Online IB maths tutor for families in Dubai and the UAE"
-      lede={null}
+      lede={
+        <p>
+          IB maths can feel like a big step up. Our lessons follow the course your child is studying at school, whether they need to catch up or want to aim for a higher grade.
+        </p>
+      }
       ctaTitle="Tell us about your child"
       ctaBody={
         <p>

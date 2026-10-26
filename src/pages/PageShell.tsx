@@ -21,6 +21,7 @@ import { useWhatsappLink } from '@/lib/whatsapp'
 // option, and the maths page covers IGCSE, GCSE and A-level, so those stay blank.
 const enquiryPrefill: Partial<Record<WhatsAppPage, { curriculum?: string; subject?: string }>> = {
   ib: { curriculum: 'IB' },
+  ibmaths: { curriculum: 'IB', subject: 'maths' },
   american: { curriculum: 'American' },
   alevel: { curriculum: 'A-level' },
   maths: { subject: 'maths' },
