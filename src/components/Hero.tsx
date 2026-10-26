@@ -1,8 +1,10 @@
 import { Button } from '@/components/ui/button'
-import { Star, WhatsappLogo } from '@phosphor-icons/react'
-import { whatsappUrl } from '@/lib/whatsapp'
+import { WhatsappLogo } from '@phosphor-icons/react'
+import { ReviewMention } from '@/components/ReviewMention'
+import { useWhatsappLink } from '@/lib/whatsapp'
 
 export function Hero() {
+  const whatsappHref = useWhatsappLink()
   return (
     <section className="relative overflow-hidden bg-primary text-primary-foreground">
       <div className="absolute inset-0 opacity-10 pointer-events-none" aria-hidden="true">
@@ -27,18 +29,7 @@ export function Hero() {
             GCSE, IGCSE and A-level, IB and American curricula, live online across all emirates.
           </p>
 
-          <p className="flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-x-3 gap-y-1 text-sm sm:text-base text-white">
-            <span className="inline-flex items-center gap-1.5">
-              <span className="inline-flex text-white" role="img" aria-label="5 out of 5 stars">
-                {Array.from({ length: 5 }, (_, i) => (
-                  <Star key={i} size={16} weight="fill" aria-hidden="true" />
-                ))}
-              </span>
-              <span className="font-semibold">
-                38 five-star reviews on MyPrivateTutor
-              </span>
-            </span>
-          </p>
+          <ReviewMention>38 five-star reviews on MyPrivateTutor</ReviewMention>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center items-center pt-2">
             <Button
@@ -46,7 +37,7 @@ export function Hero() {
               size="lg"
               className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold tracking-wide text-base sm:text-lg px-6 h-12 w-full sm:w-auto"
             >
-              <a href={whatsappUrl()} className="flex items-center gap-2">
+              <a href={whatsappHref()} className="flex items-center gap-2">
                 <WhatsappLogo size={22} weight="fill" aria-hidden="true" />
                 Chat with us on WhatsApp
               </a>
@@ -61,6 +52,7 @@ export function Hero() {
               <a href="#enquire">Send an enquiry</a>
             </Button>
           </div>
+          <p className="text-sm sm:text-base text-white">Free 30-minute trial lesson</p>
         </div>
       </div>
     </section>

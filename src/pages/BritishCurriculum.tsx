@@ -1,33 +1,6 @@
 import { Card } from '@/components/ui/card'
-import { FaqSection, PageSection, PageShell, type FaqItem, type PageCrumb } from '@/pages/PageShell.tsx'
-
-export const britishCrumbs: PageCrumb[] = [
-  { name: 'Home', path: '/' },
-  { name: 'British curriculum', path: '/curricula/british/' },
-]
-
-export const britishFaqs: FaqItem[] = [
-  {
-    question: 'How do we book a lesson?',
-    answer: 'Message us on WhatsApp and we’ll arrange a free 30-minute trial lesson. After that, we’ll set you up on our app, where you can monitor your child’s progress.',
-  },
-  {
-    question: 'We don’t live in the UAE. Can my child still have lessons?',
-    answer: 'Yes. All our lessons are online, so families join us from the UK, Europe and all over Asia.',
-  },
-  {
-    question: 'Which exam boards do you cover?',
-    answer: 'We teach Edexcel, Cambridge and OxfordAQA courses. OxfordAQA offers International GCSE and International AS and A-level.',
-  },
-  {
-    question: 'What’s the difference between GCSE and IGCSE?',
-    answer: 'GCSEs are taken by students in UK schools. The IGCSE is the international version, used by many schools in the UAE. Your child’s school decides which one they take.',
-  },
-  {
-    question: 'Do you also teach A-level?',
-    answer: 'Yes. We teach A-level in a wide range of subjects, as well as GCSE and IGCSE.',
-  },
-]
+import { FaqSection, PageSection, PageShell } from '@/pages/PageShell.tsx'
+import { britishCrumbs, britishFaqs } from '@/pages/britishCurriculumData.ts'
 
 const boards = [
   {
@@ -46,8 +19,6 @@ const boards = [
 
 const linkClass = 'font-semibold text-foreground underline underline-offset-4 hover:text-primary'
 
-const whatsappDetails = 'I would like to ask about British curriculum lessons for my child.'
-
 export function BritishCurriculum() {
   return (
     <PageShell
@@ -64,7 +35,6 @@ export function BritishCurriculum() {
           Send us your child’s subject and year group on WhatsApp, and we’ll get back to you.
         </p>
       }
-      whatsappDetails={whatsappDetails}
     >
       <PageSection title="Our lessons">
         <p>
