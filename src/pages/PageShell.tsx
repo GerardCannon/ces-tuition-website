@@ -9,12 +9,26 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from '@/components/ui/breadcrumb'
+import { EnquiryForm } from '@/components/EnquiryForm'
 import { Footer } from '@/components/Footer'
 import { Navigation } from '@/components/Navigation'
 import { ReviewMention } from '@/components/ReviewMention'
 import { WhatsAppBar } from '@/components/WhatsAppBar'
-import { useAnalyticsPage, whatsappClick } from '@/lib/goatcounter'
+import { useAnalyticsPage, whatsappClick, type WhatsAppPage } from '@/lib/goatcounter'
 import { useWhatsappLink } from '@/lib/whatsapp'
+
+// Only values the enquiry form already offers. British curriculum has no single
+// option, and the maths page covers IGCSE, GCSE and A-level, so those stay blank.
+const enquiryPrefill: Partial<Record<WhatsAppPage, { curriculum?: string; subject?: string }>> = {
+  ib: { curriculum: 'IB' },
+  american: { curriculum: 'American' },
+  alevel: { curriculum: 'A-level' },
+  maths: { subject: 'maths' },
+  chemistry: { subject: 'chemistry' },
+  physics: { subject: 'physics' },
+  biology: { subject: 'biology' },
+  english: { subject: 'English' },
+}
 
 export type PageCrumb = { name: string; path: string }
 export type FaqItem = { question: string; answer: ReactNode }
@@ -36,6 +50,7 @@ export function PageShell({
 }) {
   const whatsappHref = useWhatsappLink()
   const page = useAnalyticsPage()
+  const prefill = enquiryPrefill[page]
   return (
     <div className="min-h-screen">
       <Navigation sectionBase="/" />
@@ -105,7 +120,7 @@ export function PageShell({
                   variant="outline"
                   className="bg-transparent hover:bg-white/15 text-white border-white/70 font-medium tracking-wide text-base sm:text-lg px-6 h-12 w-full sm:w-auto"
                 >
-                  <a href="/#enquire">Send an enquiry</a>
+                  <a href="#enquire">Send an enquiry</a>
                 </Button>
               </div>
             </div>
@@ -132,6 +147,15 @@ export function PageShell({
                 Chat with us on WhatsApp
               </a>
             </Button>
+          </div>
+          <div id="enquire" className="max-w-7xl mx-auto px-6 lg:px-8 mt-10 scroll-mt-24">
+            <div className="max-w-xl mx-auto text-left">
+              <EnquiryForm
+                embedded
+                defaultCurriculum={prefill?.curriculum}
+                defaultSubject={prefill?.subject}
+              />
+            </div>
           </div>
         </section>
       </main>
