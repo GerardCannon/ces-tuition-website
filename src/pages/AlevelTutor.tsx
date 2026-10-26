@@ -79,7 +79,7 @@ export function AlevelTutor() {
 
       <PageSection title="Subjects" muted>
         <p>
-          We teach a range of A-level subjects, such as Maths, Physics, Chemistry, Biology, Economics, Business Studies, English and Computer Science. If your child's subject isn't listed, just ask us. You can read more about maths on our <a href="/igcse-gcse-maths-tutor/" className={linkClass}>maths page</a>. We also teach the IB, which you can read about on our <a href="/curricula/ib/" className={linkClass}>IB page</a>.
+          We teach a range of A-level subjects, such as Maths, <a href="/physics-tutor/" className={linkClass}>Physics</a>, <a href="/chemistry-tutor/" className={linkClass}>Chemistry</a>, <a href="/biology-tutor/" className={linkClass}>Biology</a>, Economics, Business Studies, English and Computer Science. If your child's subject isn't listed, just ask us. You can read more about maths on our <a href="/igcse-gcse-maths-tutor/" className={linkClass}>maths page</a>. We also teach the IB, which you can read about on our <a href="/curricula/ib/" className={linkClass}>IB page</a>.
         </p>
       </PageSection>
 

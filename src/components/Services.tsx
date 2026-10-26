@@ -165,6 +165,16 @@ export function Services() {
                         </a>
                       </li>
                     ))}
+                    {service.title === 'UK curriculum: GCSE, IGCSE and A-level' ? (
+                      <li>
+                        <a href="/chemistry-tutor/" className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">Chemistry</a>
+                        {', '}
+                        <a href="/physics-tutor/" className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">physics</a>
+                        {' and '}
+                        <a href="/biology-tutor/" className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">biology</a>
+                        {' tutors'}
+                      </li>
+                    ) : null}
                   </ul>
                 ) : null}
               </div>

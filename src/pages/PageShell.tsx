@@ -17,7 +17,7 @@ import { useAnalyticsPage, whatsappClick } from '@/lib/goatcounter'
 import { useWhatsappLink } from '@/lib/whatsapp'
 
 export type PageCrumb = { name: string; path: string }
-export type FaqItem = { question: string; answer: string }
+export type FaqItem = { question: string; answer: ReactNode }
 
 export function PageShell({
   crumbs,
