@@ -129,7 +129,7 @@ export function Services() {
               UK, IB and American curricula, taught live online for families across the UAE.
             </p>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Families in Dubai, Abu Dhabi, Sharjah and across the UAE learn with us online, so there's no travel involved. Every lesson is live and one-to-one with a UK-trained subject specialist. Because everything is online, families also join us from the UK, Europe and all over Asia.
+              Families in Dubai, Abu Dhabi, Sharjah and across the UAE learn with us online, so there's no travel involved. Every lesson is live and one-to-one with a UK‑trained subject specialist. Because everything is online, families also join us from the UK, Europe and all over Asia.
             </p>
           </div>
         </div>
