@@ -28,7 +28,7 @@ export function Hero() {
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl text-white leading-relaxed max-w-2xl mx-auto">
-            GCSE, IGCSE and A-level, IB and American curricula, live online across all emirates.
+            GCSE, IGCSE, A-level, IB and American curriculum, taught live online across all emirates.
           </p>
 
           <ReviewMention>38 five-star reviews on MyPrivateTutor</ReviewMention>
