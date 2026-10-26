@@ -70,7 +70,7 @@ export function IbCurriculum() {
 
       <PageSection title="Subjects" muted>
         <p>
-          We teach a range of IB subjects, such as Maths, Physics, Chemistry, Biology, Economics, Business Management, English and Computer Science. If your child's subject isn't listed, just ask us. We also teach the British curriculum, which you can find with our other curricula on our <a href="/" className={linkClass}>home page</a>.
+          We teach a range of IB subjects, such as Maths, <a href="/physics-tutor/" className={linkClass}>Physics</a>, <a href="/chemistry-tutor/" className={linkClass}>Chemistry</a>, <a href="/biology-tutor/" className={linkClass}>Biology</a>, Economics, Business Management, <a href="/english-tutor/" className={linkClass}>English</a> and Computer Science. If your child's subject isn't listed, just ask us. We also teach the <a href="/curricula/british/" className={linkClass}>British curriculum</a>, which you can find with our other curricula on our home page.
         </p>
       </PageSection>
 
