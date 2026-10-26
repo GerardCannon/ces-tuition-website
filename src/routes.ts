@@ -1,9 +1,7 @@
-import type { ComponentType } from 'react'
 import { faqAndBreadcrumbJsonLd } from './lib/structuredData.ts'
-import { Home } from './pages/Home.tsx'
-import { BritishCurriculum, britishCrumbs, britishFaqs } from './pages/BritishCurriculum.tsx'
-import { MathsTutor, mathsCrumbs, mathsFaqs } from './pages/MathsTutor.tsx'
-import { NotFound } from './pages/NotFound.tsx'
+import { WHATSAPP_GREETING } from './lib/whatsapp.tsx'
+import { britishCrumbs, britishFaqs } from './pages/britishCurriculumData.ts'
+import { mathsCrumbs, mathsFaqs } from './pages/mathsTutorData.ts'
 
 export const SITE_ORIGIN = 'https://www.cestuition.com'
 const OG_IMAGE = `${SITE_ORIGIN}/og-image.jpg`
@@ -45,7 +43,8 @@ export type SiteRoute = {
   // Home only. Leave the JSON-LD script from index.html in the published file.
   keepJsonLd?: boolean
   head: RouteHead
-  Page: ComponentType
+  // Prefilled wa.me text for every WhatsApp link on this page, including the sticky bar.
+  whatsappMessage: string
 }
 
 export function canonicalUrl(path: string) {
@@ -130,7 +129,7 @@ export const routes: SiteRoute[] = [
       twitterImage: OG_IMAGE,
       jsonLd: homeJsonLd,
     },
-    Page: Home,
+    whatsappMessage: WHATSAPP_GREETING,
   },
   {
     id: 'british-curriculum',
@@ -142,7 +141,7 @@ export const routes: SiteRoute[] = [
       path: '/curricula/british/',
       jsonLd: faqAndBreadcrumbJsonLd(britishFaqs, britishCrumbs, canonicalUrl),
     }),
-    Page: BritishCurriculum,
+    whatsappMessage: "Hi Gerard, I'd like to ask about British curriculum tuition for my child.",
   },
   {
     id: 'igcse-gcse-maths-tutor',
@@ -154,7 +153,7 @@ export const routes: SiteRoute[] = [
       path: '/igcse-gcse-maths-tutor/',
       jsonLd: faqAndBreadcrumbJsonLd(mathsFaqs, mathsCrumbs, canonicalUrl),
     }),
-    Page: MathsTutor,
+    whatsappMessage: "Hi Gerard, I'd like to ask about IGCSE maths tuition for my child.",
   },
   {
     id: 'not-found',
@@ -165,7 +164,7 @@ export const routes: SiteRoute[] = [
       description: "That page isn't on this site.",
       robots: 'noindex',
     }),
-    Page: NotFound,
+    whatsappMessage: WHATSAPP_GREETING,
   },
 ]
 
@@ -193,6 +192,9 @@ for (const route of routes) {
   }
   if (route.keepJsonLd && !route.head.jsonLd) {
     throw new Error(`Route ${route.id} keeps the template JSON-LD but has none to check`)
+  }
+  if (!route.whatsappMessage.trim()) {
+    throw new Error(`Route ${route.id} needs a WhatsApp message`)
   }
   const file = outputFile(route)
   if (file.startsWith('/') || file.includes('..')) {

@@ -1,26 +1,6 @@
 import { Card } from '@/components/ui/card'
-import { FaqSection, PageSection, PageShell, type FaqItem, type PageCrumb } from '@/pages/PageShell.tsx'
-
-export const mathsCrumbs: PageCrumb[] = [
-  { name: 'Home', path: '/' },
-  { name: 'British curriculum', path: '/curricula/british/' },
-  { name: 'IGCSE and GCSE maths', path: '/igcse-gcse-maths-tutor/' },
-]
-
-export const mathsFaqs: FaqItem[] = [
-  {
-    question: 'How do we book a lesson?',
-    answer: 'Message us on WhatsApp and we’ll arrange a free 30-minute trial lesson. After that, we’ll set you up on our app, where you can monitor your child’s progress.',
-  },
-  {
-    question: 'Which exam boards do you cover for maths?',
-    answer: 'We teach Edexcel, Cambridge and OxfordAQA maths courses. OxfordAQA offers International GCSE and International AS and A-level maths.',
-  },
-  {
-    question: 'Do you teach A-level maths?',
-    answer: 'Yes. We teach A-level maths as well as IGCSE and GCSE maths.',
-  },
-]
+import { FaqSection, PageSection, PageShell } from '@/pages/PageShell.tsx'
+import { mathsCrumbs, mathsFaqs } from '@/pages/mathsTutorData.ts'
 
 const boards = [
   {
@@ -39,8 +19,6 @@ const boards = [
 
 const linkClass = 'font-semibold text-foreground underline underline-offset-4 hover:text-primary'
 
-const whatsappDetails = 'I would like to ask about maths lessons for my child.'
-
 export function MathsTutor() {
   return (
     <PageShell
@@ -57,7 +35,6 @@ export function MathsTutor() {
           Send us your child’s year group and exam board on WhatsApp, and we’ll get back to you.
         </p>
       }
-      whatsappDetails={whatsappDetails}
     >
       <PageSection title="Our lessons">
         <p>
