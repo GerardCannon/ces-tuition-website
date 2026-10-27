@@ -16,6 +16,10 @@ export const alevelFaqs = [
     answer: 'Yes. All our lessons are online, so families join us from the UK, Europe and all over Asia.',
   },
   {
+    question: 'Do you teach families in Dubai, Abu Dhabi and Sharjah?',
+    answer: 'Yes. All our A-level lessons are live and online, so families in any emirate can join without travelling. Each lesson is one-to-one with a UK-trained subject specialist in the subject your child is studying.',
+  },
+  {
     question: 'Which exam boards do you cover?',
     answer: 'We teach students following Edexcel, Cambridge and OxfordAQA A-level courses.',
   },
