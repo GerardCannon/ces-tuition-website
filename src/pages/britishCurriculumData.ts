@@ -15,6 +15,10 @@ export const britishFaqs = [
     answer: 'Yes. All our lessons are online, so families join us from the UK, Europe and all over Asia.',
   },
   {
+    question: 'Do you teach families in Dubai, Abu Dhabi and Sharjah?',
+    answer: 'Yes. All our lessons are live and online, so families in Dubai, Abu Dhabi, Sharjah and the rest of the UAE can join without travelling. Your child works one-to-one with a UK‑trained subject specialist who teaches the British curriculum.',
+  },
+  {
     question: 'Which exam boards do you cover?',
     answer: 'We teach Edexcel, Cambridge and OxfordAQA courses. OxfordAQA offers International GCSE and International AS and A-level.',
   },
@@ -25,6 +29,10 @@ export const britishFaqs = [
   {
     question: 'Do you also teach A-level?',
     answer: 'Yes. We teach A-level in a wide range of subjects, as well as GCSE and IGCSE.',
+  },
+  {
+    question: 'How are GCSE, IGCSE and A-level exams structured?',
+    answer: 'GCSEs and IGCSEs are usually two-year courses assessed mainly by written exams, and some subjects also include coursework, practical work or a speaking test. In some subjects, such as maths, students sit either a foundation or a higher paper (called core and extended at Cambridge), and this sets the range of grades available. A-levels in UK schools are examined at the end of the two years, while international A-levels from Edexcel and OxfordAQA are modular, so units can be taken across more than one exam series. We help your child understand how their own course is assessed and practise the kinds of questions each paper asks.',
   },
 ]
 

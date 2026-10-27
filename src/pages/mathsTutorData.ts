@@ -12,6 +12,14 @@ export const mathsFaqs = [
     answer: 'Message us on WhatsApp and we’ll arrange a free 30-minute trial lesson. After that, we’ll set you up on our app, where you can monitor your child’s progress.',
   },
   {
+    question: 'We don’t live in the UAE. Can my child still have lessons?',
+    answer: 'Yes. All our lessons are online, so families join us from the UK, Europe and all over Asia.',
+  },
+  {
+    question: 'Do you teach families in Dubai, Abu Dhabi and Sharjah?',
+    answer: 'Yes. Our maths lessons are live and online, so families anywhere in the UAE can join without travelling. Your child works one-to-one with one of our UK‑trained subject specialists.',
+  },
+  {
     question: 'Which exam boards do you cover for maths?',
     answer: 'We teach Edexcel, Cambridge and OxfordAQA maths courses. OxfordAQA offers International GCSE and International AS and A-level maths.',
   },
