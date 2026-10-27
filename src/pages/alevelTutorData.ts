@@ -17,7 +17,7 @@ export const alevelFaqs = [
   },
   {
     question: 'Do you teach families in Dubai, Abu Dhabi and Sharjah?',
-    answer: 'Yes. All our A-level lessons are live and online, so families in any emirate can join without travelling. Each lesson is one-to-one with a UK-trained subject specialist in the subject your child is studying.',
+    answer: 'Yes. All our A-level lessons are live and online, so families in any emirate can join without travelling. Each lesson is one-to-one with a UK‑trained subject specialist in the subject your child is studying.',
   },
   {
     question: 'Which exam boards do you cover?',

@@ -16,7 +16,7 @@ export const ibFaqs = [
   },
   {
     question: 'Do you teach families in Dubai, Abu Dhabi and Sharjah?',
-    answer: 'Yes. Lessons are live and online, so families anywhere in the UAE can join without travelling. Your child has one-to-one lessons with UK-trained subject specialists who teach the IB.',
+    answer: 'Yes. Lessons are live and online, so families anywhere in the UAE can join without travelling. Your child has one-to-one lessons with UK‑trained subject specialists who teach the IB.',
   },
   {
     question: 'Do you teach both the MYP and the DP?',

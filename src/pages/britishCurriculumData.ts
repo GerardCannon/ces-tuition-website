@@ -16,7 +16,7 @@ export const britishFaqs = [
   },
   {
     question: 'Do you teach families in Dubai, Abu Dhabi and Sharjah?',
-    answer: 'Yes. All our lessons are live and online, so families in Dubai, Abu Dhabi, Sharjah and the rest of the UAE can join without travelling. Your child works one-to-one with a UK-trained subject specialist who teaches the British curriculum.',
+    answer: 'Yes. All our lessons are live and online, so families in Dubai, Abu Dhabi, Sharjah and the rest of the UAE can join without travelling. Your child works one-to-one with a UK‑trained subject specialist who teaches the British curriculum.',
   },
   {
     question: 'Which exam boards do you cover?',

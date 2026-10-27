@@ -16,7 +16,7 @@ export const englishFaqs = [
   },
   {
     question: 'Do you teach families in Dubai, Abu Dhabi and Sharjah?',
-    answer: 'Yes. Our English lessons are all live and online, so families anywhere in the UAE can take part without travelling. Your child works one-to-one with one of our UK-trained subject specialists.',
+    answer: 'Yes. Our English lessons are all live and online, so families anywhere in the UAE can take part without travelling. Your child works one-to-one with one of our UK‑trained subject specialists.',
   },
   {
     question: 'Which exam boards do you cover?',

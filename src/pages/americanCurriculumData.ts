@@ -16,7 +16,7 @@ export const americanFaqs = [
   },
   {
     question: 'Do you teach families in Dubai, Abu Dhabi and Sharjah?',
-    answer: 'Yes. Every lesson is live and online, so families across the UAE, including Dubai, Abu Dhabi and Sharjah, can join without travelling. Lessons are one-to-one with our UK-trained subject specialists.',
+    answer: 'Yes. Every lesson is live and online, so families across the UAE, including Dubai, Abu Dhabi and Sharjah, can join without travelling. Lessons are one-to-one with our UK‑trained subject specialists.',
   },
   {
     question: 'Do you help with the SAT?',

@@ -17,7 +17,7 @@ export const mathsFaqs = [
   },
   {
     question: 'Do you teach families in Dubai, Abu Dhabi and Sharjah?',
-    answer: 'Yes. Our maths lessons are live and online, so families anywhere in the UAE can join without travelling. Your child works one-to-one with one of our UK-trained subject specialists.',
+    answer: 'Yes. Our maths lessons are live and online, so families anywhere in the UAE can join without travelling. Your child works one-to-one with one of our UK‑trained subject specialists.',
   },
   {
     question: 'Which exam boards do you cover for maths?',

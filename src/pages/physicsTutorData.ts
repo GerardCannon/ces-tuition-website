@@ -16,7 +16,7 @@ export const physicsFaqs = [
   },
   {
     question: 'Do you teach families in Dubai, Abu Dhabi and Sharjah?',
-    answer: 'Yes. Lessons take place live and online, so wherever your family is in the UAE, your child can join without travelling. Every physics lesson is one-to-one with one of our UK-trained subject specialists.',
+    answer: 'Yes. Lessons take place live and online, so wherever your family is in the UAE, your child can join without travelling. Every physics lesson is one-to-one with one of our UK‑trained subject specialists.',
   },
   {
     question: 'Which exam boards do you cover?',
