@@ -131,14 +131,9 @@ export function Services() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">
             Curricula we teach
           </h2>
-          <div className="space-y-4">
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              British, IB and American curricula, all taught live online.
-            </p>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Families in Dubai, Abu Dhabi, Sharjah and across the UAE learn with us online, so there's no travel involved. Every lesson is live and one-to-one with a UK‑trained subject specialist. Because everything is online, families also join us from the UK, Europe and all over Asia.
-            </p>
-          </div>
+          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+            British, IB and American curricula, all taught live online.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6 md:gap-8">
