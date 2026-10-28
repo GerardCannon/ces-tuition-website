@@ -29,7 +29,7 @@ export function Footer({ sectionBase = '' }: { sectionBase?: string }) {
           <div>
             <Logo className="text-primary-foreground mb-4" />
             <p className="text-primary-foreground leading-relaxed">
-              CES Tuition is online tuition for families across the UAE, taught by UK-trained subject specialists.
+              CES Tuition is online tuition for families across the UAE, taught by UK‑trained subject specialists.
             </p>
           </div>
 

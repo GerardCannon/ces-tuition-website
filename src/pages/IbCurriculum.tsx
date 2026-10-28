@@ -22,7 +22,7 @@ export function IbCurriculum() {
     >
       <PageSection title="Our lessons">
         <p>
-          Your child has one-to-one lessons with our UK-trained subject specialists on our interactive online whiteboard.
+          Your child has one-to-one lessons with our UK‑trained subject specialists on our interactive online whiteboard.
         </p>
         <p>
           Our whiteboard replicates an in-person lesson, as we share a fully interactive digital school copybook with each student.
