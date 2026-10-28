@@ -1,3 +1,4 @@
+import { homeFaqs } from './components/homeFaqData.ts'
 import { pageForRoute } from './lib/goatcounter.tsx'
 import { AREA_SERVED, faqAndBreadcrumbJsonLd, orgId, serviceNode, withService, type ServiceInfo } from './lib/structuredData.ts'
 import { WHATSAPP_GREETING } from './lib/whatsapp.tsx'
@@ -125,6 +126,17 @@ const homeJsonLd: JsonLd = {
       '@type': 'WebSite',
       name: 'CES Tuition',
       url: canonicalUrl('/'),
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: homeFaqs.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.answer,
+        },
+      })),
     },
   ],
 }
