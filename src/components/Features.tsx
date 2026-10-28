@@ -3,7 +3,7 @@ import { ChatCircle, DeviceMobile, Gift, GraduationCap, Star, Users } from '@pho
 const features = [
   {
     icon: GraduationCap,
-    title: 'UK-trained specialists',
+    title: 'UK‑trained specialists',
     description: 'Subject specialists who teach the British, IB and American curricula.',
   },
   {
