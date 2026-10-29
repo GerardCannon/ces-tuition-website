@@ -29,6 +29,7 @@ const enquiryPrefill: Partial<Record<WhatsAppPage, { curriculum?: string; subjec
   physics: { subject: 'physics' },
   biology: { subject: 'biology' },
   english: { subject: 'English' },
+  economics: { subject: 'economics' },
 }
 
 export type PageCrumb = { name: string; path: string }
