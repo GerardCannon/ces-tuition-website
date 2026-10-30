@@ -84,6 +84,9 @@ export function EconomicsTutor() {
         <p>
           If your child is studying economics at another level, message us and we'll let you know how we can help.
         </p>
+        <p>
+          We also teach <a href="/igcse-gcse-maths-tutor/" className={linkClass}>maths</a>, <a href="/english-tutor/" className={linkClass}>English</a>, <a href="/chemistry-tutor/" className={linkClass}>chemistry</a>, <a href="/physics-tutor/" className={linkClass}>physics</a> and <a href="/biology-tutor/" className={linkClass}>biology</a>.
+        </p>
       </PageSection>
 
       <PageSection title="Where to begin" muted>

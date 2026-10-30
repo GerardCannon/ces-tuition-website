@@ -76,7 +76,7 @@ export function ChemistryTutor() {
           In the IB Diploma Programme, chemistry is taken at Higher Level or Standard Level, and students complete an internal assessment. Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about the Diploma Programme.
         </p>
         <p>
-          We also teach the other sciences: see our <a href="/physics-tutor/" className={linkClass}>physics page</a> and <a href="/biology-tutor/" className={linkClass}>biology page</a>.
+          We also teach the other sciences, <a href="/physics-tutor/" className={linkClass}>physics</a> and <a href="/biology-tutor/" className={linkClass}>biology</a>, as well as <a href="/igcse-gcse-maths-tutor/" className={linkClass}>maths</a>, <a href="/english-tutor/" className={linkClass}>English</a> and <a href="/economics-tutor/" className={linkClass}>economics</a>.
         </p>
       </PageSection>
 

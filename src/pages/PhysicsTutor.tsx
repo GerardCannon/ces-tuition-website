@@ -82,7 +82,7 @@ export function PhysicsTutor() {
           In the IB Diploma Programme, physics is taken at Higher Level or Standard Level, and students complete an internal assessment. Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about the Diploma Programme.
         </p>
         <p>
-          We also teach <a href="/chemistry-tutor/" className={linkClass}>chemistry</a> and <a href="/biology-tutor/" className={linkClass}>biology</a>.
+          We also teach <a href="/chemistry-tutor/" className={linkClass}>chemistry</a> and <a href="/biology-tutor/" className={linkClass}>biology</a>, as well as <a href="/igcse-gcse-maths-tutor/" className={linkClass}>maths</a>, <a href="/english-tutor/" className={linkClass}>English</a> and <a href="/economics-tutor/" className={linkClass}>economics</a>.
         </p>
       </PageSection>
 
