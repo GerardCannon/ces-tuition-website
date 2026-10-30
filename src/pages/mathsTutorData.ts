@@ -2,7 +2,7 @@ import type { ServiceInfo } from '../lib/structuredData.ts'
 
 export const mathsCrumbs = [
   { name: 'Home', path: '/' },
-  { name: 'British curriculum', path: '/curricula/british/' },
+  { name: 'IGCSE, GCSE and British curriculum', path: '/curricula/british/' },
   { name: 'IGCSE and GCSE maths', path: '/igcse-gcse-maths-tutor/' },
 ]
 

@@ -23,10 +23,10 @@ export function BritishCurriculum() {
   return (
     <PageShell
       crumbs={britishCrumbs}
-      title="Online British curriculum tuition for families in Dubai and across the UAE"
+      title="Online IGCSE, GCSE and British curriculum tuition for families in Dubai and the UAE"
       lede={
         <p>
-          Many families in the UAE follow the British curriculum. If your child is finding a subject difficult, or simply wants to feel more confident, we can help.
+          Many schools in the UAE teach the IGCSE. If your child is finding a subject difficult, or wants to feel more confident, we can help.
         </p>
       }
       ctaTitle="Tell us about your child"
@@ -37,6 +37,9 @@ export function BritishCurriculum() {
       }
     >
       <PageSection title="Our lessons">
+        <p>
+          Every lesson is live, one-to-one and online, so families in Dubai, Abu Dhabi, Sharjah and across the UAE join without travelling.
+        </p>
         <p>
           Your child has one-to-one lessons with our UK‑trained subject specialists on our interactive online whiteboard.
         </p>
@@ -69,9 +72,18 @@ export function BritishCurriculum() {
         </p>
       </PageSection>
 
-      <PageSection title="Subjects">
+      <PageSection title="IGCSE and GCSE subjects">
         <p>
-          We teach a wide range of subjects at IGCSE, GCSE and <a href="/a-level-tutor/" className={linkClass}>A-level</a>, including maths, <a href="/english-tutor/" className={linkClass}>English</a>, <a href="/biology-tutor/" className={linkClass}>biology</a>, <a href="/chemistry-tutor/" className={linkClass}>chemistry</a>, <a href="/physics-tutor/" className={linkClass}>physics</a>, <a href="/economics-tutor/" className={linkClass}>economics</a>, business studies and computer science. If your child’s subject isn’t listed, just ask us. We also teach the IB, which you can find with our other curricula on our <a href="/" className={linkClass}>home page</a>.
+          We teach IGCSE and GCSE <a href="/igcse-gcse-maths-tutor/" className={linkClass}>maths</a>, <a href="/english-tutor/" className={linkClass}>English</a>, <a href="/chemistry-tutor/" className={linkClass}>chemistry</a>, <a href="/physics-tutor/" className={linkClass}>physics</a>, <a href="/biology-tutor/" className={linkClass}>biology</a> and <a href="/economics-tutor/" className={linkClass}>economics</a>.
+        </p>
+        <p>
+          If your child’s subject isn’t listed, just ask us. We also teach <a href="/a-level-tutor/" className={linkClass}>A-level</a>, and you can read about the IB on our <a href="/curricula/ib/" className={linkClass}>IB page</a>.
+        </p>
+      </PageSection>
+
+      <PageSection title="Years 10 and 11" muted>
+        <p>
+          IGCSE and GCSE courses usually run through Years 10 and 11. Gaps from earlier years often show up then, because the work builds on what students have already covered.
         </p>
       </PageSection>
 
