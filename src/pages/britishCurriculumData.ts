@@ -2,7 +2,7 @@ import type { ServiceInfo } from '../lib/structuredData.ts'
 
 export const britishCrumbs = [
   { name: 'Home', path: '/' },
-  { name: 'British curriculum', path: '/curricula/british/' },
+  { name: 'IGCSE, GCSE and British curriculum', path: '/curricula/british/' },
 ]
 
 export const britishFaqs = [
@@ -37,8 +37,8 @@ export const britishFaqs = [
 ]
 
 export const britishService: ServiceInfo = {
-  name: 'British curriculum tuition',
-  serviceType: 'Online British curriculum tuition',
+  name: 'IGCSE, GCSE and British curriculum tuition',
+  serviceType: 'Online IGCSE and GCSE tuition',
   description:
-    'Live one-to-one online lessons for GCSE, IGCSE and A-level students following the British curriculum, with UK-trained subject specialists.',
+    'Live one-to-one online IGCSE and GCSE lessons for students following the British curriculum, with UK-trained subject specialists.',
 }

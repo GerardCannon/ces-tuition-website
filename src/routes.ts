@@ -174,8 +174,8 @@ export const routes: SiteRoute[] = [
     path: '/curricula/british/',
     sitemap: true,
     head: socialHead({
-      title: 'Online British curriculum tutor, Dubai and UAE | CES Tuition',
-      description: 'One-to-one online GCSE, IGCSE and A-level lessons for British curriculum students in Dubai, Abu Dhabi and across the UAE. Free 30-minute trial lesson.',
+      title: 'IGCSE and GCSE tutor in Dubai, British curriculum | CES Tuition',
+      description: 'One-to-one online IGCSE and GCSE lessons for families in Dubai, Abu Dhabi and the UAE, with UK-trained subject specialists. Free 30-minute trial.',
       path: '/curricula/british/',
       jsonLd: withService(faqAndBreadcrumbJsonLd(britishFaqs, britishCrumbs, canonicalUrl), britishService, '/curricula/british/', canonicalUrl),
     }),

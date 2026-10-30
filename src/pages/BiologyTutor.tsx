@@ -73,7 +73,7 @@ export function BiologyTutor() {
 
       <PageSection title="Levels we teach" muted>
         <p>
-          We teach biology at GCSE, IGCSE and A-level, and in the IB. You can read more about A-level on our <a href="/a-level-tutor/" className={linkClass}>A-level page</a>.
+          We teach biology at GCSE, <a href="/curricula/british/" className={linkClass}>IGCSE</a> and A-level, and in the IB. You can read more about A-level on our <a href="/a-level-tutor/" className={linkClass}>A-level page</a>.
         </p>
         <p>
           In the IB Diploma Programme, biology is taken at Higher Level or Standard Level. Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about the Diploma Programme.

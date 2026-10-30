@@ -73,7 +73,7 @@ export function PhysicsTutor() {
 
       <PageSection title="Levels we teach" muted>
         <p>
-          We teach physics at GCSE, IGCSE and A-level, and in the IB.
+          We teach physics at GCSE, <a href="/curricula/british/" className={linkClass}>IGCSE</a> and A-level, and in the IB.
         </p>
         <p>
           A-level physics uses more maths than GCSE or IGCSE, and topics such as mechanics are taken further. For more on the step up to A-level, see our <a href="/a-level-tutor/" className={linkClass}>A-level page</a>.

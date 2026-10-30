@@ -67,7 +67,7 @@ export function ChemistryTutor() {
 
       <PageSection title="Levels we teach">
         <p>
-          We teach chemistry at GCSE, IGCSE and A-level, and in the IB.
+          We teach chemistry at GCSE, <a href="/curricula/british/" className={linkClass}>IGCSE</a> and A-level, and in the IB.
         </p>
         <p>
           A-level chemistry goes into more depth than GCSE or IGCSE, and the calculations get longer. You can read more about the move to A-level on our <a href="/a-level-tutor/" className={linkClass}>A-level page</a>.
