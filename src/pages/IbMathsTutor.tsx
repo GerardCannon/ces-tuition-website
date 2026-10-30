@@ -73,7 +73,7 @@ export function IbMathsTutor() {
           Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about the MYP and the Diploma Programme, and the other IB subjects we teach. If your child also takes IGCSE, GCSE or A-level maths, our <a href="/igcse-gcse-maths-tutor/" className={linkClass}>maths page</a> covers the exam boards we teach.
         </p>
         <p>
-          We also teach <a href="/physics-tutor/" className={linkClass}>physics</a>, <a href="/chemistry-tutor/" className={linkClass}>chemistry</a>, <a href="/biology-tutor/" className={linkClass}>biology</a> and <a href="/english-tutor/" className={linkClass}>English</a> in the IB.
+          We also teach <a href="/physics-tutor/" className={linkClass}>physics</a>, <a href="/chemistry-tutor/" className={linkClass}>chemistry</a>, <a href="/biology-tutor/" className={linkClass}>biology</a>, <a href="/english-tutor/" className={linkClass}>English</a> and <a href="/economics-tutor/" className={linkClass}>economics</a> in the IB.
         </p>
       </PageSection>
 

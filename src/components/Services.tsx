@@ -180,8 +180,10 @@ export function Services() {
                         <a href="/physics-tutor/" className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">physics</a>
                         {', '}
                         <a href="/biology-tutor/" className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">biology</a>
-                        {' and '}
+                        {', '}
                         <a href="/english-tutor/" className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">English</a>
+                        {' and '}
+                        <a href="/economics-tutor/" className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">economics</a>
                         {' tutors'}
                       </li>
                     ) : null}
