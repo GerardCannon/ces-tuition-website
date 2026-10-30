@@ -7,6 +7,7 @@ import { alevelCrumbs, alevelFaqs, alevelService } from './pages/alevelTutorData
 import { biologyCrumbs, biologyFaqs, biologyService } from './pages/biologyTutorData.ts'
 import { britishCrumbs, britishFaqs, britishService } from './pages/britishCurriculumData.ts'
 import { chemistryCrumbs, chemistryFaqs, chemistryService } from './pages/chemistryTutorData.ts'
+import { economicsCrumbs, economicsFaqs, economicsService } from './pages/economicsTutorData.ts'
 import { englishCrumbs, englishFaqs, englishService } from './pages/englishTutorData.ts'
 import { ibCrumbs, ibFaqs, ibService } from './pages/ibCurriculumData.ts'
 import { ibMathsCrumbs, ibMathsFaqs, ibMathsService } from './pages/ibMathsTutorData.ts'
@@ -287,6 +288,18 @@ export const routes: SiteRoute[] = [
       jsonLd: withService(faqAndBreadcrumbJsonLd(ibMathsFaqs, ibMathsCrumbs, canonicalUrl), ibMathsService, '/ib-maths-tutor/', canonicalUrl),
     }),
     whatsappMessage: "Hi Gerard, I'd like to ask about IB maths tuition for my child.",
+  },
+  {
+    id: 'economics-tutor',
+    path: '/economics-tutor/',
+    sitemap: true,
+    head: socialHead({
+      title: 'Online economics tutor in Dubai and Abu Dhabi | CES Tuition',
+      description: 'Online one-to-one GCSE, IGCSE, A-level and IB economics lessons for UAE families, with UK-trained subject specialists. Free 30-minute trial.',
+      path: '/economics-tutor/',
+      jsonLd: withService(faqAndBreadcrumbJsonLd(economicsFaqs, economicsCrumbs, canonicalUrl), economicsService, '/economics-tutor/', canonicalUrl),
+    }),
+    whatsappMessage: "Hi Gerard, I'd like to ask about economics tuition for my child.",
   },
   {
     id: 'not-found',

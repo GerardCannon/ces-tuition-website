@@ -71,7 +71,7 @@ export function BritishCurriculum() {
 
       <PageSection title="Subjects">
         <p>
-          We teach a wide range of subjects at IGCSE, GCSE and <a href="/a-level-tutor/" className={linkClass}>A-level</a>, including Maths, <a href="/english-tutor/" className={linkClass}>English</a>, <a href="/biology-tutor/" className={linkClass}>Biology</a>, <a href="/chemistry-tutor/" className={linkClass}>Chemistry</a>, <a href="/physics-tutor/" className={linkClass}>Physics</a>, Economics, Business Studies and Computer Science. If your child’s subject isn’t listed, just ask us. We also teach the IB, which you can find with our other curricula on our <a href="/" className={linkClass}>home page</a>.
+          We teach a wide range of subjects at IGCSE, GCSE and <a href="/a-level-tutor/" className={linkClass}>A-level</a>, including maths, <a href="/english-tutor/" className={linkClass}>English</a>, <a href="/biology-tutor/" className={linkClass}>biology</a>, <a href="/chemistry-tutor/" className={linkClass}>chemistry</a>, <a href="/physics-tutor/" className={linkClass}>physics</a>, <a href="/economics-tutor/" className={linkClass}>economics</a>, business studies and computer science. If your child’s subject isn’t listed, just ask us. We also teach the IB, which you can find with our other curricula on our <a href="/" className={linkClass}>home page</a>.
         </p>
       </PageSection>
 
