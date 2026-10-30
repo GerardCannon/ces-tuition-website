@@ -234,7 +234,7 @@ export const routes: SiteRoute[] = [
     path: '/chemistry-tutor/',
     sitemap: true,
     head: socialHead({
-      title: 'Online A-level and IB chemistry tutor, Dubai | CES Tuition',
+      title: 'IGCSE, A-level and IB chemistry tutor, Dubai | CES Tuition',
       description: 'One-to-one online chemistry lessons for GCSE, IGCSE, A-level and IB students in Dubai, Abu Dhabi and across the UAE, with UK-trained subject specialists.',
       path: '/chemistry-tutor/',
       jsonLd: withService(faqAndBreadcrumbJsonLd(chemistryFaqs, chemistryCrumbs, canonicalUrl), chemistryService, '/chemistry-tutor/', canonicalUrl),
@@ -246,7 +246,7 @@ export const routes: SiteRoute[] = [
     path: '/physics-tutor/',
     sitemap: true,
     head: socialHead({
-      title: 'Online A-level and IB physics tutor, Dubai | CES Tuition',
+      title: 'IGCSE, A-level and IB physics tutor, Dubai | CES Tuition',
       description: 'Online one-to-one physics lessons for GCSE, IGCSE, A-level and IB students in Dubai, Abu Dhabi and the wider UAE, with UK-trained subject specialists.',
       path: '/physics-tutor/',
       jsonLd: withService(faqAndBreadcrumbJsonLd(physicsFaqs, physicsCrumbs, canonicalUrl), physicsService, '/physics-tutor/', canonicalUrl),
@@ -258,7 +258,7 @@ export const routes: SiteRoute[] = [
     path: '/biology-tutor/',
     sitemap: true,
     head: socialHead({
-      title: 'Online A-level and IB biology tutor, Dubai | CES Tuition',
+      title: 'IGCSE, A-level and IB biology tutor, Dubai | CES Tuition',
       description: 'One-to-one biology lessons, live online, for GCSE, IGCSE, A-level and IB students in Dubai, Abu Dhabi and across the UAE. Free 30-minute trial lesson.',
       path: '/biology-tutor/',
       jsonLd: withService(faqAndBreadcrumbJsonLd(biologyFaqs, biologyCrumbs, canonicalUrl), biologyService, '/biology-tutor/', canonicalUrl),
