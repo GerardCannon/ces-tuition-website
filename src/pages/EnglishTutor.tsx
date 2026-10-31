@@ -1,3 +1,4 @@
+import { LevelEnquiry } from '@/components/LevelEnquiry'
 import { FaqSection, PageSection, PageShell } from '@/pages/PageShell.tsx'
 import { englishCrumbs, englishFaqs } from '@/pages/englishTutorData.ts'
 
@@ -75,6 +76,13 @@ export function EnglishTutor() {
         <p>
           Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about the MYP and the Diploma Programme.
         </p>
+        <LevelEnquiry
+          levels={[
+            { id: 'igcse-gcse', label: 'IGCSE or GCSE English' },
+            { id: 'alevel', label: 'A-level English' },
+            { id: 'ib', label: 'IB English' },
+          ]}
+        />
         <p>
           We also teach <a href="/igcse-gcse-maths-tutor/" className={linkClass}>maths</a>, <a href="/chemistry-tutor/" className={linkClass}>chemistry</a>, <a href="/physics-tutor/" className={linkClass}>physics</a>, <a href="/biology-tutor/" className={linkClass}>biology</a> and <a href="/economics-tutor/" className={linkClass}>economics</a>.
         </p>

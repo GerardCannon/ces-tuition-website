@@ -1,3 +1,4 @@
+import { LevelEnquiry } from '@/components/LevelEnquiry'
 import { FaqSection, PageSection, PageShell } from '@/pages/PageShell.tsx'
 import { biologyCrumbs, biologyFaqs } from '@/pages/biologyTutorData.ts'
 
@@ -78,6 +79,13 @@ export function BiologyTutor() {
         <p>
           In the IB Diploma Programme, biology is taken at Higher Level or Standard Level. Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about the Diploma Programme.
         </p>
+        <LevelEnquiry
+          levels={[
+            { id: 'igcse-gcse', label: 'IGCSE or GCSE biology' },
+            { id: 'alevel', label: 'A-level biology' },
+            { id: 'ib', label: 'IB biology' },
+          ]}
+        />
         <p>
           We also teach <a href="/chemistry-tutor/" className={linkClass}>chemistry</a> and <a href="/physics-tutor/" className={linkClass}>physics</a>, as well as <a href="/igcse-gcse-maths-tutor/" className={linkClass}>maths</a>, <a href="/english-tutor/" className={linkClass}>English</a> and <a href="/economics-tutor/" className={linkClass}>economics</a>.
         </p>

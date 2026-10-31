@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, type ReactNode } from 'react'
 
 export type WhatsAppPage = 'home' | 'british' | 'ib' | 'ibmaths' | 'american' | 'maths' | 'alevel' | 'chemistry' | 'physics' | 'biology' | 'english' | 'economics' | '404'
-export type WhatsAppPlace = 'header' | 'menu' | 'hero' | 'pricing' | 'form' | 'footer' | 'sticky'
+export type WhatsAppPlace = 'header' | 'menu' | 'hero' | 'pricing' | 'form' | 'cta' | 'footer' | 'sticky' | 'level'
 
 const pageByRouteId: Record<string, WhatsAppPage> = {
   home: 'home',
@@ -55,10 +55,12 @@ export function useAnalyticsPage() {
   return page
 }
 
-export function whatsappClick(page: WhatsAppPage, place: WhatsAppPlace) {
+export function whatsappClick(page: WhatsAppPage, place: WhatsAppPlace, detail?: string) {
+  const suffix = detail ? `-${detail}` : ''
+  const titleDetail = detail ? ` ${detail}` : ''
   return {
-    'data-goatcounter-click': `whatsapp-${page}-${place}`,
-    'data-goatcounter-title': `WhatsApp click: ${page} ${place}`,
+    'data-goatcounter-click': `whatsapp-${page}-${place}${suffix}`,
+    'data-goatcounter-title': `WhatsApp click: ${page} ${place}${titleDetail}`,
   }
 }
 

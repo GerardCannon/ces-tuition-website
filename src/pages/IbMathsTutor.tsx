@@ -1,3 +1,4 @@
+import { LevelEnquiry } from '@/components/LevelEnquiry'
 import { FaqSection, PageSection, PageShell } from '@/pages/PageShell.tsx'
 import { ibMathsCrumbs, ibMathsFaqs } from '@/pages/ibMathsTutorData.ts'
 
@@ -84,6 +85,11 @@ export function IbMathsTutor() {
         <p>
           If your child has recently moved to the UAE or changed school, the new class may be ahead in some topics. Let us know and we'll help them catch up.
         </p>
+        <LevelEnquiry
+          heading="Ask about IB maths"
+          line="Tap below and WhatsApp opens with a message ready to send. Add your child's year group too, if you can."
+          levels={[{ id: 'ib', label: 'IB maths' }]}
+        />
       </PageSection>
 
       <FaqSection items={ibMathsFaqs} />

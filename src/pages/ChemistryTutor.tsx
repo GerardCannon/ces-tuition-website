@@ -1,3 +1,4 @@
+import { LevelEnquiry } from '@/components/LevelEnquiry'
 import { FaqSection, PageSection, PageShell } from '@/pages/PageShell.tsx'
 import { chemistryCrumbs, chemistryFaqs } from '@/pages/chemistryTutorData.ts'
 
@@ -75,6 +76,13 @@ export function ChemistryTutor() {
         <p>
           In the IB Diploma Programme, chemistry is taken at Higher Level or Standard Level, and students complete an internal assessment. Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about the Diploma Programme.
         </p>
+        <LevelEnquiry
+          levels={[
+            { id: 'igcse-gcse', label: 'IGCSE or GCSE chemistry' },
+            { id: 'alevel', label: 'A-level chemistry' },
+            { id: 'ib', label: 'IB chemistry' },
+          ]}
+        />
         <p>
           We also teach the other sciences, <a href="/physics-tutor/" className={linkClass}>physics</a> and <a href="/biology-tutor/" className={linkClass}>biology</a>, as well as <a href="/igcse-gcse-maths-tutor/" className={linkClass}>maths</a>, <a href="/english-tutor/" className={linkClass}>English</a> and <a href="/economics-tutor/" className={linkClass}>economics</a>.
         </p>

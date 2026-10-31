@@ -146,7 +146,7 @@ export function PageShell({
               size="lg"
               className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold tracking-wide text-base sm:text-lg px-6 h-12"
             >
-              <a href={whatsappHref()} {...whatsappClick(page, 'form')} className="flex items-center gap-2">
+              <a href={whatsappHref()} {...whatsappClick(page, 'cta')} className="flex items-center gap-2">
                 <WhatsappLogo size={22} weight="fill" aria-hidden="true" />
                 Chat with us on WhatsApp
               </a>

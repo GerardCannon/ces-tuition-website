@@ -215,7 +215,7 @@ export const routes: SiteRoute[] = [
       path: '/igcse-gcse-maths-tutor/',
       jsonLd: withService(faqAndBreadcrumbJsonLd(mathsFaqs, mathsCrumbs, canonicalUrl), mathsService, '/igcse-gcse-maths-tutor/', canonicalUrl),
     }),
-    whatsappMessage: "Hi Gerard, I'd like to ask about IGCSE maths tuition for my child.",
+    whatsappMessage: "Hi Gerard, I'd like to ask about maths tuition for my child.",
   },
   {
     id: 'a-level-tutor',
