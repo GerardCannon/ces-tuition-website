@@ -1,4 +1,5 @@
 import { Card } from '@/components/ui/card'
+import { LevelEnquiry } from '@/components/LevelEnquiry'
 import { FaqSection, PageSection, PageShell } from '@/pages/PageShell.tsx'
 import { mathsCrumbs, mathsFaqs } from '@/pages/mathsTutorData.ts'
 
@@ -64,6 +65,12 @@ export function MathsTutor() {
         <p>
           If your child has recently changed school, their new class may be partway through a topic. If so, let us know and we’ll pick up from where the class is, rather than starting from the beginning.
         </p>
+        <LevelEnquiry
+          levels={[
+            { id: 'igcse-gcse', label: 'IGCSE or GCSE maths' },
+            { id: 'alevel', label: 'A-level maths' },
+          ]}
+        />
       </PageSection>
 
       <PageSection

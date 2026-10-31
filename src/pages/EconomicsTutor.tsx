@@ -1,3 +1,4 @@
+import { LevelEnquiry } from '@/components/LevelEnquiry'
 import { FaqSection, PageSection, PageShell } from '@/pages/PageShell.tsx'
 import { economicsCrumbs, economicsFaqs } from '@/pages/economicsTutorData.ts'
 
@@ -81,6 +82,13 @@ export function EconomicsTutor() {
         <p>
           In the IB Diploma Programme, economics is one of the subjects students can choose. Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about the Diploma Programme and the other IB subjects we teach.
         </p>
+        <LevelEnquiry
+          levels={[
+            { id: 'igcse-gcse', label: 'IGCSE or GCSE economics' },
+            { id: 'alevel', label: 'A-level economics' },
+            { id: 'ib', label: 'IB economics' },
+          ]}
+        />
         <p>
           If your child is studying economics at another level, message us and we'll let you know how we can help.
         </p>
