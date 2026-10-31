@@ -12,14 +12,20 @@ function levelMessage(label: string) {
   return `Hi Gerard, I'd like to ask about ${label} tuition for my child.`
 }
 
-export function LevelEnquiry({ levels }: { levels: readonly LevelEnquiryItem[] }) {
+export function LevelEnquiry({
+  levels,
+  heading = "Ask about your child's level",
+  line = "Choose a level and WhatsApp opens with a message ready to send. Add your child's year group too, if you can.",
+}: {
+  levels: readonly LevelEnquiryItem[]
+  heading?: string
+  line?: string
+}) {
   const page = useAnalyticsPage()
   return (
     <div className="max-w-full">
-      <h3 className="text-xl font-bold text-foreground mb-2">Ask about your child's level</h3>
-      <p>
-        Choose a level and WhatsApp opens with a message ready to send. Add your child's year group too, if you can.
-      </p>
+      <h3 className="text-xl font-bold text-foreground mb-2">{heading}</h3>
+      <p>{line}</p>
       <div className="flex max-w-full flex-col gap-3 pt-2 sm:flex-row sm:flex-wrap">
         {levels.map((level) => (
           <Button
