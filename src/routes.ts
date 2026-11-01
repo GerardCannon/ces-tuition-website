@@ -270,7 +270,7 @@ export const routes: SiteRoute[] = [
     path: '/english-tutor/',
     sitemap: true,
     head: socialHead({
-      title: 'Online English tutor in Dubai and Abu Dhabi | CES Tuition',
+      title: 'IGCSE, A-level and IB English tutor, Dubai | CES Tuition',
       description: 'One-to-one online English lessons for GCSE, IGCSE, A-level and IB students in Dubai, Abu Dhabi and across the UAE, with UK-trained subject specialists.',
       path: '/english-tutor/',
       jsonLd: withService(faqAndBreadcrumbJsonLd(englishFaqs, englishCrumbs, canonicalUrl), englishService, '/english-tutor/', canonicalUrl),

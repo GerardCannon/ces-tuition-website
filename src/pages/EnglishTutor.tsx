@@ -8,7 +8,7 @@ export function EnglishTutor() {
   return (
     <PageShell
       crumbs={englishCrumbs}
-      title="English tutor for families in Dubai and the UAE"
+      title="Online GCSE, IGCSE, A-level and IB English tutor for families in Dubai and the UAE"
       lede={
         <p>
           Strong reading and writing help in every subject, not only in English lessons. If your child is finding English difficult, or simply wants to feel more confident, we can help.
@@ -74,7 +74,7 @@ export function EnglishTutor() {
           A-level English goes into more depth than GCSE or IGCSE. For more on the step up to A-level, see our <a href="/a-level-tutor/" className={linkClass}>A-level page</a>.
         </p>
         <p>
-          Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about the MYP and the Diploma Programme.
+          Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about how we support IB students.
         </p>
         <LevelEnquiry
           levels={[
