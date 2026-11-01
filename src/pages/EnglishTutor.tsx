@@ -8,7 +8,7 @@ export function EnglishTutor() {
   return (
     <PageShell
       crumbs={englishCrumbs}
-      title="Online GCSE, IGCSE, A-level and IB English tutor for families in Dubai and the UAE"
+      title="Online GCSE, IGCSE, A‑level and IB English tutor for families in Dubai and the UAE"
       lede={
         <p>
           Strong reading and writing help in every subject, not only in English lessons. If your child is finding English difficult, or simply wants to feel more confident, we can help.
