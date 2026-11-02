@@ -294,8 +294,8 @@ export const routes: SiteRoute[] = [
     path: '/economics-tutor/',
     sitemap: true,
     head: socialHead({
-      title: 'Online economics tutor in Dubai and Abu Dhabi | CES Tuition',
-      description: 'Online one-to-one GCSE, IGCSE, A-level and IB economics lessons for UAE families, with UK-trained subject specialists. Free 30-minute trial.',
+      title: 'IGCSE, A-level and IB economics tutor, Dubai | CES Tuition',
+      description: 'One-to-one online economics lessons for GCSE, IGCSE, A-level and IB students in Dubai, Abu Dhabi and the UAE, with UK-trained subject specialists. Free trial.',
       path: '/economics-tutor/',
       jsonLd: withService(faqAndBreadcrumbJsonLd(economicsFaqs, economicsCrumbs, canonicalUrl), economicsService, '/economics-tutor/', canonicalUrl),
     }),

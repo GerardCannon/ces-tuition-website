@@ -8,7 +8,7 @@ export function EconomicsTutor() {
   return (
     <PageShell
       crumbs={economicsCrumbs}
-      title="Economics tutor for families in Dubai and the UAE"
+      title="Online GCSE, IGCSE, A‑level and IB economics tutor for families in Dubai and the UAE"
       lede={
         <p>
           Economics asks students to explain, draw and argue, not just remember. If your child is new to the subject or finds it hard to turn what they know into clear written answers, we can help.
