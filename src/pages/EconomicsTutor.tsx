@@ -71,7 +71,7 @@ export function EconomicsTutor() {
 
       <PageSection title="Levels we teach">
         <p>
-          We teach economics at GCSE, IGCSE and A-level, and in the IB Diploma Programme (DP).
+          We teach economics at GCSE, IGCSE and A-level, and in the IB MYP and Diploma Programme (DP).
         </p>
         <p>
           At GCSE and IGCSE, students meet the key ideas for the first time and learn to explain them clearly in written answers. You can read more on our <a href="/curricula/british/" className={linkClass}>British curriculum page</a>.
@@ -80,7 +80,7 @@ export function EconomicsTutor() {
           Many students start economics fresh at A-level, and the course moves from the basic ideas to longer essays quite quickly. You can read more about the move to A-level on our <a href="/a-level-tutor/" className={linkClass}>A-level page</a>.
         </p>
         <p>
-          In the IB Diploma Programme, economics is one of the subjects students can choose. Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about the Diploma Programme and the other IB subjects we teach.
+          In the DP, economics is one of the subjects students can choose, and in the MYP it can be part of individuals and societies. Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about the MYP, the Diploma Programme and the other IB subjects we teach.
         </p>
         <LevelEnquiry
           levels={[
@@ -99,7 +99,7 @@ export function EconomicsTutor() {
 
       <PageSection title="Where to begin" muted>
         <p>
-          When you message us, it helps to tell us your child's year group, which course they take (GCSE, IGCSE, A-level or IB Diploma), and which exam board their school uses if you know it. If you're not sure, your child's school will be able to tell you, or we can work it out together.
+          When you message us, it helps to tell us your child's year group, which course they take (GCSE, IGCSE, A-level, IB MYP or IB Diploma), and which exam board their school uses if you know it. If you're not sure, your child's school will be able to tell you, or we can work it out together.
         </p>
         <p>
           If your child has just started economics, or has recently moved to the UAE or changed school, let us know. We'll start with the basics their class is building on.
