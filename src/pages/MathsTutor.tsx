@@ -102,7 +102,7 @@ export function MathsTutor() {
 
       <PageSection title="Other subjects" muted>
         <p>
-          We also teach <a href="/english-tutor/" className={linkClass}>English</a>, <a href="/chemistry-tutor/" className={linkClass}>chemistry</a>, <a href="/physics-tutor/" className={linkClass}>physics</a>, <a href="/biology-tutor/" className={linkClass}>biology</a> and <a href="/economics-tutor/" className={linkClass}>economics</a>. See our <a href="/curricula/british/" className={linkClass}>IGCSE and GCSE page</a> for the full list, or ask us on WhatsApp. We also teach <a href="/ib-maths-tutor/" className={linkClass}>IB maths</a>.
+          We also teach <a href="/english-tutor/" className={linkClass}>English</a>, <a href="/chemistry-tutor/" className={linkClass}>chemistry</a>, <a href="/physics-tutor/" className={linkClass}>physics</a>, <a href="/biology-tutor/" className={linkClass}>biology</a> and <a href="/economics-tutor/" className={linkClass}>economics</a>. See our <a href="/curricula/british/" className={linkClass}>IGCSE and GCSE page</a> for the full list, or ask us on WhatsApp. We also teach <a href="/ib-maths-tutor/" className={linkClass}>IB maths</a> for MYP and Diploma Programme (DP) students.
         </p>
       </PageSection>
 

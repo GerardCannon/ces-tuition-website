@@ -68,13 +68,13 @@ export function ChemistryTutor() {
 
       <PageSection title="Levels we teach">
         <p>
-          We teach chemistry at GCSE, <a href="/curricula/british/" className={linkClass}>IGCSE</a> and A-level, and in the IB.
+          We teach chemistry at GCSE, <a href="/curricula/british/" className={linkClass}>IGCSE</a> and A-level, and in the IB MYP and Diploma Programme (DP).
         </p>
         <p>
           A-level chemistry goes into more depth than GCSE or IGCSE, and the calculations get longer. You can read more about the move to A-level on our <a href="/a-level-tutor/" className={linkClass}>A-level page</a>.
         </p>
         <p>
-          In the IB Diploma Programme, chemistry is taken at Higher Level or Standard Level, and students complete an internal assessment. Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about the Diploma Programme.
+          In the DP, chemistry is taken at Higher Level or Standard Level, and students complete an internal assessment. Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about the MYP and the Diploma Programme.
         </p>
         <LevelEnquiry
           levels={[

@@ -8,7 +8,7 @@ export function IbMathsTutor() {
   return (
     <PageShell
       crumbs={ibMathsCrumbs}
-      title="Online IB maths tutor for families in Dubai and the UAE"
+      title="Online IB maths tutor for MYP and Diploma students in Dubai and the UAE"
       lede={
         <p>
           IB maths can feel like a big step up. Our lessons follow the course your child is studying at school, whether they need to catch up or want to aim for a higher grade.
@@ -23,7 +23,7 @@ export function IbMathsTutor() {
     >
       <PageSection title="Our lessons">
         <p>
-          We teach IB maths to families in Dubai, Abu Dhabi, Sharjah and across the UAE. Every lesson is live and online, so there's no travel involved.
+          We teach IB maths in both the MYP and the Diploma Programme (DP) to families in Dubai, Abu Dhabi, Sharjah and across the UAE. Every lesson is live and online, so there's no travel involved.
         </p>
         <p>
           Your child has one-to-one maths lessons with our UK‑trained subject specialists on our interactive online whiteboard.

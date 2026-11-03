@@ -32,5 +32,5 @@ export const englishService: ServiceInfo = {
   name: 'English tuition',
   serviceType: 'Online English tuition',
   description:
-    'Live one-to-one online English lessons for GCSE, IGCSE, A-level and IB students, with UK-trained subject specialists.',
+    'Live one-to-one online English lessons for GCSE, IGCSE, A-level, IB MYP and IB Diploma (DP) students, with UK-trained subject specialists.',
 }
