@@ -7,10 +7,10 @@ export function IbCurriculum() {
   return (
     <PageShell
       crumbs={ibCrumbs}
-      title="Online IB tuition for families in Dubai and across the UAE"
+      title="Online IB MYP and Diploma tuition for families in Dubai and across the UAE"
       lede={
         <p>
-          Many families in the UAE follow the International Baccalaureate (IB). If your child is finding a subject difficult, or simply wants to feel more confident, we can help.
+          Many families in the UAE follow the International Baccalaureate (IB), from the Middle Years Programme (MYP) through to the Diploma Programme (DP). If your child is finding a subject difficult, or simply wants to feel more confident, we can help.
         </p>
       }
       ctaTitle="Tell us about your child"
@@ -70,7 +70,7 @@ export function IbCurriculum() {
 
       <PageSection title="Subjects" muted>
         <p>
-          We teach a range of IB subjects, such as <a href="/ib-maths-tutor/" className={linkClass}>maths</a>, <a href="/physics-tutor/" className={linkClass}>physics</a>, <a href="/chemistry-tutor/" className={linkClass}>chemistry</a>, <a href="/biology-tutor/" className={linkClass}>biology</a>, <a href="/economics-tutor/" className={linkClass}>economics</a>, business management, <a href="/english-tutor/" className={linkClass}>English</a> and computer science. If your child's subject isn't listed, just ask us. We also teach the British curriculum, which you can read about on our <a href="/curricula/british/" className={linkClass}>British curriculum page</a>.
+          We teach a range of IB subjects in both the MYP and the DP, such as <a href="/ib-maths-tutor/" className={linkClass}>maths</a>, <a href="/physics-tutor/" className={linkClass}>physics</a>, <a href="/chemistry-tutor/" className={linkClass}>chemistry</a>, <a href="/biology-tutor/" className={linkClass}>biology</a>, <a href="/economics-tutor/" className={linkClass}>economics</a>, business management, <a href="/english-tutor/" className={linkClass}>English</a> and computer science. If your child's subject isn't listed, just ask us. We also teach the British curriculum, which you can read about on our <a href="/curricula/british/" className={linkClass}>British curriculum page</a>.
         </p>
       </PageSection>
 

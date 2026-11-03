@@ -99,7 +99,7 @@ const homeService: ServiceInfo = {
   name: 'Online one-to-one tuition',
   serviceType: 'Online tuition',
   description:
-    'Live one-to-one online lessons in GCSE, IGCSE, A-level, IB and American curriculum subjects, with UK-trained subject specialists.',
+    'Live one-to-one online lessons in GCSE, IGCSE, A-level, IB MYP, IB Diploma (DP) and American curriculum subjects, with UK-trained subject specialists.',
 }
 
 const homeJsonLd: JsonLd = {
@@ -152,18 +152,18 @@ export const routes: SiteRoute[] = [
     keepJsonLd: true,
     head: {
       title: 'Online tutors in Dubai, Abu Dhabi and the UAE | CES Tuition',
-      description: 'Live one-to-one online tuition for families in Dubai, Abu Dhabi, Sharjah and the UAE: GCSE, IGCSE, A-level, IB and American curriculum. 38 five-star reviews.',
+      description: 'Live one-to-one online tuition in Dubai, Abu Dhabi, Sharjah and the UAE: GCSE, IGCSE, A-level, IB MYP and DP, and American curriculum. 38 five-star reviews.',
       canonical: 'https://www.cestuition.com/',
       ogType: 'website',
       ogUrl: 'https://www.cestuition.com/',
       ogTitle: 'CES Tuition: UK-trained online tutors for UAE families',
-      ogDescription: 'GCSE, IGCSE, A-level, IB and American curriculum, taught live online across all emirates.',
+      ogDescription: 'GCSE, IGCSE, A-level, IB MYP and IB Diploma (DP), and American curriculum, taught live online across all emirates.',
       ogImage: OG_IMAGE,
       ogImageWidth: '1200',
       ogImageHeight: '630',
       twitterCard: 'summary_large_image',
       twitterTitle: 'CES Tuition: UK-trained online tutors for UAE families',
-      twitterDescription: 'GCSE, IGCSE, A-level, IB and American curriculum, taught live online across all emirates.',
+      twitterDescription: 'GCSE, IGCSE, A-level, IB MYP and IB Diploma (DP), and American curriculum, taught live online across all emirates.',
       twitterImage: OG_IMAGE,
       jsonLd: homeJsonLd,
     },
@@ -235,7 +235,7 @@ export const routes: SiteRoute[] = [
     sitemap: true,
     head: socialHead({
       title: 'IGCSE, A-level and IB chemistry tutor, Dubai | CES Tuition',
-      description: 'One-to-one online chemistry lessons for GCSE, IGCSE, A-level and IB students in Dubai, Abu Dhabi and across the UAE, with UK-trained subject specialists.',
+      description: 'One-to-one online chemistry lessons for GCSE, IGCSE, A-level, IB MYP and Diploma students in Dubai, Abu Dhabi and the UAE, with UK-trained subject specialists.',
       path: '/chemistry-tutor/',
       jsonLd: withService(faqAndBreadcrumbJsonLd(chemistryFaqs, chemistryCrumbs, canonicalUrl), chemistryService, '/chemistry-tutor/', canonicalUrl),
     }),
@@ -247,7 +247,7 @@ export const routes: SiteRoute[] = [
     sitemap: true,
     head: socialHead({
       title: 'IGCSE, A-level and IB physics tutor, Dubai | CES Tuition',
-      description: 'Online one-to-one physics lessons for GCSE, IGCSE, A-level and IB students in Dubai, Abu Dhabi and the wider UAE, with UK-trained subject specialists.',
+      description: 'Online one-to-one physics lessons for GCSE, IGCSE, A-level, IB MYP and Diploma students in Dubai, Abu Dhabi and the UAE, with UK-trained subject specialists.',
       path: '/physics-tutor/',
       jsonLd: withService(faqAndBreadcrumbJsonLd(physicsFaqs, physicsCrumbs, canonicalUrl), physicsService, '/physics-tutor/', canonicalUrl),
     }),
@@ -259,7 +259,7 @@ export const routes: SiteRoute[] = [
     sitemap: true,
     head: socialHead({
       title: 'IGCSE, A-level and IB biology tutor, Dubai | CES Tuition',
-      description: 'One-to-one biology lessons, live online, for GCSE, IGCSE, A-level and IB students in Dubai, Abu Dhabi and across the UAE. Free 30-minute trial lesson.',
+      description: 'One-to-one biology lessons, live online, for GCSE, IGCSE, A-level, IB MYP and Diploma students in Dubai, Abu Dhabi and the UAE. Free 30-minute trial lesson.',
       path: '/biology-tutor/',
       jsonLd: withService(faqAndBreadcrumbJsonLd(biologyFaqs, biologyCrumbs, canonicalUrl), biologyService, '/biology-tutor/', canonicalUrl),
     }),
@@ -271,7 +271,7 @@ export const routes: SiteRoute[] = [
     sitemap: true,
     head: socialHead({
       title: 'IGCSE, A-level and IB English tutor, Dubai | CES Tuition',
-      description: 'One-to-one online English lessons for GCSE, IGCSE, A-level and IB students in Dubai, Abu Dhabi and across the UAE, with UK-trained subject specialists.',
+      description: 'One-to-one online English lessons for GCSE, IGCSE, A-level, IB MYP and Diploma students in Dubai, Abu Dhabi and the UAE, with UK-trained subject specialists.',
       path: '/english-tutor/',
       jsonLd: withService(faqAndBreadcrumbJsonLd(englishFaqs, englishCrumbs, canonicalUrl), englishService, '/english-tutor/', canonicalUrl),
     }),
@@ -283,7 +283,7 @@ export const routes: SiteRoute[] = [
     sitemap: true,
     head: socialHead({
       title: 'Online IB maths tutor in Dubai and Abu Dhabi | CES Tuition',
-      description: 'One-to-one online IB maths lessons for students in Dubai, Abu Dhabi, Sharjah and across the UAE, with UK-trained subject specialists. Free 30-minute trial.',
+      description: 'One-to-one online IB maths lessons for MYP and Diploma students in Dubai, Abu Dhabi, Sharjah and the UAE, with UK-trained specialists. Free 30-minute trial.',
       path: '/ib-maths-tutor/',
       jsonLd: withService(faqAndBreadcrumbJsonLd(ibMathsFaqs, ibMathsCrumbs, canonicalUrl), ibMathsService, '/ib-maths-tutor/', canonicalUrl),
     }),
@@ -295,7 +295,7 @@ export const routes: SiteRoute[] = [
     sitemap: true,
     head: socialHead({
       title: 'IGCSE, A-level and IB economics tutor, Dubai | CES Tuition',
-      description: 'One-to-one online economics lessons for GCSE, IGCSE, A-level and IB students in Dubai, Abu Dhabi and the UAE, with UK-trained subject specialists. Free trial.',
+      description: 'One-to-one online economics lessons for GCSE, IGCSE, A-level and IB Diploma students in Dubai, Abu Dhabi and the UAE, with UK-trained specialists. Free trial.',
       path: '/economics-tutor/',
       jsonLd: withService(faqAndBreadcrumbJsonLd(economicsFaqs, economicsCrumbs, canonicalUrl), economicsService, '/economics-tutor/', canonicalUrl),
     }),

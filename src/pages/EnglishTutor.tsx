@@ -68,13 +68,13 @@ export function EnglishTutor() {
 
       <PageSection title="Levels we teach">
         <p>
-          We teach English at GCSE, IGCSE and A-level, and in the IB.
+          We teach English at GCSE, IGCSE and A-level, and in the IB MYP and Diploma Programme (DP).
         </p>
         <p>
           A-level English goes into more depth than GCSE or IGCSE. For more on the step up to A-level, see our <a href="/a-level-tutor/" className={linkClass}>A-level page</a>.
         </p>
         <p>
-          Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about how we support IB students.
+          Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about how we support students in the MYP and the DP.
         </p>
         <LevelEnquiry
           levels={[

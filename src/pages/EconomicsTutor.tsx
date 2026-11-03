@@ -71,7 +71,7 @@ export function EconomicsTutor() {
 
       <PageSection title="Levels we teach">
         <p>
-          We teach economics at GCSE, IGCSE, A-level and in the IB.
+          We teach economics at GCSE, IGCSE and A-level, and in the IB Diploma Programme (DP).
         </p>
         <p>
           At GCSE and IGCSE, students meet the key ideas for the first time and learn to explain them clearly in written answers. You can read more on our <a href="/curricula/british/" className={linkClass}>British curriculum page</a>.
@@ -99,7 +99,7 @@ export function EconomicsTutor() {
 
       <PageSection title="Where to begin" muted>
         <p>
-          When you message us, it helps to tell us your child's year group, which course they take (GCSE, IGCSE, A-level or IB), and which exam board their school uses if you know it. If you're not sure, your child's school will be able to tell you, or we can work it out together.
+          When you message us, it helps to tell us your child's year group, which course they take (GCSE, IGCSE, A-level or IB Diploma), and which exam board their school uses if you know it. If you're not sure, your child's school will be able to tell you, or we can work it out together.
         </p>
         <p>
           If your child has just started economics, or has recently moved to the UAE or changed school, let us know. We'll start with the basics their class is building on.

@@ -73,7 +73,7 @@ export function AmericanCurriculum() {
 
       <PageSection title="Other curricula">
         <p>
-          We also teach the British curriculum and the IB, which you can read about on our <a href="/curricula/british/" className={linkClass}>British curriculum page</a> and our <a href="/curricula/ib/" className={linkClass}>IB page</a>.
+          We also teach the British curriculum and the IB MYP and Diploma Programme (DP), which you can read about on our <a href="/curricula/british/" className={linkClass}>British curriculum page</a> and our <a href="/curricula/ib/" className={linkClass}>IB page</a>.
         </p>
       </PageSection>
 

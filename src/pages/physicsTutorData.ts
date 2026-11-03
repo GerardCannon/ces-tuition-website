@@ -32,5 +32,5 @@ export const physicsService: ServiceInfo = {
   name: 'Physics tuition',
   serviceType: 'Online physics tuition',
   description:
-    'Live one-to-one online physics lessons for GCSE, IGCSE, A-level and IB students, with UK-trained subject specialists.',
+    'Live one-to-one online physics lessons for GCSE, IGCSE, A-level, IB MYP and IB Diploma (DP) students, with UK-trained subject specialists.',
 }

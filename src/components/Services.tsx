@@ -95,7 +95,7 @@ const services: {
   {
     title: 'IB',
     href: '/curricula/ib/',
-    description: 'Lessons for students taking the International Baccalaureate.',
+    description: 'Lessons for students in the IB Middle Years Programme (MYP) and Diploma Programme (DP).',
     graphic: <IbGlobe />,
     links: [
       { href: '/curricula/ib/', label: 'IB tutor' },
@@ -132,7 +132,7 @@ export function Services() {
             Curricula we teach
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-            British, IB and American curricula, all taught live online.
+            British, IB (MYP and DP) and American curricula, all taught live online.
           </p>
         </div>
 

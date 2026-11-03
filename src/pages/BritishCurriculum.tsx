@@ -77,7 +77,7 @@ export function BritishCurriculum() {
           We teach IGCSE and GCSE <a href="/igcse-gcse-maths-tutor/" className={linkClass}>maths</a>, <a href="/english-tutor/" className={linkClass}>English</a>, <a href="/chemistry-tutor/" className={linkClass}>chemistry</a>, <a href="/physics-tutor/" className={linkClass}>physics</a>, <a href="/biology-tutor/" className={linkClass}>biology</a> and <a href="/economics-tutor/" className={linkClass}>economics</a>.
         </p>
         <p>
-          If your child’s subject isn’t listed, just ask us. We also teach <a href="/a-level-tutor/" className={linkClass}>A-level</a>, and you can read about the IB on our <a href="/curricula/ib/" className={linkClass}>IB page</a>.
+          If your child’s subject isn’t listed, just ask us. We also teach <a href="/a-level-tutor/" className={linkClass}>A-level</a>, and you can read about the IB MYP and Diploma Programme (DP) on our <a href="/curricula/ib/" className={linkClass}>IB page</a>.
         </p>
       </PageSection>
 

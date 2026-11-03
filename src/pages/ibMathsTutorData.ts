@@ -31,5 +31,5 @@ export const ibMathsFaqs = [
 export const ibMathsService: ServiceInfo = {
   name: 'IB maths tuition',
   serviceType: 'Online IB maths tuition',
-  description: 'Live one-to-one online IB maths lessons, with UK-trained subject specialists.',
+  description: 'Live one-to-one online IB maths lessons for MYP and Diploma Programme (DP) students, with UK-trained subject specialists.',
 }
