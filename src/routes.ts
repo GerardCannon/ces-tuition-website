@@ -295,7 +295,7 @@ export const routes: SiteRoute[] = [
     sitemap: true,
     head: socialHead({
       title: 'IGCSE, A-level and IB economics tutor, Dubai | CES Tuition',
-      description: 'One-to-one online economics lessons for GCSE, IGCSE, A-level and IB Diploma students in Dubai, Abu Dhabi and the UAE, with UK-trained specialists. Free trial.',
+      description: 'One-to-one online economics lessons for GCSE, IGCSE, A-level, IB MYP and Diploma students in Dubai, Abu Dhabi and the UAE, with UK-trained tutors. Free trial.',
       path: '/economics-tutor/',
       jsonLd: withService(faqAndBreadcrumbJsonLd(economicsFaqs, economicsCrumbs, canonicalUrl), economicsService, '/economics-tutor/', canonicalUrl),
     }),
