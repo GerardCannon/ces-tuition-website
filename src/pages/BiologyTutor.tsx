@@ -79,6 +79,9 @@ export function BiologyTutor() {
         <p>
           In the DP, biology is taken at Higher Level or Standard Level. Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about the MYP and the Diploma Programme.
         </p>
+        <p>
+          At IGCSE we teach Edexcel and OxfordAQA biology; at A-level we teach Edexcel and AQA.
+        </p>
         <LevelEnquiry
           levels={[
             { id: 'igcse-gcse', label: 'IGCSE or GCSE biology' },

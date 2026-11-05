@@ -20,7 +20,7 @@ export const biologyFaqs = [
   },
   {
     question: 'Which exam boards do you cover?',
-    answer: 'We teach students following Edexcel, Cambridge and OxfordAQA biology courses.',
+    answer: 'For biology we cover Edexcel at IGCSE and A-level, OxfordAQA at IGCSE, and AQA at A-level. Send us the board on WhatsApp if you are unsure which one your school uses.',
   },
   {
     question: 'Can you help with an IB Diploma internal assessment?',
