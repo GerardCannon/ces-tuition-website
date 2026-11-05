@@ -20,7 +20,7 @@ export const chemistryFaqs = [
   },
   {
     question: 'Which exam boards do you cover?',
-    answer: 'We teach students following Edexcel, Cambridge and OxfordAQA chemistry courses.',
+    answer: 'For chemistry we cover Edexcel at IGCSE, and IB at MYP and Diploma level. Send us the board on WhatsApp if you are unsure which one your school uses.',
   },
   {
     question: 'Does my child need to be good at maths for chemistry?',

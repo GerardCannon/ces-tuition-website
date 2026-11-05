@@ -76,6 +76,9 @@ export function ChemistryTutor() {
         <p>
           In the DP, chemistry is taken at Higher Level or Standard Level, and students complete an internal assessment. Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about the MYP and the Diploma Programme.
         </p>
+        <p>
+          At IGCSE we teach Edexcel chemistry. We also teach IB chemistry at MYP and Diploma.
+        </p>
         <LevelEnquiry
           levels={[
             { id: 'igcse-gcse', label: 'IGCSE or GCSE chemistry' },
