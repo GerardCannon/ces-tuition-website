@@ -1,4 +1,7 @@
 import { createContext, useContext, useEffect, type ReactNode } from 'react'
+import { bindGoatCounterClicks } from './bindGoatCounter.ts'
+
+export { bindGoatCounterClicks } from './bindGoatCounter.ts'
 
 export type WhatsAppPage = 'home' | 'british' | 'ib' | 'ibmaths' | 'american' | 'maths' | 'alevel' | 'chemistry' | 'physics' | 'biology' | 'english' | 'economics' | '404'
 export type WhatsAppPlace = 'header' | 'menu' | 'hero' | 'pricing' | 'form' | 'cta' | 'footer' | 'sticky' | 'level'
@@ -17,15 +20,6 @@ const pageByRouteId: Record<string, WhatsAppPage> = {
   'ib-maths-tutor': 'ibmaths',
   'economics-tutor': 'economics',
   'not-found': '404',
-}
-
-declare global {
-  interface Window {
-    goatcounter?: {
-      count?: (vars: { path: string; title: string; event: boolean }) => void
-      bind_events?: () => void
-    }
-  }
 }
 
 const AnalyticsPageContext = createContext<WhatsAppPage | null>(null)
@@ -61,15 +55,5 @@ export function whatsappClick(page: WhatsAppPage, place: WhatsAppPlace, detail?:
   return {
     'data-goatcounter-click': `whatsapp-${page}-${place}${suffix}`,
     'data-goatcounter-title': `WhatsApp click: ${page} ${place}${titleDetail}`,
-  }
-}
-
-// count.js only binds elements already in the document. Call this again after
-// hydration and after the mobile menu mounts its link.
-export function bindGoatCounterClicks() {
-  try {
-    window.goatcounter?.bind_events?.()
-  } catch {
-    // A blocked script must not break the page.
   }
 }

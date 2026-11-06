@@ -1,23 +1,12 @@
-import { createRoot, hydrateRoot } from 'react-dom/client'
-import { App } from './App.tsx'
-import { pages } from './pageLoaders.ts'
-import { resolveRoute } from './routes.ts'
+import './main.css'
+import { startIslands } from './islands.ts'
 
-import "./main.css"
-
-const route = resolveRoute(
-  document.documentElement.getAttribute('data-route'),
-  window.location.pathname,
-)
-const Page = pages[route.id]
-if (!Page) throw new Error(`No page for ${route.id}`)
-const container = document.getElementById('root')!
-const tree = <App route={route} Page={Page} />
-
-// The production build fills #root before this script runs. Dev serves the
-// empty shell in index.html, so there is nothing to hydrate.
-if (container.hasChildNodes()) {
-  hydrateRoot(container, tree)
+// The published pages are already prerendered. Shipping React to hydrate them
+// pulled every page, icon weight and tailwind-merge into one bundle, and most
+// of that JavaScript never ran. Production only wires the mobile menu and the
+// enquiry form. Dev still renders with React because index.html's #root is empty.
+if (import.meta.env.DEV) {
+  void import('./devApp.tsx')
 } else {
-  createRoot(container).render(tree)
+  startIslands()
 }

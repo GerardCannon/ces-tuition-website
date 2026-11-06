@@ -1,6 +1,7 @@
 import { FormEvent } from 'react'
 import { Button } from '@/components/ui/button'
 import { WhatsappLogo } from '@phosphor-icons/react'
+import { countWhatsappHomeForm } from '@/lib/bindGoatCounter'
 import { useAnalyticsPage, whatsappClick } from '@/lib/goatcounter'
 import { useWhatsappLink } from '@/lib/whatsapp'
 
@@ -28,17 +29,7 @@ export function EnquiryForm({
     ].join('\n')
     // The homepage form records the click in script. Inner pages use the
     // data-goatcounter-click attribute on the submit button instead.
-    if (page === 'home') {
-      try {
-        window.goatcounter?.count?.({
-          path: 'whatsapp-home-form',
-          title: 'WhatsApp click: home form',
-          event: true,
-        })
-      } catch {
-        // A blocked script must not stop WhatsApp from opening.
-      }
-    }
+    if (page === 'home') countWhatsappHomeForm()
     window.location.href = whatsappHref(details)
   }
 
