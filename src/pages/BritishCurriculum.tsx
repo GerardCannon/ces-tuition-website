@@ -1,3 +1,4 @@
+import { LevelEnquiry } from '@/components/LevelEnquiry'
 import { Card } from '@/components/ui/card'
 import { FaqSection, PageSection, PageShell } from '@/pages/PageShell.tsx'
 import { britishCrumbs, britishFaqs } from '@/pages/britishCurriculumData.ts'
@@ -70,6 +71,16 @@ export function BritishCurriculum() {
         <p>
           When you message us, it helps to tell us the subject, your child’s year group and the exam board. If you’re not sure of the board, your child’s school will be able to tell you, or we can work it out together.
         </p>
+        <LevelEnquiry
+          levels={[
+            { id: 'igcse-gcse-maths', label: 'IGCSE or GCSE maths' },
+            { id: 'igcse-gcse-english', label: 'IGCSE or GCSE English' },
+            { id: 'igcse-chemistry', label: 'Edexcel IGCSE chemistry' },
+            { id: 'igcse-gcse-physics', label: 'IGCSE or GCSE physics' },
+            { id: 'igcse-gcse-biology', label: 'IGCSE or GCSE biology' },
+            { id: 'igcse-gcse-economics', label: 'IGCSE or GCSE economics' },
+          ]}
+        />
       </PageSection>
 
       <PageSection title="IGCSE and GCSE subjects">
