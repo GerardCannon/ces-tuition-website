@@ -1,3 +1,4 @@
+import { LevelEnquiry } from '@/components/LevelEnquiry'
 import { FaqSection, PageSection, PageShell } from '@/pages/PageShell.tsx'
 import { alevelCrumbs, alevelFaqs } from '@/pages/alevelTutorData.ts'
 
@@ -48,6 +49,15 @@ export function AlevelTutor() {
         <p>
           When you message us, it helps to tell us the subject, your child's year group and the exam board. If you're not sure of the board, your child's school will be able to tell you, or we can work it out together.
         </p>
+        <LevelEnquiry
+          levels={[
+            { id: 'maths', label: 'A-level maths' },
+            { id: 'physics', label: 'A-level physics' },
+            { id: 'biology', label: 'A-level biology' },
+            { id: 'economics', label: 'A-level economics' },
+            { id: 'english', label: 'A-level English' },
+          ]}
+        />
       </PageSection>
 
       <PageSection title="A-level: Year 12 and Year 13">

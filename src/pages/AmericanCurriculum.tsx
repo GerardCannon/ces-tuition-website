@@ -1,3 +1,4 @@
+import { LevelEnquiry } from '@/components/LevelEnquiry'
 import { FaqSection, PageSection, PageShell } from '@/pages/PageShell.tsx'
 import { americanCrumbs, americanFaqs } from '@/pages/americanCurriculumData.ts'
 
@@ -69,6 +70,14 @@ export function AmericanCurriculum() {
         <p>
           If your child has recently changed school, they may find the new class is ahead in some areas. If so, let us know and we'll help them catch up.
         </p>
+        <LevelEnquiry
+          line="Choose a level and WhatsApp opens with a message ready to send. Add your child's grade too, if you can."
+          levels={[
+            { id: 'sat', label: 'SAT preparation' },
+            { id: 'maths', label: 'American curriculum maths' },
+            { id: 'english', label: 'American curriculum English' },
+          ]}
+        />
       </PageSection>
 
       <PageSection title="Other curricula">

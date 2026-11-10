@@ -1,3 +1,4 @@
+import { LevelEnquiry } from '@/components/LevelEnquiry'
 import { FaqSection, PageSection, PageShell } from '@/pages/PageShell.tsx'
 import { ibCrumbs, ibFaqs } from '@/pages/ibCurriculumData.ts'
 
@@ -51,6 +52,16 @@ export function IbCurriculum() {
         <p>
           When you message us, it helps to tell us the subject, your child's year group and whether they're in the MYP or the DP. If you're not sure, your child's school will be able to tell you, or we can work it out together.
         </p>
+        <LevelEnquiry
+          levels={[
+            { id: 'maths', label: 'IB maths' },
+            { id: 'physics', label: 'IB physics' },
+            { id: 'chemistry', label: 'IB chemistry' },
+            { id: 'biology', label: 'IB biology' },
+            { id: 'economics', label: 'IB economics' },
+            { id: 'english', label: 'IB English' },
+          ]}
+        />
       </PageSection>
 
       <PageSection title="MYP and DP">
