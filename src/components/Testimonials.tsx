@@ -45,9 +45,12 @@ function Stars({ size = 20, label }: { size?: number; label: string }) {
   )
 }
 
-export function Testimonials() {
+export function Testimonials({ surface = 'muted' }: { surface?: 'muted' | 'plain' } = {}) {
+  // Inner pages already end on a muted FAQ band. A plain surface keeps this
+  // section separate there. The homepage keeps the muted band.
+  const surfaceClass = surface === 'plain' ? 'bg-background' : 'bg-muted/30'
   return (
-    <section id="testimonials" className="py-16 md:py-24 bg-muted/30 scroll-mt-24">
+    <section id="testimonials" className={`py-16 md:py-24 ${surfaceClass} scroll-mt-24`}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <div className="flex justify-center mb-4">
