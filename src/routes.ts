@@ -235,7 +235,7 @@ export const routes: SiteRoute[] = [
     sitemap: true,
     head: socialHead({
       title: 'IGCSE, A-level and IB chemistry tutor, Dubai | CES Tuition',
-      description: 'One-to-one online chemistry lessons for GCSE, IGCSE, A-level, IB MYP and Diploma students in Dubai, Abu Dhabi and the UAE, with UK-trained subject specialists.',
+      description: 'One-to-one chemistry lessons, live online, for GCSE, IGCSE, A-level, IB MYP and Diploma students in Dubai, Abu Dhabi and the UAE. Free 30-minute trial.',
       path: '/chemistry-tutor/',
       jsonLd: withService(faqAndBreadcrumbJsonLd(chemistryFaqs, chemistryCrumbs, canonicalUrl), chemistryService, '/chemistry-tutor/', canonicalUrl),
     }),
@@ -247,7 +247,7 @@ export const routes: SiteRoute[] = [
     sitemap: true,
     head: socialHead({
       title: 'IGCSE, A-level and IB physics tutor, Dubai | CES Tuition',
-      description: 'Online one-to-one physics lessons for GCSE, IGCSE, A-level, IB MYP and Diploma students in Dubai, Abu Dhabi and the UAE, with UK-trained subject specialists.',
+      description: 'One-to-one physics lessons, live online, for GCSE, IGCSE, A-level, IB MYP and Diploma students in Dubai, Abu Dhabi and the UAE. Free 30-minute trial.',
       path: '/physics-tutor/',
       jsonLd: withService(faqAndBreadcrumbJsonLd(physicsFaqs, physicsCrumbs, canonicalUrl), physicsService, '/physics-tutor/', canonicalUrl),
     }),
@@ -271,7 +271,7 @@ export const routes: SiteRoute[] = [
     sitemap: true,
     head: socialHead({
       title: 'IGCSE, A-level and IB English tutor, Dubai | CES Tuition',
-      description: 'One-to-one online English lessons for GCSE, IGCSE, A-level, IB MYP and Diploma students in Dubai, Abu Dhabi and the UAE, with UK-trained subject specialists.',
+      description: 'One-to-one English lessons, live online, for GCSE, IGCSE, A-level, IB MYP and Diploma students in Dubai, Abu Dhabi and the UAE. Free 30-minute trial.',
       path: '/english-tutor/',
       jsonLd: withService(faqAndBreadcrumbJsonLd(englishFaqs, englishCrumbs, canonicalUrl), englishService, '/english-tutor/', canonicalUrl),
     }),

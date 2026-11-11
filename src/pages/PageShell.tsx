@@ -13,6 +13,7 @@ import { EnquiryForm } from '@/components/EnquiryForm'
 import { Footer } from '@/components/Footer'
 import { Navigation } from '@/components/Navigation'
 import { ReviewMention } from '@/components/ReviewMention'
+import { Testimonials } from '@/components/Testimonials'
 import { WhatsAppBar } from '@/components/WhatsAppBar'
 import { useAnalyticsPage, whatsappClick, type WhatsAppPage } from '@/lib/goatcounter'
 import { useWhatsappLink } from '@/lib/whatsapp'
@@ -106,7 +107,7 @@ export function PageShell({
               <p className="text-base sm:text-lg text-white leading-relaxed">
                 Book a free 30-minute trial lesson on WhatsApp.
               </p>
-              <ReviewMention>38 five-star reviews</ReviewMention>
+              <ReviewMention>38 five-star reviews on MyPrivateTutor</ReviewMention>
               <div className="flex flex-col sm:flex-row gap-3 justify-center items-center pt-2">
                 <Button
                   asChild
@@ -132,6 +133,8 @@ export function PageShell({
         </header>
 
         {children}
+
+        <Testimonials surface="plain" />
 
         <section className="py-16 md:py-24 bg-primary text-primary-foreground">
           <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center space-y-6">
