@@ -56,7 +56,7 @@ export function Hero() {
             </Button>
           </div>
           <p className="text-sm sm:text-base text-white leading-relaxed text-balance max-w-2xl mx-auto">
-            Message us on WhatsApp. We reply within the hour, then you book your free 30-minute trial with a UK‑trained specialist.
+            We reply within the hour. Your free 30-minute trial is with a UK‑trained specialist.
           </p>
           <QuickChatLink placement="home-hero" tone="on-primary" />
         </div>
