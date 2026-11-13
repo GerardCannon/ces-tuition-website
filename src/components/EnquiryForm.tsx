@@ -86,10 +86,10 @@ export function EnquiryForm({
         {...(page === 'home' ? {} : whatsappClick(page, 'form'))}
       >
         <WhatsappLogo size={22} weight="fill" aria-hidden="true" />
-        Send on WhatsApp
+        Book free trial on WhatsApp
       </Button>
       <p className="text-sm text-muted-foreground text-center leading-relaxed">
-        This opens WhatsApp with your details filled in. This website does not store the form.
+        Free 30‑minute trial. We reply within the hour. This opens WhatsApp with your details filled in. This website does not store the form.
       </p>
       {page === 'home' && !embedded ? (
         <p className="text-center">
@@ -107,10 +107,10 @@ export function EnquiryForm({
         <div className="max-w-xl mx-auto">
           <div className="text-center mb-8">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">
-              Book your free 30-minute trial
+              Book your free 30‑minute trial
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Tell us your child's curriculum, subject and year group. WhatsApp opens with your message ready to send. We reply within the hour to arrange your free 30-minute trial. This page does not create an account.
+              Tell us your child's curriculum, subject and year group. WhatsApp opens with your message ready to send. We reply within the hour to arrange your free 30‑minute trial. This page does not create an account.
             </p>
             <RematchLine tone="on-light" className="mt-3" />
           </div>

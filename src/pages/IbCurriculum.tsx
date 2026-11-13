@@ -14,10 +14,10 @@ export function IbCurriculum() {
           Many families in the UAE follow the International Baccalaureate (IB), from the Middle Years Programme (MYP) through to the Diploma Programme (DP). If your child is finding a subject difficult, or simply wants to feel more confident, we can help.
         </p>
       }
-      ctaTitle="Tell us about your child"
+      ctaTitle="Book your free 30‑minute trial"
       ctaBody={
         <p>
-          Send us your child's subject and year group on WhatsApp, and we'll get back to you.
+          Send us your child's subject and year group on WhatsApp. We reply within the hour to arrange your free 30‑minute trial.
         </p>
       }
     >
@@ -32,7 +32,7 @@ export function IbCurriculum() {
           Lessons last one or two hours, whichever suits you, and are scheduled through our app.
         </p>
         <p>
-          To get started, simply message us on WhatsApp and we'll arrange a free trial lesson, so we can put your mind at ease.
+          To get started, simply message us on WhatsApp and we'll arrange a free 30‑minute trial lesson, so we can put your mind at ease.
         </p>
         <p>
           Lessons typically follow what your child is learning at school. Some parents come to us after a disappointing grade; others want their child to feel better prepared for an upcoming test, or simply to get ready for the end-of-year exams.

@@ -14,10 +14,10 @@ export function BiologyTutor() {
           Biology covers a lot of ground, and good answers depend on understanding the ideas and using the right words. If your child is finding biology difficult, or simply wants to feel more confident, we can help.
         </p>
       }
-      ctaTitle="Tell us about your child"
+      ctaTitle="Book your free 30‑minute trial"
       ctaBody={
         <p>
-          Send us your child's year group and exam board on WhatsApp, and we'll get back to you.
+          Send us your child's year group and exam board on WhatsApp. We reply within the hour to arrange your free 30‑minute trial.
         </p>
       }
     >
@@ -35,7 +35,7 @@ export function BiologyTutor() {
           Lessons last one or two hours, whichever suits you, and are scheduled through our app.
         </p>
         <p>
-          To get started, simply message us on WhatsApp and we'll arrange a free trial lesson, so we can put your mind at ease.
+          To get started, simply message us on WhatsApp and we'll arrange a free 30‑minute trial lesson, so we can put your mind at ease.
         </p>
         <p>
           Lessons follow the topics your child is covering at school, and we can go back over earlier ones if needed. You can follow your child's progress in our app.

@@ -15,8 +15,8 @@ function levelMessage(label: string) {
 
 export function LevelEnquiry({
   levels,
-  heading = "Ask about your child's level",
-  line = "Choose a level and WhatsApp opens with a message ready to send. Add your child's year group too, if you can.",
+  heading = "Book a free trial for your child's level",
+  line = "Choose a level and WhatsApp opens with a message ready to send. Add your child's year group too, if you can. We reply within the hour to arrange your free 30‑minute trial.",
 }: {
   levels: readonly LevelEnquiryItem[]
   heading?: string

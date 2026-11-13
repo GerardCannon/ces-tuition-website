@@ -43,7 +43,7 @@ export function NotFound() {
               >
                 <a href={whatsappHref()} {...whatsappClick(page, 'hero')} className="flex items-center gap-2">
                   <WhatsappLogo size={22} weight="fill" aria-hidden="true" />
-                  Chat with us on WhatsApp
+                  Book your free trial on WhatsApp
                 </a>
               </Button>
 

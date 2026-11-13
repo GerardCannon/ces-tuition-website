@@ -14,10 +14,10 @@ export function IbMathsTutor() {
           IB maths can feel like a big step up. Our lessons follow the course your child is studying at school, whether they need to catch up or want to aim for a higher grade.
         </p>
       }
-      ctaTitle="Tell us about your child"
+      ctaTitle="Book your free 30‑minute trial"
       ctaBody={
         <p>
-          Send us your child's year group and maths course on WhatsApp, and we'll get back to you.
+          Send us your child's year group and maths course on WhatsApp. We reply within the hour to arrange your free 30‑minute trial.
         </p>
       }
     >
@@ -35,7 +35,7 @@ export function IbMathsTutor() {
           Lessons last one or two hours, whichever suits you, and are scheduled through our app.
         </p>
         <p>
-          To get started, simply message us on WhatsApp and we'll arrange a free trial lesson, so we can put your mind at ease.
+          To get started, simply message us on WhatsApp and we'll arrange a free 30‑minute trial lesson, so we can put your mind at ease.
         </p>
         <p>
           Lessons follow what your child is learning at school. If they're stuck on a piece of homework, we'll always start by working through it together. You can follow your child's progress in our app.
@@ -86,8 +86,8 @@ export function IbMathsTutor() {
           If your child has recently moved to the UAE or changed school, the new class may be ahead in some topics. Let us know and we'll help them catch up.
         </p>
         <LevelEnquiry
-          heading="Ask about IB maths"
-          line="Tap below and WhatsApp opens with a message ready to send. Add your child's year group too, if you can."
+          heading="Book a free IB maths trial"
+          line="Tap below and WhatsApp opens with a message ready to send. Add your child's year group too, if you can. We reply within the hour to arrange your free 30‑minute trial."
           levels={[{ id: 'ib', label: 'IB maths' }]}
         />
       </PageSection>

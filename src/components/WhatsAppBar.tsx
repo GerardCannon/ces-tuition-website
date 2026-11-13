@@ -10,10 +10,10 @@ export function WhatsAppBar() {
       <a
         href={whatsappHref()}
         {...whatsappClick(page, 'sticky')}
-        className="flex items-center justify-center gap-2 min-h-14 px-4 py-3 font-semibold"
+        className="flex items-center justify-center gap-2 min-h-14 whitespace-nowrap px-4 py-3 font-semibold"
       >
         <WhatsappLogo size={22} weight="fill" aria-hidden="true" />
-        WhatsApp us – free trial
+        Book your free trial on WhatsApp
       </a>
     </div>
   )

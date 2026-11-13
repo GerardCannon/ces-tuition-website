@@ -198,7 +198,7 @@ for (const phrase of ['UK\u2011trained subject specialists', 'Book your free tri
     throw new Error(`Home page raw HTML is missing "${phrase}"`)
   }
 }
-for (const phrase of ['Page not found', 'Back to the home page', 'Chat with us on WhatsApp']) {
+for (const phrase of ['Page not found', 'Back to the home page', 'Book your free trial on WhatsApp']) {
   if (!bodyText(notFoundHtml).includes(phrase)) {
     throw new Error(`404 page raw HTML is missing "${phrase}"`)
   }

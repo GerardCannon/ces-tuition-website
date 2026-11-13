@@ -9,7 +9,7 @@ const quickLinks = [
   { label: 'Why us', href: '#features' },
   { label: 'Pricing', href: '#pricing' },
   { label: 'Reviews', href: '#testimonials' },
-  { label: 'Enquire', href: '#enquire' },
+  { label: 'Free trial', href: '#enquire' },
 ]
 
 const curriculaLinks = [

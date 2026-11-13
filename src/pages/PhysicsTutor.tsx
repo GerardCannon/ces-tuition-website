@@ -14,10 +14,10 @@ export function PhysicsTutor() {
           Physics asks students to understand an idea, use maths and explain their answer in words, often in the same question. If your child is finding physics difficult, or simply wants to feel more confident, we can help.
         </p>
       }
-      ctaTitle="Tell us about your child"
+      ctaTitle="Book your free 30‑minute trial"
       ctaBody={
         <p>
-          Send us your child's year group and exam board on WhatsApp, and we'll get back to you.
+          Send us your child's year group and exam board on WhatsApp. We reply within the hour to arrange your free 30‑minute trial.
         </p>
       }
     >
@@ -35,7 +35,7 @@ export function PhysicsTutor() {
           Lessons last one or two hours, whichever suits you, and are scheduled through our app.
         </p>
         <p>
-          To get started, simply message us on WhatsApp and we'll arrange a free trial lesson, so we can put your mind at ease.
+          To get started, simply message us on WhatsApp and we'll arrange a free 30‑minute trial lesson, so we can put your mind at ease.
         </p>
         <p>
           We start from what your child is covering at school. If they're losing marks on a particular kind of question, that's where we begin. You can follow your child's progress in our app.
