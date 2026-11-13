@@ -82,11 +82,11 @@ export function EnquiryForm({
 
       <Button
         type="submit"
-        className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold h-12 text-base"
+        className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold h-12 text-base max-[359px]:h-auto max-[359px]:min-h-12 max-[359px]:whitespace-normal max-[359px]:text-center max-[359px]:py-3"
         {...(page === 'home' ? {} : whatsappClick(page, 'form'))}
       >
-        <WhatsappLogo size={22} weight="fill" aria-hidden="true" />
-        Book free trial on WhatsApp
+        <WhatsappLogo size={22} weight="fill" aria-hidden="true" className="shrink-0" />
+        <span className="min-w-0">Book free trial on WhatsApp</span>
       </Button>
       <p className="text-sm text-muted-foreground text-center leading-relaxed">
         Free 30‑minute trial. We reply within the hour. This opens WhatsApp with your details filled in. This website does not store the form.

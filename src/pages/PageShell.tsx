@@ -111,11 +111,11 @@ export function PageShell({
                 <Button
                   asChild
                   size="lg"
-                  className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold tracking-wide text-base sm:text-lg px-6 h-12 w-full sm:w-auto"
+                  className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold tracking-wide text-base sm:text-lg px-6 h-12 w-full sm:w-auto max-[359px]:h-auto max-[359px]:min-h-12 max-[359px]:whitespace-normal max-[359px]:text-center max-[359px]:py-3"
                 >
                   <a href={whatsappHref()} {...whatsappClick(page, 'hero')} className="flex items-center gap-2">
-                    <WhatsappLogo size={22} weight="fill" aria-hidden="true" />
-                    Book your free trial on WhatsApp
+                    <WhatsappLogo size={22} weight="fill" aria-hidden="true" className="shrink-0" />
+                    <span className="min-w-0">Book your free trial on WhatsApp</span>
                   </a>
                 </Button>
                 <Button
