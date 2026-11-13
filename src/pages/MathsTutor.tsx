@@ -14,7 +14,7 @@ const boards = [
   },
   {
     title: 'OxfordAQA',
-    body: 'International GCSE and International AS and A-level maths.',
+    body: 'International GCSE and International AS and A Level maths.',
   },
 ]
 

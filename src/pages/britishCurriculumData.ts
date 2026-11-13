@@ -21,7 +21,7 @@ export const britishFaqs = [
   },
   {
     question: 'Which exam boards do you cover?',
-    answer: 'We teach Edexcel, Cambridge and OxfordAQA courses. OxfordAQA offers International GCSE and International AS and A-level.',
+    answer: 'We teach Edexcel, Cambridge and OxfordAQA courses. OxfordAQA offers International GCSE and International AS and A Level.',
   },
   {
     question: 'What’s the difference between IGCSE and the UK GCSE?',

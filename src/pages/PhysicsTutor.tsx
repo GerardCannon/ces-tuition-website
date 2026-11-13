@@ -77,7 +77,7 @@ export function PhysicsTutor() {
 
       <PageSection title="Levels we teach" muted>
         <p>
-          We teach physics at <a href="/curricula/british/" className={linkClass}>IGCSE</a> and A-level, and in the IB MYP and Diploma Programme (DP). Edexcel covers International GCSE and International A Level, Cambridge covers IGCSE and International AS and A Level, and OxfordAQA covers International GCSE and International AS and A-level.
+          We teach physics at <a href="/curricula/british/" className={linkClass}>IGCSE</a> and A-level, and in the IB MYP and Diploma Programme (DP). Edexcel covers International GCSE and International A Level, Cambridge covers IGCSE and International AS and A Level, and OxfordAQA covers International GCSE and International AS and A Level.
         </p>
         <LevelEnquiry
           levels={[
