@@ -89,7 +89,7 @@ export function AlevelTutor() {
 
       <PageSection title="Subjects" muted>
         <p>
-          We teach a range of A-level subjects, such as <a href="/igcse-gcse-maths-tutor/" className={linkClass}>maths</a>, <a href="/physics-tutor/" className={linkClass}>physics</a>, <a href="/chemistry-tutor/" className={linkClass}>chemistry</a>, <a href="/biology-tutor/" className={linkClass}>biology</a>, <a href="/economics-tutor/" className={linkClass}>economics</a>, business studies, <a href="/english-tutor/" className={linkClass}>English</a> and computer science. If your child's subject isn't listed, just ask us. You can read more about maths on our <a href="/igcse-gcse-maths-tutor/" className={linkClass}>maths page</a>. We also teach the IB MYP and Diploma Programme (DP), which you can read about on our <a href="/curricula/ib/" className={linkClass}>IB page</a>.
+          We teach a range of A-level subjects, such as <a href="/igcse-gcse-maths-tutor/" className={linkClass}>maths</a>, <a href="/chemistry-tutor/" className={linkClass}>chemistry</a>, <a href="/economics-tutor/" className={linkClass}>economics</a>, business studies, <a href="/english-tutor/" className={linkClass}>English</a> and computer science. For the sciences, see our <a href="/physics-tutor/" className={linkClass}>A-level physics tutor</a> page and our <a href="/biology-tutor/" className={linkClass}>A-level biology</a> page. If your child's subject isn't listed, just ask us. You can read more about maths on our <a href="/igcse-gcse-maths-tutor/" className={linkClass}>maths page</a>. We also teach the IB MYP and Diploma Programme (DP), which you can read about on our <a href="/curricula/ib/" className={linkClass}>IB page</a>.
         </p>
       </PageSection>
 

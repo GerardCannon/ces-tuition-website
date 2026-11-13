@@ -20,11 +20,27 @@ export const biologyFaqs = [
   },
   {
     question: 'Which exam boards do you cover?',
-    answer: 'For biology we cover Edexcel at IGCSE and A-level, OxfordAQA at IGCSE, and OxfordAQA at International A Level. Send us the board on WhatsApp if you are unsure which one your school uses.',
+    answer: 'For biology we cover Edexcel and OxfordAQA at IGCSE, and Edexcel International A Level and OxfordAQA International A Level at A-level. We also teach IB biology in the MYP and the Diploma Programme, at both Higher Level and Standard Level. Send us the board on WhatsApp if you are unsure which one your school uses.',
   },
   {
     question: 'Can you help with an IB Diploma internal assessment?',
     answer: 'Yes. We can help your child understand what\'s expected and plan their time. The work they hand in is always their own.',
+  },
+  {
+    question: 'Do you teach IGCSE biology online in the UAE?',
+    answer: 'Yes. We teach IGCSE biology live and online, so families in every emirate, including Dubai, Abu Dhabi and Sharjah, can join without travelling. Your child has one-to-one lessons with our UK‑trained subject specialists.',
+  },
+  {
+    question: 'Do you teach IB biology in Dubai?',
+    answer: 'Yes. We teach IB biology live and online, so families in Dubai can join without travelling. Your child has one-to-one lessons with our UK‑trained subject specialists.',
+  },
+  {
+    question: 'Do you teach IB biology at Higher Level and Standard Level?',
+    answer: 'Yes. We teach both Higher Level and Standard Level, in the MYP and in the Diploma Programme.',
+  },
+  {
+    question: 'Do you teach MYP biology?',
+    answer: 'Yes. We teach biology in the IB MYP and in the Diploma Programme (DP).',
   },
 ]
 

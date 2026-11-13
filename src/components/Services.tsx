@@ -175,11 +175,11 @@ export function Services() {
                     ))}
                     {service.title === 'British curriculum: IGCSE and A-level' ? (
                       <li>
-                        <a href="/chemistry-tutor/" className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">Chemistry</a>
+                        <a href="/chemistry-tutor/" className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">IGCSE chemistry tutor</a>
                         {', '}
-                        <a href="/physics-tutor/" className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">physics</a>
+                        <a href="/physics-tutor/" className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">IGCSE physics tutor</a>
                         {', '}
-                        <a href="/biology-tutor/" className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">biology</a>
+                        <a href="/biology-tutor/" className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">IGCSE biology tutor</a>
                         {', '}
                         <a href="/english-tutor/" className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">English</a>
                         {' and '}

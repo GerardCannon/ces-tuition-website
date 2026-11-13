@@ -180,16 +180,18 @@ export function PageSection({
   children,
   muted = false,
   extra,
+  id,
 }: {
   title: string
   children: ReactNode
   muted?: boolean
   extra?: ReactNode
+  id?: string
 }) {
   return (
     <section className={`py-16 md:py-24 ${muted ? 'bg-muted/30' : 'bg-background'}`}>
       <div className="max-w-3xl mx-auto px-6 lg:px-8">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">
+        <h2 id={id} className={`text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance${id ? ' scroll-mt-24' : ''}`}>
           {title}
         </h2>
         <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">

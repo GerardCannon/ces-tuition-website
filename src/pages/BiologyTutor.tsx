@@ -23,6 +23,9 @@ export function BiologyTutor() {
     >
       <PageSection title="Our lessons">
         <p>
+          We teach one-to-one online biology tuition, live, for students in Dubai, Abu Dhabi, Sharjah and across the UAE.
+        </p>
+        <p>
           Your child has one-to-one biology lessons with our UK‑trained subject specialists on our interactive online whiteboard.
         </p>
         <p>
@@ -74,13 +77,7 @@ export function BiologyTutor() {
 
       <PageSection title="Levels we teach" muted>
         <p>
-          We teach biology at <a href="/curricula/british/" className={linkClass}>IGCSE</a> and A-level, and in the IB MYP and Diploma Programme (DP). You can read more about A-level on our <a href="/a-level-tutor/" className={linkClass}>A-level page</a>.
-        </p>
-        <p>
-          In the DP, biology is taken at Higher Level or Standard Level. Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about the MYP and the Diploma Programme.
-        </p>
-        <p>
-          At IGCSE we teach Edexcel and OxfordAQA biology; at A-level we teach Edexcel and OxfordAQA International A Level biology.
+          We teach biology at <a href="/curricula/british/" className={linkClass}>IGCSE</a> and A-level, and in the IB MYP and Diploma Programme (DP).
         </p>
         <LevelEnquiry
           levels={[
@@ -91,6 +88,27 @@ export function BiologyTutor() {
         />
         <p>
           We also teach <a href="/chemistry-tutor/" className={linkClass}>chemistry</a> and <a href="/physics-tutor/" className={linkClass}>physics</a>, as well as <a href="/igcse-gcse-maths-tutor/" className={linkClass}>maths</a>, <a href="/english-tutor/" className={linkClass}>English</a> and <a href="/economics-tutor/" className={linkClass}>economics</a>.
+        </p>
+      </PageSection>
+
+      <PageSection id="ib-biology" title="IB biology (MYP and Diploma)">
+        <p>
+          We teach IB biology in the MYP and the Diploma Programme (DP). We teach both Higher Level and Standard Level.
+        </p>
+        <p>
+          In the DP, biology is taken at Higher Level or Standard Level. Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about the MYP and the Diploma Programme.
+        </p>
+      </PageSection>
+
+      <PageSection id="igcse-biology" title="IGCSE biology for UAE students" muted>
+        <p>
+          At IGCSE we teach Edexcel and OxfordAQA biology, live and online, for students in Dubai, Abu Dhabi, Sharjah and across the UAE.
+        </p>
+      </PageSection>
+
+      <PageSection id="a-level-biology" title="A-level biology">
+        <p>
+          At A-level we teach Edexcel International A Level and OxfordAQA International A Level biology. You can read more about A-level on our <a href="/a-level-tutor/" className={linkClass}>A-level page</a>.
         </p>
       </PageSection>
 
