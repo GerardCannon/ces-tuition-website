@@ -135,6 +135,14 @@
                 "@type": "Answer",
                 "text": "The 30-minute trial is free, so there's nothing to pay for it. If your child's first paid lesson after the trial isn't the right fit, tell us and we'll match them with a different tutor straight away. You won't be charged for that lesson. This applies to the first paid lesson in each subject, so if your child starts a new subject, it applies again to that subject's first lesson."
               }
+            },
+            {
+              "@type": "Question",
+              "name": "How can we earn free lessons?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Recommend CES to a friend. Each time the student you refer reaches another 10 lessons with us, you get a free lesson, for as long as they keep learning with us. Your friend starts with a free 30-minute trial too."
+              }
             }
           ]
         }
@@ -145,6 +153,22 @@
 </head>
 
 <body>
+    <script>
+      try {
+        if (localStorage.getItem('ces-free-lessons-banner-dismissed')) {
+          document.documentElement.classList.add('ces-banner-dismissed')
+        }
+      } catch (e) {}
+      document.addEventListener('click', function (event) {
+        var target = event.target
+        if (!target || !target.closest) return
+        if (!target.closest('[data-free-lessons-banner-close]')) return
+        try {
+          localStorage.setItem('ces-free-lessons-banner-dismissed', '1')
+        } catch (e) {}
+        document.documentElement.classList.add('ces-banner-dismissed')
+      })
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
 </body>

@@ -109,7 +109,27 @@
 
 html {
   scroll-behavior: smooth;
+  /* Header (5rem) plus the fixed free-lessons banner. */
+  scroll-padding-top: calc(38px + 5rem);
+}
+
+/* The banner is fixed above the header. Offset the header while it is showing,
+   and put the header back at the top once the visitor dismisses it. */
+.site-nav {
+  top: 38px;
+}
+
+html.ces-banner-dismissed {
   scroll-padding-top: 5rem;
+}
+
+html.ces-banner-dismissed .site-nav {
+  top: 0;
+}
+
+/* Set before paint by the inline script when the visitor has dismissed the banner. */
+html.ces-banner-dismissed [data-free-lessons-banner] {
+  display: none;
 }
 
 body {
