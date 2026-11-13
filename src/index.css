@@ -107,16 +107,54 @@
   --font-body: 'Space Grotesk', sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-  /* Header (5rem) plus the fixed free-lessons banner. */
-  scroll-padding-top: calc(38px + 5rem);
+:root {
+  /* Matches the wrapped mobile bar. The inline script replaces this with the measured height. */
+  --free-lessons-banner-height: 46px;
 }
 
-/* The banner is fixed above the header. Offset the header while it is showing,
-   and put the header back at the top once the visitor dismisses it. */
+@media (min-width: 640px) {
+  :root {
+    --free-lessons-banner-height: 46px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--free-lessons-banner-height) + 5rem);
+}
+
+/* The banner is fixed. The header and the in-page offsets use its real height
+   so they stay flush with it. Dismissing puts the header back at the top. */
 .site-nav {
-  top: 38px;
+  top: var(--free-lessons-banner-height);
+}
+
+.free-lessons-banner {
+  min-height: var(--free-lessons-banner-height);
+}
+
+@media (min-width: 640px) {
+  .free-lessons-banner {
+    height: 46px;
+  }
+}
+
+.banner-offset {
+  padding-top: calc(var(--free-lessons-banner-height) + 4.5625rem);
+}
+
+.banner-offset-crumb {
+  padding-top: calc(var(--free-lessons-banner-height) + 5rem);
+}
+
+@media (min-width: 768px) {
+  .banner-offset {
+    padding-top: calc(var(--free-lessons-banner-height) + 5.5625rem);
+  }
+
+  .banner-offset-crumb {
+    padding-top: calc(var(--free-lessons-banner-height) + 6rem);
+  }
 }
 
 html.ces-banner-dismissed {
@@ -127,9 +165,26 @@ html.ces-banner-dismissed .site-nav {
   top: 0;
 }
 
-/* Set before paint by the inline script when the visitor has dismissed the banner. */
 html.ces-banner-dismissed [data-free-lessons-banner] {
   display: none;
+}
+
+html.ces-banner-dismissed .banner-offset {
+  padding-top: 7rem;
+}
+
+html.ces-banner-dismissed .banner-offset-crumb {
+  padding-top: 5rem;
+}
+
+@media (min-width: 768px) {
+  html.ces-banner-dismissed .banner-offset {
+    padding-top: 8rem;
+  }
+
+  html.ces-banner-dismissed .banner-offset-crumb {
+    padding-top: 6rem;
+  }
 }
 
 body {

@@ -23,7 +23,7 @@ export function Hero() {
         }} />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 pt-28 pb-14 md:pt-32 md:pb-20 text-center">
+      <div className="banner-offset relative max-w-7xl mx-auto px-6 lg:px-8 pb-14 md:pb-20 text-center">
         <div className="max-w-4xl mx-auto space-y-5 md:space-y-6">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight text-balance">
             Online tuition for UAE families, taught by UK‑trained subject specialists

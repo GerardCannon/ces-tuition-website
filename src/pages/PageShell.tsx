@@ -60,7 +60,7 @@ export function PageShell({
     <div className="min-h-screen">
       <Navigation sectionBase="/" />
       <main>
-        <div className="bg-card border-b border-border pt-20 md:pt-24">
+        <div className="banner-offset-crumb bg-card border-b border-border">
           <div className="max-w-7xl mx-auto px-6 lg:px-8 py-3">
             <Breadcrumb>
               <BreadcrumbList>

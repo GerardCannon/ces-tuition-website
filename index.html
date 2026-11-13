@@ -170,6 +170,21 @@
       })
     </script>
     <div id="root"></div>
+    <script>
+      (function () {
+        var root = document.documentElement
+        var banner = document.querySelector('[data-free-lessons-banner]')
+        if (!banner) return
+        function apply() {
+          if (root.classList.contains('ces-banner-dismissed')) return
+          var height = banner.getBoundingClientRect().height
+          if (!height) return
+          root.style.setProperty('--free-lessons-banner-height', height + 'px')
+        }
+        apply()
+        if (typeof ResizeObserver === 'function') new ResizeObserver(apply).observe(banner)
+      })()
+    </script>
     <script type="module" src="/src/main.tsx"></script>
 </body>
 

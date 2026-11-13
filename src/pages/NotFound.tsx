@@ -25,7 +25,7 @@ export function NotFound() {
           }} />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-8 pt-28 pb-16 md:pt-32 md:pb-24 text-center">
+        <div className="banner-offset relative max-w-7xl mx-auto px-6 lg:px-8 pb-16 md:pb-24 text-center">
           <div className="max-w-2xl mx-auto space-y-5 md:space-y-6">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight text-balance">
               Page not found
