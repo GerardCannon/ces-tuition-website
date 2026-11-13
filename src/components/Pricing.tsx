@@ -85,7 +85,7 @@ export function Pricing() {
                 asChild
                 className="bg-accent hover:bg-accent/90 text-accent-foreground w-full font-semibold mt-auto"
               >
-                <a href="#enquire">Enquire</a>
+                <a href="#enquire">Start with a free trial</a>
               </Button>
             </Card>
           ))}

@@ -106,10 +106,10 @@ export function EnquiryForm({
         <div className="max-w-xl mx-auto">
           <div className="text-center mb-8">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">
-              Tell us what your child needs
+              Book your free 30-minute trial
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Send the curriculum, subject and year group on WhatsApp. This page does not create an account.
+              Tell us your child's curriculum, subject and year group. WhatsApp opens with your message ready to send. We reply within the hour to arrange your free 30-minute trial. This page does not create an account.
             </p>
           </div>
           {form}
