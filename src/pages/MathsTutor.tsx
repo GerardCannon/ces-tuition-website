@@ -30,10 +30,10 @@ export function MathsTutor() {
           Maths is often the subject parents worry about most. Our lessons follow the course your child is studying at school, whether they need to catch up or want to aim for a higher grade.
         </p>
       }
-      ctaTitle="Tell us about your child"
+      ctaTitle="Book your free 30‑minute trial"
       ctaBody={
         <p>
-          Send us your child’s year group and exam board on WhatsApp, and we’ll get back to you.
+          Send us your child’s year group and exam board on WhatsApp. We reply within the hour.
         </p>
       }
     >
@@ -48,7 +48,7 @@ export function MathsTutor() {
           Lessons typically last one or two hours, as you prefer.
         </p>
         <p>
-          To get started, simply message us on WhatsApp and we’ll arrange a free trial lesson, so we can put your mind at ease.
+          To get started, simply message us on WhatsApp and we’ll arrange a free 30‑minute trial lesson, so we can put your mind at ease.
         </p>
         <p>
           We focus on the topics your child is covering at school. If they’re struggling with algebra, or losing marks on exam questions, that’s where we start. If there are gaps from earlier years, we’ll help fill them before the class moves on.

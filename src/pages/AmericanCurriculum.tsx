@@ -14,10 +14,10 @@ export function AmericanCurriculum() {
           Many families in the UAE choose a school that follows an American curriculum. If your child is finding a subject difficult, is getting ready for the SAT, or simply wants to feel more confident, we can help.
         </p>
       }
-      ctaTitle="Tell us about your child"
+      ctaTitle="Book your free 30‑minute trial"
       ctaBody={
         <p>
-          Send us your child's grade and the subject they need help with, or tell us you're asking about the SAT, and we'll get back to you on WhatsApp.
+          Send us your child's grade and the subject they need help with, or tell us you're asking about the SAT, on WhatsApp. We reply within the hour.
         </p>
       }
     >
@@ -32,7 +32,7 @@ export function AmericanCurriculum() {
           Lessons last one or two hours, whichever suits you, and are scheduled through our app.
         </p>
         <p>
-          To get started, simply message us on WhatsApp and we'll arrange a free trial lesson, so we can put your mind at ease.
+          To get started, simply message us on WhatsApp and we'll arrange a free 30‑minute trial lesson, so we can put your mind at ease.
         </p>
         <p>
           You can follow your child's progress in our app.
@@ -71,7 +71,8 @@ export function AmericanCurriculum() {
           If your child has recently changed school, they may find the new class is ahead in some areas. If so, let us know and we'll help them catch up.
         </p>
         <LevelEnquiry
-          line="Choose a level and WhatsApp opens with a message ready to send. Add your child's grade too, if you can."
+          heading="Book a free trial for your child's level"
+          line="Choose a level and WhatsApp opens with a message ready to send. Add your child's grade too, if you can. We reply within the hour to arrange your free 30‑minute trial."
           levels={[
             { id: 'sat', label: 'SAT preparation' },
             { id: 'maths', label: 'American curriculum maths' },

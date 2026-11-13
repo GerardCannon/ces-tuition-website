@@ -9,7 +9,7 @@ export const britishCrumbs = [
 export const britishFaqs = [
   {
     question: 'How do we book a lesson?',
-    answer: 'Message us on WhatsApp and we’ll arrange a free 30-minute trial lesson. After that, we’ll set you up on our app, where you can monitor your child’s progress.',
+    answer: 'Message us on WhatsApp. We reply within the hour and arrange your free 30-minute trial lesson with a UK-trained specialist. After that, we\'ll set you up on our app, where you can schedule lessons and monitor your child\'s progress.',
   },
   {
     question: 'We don’t live in the UAE. Can my child still have lessons?',

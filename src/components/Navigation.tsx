@@ -61,7 +61,7 @@ export function Navigation({ sectionBase = '' }: { sectionBase?: string }) {
             >
               <a href={whatsappHref()} {...whatsappClick(page, 'header')} className="flex items-center gap-2">
                 <WhatsappLogo size={18} weight="fill" aria-hidden="true" />
-                WhatsApp
+                Free trial on WhatsApp
               </a>
             </Button>
           </div>
@@ -94,11 +94,11 @@ export function Navigation({ sectionBase = '' }: { sectionBase?: string }) {
             <a
               href={whatsappHref()}
               {...whatsappClick(page, 'menu')}
-              className="flex items-center justify-center gap-2 mt-3 min-h-12 rounded-lg bg-accent text-accent-foreground font-semibold"
+              className="flex items-center justify-center gap-2 mt-3 min-h-12 rounded-lg bg-accent px-3 text-center text-accent-foreground font-semibold"
               onClick={closeMenu}
             >
               <WhatsappLogo size={20} weight="fill" aria-hidden="true" />
-              WhatsApp
+              <span className="min-w-0 whitespace-normal">Book your free trial on WhatsApp</span>
             </a>
             <a
               href="https://app.cestuition.com"

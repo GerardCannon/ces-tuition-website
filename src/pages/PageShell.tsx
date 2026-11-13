@@ -106,9 +106,6 @@ export function PageShell({
                   {lede}
                 </div>
               ) : null}
-              <p className="text-base sm:text-lg text-white leading-relaxed">
-                Book a free 30-minute trial lesson on WhatsApp.
-              </p>
               <ReviewMention>38 five-star reviews on MyPrivateTutor</ReviewMention>
               <div className="flex flex-col sm:flex-row gap-3 justify-center items-center pt-2">
                 <Button
@@ -118,7 +115,7 @@ export function PageShell({
                 >
                   <a href={whatsappHref()} {...whatsappClick(page, 'hero')} className="flex items-center gap-2">
                     <WhatsappLogo size={22} weight="fill" aria-hidden="true" />
-                    Chat with us on WhatsApp
+                    Book your free trial on WhatsApp
                   </a>
                 </Button>
                 <Button
@@ -127,9 +124,12 @@ export function PageShell({
                   variant="outline"
                   className="bg-transparent hover:bg-white/15 text-white border-white/70 font-medium tracking-wide text-base sm:text-lg px-6 h-12 w-full sm:w-auto"
                 >
-                  <a href="#enquire">Send an enquiry</a>
+                  <a href="#enquire">Send your child's details</a>
                 </Button>
               </div>
+              <p className="text-sm sm:text-base text-white leading-relaxed text-balance max-w-2xl mx-auto">
+                We reply within the hour. Your free 30‑minute trial is with a UK‑trained specialist.
+              </p>
               <QuickChatLink placement={routeId} tone="on-primary" />
             </div>
           </div>
@@ -150,11 +150,11 @@ export function PageShell({
             <Button
               asChild
               size="lg"
-              className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold tracking-wide text-base sm:text-lg px-6 h-12"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold tracking-wide text-base sm:text-lg px-6 h-auto min-h-12 w-full max-w-full whitespace-normal sm:w-auto"
             >
               <a href={whatsappHref()} {...whatsappClick(page, 'cta')} className="flex items-center gap-2">
                 <WhatsappLogo size={22} weight="fill" aria-hidden="true" />
-                Chat with us on WhatsApp
+                Book your free trial on WhatsApp
               </a>
             </Button>
           </div>

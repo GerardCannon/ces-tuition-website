@@ -14,10 +14,10 @@ export function ChemistryTutor() {
           Chemistry builds on itself, so a gap in one topic can make the next one harder. If your child is finding chemistry difficult, or simply wants to feel more confident, we can help.
         </p>
       }
-      ctaTitle="Tell us about your child"
+      ctaTitle="Book your free 30‑minute trial"
       ctaBody={
         <p>
-          Send us your child's year group and exam board on WhatsApp, and we'll get back to you.
+          Send us your child's year group and exam board on WhatsApp. We reply within the hour.
         </p>
       }
     >
@@ -35,7 +35,7 @@ export function ChemistryTutor() {
           Lessons last one or two hours, whichever suits you, and are scheduled through our app.
         </p>
         <p>
-          To get started, simply message us on WhatsApp and we'll arrange a free trial lesson, so we can put your mind at ease.
+          To get started, simply message us on WhatsApp and we'll arrange a free 30‑minute trial lesson, so we can put your mind at ease.
         </p>
         <p>
           Lessons follow what your child is learning at school. If they're stuck on a piece of homework, we'll always start by working through it together. You can follow your child's progress in our app.

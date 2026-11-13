@@ -90,14 +90,17 @@ function wireMobileMenu() {
     whatsapp.href = headerLink.href
     whatsapp.setAttribute('data-goatcounter-click', `whatsapp-${page}-menu`)
     whatsapp.setAttribute('data-goatcounter-title', `WhatsApp click: ${page} menu`)
-    whatsapp.className = 'flex items-center justify-center gap-2 mt-3 min-h-12 rounded-lg bg-accent text-accent-foreground font-semibold'
+    whatsapp.className = 'flex items-center justify-center gap-2 mt-3 min-h-12 rounded-lg bg-accent px-3 text-center text-accent-foreground font-semibold'
     const icon = headerLink.querySelector('svg')?.cloneNode(true) as SVGElement | undefined
     if (icon) {
       icon.setAttribute('width', '20')
       icon.setAttribute('height', '20')
       whatsapp.append(icon)
     }
-    whatsapp.append(document.createTextNode('WhatsApp'))
+    const label = document.createElement('span')
+    label.className = 'min-w-0 whitespace-normal'
+    label.textContent = 'Book your free trial on WhatsApp'
+    whatsapp.append(label)
     whatsapp.addEventListener('click', closeMenu)
     inner.append(whatsapp)
 
