@@ -32,5 +32,5 @@ export const chemistryService: ServiceInfo = {
   name: 'Chemistry tuition',
   serviceType: 'Online chemistry tuition',
   description:
-    'Live one-to-one online chemistry lessons for GCSE, IGCSE, A-level, IB MYP and IB Diploma (DP) students, with UK-trained subject specialists.',
+    'Live one-to-one online chemistry lessons for IGCSE, A-level, IB MYP and IB Diploma (DP) students, with UK-trained subject specialists.',
 }

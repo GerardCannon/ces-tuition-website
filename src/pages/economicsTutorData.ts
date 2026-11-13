@@ -20,7 +20,7 @@ export const economicsFaqs = [
   },
   {
     question: 'My child hasn\'t studied economics before. Is that a problem?',
-    answer: 'No. Many students start economics for the first time at GCSE, A-level or in the IB MYP or Diploma Programme. We begin with the key ideas and build from there, alongside what their class is covering.',
+    answer: 'No. Many students start economics for the first time at IGCSE, A-level or in the IB MYP or Diploma Programme. We begin with the key ideas and build from there, alongside what their class is covering.',
   },
   {
     question: 'Does my child need to be good at maths for economics?',
@@ -36,5 +36,5 @@ export const economicsService: ServiceInfo = {
   name: 'Economics tuition',
   serviceType: 'Online economics tuition',
   description:
-    'Live one-to-one online GCSE, IGCSE, A-level, IB MYP and IB Diploma (DP) economics lessons, with UK-trained subject specialists.',
+    'Live one-to-one online IGCSE, A-level, IB MYP and IB Diploma (DP) economics lessons, with UK-trained subject specialists.',
 }

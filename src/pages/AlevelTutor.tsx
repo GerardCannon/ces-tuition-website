@@ -62,9 +62,9 @@ export function AlevelTutor() {
 
       <PageSection title="A-level: Year 12 and Year 13">
         <div>
-          <h3 className="text-xl font-bold text-foreground mb-2">The step up from GCSE and IGCSE</h3>
+          <h3 className="text-xl font-bold text-foreground mb-2">The step up from IGCSE</h3>
           <p>
-            A-level goes into more depth than GCSE or IGCSE, and students are expected to work more independently. If your child is finding the step up hard, lessons can help them settle in.
+            A-level goes into more depth than IGCSE, and students are expected to work more independently. If your child is finding the step up hard, lessons can help them settle in.
           </p>
         </div>
         <div>

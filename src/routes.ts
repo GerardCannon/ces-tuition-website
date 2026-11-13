@@ -99,7 +99,7 @@ const homeService: ServiceInfo = {
   name: 'Online one-to-one tuition',
   serviceType: 'Online tuition',
   description:
-    'Live one-to-one online lessons in GCSE, IGCSE, A-level, IB MYP, IB Diploma (DP) and American curriculum subjects, with UK-trained subject specialists.',
+    'Live one-to-one online lessons in IGCSE, A-level, IB MYP, IB Diploma (DP) and American curriculum subjects, with UK-trained subject specialists.',
 }
 
 const homeJsonLd: JsonLd = {
@@ -152,18 +152,18 @@ export const routes: SiteRoute[] = [
     keepJsonLd: true,
     head: {
       title: 'Online tutors in Dubai, Abu Dhabi and the UAE | CES Tuition',
-      description: 'Live one-to-one online tuition in Dubai, Abu Dhabi, Sharjah and the UAE: GCSE, IGCSE, A-level, IB MYP and DP, and American curriculum. Free 30-minute trial.',
+      description: 'Live one-to-one online tuition in Dubai, Abu Dhabi, Sharjah and the UAE: IGCSE, A-level, IB MYP and DP, and American curriculum. Free 30-minute trial.',
       canonical: 'https://www.cestuition.com/',
       ogType: 'website',
       ogUrl: 'https://www.cestuition.com/',
       ogTitle: 'CES Tuition: UK-trained online tutors for UAE families',
-      ogDescription: 'GCSE, IGCSE, A-level, IB MYP and IB Diploma (DP), and American curriculum, taught live online across all emirates. Free 30-minute trial.',
+      ogDescription: 'IGCSE, A-level, IB MYP and IB Diploma (DP), and American curriculum, taught live online across all emirates. Free 30-minute trial.',
       ogImage: OG_IMAGE,
       ogImageWidth: '1200',
       ogImageHeight: '630',
       twitterCard: 'summary_large_image',
       twitterTitle: 'CES Tuition: UK-trained online tutors for UAE families',
-      twitterDescription: 'GCSE, IGCSE, A-level, IB MYP and IB Diploma (DP), and American curriculum, taught live online across all emirates. Free 30-minute trial.',
+      twitterDescription: 'IGCSE, A-level, IB MYP and IB Diploma (DP), and American curriculum, taught live online across all emirates. Free 30-minute trial.',
       twitterImage: OG_IMAGE,
       jsonLd: homeJsonLd,
     },
@@ -174,8 +174,8 @@ export const routes: SiteRoute[] = [
     path: '/curricula/british/',
     sitemap: true,
     head: socialHead({
-      title: 'IGCSE and GCSE tutor in Dubai, British curriculum | CES Tuition',
-      description: 'One-to-one online IGCSE and GCSE lessons for families in Dubai, Abu Dhabi and the UAE, with UK-trained subject specialists. Free 30-minute trial.',
+      title: 'IGCSE tutor in Dubai, British curriculum | CES Tuition',
+      description: 'One-to-one online IGCSE lessons for families in Dubai, Abu Dhabi and the UAE, with UK-trained subject specialists. Free 30-minute trial.',
       path: '/curricula/british/',
       jsonLd: withService(faqAndBreadcrumbJsonLd(britishFaqs, britishCrumbs, canonicalUrl), britishService, '/curricula/british/', canonicalUrl),
     }),
@@ -210,8 +210,8 @@ export const routes: SiteRoute[] = [
     path: '/igcse-gcse-maths-tutor/',
     sitemap: true,
     head: socialHead({
-      title: 'IGCSE, GCSE and A-level maths tutor, Dubai | CES Tuition',
-      description: 'One-to-one online maths lessons for IGCSE, GCSE and A-level students in Dubai, Abu Dhabi and across the UAE, with UK-trained subject specialists. Free trial.',
+      title: 'IGCSE and A-level maths tutor, Dubai | CES Tuition',
+      description: 'One-to-one online maths lessons for IGCSE and A-level students in Dubai, Abu Dhabi and across the UAE, with UK-trained subject specialists. Free trial.',
       path: '/igcse-gcse-maths-tutor/',
       jsonLd: withService(faqAndBreadcrumbJsonLd(mathsFaqs, mathsCrumbs, canonicalUrl), mathsService, '/igcse-gcse-maths-tutor/', canonicalUrl),
     }),
@@ -235,7 +235,7 @@ export const routes: SiteRoute[] = [
     sitemap: true,
     head: socialHead({
       title: 'IGCSE, A-level and IB chemistry tutor, Dubai | CES Tuition',
-      description: 'One-to-one chemistry lessons, live online, for GCSE, IGCSE, A-level, IB MYP and Diploma students in Dubai, Abu Dhabi and the UAE. Free 30-minute trial.',
+      description: 'One-to-one chemistry lessons, live online, for IGCSE, A-level, IB MYP and Diploma students in Dubai, Abu Dhabi and the UAE. Free 30-minute trial.',
       path: '/chemistry-tutor/',
       jsonLd: withService(faqAndBreadcrumbJsonLd(chemistryFaqs, chemistryCrumbs, canonicalUrl), chemistryService, '/chemistry-tutor/', canonicalUrl),
     }),
@@ -247,7 +247,7 @@ export const routes: SiteRoute[] = [
     sitemap: true,
     head: socialHead({
       title: 'IGCSE, A-level and IB physics tutor, Dubai | CES Tuition',
-      description: 'One-to-one physics lessons, live online, for GCSE, IGCSE, A-level, IB MYP and Diploma students in Dubai, Abu Dhabi and the UAE. Free 30-minute trial.',
+      description: 'One-to-one physics lessons, live online, for IGCSE, A-level, IB MYP and Diploma students in Dubai, Abu Dhabi and the UAE. Free 30-minute trial.',
       path: '/physics-tutor/',
       jsonLd: withService(faqAndBreadcrumbJsonLd(physicsFaqs, physicsCrumbs, canonicalUrl), physicsService, '/physics-tutor/', canonicalUrl),
     }),
@@ -259,7 +259,7 @@ export const routes: SiteRoute[] = [
     sitemap: true,
     head: socialHead({
       title: 'IGCSE, A-level and IB biology tutor, Dubai | CES Tuition',
-      description: 'One-to-one biology lessons, live online, for GCSE, IGCSE, A-level, IB MYP and Diploma students in Dubai, Abu Dhabi and the UAE. Free 30-minute trial lesson.',
+      description: 'One-to-one biology lessons, live online, for IGCSE, A-level, IB MYP and Diploma students in Dubai, Abu Dhabi and the UAE. Free 30-minute trial lesson.',
       path: '/biology-tutor/',
       jsonLd: withService(faqAndBreadcrumbJsonLd(biologyFaqs, biologyCrumbs, canonicalUrl), biologyService, '/biology-tutor/', canonicalUrl),
     }),
@@ -271,7 +271,7 @@ export const routes: SiteRoute[] = [
     sitemap: true,
     head: socialHead({
       title: 'IGCSE, A-level and IB English tutor, Dubai | CES Tuition',
-      description: 'One-to-one English lessons, live online, for GCSE, IGCSE, A-level, IB MYP and Diploma students in Dubai, Abu Dhabi and the UAE. Free 30-minute trial.',
+      description: 'One-to-one English lessons, live online, for IGCSE, A-level, IB MYP and Diploma students in Dubai, Abu Dhabi and the UAE. Free 30-minute trial.',
       path: '/english-tutor/',
       jsonLd: withService(faqAndBreadcrumbJsonLd(englishFaqs, englishCrumbs, canonicalUrl), englishService, '/english-tutor/', canonicalUrl),
     }),
@@ -295,7 +295,7 @@ export const routes: SiteRoute[] = [
     sitemap: true,
     head: socialHead({
       title: 'IGCSE, A-level and IB economics tutor, Dubai | CES Tuition',
-      description: 'One-to-one online economics lessons for GCSE, IGCSE, A-level, IB MYP and Diploma students in Dubai, Abu Dhabi and the UAE, with UK-trained tutors. Free trial.',
+      description: 'One-to-one online economics lessons for IGCSE, A-level, IB MYP and Diploma students in Dubai, Abu Dhabi and the UAE, with UK-trained tutors. Free trial.',
       path: '/economics-tutor/',
       jsonLd: withService(faqAndBreadcrumbJsonLd(economicsFaqs, economicsCrumbs, canonicalUrl), economicsService, '/economics-tutor/', canonicalUrl),
     }),

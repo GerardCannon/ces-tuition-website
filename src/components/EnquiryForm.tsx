@@ -48,7 +48,6 @@ export function EnquiryForm({
         </label>
         <select id="curriculum" name="curriculum" required defaultValue={defaultCurriculum} className={fieldClass}>
           <option value="" disabled>Choose a curriculum</option>
-          <option>GCSE</option>
           <option>IGCSE</option>
           <option>A-level</option>
           <option>IB</option>
