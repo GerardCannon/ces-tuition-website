@@ -22,7 +22,7 @@ export const mathsFaqs = [
   },
   {
     question: 'Which exam boards do you cover for maths?',
-    answer: 'We teach Edexcel, Cambridge and OxfordAQA maths courses. OxfordAQA offers International GCSE and International AS and A-level maths.',
+    answer: 'We teach Edexcel, Cambridge and OxfordAQA maths courses. OxfordAQA offers International GCSE and International AS and A Level maths.',
   },
   {
     question: 'Do you teach A-level maths?',
