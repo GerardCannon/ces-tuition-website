@@ -1,3 +1,4 @@
+import { subjectRematchFaq } from '../lib/rematchCopy.ts'
 import type { ServiceInfo } from '../lib/structuredData.ts'
 
 export const englishCrumbs = [
@@ -26,6 +27,7 @@ export const englishFaqs = [
     question: 'My child enjoys reading but struggles to write about it. Can you help?',
     answer: 'Yes. Enjoying reading is a good start. We help your child turn what they notice into clear written points, backed up with evidence.',
   },
+  subjectRematchFaq('English'),
 ]
 
 export const englishService: ServiceInfo = {

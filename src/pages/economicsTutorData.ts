@@ -1,3 +1,4 @@
+import { subjectRematchFaq } from '../lib/rematchCopy.ts'
 import type { ServiceInfo } from '../lib/structuredData.ts'
 
 export const economicsCrumbs = [
@@ -30,6 +31,7 @@ export const economicsFaqs = [
     question: 'Which exam boards do you cover?',
     answer: 'Tell us which exam board your child\'s school uses, and our lessons will follow that course.',
   },
+  subjectRematchFaq('economics'),
 ]
 
 export const economicsService: ServiceInfo = {

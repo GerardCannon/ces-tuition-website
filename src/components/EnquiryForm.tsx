@@ -2,6 +2,7 @@ import { FormEvent } from 'react'
 import { Button } from '@/components/ui/button'
 import { WhatsappLogo } from '@phosphor-icons/react'
 import { QuickChatLink } from '@/components/QuickChatLink'
+import { RematchLine } from '@/components/RematchLine'
 import { countWhatsappHomeForm } from '@/lib/bindGoatCounter'
 import { useAnalyticsPage, whatsappClick } from '@/lib/goatcounter'
 import { useWhatsappLink } from '@/lib/whatsapp'
@@ -111,6 +112,7 @@ export function EnquiryForm({
             <p className="text-lg text-muted-foreground leading-relaxed">
               Tell us your child's curriculum, subject and year group. WhatsApp opens with your message ready to send. We reply within the hour to arrange your free 30-minute trial. This page does not create an account.
             </p>
+            <RematchLine tone="on-light" className="mt-3" />
           </div>
           {form}
         </div>

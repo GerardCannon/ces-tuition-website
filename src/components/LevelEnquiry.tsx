@@ -1,4 +1,5 @@
 import { WhatsappLogo } from '@phosphor-icons/react'
+import { RematchLine } from '@/components/RematchLine'
 import { Button } from '@/components/ui/button'
 import { useAnalyticsPage, whatsappClick } from '@/lib/goatcounter'
 import { whatsappUrl } from '@/lib/whatsapp'
@@ -46,6 +47,7 @@ export function LevelEnquiry({
           </Button>
         ))}
       </div>
+      <RematchLine tone="on-light" align="start" />
     </div>
   )
 }
