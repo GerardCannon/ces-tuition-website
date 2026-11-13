@@ -186,8 +186,8 @@ export const routes: SiteRoute[] = [
     path: '/curricula/ib/',
     sitemap: true,
     head: socialHead({
-      title: 'Online IB tutor in Dubai and Abu Dhabi | CES Tuition',
-      description: 'One-to-one online lessons for IB MYP and Diploma Programme students in Dubai, Abu Dhabi and across the UAE, with UK-trained subject specialists. Free trial.',
+      title: 'Online IB tuition (MYP & Diploma), Dubai & UAE | CES Tuition',
+      description: 'One-to-one online tuition for IB MYP and Diploma Programme students in Dubai, Abu Dhabi and across the UAE, with UK-trained subject specialists. Free trial.',
       path: '/curricula/ib/',
       jsonLd: withService(faqAndBreadcrumbJsonLd(ibFaqs, ibCrumbs, canonicalUrl), ibService, '/curricula/ib/', canonicalUrl),
     }),
@@ -198,8 +198,8 @@ export const routes: SiteRoute[] = [
     path: '/curricula/american/',
     sitemap: true,
     head: socialHead({
-      title: 'SAT prep and American curriculum tutor, Dubai | CES Tuition',
-      description: 'One-to-one online lessons for American curriculum students in Dubai, Abu Dhabi and across the UAE, including SAT prep. Free 30-minute trial on WhatsApp.',
+      title: 'Online American curriculum tuition, Dubai & UAE | CES Tuition',
+      description: 'One-to-one online tuition for American curriculum students in Dubai, Abu Dhabi and across the UAE, including SAT prep. Free 30-minute trial on WhatsApp.',
       path: '/curricula/american/',
       jsonLd: withService(faqAndBreadcrumbJsonLd(americanFaqs, americanCrumbs, canonicalUrl), americanService, '/curricula/american/', canonicalUrl),
     }),
