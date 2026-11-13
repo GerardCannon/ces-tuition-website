@@ -8,7 +8,7 @@ export function EconomicsTutor() {
   return (
     <PageShell
       crumbs={economicsCrumbs}
-      title="Online GCSE, IGCSE, A‑level and IB economics tutor for families in Dubai and the UAE"
+      title="Online IGCSE, A‑level and IB economics tutor for families in Dubai and the UAE"
       lede={
         <p>
           Economics asks students to explain, draw and argue, not just remember. If your child is new to the subject or finds it hard to turn what they know into clear written answers, we can help.
@@ -71,10 +71,10 @@ export function EconomicsTutor() {
 
       <PageSection title="Levels we teach">
         <p>
-          We teach economics at GCSE, IGCSE and A-level, and in the IB MYP and Diploma Programme (DP).
+          We teach economics at IGCSE and A-level, and in the IB MYP and Diploma Programme (DP).
         </p>
         <p>
-          At GCSE and IGCSE, students meet the key ideas for the first time and learn to explain them clearly in written answers. You can read more on our <a href="/curricula/british/" className={linkClass}>British curriculum page</a>.
+          At IGCSE, students meet the key ideas for the first time and learn to explain them clearly in written answers. You can read more on our <a href="/curricula/british/" className={linkClass}>British curriculum page</a>.
         </p>
         <p>
           Many students start economics fresh at A-level, and the course moves from the basic ideas to longer essays quite quickly. You can read more about the move to A-level on our <a href="/a-level-tutor/" className={linkClass}>A-level page</a>.
@@ -84,7 +84,7 @@ export function EconomicsTutor() {
         </p>
         <LevelEnquiry
           levels={[
-            { id: 'igcse-gcse', label: 'IGCSE or GCSE economics' },
+            { id: 'igcse-gcse', label: 'IGCSE economics' },
             { id: 'alevel', label: 'A-level economics' },
             { id: 'ib', label: 'IB economics' },
           ]}
@@ -99,7 +99,7 @@ export function EconomicsTutor() {
 
       <PageSection title="Where to begin" muted>
         <p>
-          When you message us, it helps to tell us your child's year group, which course they take (GCSE, IGCSE, A-level, IB MYP or IB Diploma), and which exam board their school uses if you know it. If you're not sure, your child's school will be able to tell you, or we can work it out together.
+          When you message us, it helps to tell us your child's year group, which course they take (IGCSE, A-level, IB MYP or IB Diploma), and which exam board their school uses if you know it. If you're not sure, your child's school will be able to tell you, or we can work it out together.
         </p>
         <p>
           If your child has just started economics, or has recently moved to the UAE or changed school, let us know. We'll start with the basics their class is building on.

@@ -2,7 +2,7 @@ import type { ServiceInfo } from '../lib/structuredData.ts'
 
 export const britishCrumbs = [
   { name: 'Home', path: '/' },
-  { name: 'IGCSE, GCSE and British curriculum', path: '/curricula/british/' },
+  { name: 'IGCSE and British curriculum', path: '/curricula/british/' },
 ]
 
 export const britishFaqs = [
@@ -23,22 +23,22 @@ export const britishFaqs = [
     answer: 'We teach Edexcel, Cambridge and OxfordAQA courses. OxfordAQA offers International GCSE and International AS and A-level.',
   },
   {
-    question: 'What’s the difference between GCSE and IGCSE?',
-    answer: 'GCSEs are taken by students in UK schools. The IGCSE is the international version, used by many schools in the UAE. Your child’s school decides which one they take.',
+    question: 'What’s the difference between IGCSE and the UK GCSE?',
+    answer: 'The IGCSE is the international version of the UK GCSE and is used by many schools in the UAE. We teach the IGCSE, not the UK GCSE. Your child’s school decides which one they take.',
   },
   {
     question: 'Do you also teach A-level?',
-    answer: 'Yes. We teach A-level in a wide range of subjects, as well as GCSE and IGCSE.',
+    answer: 'Yes. We teach A-level in a wide range of subjects, as well as IGCSE.',
   },
   {
-    question: 'How are GCSE, IGCSE and A-level exams structured?',
-    answer: 'GCSEs and IGCSEs are usually two-year courses assessed mainly by written exams, and some subjects also include coursework, practical work or a speaking test. In some subjects, such as maths, students sit either a foundation or a higher paper (called core and extended at Cambridge), and this sets the range of grades available. A-levels in UK schools are examined at the end of the two years, while international A-levels from Edexcel and OxfordAQA are modular, so units can be taken across more than one exam series. We help your child understand how their own course is assessed and practise the kinds of questions each paper asks.',
+    question: 'How are IGCSE and A-level exams structured?',
+    answer: 'IGCSEs are usually two-year courses assessed mainly by written exams, and some subjects also include coursework, practical work or a speaking test. In some subjects, such as maths, students sit either a foundation or a higher paper (called core and extended at Cambridge), and this sets the range of grades available. A-levels in UK schools are examined at the end of the two years, while international A-levels from Edexcel and OxfordAQA are modular, so units can be taken across more than one exam series. We help your child understand how their own course is assessed and practise the kinds of questions each paper asks.',
   },
 ]
 
 export const britishService: ServiceInfo = {
-  name: 'IGCSE, GCSE and British curriculum tuition',
-  serviceType: 'Online IGCSE and GCSE tuition',
+  name: 'IGCSE and British curriculum tuition',
+  serviceType: 'Online IGCSE tuition',
   description:
-    'Live one-to-one online IGCSE and GCSE lessons for students following the British curriculum, with UK-trained subject specialists.',
+    'Live one-to-one online IGCSE lessons for students following the British curriculum, with UK-trained subject specialists.',
 }

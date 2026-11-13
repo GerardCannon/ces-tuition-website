@@ -19,7 +19,7 @@ import { useAnalyticsPage, whatsappClick, type WhatsAppPage } from '@/lib/goatco
 import { useWhatsappLink } from '@/lib/whatsapp'
 
 // Only values the enquiry form already offers. British curriculum has no single
-// option, and the maths page covers IGCSE, GCSE and A-level, so those stay blank.
+// option, and the maths page covers IGCSE and A-level, so those stay blank.
 const enquiryPrefill: Partial<Record<WhatsAppPage, { curriculum?: string; subject?: string }>> = {
   ib: { curriculum: 'IB' },
   ibmaths: { curriculum: 'IB', subject: 'maths' },

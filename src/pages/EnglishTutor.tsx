@@ -8,7 +8,7 @@ export function EnglishTutor() {
   return (
     <PageShell
       crumbs={englishCrumbs}
-      title="Online GCSE, IGCSE, A‑level and IB English tutor for families in Dubai and the UAE"
+      title="Online IGCSE, A‑level and IB English tutor for families in Dubai and the UAE"
       lede={
         <p>
           Strong reading and writing help in every subject, not only in English lessons. If your child is finding English difficult, or simply wants to feel more confident, we can help.
@@ -68,17 +68,17 @@ export function EnglishTutor() {
 
       <PageSection title="Levels we teach">
         <p>
-          We teach English at GCSE, IGCSE and A-level, and in the IB MYP and Diploma Programme (DP).
+          We teach English at IGCSE and A-level, and in the IB MYP and Diploma Programme (DP).
         </p>
         <p>
-          A-level English goes into more depth than GCSE or IGCSE. For more on the step up to A-level, see our <a href="/a-level-tutor/" className={linkClass}>A-level page</a>.
+          A-level English goes into more depth than IGCSE. For more on the step up to A-level, see our <a href="/a-level-tutor/" className={linkClass}>A-level page</a>.
         </p>
         <p>
           Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about how we support students in the MYP and the DP.
         </p>
         <LevelEnquiry
           levels={[
-            { id: 'igcse-gcse', label: 'IGCSE or GCSE English' },
+            { id: 'igcse-gcse', label: 'IGCSE English' },
             { id: 'alevel', label: 'A-level English' },
             { id: 'ib', label: 'IB English' },
           ]}

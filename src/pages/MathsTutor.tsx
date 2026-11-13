@@ -6,7 +6,7 @@ import { mathsCrumbs, mathsFaqs } from '@/pages/mathsTutorData.ts'
 const boards = [
   {
     title: 'Edexcel',
-    body: 'GCSE, International GCSE and A-level maths.',
+    body: 'International GCSE and International A Level maths.',
   },
   {
     title: 'Cambridge',
@@ -24,7 +24,7 @@ export function MathsTutor() {
   return (
     <PageShell
       crumbs={mathsCrumbs}
-      title="Online IGCSE, GCSE and A-level maths tutor for families in Dubai and the UAE"
+      title="Online IGCSE and A-level maths tutor for families in Dubai and the UAE"
       lede={
         <p>
           Maths is often the subject parents worry about most. Our lessons follow the course your child is studying at school, whether they need to catch up or want to aim for a higher grade.
@@ -67,7 +67,7 @@ export function MathsTutor() {
         </p>
         <LevelEnquiry
           levels={[
-            { id: 'igcse-gcse', label: 'IGCSE or GCSE maths' },
+            { id: 'igcse-gcse', label: 'IGCSE maths' },
             { id: 'alevel', label: 'A-level maths' },
           ]}
         />
@@ -93,7 +93,7 @@ export function MathsTutor() {
 
       <PageSection title="Foundation, Higher, Core and Extended">
         <p>
-          GCSE and International GCSE maths papers are set at two levels, called Foundation and Higher. Cambridge IGCSE maths uses Core and Extended instead. You may hear these terms at parents’ evening; they simply describe which paper your child will sit. If you know which one it is, tell us and we’ll prepare your child for that paper.
+          International GCSE maths papers are set at two levels, called Foundation and Higher. Cambridge IGCSE maths uses Core and Extended instead. You may hear these terms at parents’ evening; they simply describe which paper your child will sit. If you know which one it is, tell us and we’ll prepare your child for that paper.
         </p>
         <p>
           If your child is going on to A-level, you can read about our A-level tuition on our <a href="/a-level-tutor/" className={linkClass}>A-level page</a>.
@@ -102,7 +102,7 @@ export function MathsTutor() {
 
       <PageSection title="Other subjects" muted>
         <p>
-          We also teach <a href="/english-tutor/" className={linkClass}>English</a>, <a href="/chemistry-tutor/" className={linkClass}>chemistry</a>, <a href="/physics-tutor/" className={linkClass}>physics</a>, <a href="/biology-tutor/" className={linkClass}>biology</a> and <a href="/economics-tutor/" className={linkClass}>economics</a>. See our <a href="/curricula/british/" className={linkClass}>IGCSE and GCSE page</a> for the full list, or ask us on WhatsApp. We also teach <a href="/ib-maths-tutor/" className={linkClass}>IB maths</a> for MYP and Diploma Programme (DP) students.
+          We also teach <a href="/english-tutor/" className={linkClass}>English</a>, <a href="/chemistry-tutor/" className={linkClass}>chemistry</a>, <a href="/physics-tutor/" className={linkClass}>physics</a>, <a href="/biology-tutor/" className={linkClass}>biology</a> and <a href="/economics-tutor/" className={linkClass}>economics</a>. See our <a href="/curricula/british/" className={linkClass}>IGCSE page</a> for the full list, or ask us on WhatsApp. We also teach <a href="/ib-maths-tutor/" className={linkClass}>IB maths</a> for MYP and Diploma Programme (DP) students.
         </p>
       </PageSection>
 

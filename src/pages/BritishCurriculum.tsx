@@ -6,7 +6,7 @@ import { britishCrumbs, britishFaqs } from '@/pages/britishCurriculumData.ts'
 const boards = [
   {
     title: 'Edexcel',
-    body: 'GCSE, International GCSE and A-level.',
+    body: 'International GCSE and International A Level.',
   },
   {
     title: 'Cambridge',
@@ -24,7 +24,7 @@ export function BritishCurriculum() {
   return (
     <PageShell
       crumbs={britishCrumbs}
-      title="Online IGCSE, GCSE and British curriculum tuition for families in Dubai and the UAE"
+      title="Online IGCSE and British curriculum tuition for families in Dubai and the UAE"
       lede={
         <p>
           Many schools in the UAE teach the IGCSE. If your child is finding a subject difficult, or wants to feel more confident, we can help.
@@ -73,19 +73,19 @@ export function BritishCurriculum() {
         </p>
         <LevelEnquiry
           levels={[
-            { id: 'igcse-gcse-maths', label: 'IGCSE or GCSE maths' },
-            { id: 'igcse-gcse-english', label: 'IGCSE or GCSE English' },
+            { id: 'igcse-gcse-maths', label: 'IGCSE maths' },
+            { id: 'igcse-gcse-english', label: 'IGCSE English' },
             { id: 'igcse-chemistry', label: 'Edexcel IGCSE chemistry' },
-            { id: 'igcse-gcse-physics', label: 'IGCSE or GCSE physics' },
-            { id: 'igcse-gcse-biology', label: 'IGCSE or GCSE biology' },
-            { id: 'igcse-gcse-economics', label: 'IGCSE or GCSE economics' },
+            { id: 'igcse-gcse-physics', label: 'IGCSE physics' },
+            { id: 'igcse-gcse-biology', label: 'IGCSE biology' },
+            { id: 'igcse-gcse-economics', label: 'IGCSE economics' },
           ]}
         />
       </PageSection>
 
-      <PageSection title="IGCSE and GCSE subjects">
+      <PageSection title="IGCSE subjects">
         <p>
-          We teach IGCSE and GCSE <a href="/igcse-gcse-maths-tutor/" className={linkClass}>maths</a>, <a href="/english-tutor/" className={linkClass}>English</a>, <a href="/chemistry-tutor/" className={linkClass}>chemistry</a>, <a href="/physics-tutor/" className={linkClass}>physics</a>, <a href="/biology-tutor/" className={linkClass}>biology</a> and <a href="/economics-tutor/" className={linkClass}>economics</a>.
+          We teach IGCSE <a href="/igcse-gcse-maths-tutor/" className={linkClass}>maths</a>, <a href="/english-tutor/" className={linkClass}>English</a>, <a href="/chemistry-tutor/" className={linkClass}>chemistry</a>, <a href="/physics-tutor/" className={linkClass}>physics</a>, <a href="/biology-tutor/" className={linkClass}>biology</a> and <a href="/economics-tutor/" className={linkClass}>economics</a>.
         </p>
         <p>
           If your child’s subject isn’t listed, just ask us. We also teach <a href="/a-level-tutor/" className={linkClass}>A-level</a>, and you can read about the IB MYP and Diploma Programme (DP) on our <a href="/curricula/ib/" className={linkClass}>IB page</a>.
@@ -94,7 +94,7 @@ export function BritishCurriculum() {
 
       <PageSection title="Years 10 and 11" muted>
         <p>
-          IGCSE and GCSE courses usually run through Years 10 and 11. Gaps from earlier years often show up then, because the work builds on what students have already covered.
+          IGCSE courses usually run through Years 10 and 11. Gaps from earlier years often show up then, because the work builds on what students have already covered.
         </p>
       </PageSection>
 
@@ -118,7 +118,7 @@ export function BritishCurriculum() {
 
       <PageSection title="Maths" muted>
         <p>
-          Maths has a few extra options, such as different levels of exam paper, depending on the exam board. You can read more on our <a href="/igcse-gcse-maths-tutor/" className={linkClass}>IGCSE, GCSE and A-level maths page</a>.
+          Maths has a few extra options, such as different levels of exam paper, depending on the exam board. You can read more on our <a href="/igcse-gcse-maths-tutor/" className={linkClass}>IGCSE and A-level maths page</a>.
         </p>
       </PageSection>
 

@@ -2,8 +2,8 @@ import type { ServiceInfo } from '../lib/structuredData.ts'
 
 export const mathsCrumbs = [
   { name: 'Home', path: '/' },
-  { name: 'IGCSE, GCSE and British curriculum', path: '/curricula/british/' },
-  { name: 'IGCSE and GCSE maths', path: '/igcse-gcse-maths-tutor/' },
+  { name: 'IGCSE and British curriculum', path: '/curricula/british/' },
+  { name: 'IGCSE maths', path: '/igcse-gcse-maths-tutor/' },
 ]
 
 export const mathsFaqs = [
@@ -25,13 +25,13 @@ export const mathsFaqs = [
   },
   {
     question: 'Do you teach A-level maths?',
-    answer: 'Yes. We teach A-level maths as well as IGCSE and GCSE maths.',
+    answer: 'Yes. We teach A-level maths as well as IGCSE maths.',
   },
 ]
 
 export const mathsService: ServiceInfo = {
-  name: 'IGCSE, GCSE and A-level maths tuition',
+  name: 'IGCSE and A-level maths tuition',
   serviceType: 'Online maths tuition',
   description:
-    'Live one-to-one online maths lessons for IGCSE, GCSE and A-level students, with UK-trained subject specialists.',
+    'Live one-to-one online maths lessons for IGCSE and A-level students, with UK-trained subject specialists.',
 }

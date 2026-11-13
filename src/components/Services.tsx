@@ -83,12 +83,12 @@ const services: {
   links?: { href: string; label: string }[]
 }[] = [
   {
-    title: 'British curriculum: GCSE, IGCSE and A-level',
-    description: 'Live online lessons for GCSE, IGCSE and A-level courses with a subject specialist, including exam practice.',
+    title: 'British curriculum: IGCSE and A-level',
+    description: 'Live online lessons for IGCSE and A-level courses with a subject specialist, including exam practice.',
     graphic: <UkFlag />,
     links: [
       { href: '/curricula/british/', label: 'British curriculum tutor' },
-      { href: '/igcse-gcse-maths-tutor/', label: 'IGCSE and GCSE maths tutor' },
+      { href: '/igcse-gcse-maths-tutor/', label: 'IGCSE maths tutor' },
       { href: '/a-level-tutor/', label: 'A-level tutor' },
     ],
   },
@@ -173,7 +173,7 @@ export function Services() {
                         </a>
                       </li>
                     ))}
-                    {service.title === 'British curriculum: GCSE, IGCSE and A-level' ? (
+                    {service.title === 'British curriculum: IGCSE and A-level' ? (
                       <li>
                         <a href="/chemistry-tutor/" className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">Chemistry</a>
                         {', '}

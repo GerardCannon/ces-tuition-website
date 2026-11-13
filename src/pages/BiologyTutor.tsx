@@ -74,17 +74,17 @@ export function BiologyTutor() {
 
       <PageSection title="Levels we teach" muted>
         <p>
-          We teach biology at GCSE, <a href="/curricula/british/" className={linkClass}>IGCSE</a> and A-level, and in the IB MYP and Diploma Programme (DP). You can read more about A-level on our <a href="/a-level-tutor/" className={linkClass}>A-level page</a>.
+          We teach biology at <a href="/curricula/british/" className={linkClass}>IGCSE</a> and A-level, and in the IB MYP and Diploma Programme (DP). You can read more about A-level on our <a href="/a-level-tutor/" className={linkClass}>A-level page</a>.
         </p>
         <p>
           In the DP, biology is taken at Higher Level or Standard Level. Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about the MYP and the Diploma Programme.
         </p>
         <p>
-          At IGCSE we teach Edexcel and OxfordAQA biology; at A-level we teach Edexcel and AQA.
+          At IGCSE we teach Edexcel and OxfordAQA biology; at A-level we teach Edexcel and OxfordAQA International A Level biology.
         </p>
         <LevelEnquiry
           levels={[
-            { id: 'igcse-gcse', label: 'IGCSE or GCSE biology' },
+            { id: 'igcse-gcse', label: 'IGCSE biology' },
             { id: 'alevel', label: 'A-level biology' },
             { id: 'ib', label: 'IB biology' },
           ]}

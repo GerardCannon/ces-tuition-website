@@ -20,7 +20,7 @@ export const biologyFaqs = [
   },
   {
     question: 'Which exam boards do you cover?',
-    answer: 'For biology we cover Edexcel at IGCSE and A-level, OxfordAQA at IGCSE, and AQA at A-level. Send us the board on WhatsApp if you are unsure which one your school uses.',
+    answer: 'For biology we cover Edexcel at IGCSE and A-level, OxfordAQA at IGCSE, and OxfordAQA at International A Level. Send us the board on WhatsApp if you are unsure which one your school uses.',
   },
   {
     question: 'Can you help with an IB Diploma internal assessment?',
@@ -32,5 +32,5 @@ export const biologyService: ServiceInfo = {
   name: 'Biology tuition',
   serviceType: 'Online biology tuition',
   description:
-    'Live one-to-one online biology lessons for GCSE, IGCSE, A-level, IB MYP and IB Diploma (DP) students, with UK-trained subject specialists.',
+    'Live one-to-one online biology lessons for IGCSE, A-level, IB MYP and IB Diploma (DP) students, with UK-trained subject specialists.',
 }

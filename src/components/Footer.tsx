@@ -13,7 +13,7 @@ const quickLinks = [
 ]
 
 const curriculaLinks = [
-  { label: 'GCSE and IGCSE', href: '/curricula/british/' },
+  { label: 'IGCSE', href: '/curricula/british/' },
   { label: 'A-level', href: '/a-level-tutor/' },
   { label: 'IB', href: '/curricula/ib/' },
   { label: 'American curriculum', href: '/curricula/american/' },
