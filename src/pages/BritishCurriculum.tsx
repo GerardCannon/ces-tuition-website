@@ -85,7 +85,7 @@ export function BritishCurriculum() {
 
       <PageSection title="IGCSE subjects">
         <p>
-          We teach IGCSE <a href="/igcse-gcse-maths-tutor/" className={linkClass}>maths</a>, <a href="/english-tutor/" className={linkClass}>English</a>, <a href="/chemistry-tutor/" className={linkClass}>chemistry</a>, <a href="/physics-tutor/" className={linkClass}>physics</a>, <a href="/biology-tutor/" className={linkClass}>biology</a> and <a href="/economics-tutor/" className={linkClass}>economics</a>.
+          We teach IGCSE <a href="/igcse-gcse-maths-tutor/" className={linkClass}>maths</a> and <a href="/english-tutor/" className={linkClass}>English</a>. For the sciences, see our <a href="/chemistry-tutor/" className={linkClass}>IGCSE chemistry tutor</a>, <a href="/physics-tutor/" className={linkClass}>IGCSE physics tutor</a> and <a href="/biology-tutor/" className={linkClass}>IGCSE biology tutor</a> pages, and we also teach <a href="/economics-tutor/" className={linkClass}>economics</a>.
         </p>
         <p>
           If your child’s subject isn’t listed, just ask us. We also teach <a href="/a-level-tutor/" className={linkClass}>A-level</a>, and you can read about the IB MYP and Diploma Programme (DP) on our <a href="/curricula/ib/" className={linkClass}>IB page</a>.

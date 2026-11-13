@@ -81,7 +81,7 @@ export function IbCurriculum() {
 
       <PageSection title="Subjects" muted>
         <p>
-          We teach a range of IB subjects in both the MYP and the DP, such as <a href="/ib-maths-tutor/" className={linkClass}>maths</a>, <a href="/physics-tutor/" className={linkClass}>physics</a>, <a href="/chemistry-tutor/" className={linkClass}>chemistry</a>, <a href="/biology-tutor/" className={linkClass}>biology</a>, <a href="/economics-tutor/" className={linkClass}>economics</a>, business management, <a href="/english-tutor/" className={linkClass}>English</a> and computer science. If your child's subject isn't listed, just ask us. We also teach the British curriculum, which you can read about on our <a href="/curricula/british/" className={linkClass}>British curriculum page</a>.
+          We teach a range of IB subjects in both the MYP and the DP, such as <a href="/ib-maths-tutor/" className={linkClass}>maths</a>, <a href="/physics-tutor/" className={linkClass}>physics</a>, <a href="/chemistry-tutor/" className={linkClass}>IB chemistry</a>, <a href="/biology-tutor/" className={linkClass}>IB biology</a>, <a href="/economics-tutor/" className={linkClass}>economics</a>, business management, <a href="/english-tutor/" className={linkClass}>English</a> and computer science. If your child's subject isn't listed, just ask us. We also teach the British curriculum, which you can read about on our <a href="/curricula/british/" className={linkClass}>British curriculum page</a>.
         </p>
       </PageSection>
 

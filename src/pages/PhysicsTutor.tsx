@@ -23,6 +23,9 @@ export function PhysicsTutor() {
     >
       <PageSection title="Our lessons">
         <p>
+          We teach one-to-one online physics tuition, live, for students in Dubai, Abu Dhabi, Sharjah and across the UAE, on Edexcel, Cambridge and OxfordAQA courses.
+        </p>
+        <p>
           Your child has one-to-one physics lessons with our UK‑trained subject specialists on our interactive online whiteboard.
         </p>
         <p>
@@ -74,13 +77,7 @@ export function PhysicsTutor() {
 
       <PageSection title="Levels we teach" muted>
         <p>
-          We teach physics at <a href="/curricula/british/" className={linkClass}>IGCSE</a> and A-level, and in the IB MYP and Diploma Programme (DP).
-        </p>
-        <p>
-          A-level physics uses more maths than IGCSE, and topics such as mechanics are taken further. For more on the step up to A-level, see our <a href="/a-level-tutor/" className={linkClass}>A-level page</a>.
-        </p>
-        <p>
-          In the DP, physics is taken at Higher Level or Standard Level, and students complete an internal assessment. Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about the MYP and the Diploma Programme.
+          We teach physics at <a href="/curricula/british/" className={linkClass}>IGCSE</a> and A-level, and in the IB MYP and Diploma Programme (DP). Edexcel covers International GCSE and International A Level, Cambridge covers IGCSE and International AS and A Level, and OxfordAQA covers International GCSE and International AS and A-level.
         </p>
         <LevelEnquiry
           levels={[
@@ -91,6 +88,27 @@ export function PhysicsTutor() {
         />
         <p>
           We also teach <a href="/chemistry-tutor/" className={linkClass}>chemistry</a> and <a href="/biology-tutor/" className={linkClass}>biology</a>, as well as <a href="/igcse-gcse-maths-tutor/" className={linkClass}>maths</a>, <a href="/english-tutor/" className={linkClass}>English</a> and <a href="/economics-tutor/" className={linkClass}>economics</a>.
+        </p>
+      </PageSection>
+
+      <PageSection id="igcse-physics" title="IGCSE physics">
+        <p>
+          We teach IGCSE physics live and online for students in Dubai, Abu Dhabi, Sharjah and across the UAE.
+        </p>
+      </PageSection>
+
+      <PageSection id="a-level-physics" title="A-level physics" muted>
+        <p>
+          A-level physics uses more maths than IGCSE, and topics such as mechanics are taken further. For more on the step up to A-level, see our <a href="/a-level-tutor/" className={linkClass}>A-level page</a>.
+        </p>
+      </PageSection>
+
+      <PageSection id="ib-physics" title="IB physics (MYP and Diploma)">
+        <p>
+          We teach IB physics in the MYP and in the Diploma Programme, where we cover both Higher Level and Standard Level.
+        </p>
+        <p>
+          In the DP, physics is taken at Higher Level or Standard Level, and students complete an internal assessment. Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about the MYP and the Diploma Programme.
         </p>
       </PageSection>
 

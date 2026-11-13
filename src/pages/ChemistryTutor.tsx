@@ -23,6 +23,9 @@ export function ChemistryTutor() {
     >
       <PageSection title="Our lessons">
         <p>
+          We teach one-to-one online chemistry tuition, live, for students in Dubai, Abu Dhabi, Sharjah and across the UAE.
+        </p>
+        <p>
           Your child has one-to-one chemistry lessons with our UK‑trained subject specialists on our interactive online whiteboard.
         </p>
         <p>
@@ -66,18 +69,36 @@ export function ChemistryTutor() {
         </div>
       </PageSection>
 
+      <PageSection id="ib-chemistry" title="IB chemistry (MYP and Diploma)" muted>
+        <p>
+          We teach IB chemistry in the MYP and in the Diploma Programme, where we cover both Higher Level and Standard Level.
+        </p>
+        <p>
+          In the DP, chemistry is taken at Higher Level or Standard Level, and students complete an internal assessment. Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about the MYP and the Diploma Programme.
+        </p>
+      </PageSection>
+
+      <PageSection id="igcse-chemistry" title="IGCSE chemistry (Edexcel)">
+        <p>
+          We teach Edexcel IGCSE chemistry.
+        </p>
+      </PageSection>
+
+      <PageSection id="a-level-chemistry" title="A-level chemistry" muted>
+        <p>
+          At A-level we teach Edexcel International A Level, Cambridge International AS and A Level, and OxfordAQA International AS and A Level chemistry.
+        </p>
+        <p>
+          A-level chemistry goes into more depth than IGCSE, and the calculations get longer. You can read more about the move to A-level on our <a href="/a-level-tutor/" className={linkClass}>A-level page</a>.
+        </p>
+      </PageSection>
+
       <PageSection title="Levels we teach">
         <p>
           We teach chemistry at <a href="/curricula/british/" className={linkClass}>IGCSE</a> and A-level, and in the IB MYP and Diploma Programme (DP).
         </p>
         <p>
-          A-level chemistry goes into more depth than IGCSE, and the calculations get longer. You can read more about the move to A-level on our <a href="/a-level-tutor/" className={linkClass}>A-level page</a>.
-        </p>
-        <p>
-          In the DP, chemistry is taken at Higher Level or Standard Level, and students complete an internal assessment. Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about the MYP and the Diploma Programme.
-        </p>
-        <p>
-          At IGCSE we teach Edexcel chemistry. We also teach IB chemistry at MYP and Diploma.
+          At IGCSE we teach Edexcel chemistry, and at A-level we teach Edexcel International A Level, Cambridge International AS and A Level, and OxfordAQA International AS and A Level chemistry. We also teach IB chemistry at MYP and Diploma.
         </p>
         <LevelEnquiry
           levels={[
