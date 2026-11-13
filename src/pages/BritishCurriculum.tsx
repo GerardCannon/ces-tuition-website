@@ -33,7 +33,7 @@ export function BritishCurriculum() {
       ctaTitle="Book your free 30‑minute trial"
       ctaBody={
         <p>
-          Send us your child’s subject and year group on WhatsApp. We reply within the hour to arrange your free 30‑minute trial.
+          Send us your child’s subject and year group on WhatsApp. We reply within the hour.
         </p>
       }
     >
