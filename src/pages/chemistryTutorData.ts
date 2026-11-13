@@ -1,3 +1,4 @@
+import { subjectRematchFaq } from '../lib/rematchCopy.ts'
 import type { ServiceInfo } from '../lib/structuredData.ts'
 
 export const chemistryCrumbs = [
@@ -46,6 +47,7 @@ export const chemistryFaqs = [
     question: 'Do you teach MYP chemistry?',
     answer: 'Yes. We teach chemistry in the IB MYP and in the Diploma Programme (DP).',
   },
+  subjectRematchFaq('chemistry'),
 ]
 
 export const chemistryService: ServiceInfo = {

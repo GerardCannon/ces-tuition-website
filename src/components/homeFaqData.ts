@@ -1,3 +1,5 @@
+import { HOME_REMATCH_FAQ } from '../lib/rematchCopy.ts'
+
 export const homeFaqs = [
   {
     question: 'Do you teach families in Abu Dhabi and Sharjah?',
@@ -8,4 +10,5 @@ export const homeFaqs = [
     question: 'Can my child join from outside the UAE?',
     answer: 'Yes. All our lessons are online, so families join us from the UK, Europe and all over Asia.',
   },
+  HOME_REMATCH_FAQ,
 ]

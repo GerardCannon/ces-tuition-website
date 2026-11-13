@@ -1,3 +1,4 @@
+import { subjectRematchFaq } from '../lib/rematchCopy.ts'
 import type { ServiceInfo } from '../lib/structuredData.ts'
 
 export const ibMathsCrumbs = [
@@ -26,6 +27,7 @@ export const ibMathsFaqs = [
     question: 'Can you help with the internal assessment?',
     answer: 'Yes. We can help your child understand what\'s expected and plan their time. The work they hand in is always their own.',
   },
+  subjectRematchFaq('IB maths'),
 ]
 
 export const ibMathsService: ServiceInfo = {

@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { WhatsappLogo } from '@phosphor-icons/react'
 import { QuickChatLink } from '@/components/QuickChatLink'
+import { RematchLine } from '@/components/RematchLine'
 import { ReviewMention } from '@/components/ReviewMention'
 import { useAnalyticsPage, whatsappClick } from '@/lib/goatcounter'
 import { useWhatsappLink } from '@/lib/whatsapp'
@@ -58,6 +59,7 @@ export function Hero() {
           <p className="text-sm sm:text-base text-white leading-relaxed text-balance max-w-2xl mx-auto">
             We reply within the hour. Your free 30-minute trial is with a UK‑trained specialist.
           </p>
+          <RematchLine tone="on-primary" />
           <QuickChatLink placement="home-hero" tone="on-primary" />
         </div>
       </div>
