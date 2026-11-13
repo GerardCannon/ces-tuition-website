@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button'
 import { WhatsappLogo } from '@phosphor-icons/react'
+import { QuickChatLink } from '@/components/QuickChatLink'
 import { ReviewMention } from '@/components/ReviewMention'
 import { useAnalyticsPage, whatsappClick } from '@/lib/goatcounter'
 import { useWhatsappLink } from '@/lib/whatsapp'
@@ -55,6 +56,7 @@ export function Hero() {
             </Button>
           </div>
           <p className="text-sm sm:text-base text-white">Free 30-minute trial lesson</p>
+          <QuickChatLink placement="home-hero" tone="on-primary" />
         </div>
       </div>
     </section>

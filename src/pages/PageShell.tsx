@@ -12,10 +12,11 @@ import {
 import { EnquiryForm } from '@/components/EnquiryForm'
 import { Footer } from '@/components/Footer'
 import { Navigation } from '@/components/Navigation'
+import { QuickChatLink } from '@/components/QuickChatLink'
 import { ReviewMention } from '@/components/ReviewMention'
 import { Testimonials } from '@/components/Testimonials'
 import { WhatsAppBar } from '@/components/WhatsAppBar'
-import { useAnalyticsPage, whatsappClick, type WhatsAppPage } from '@/lib/goatcounter'
+import { useAnalyticsPage, useAnalyticsRouteId, whatsappClick, type WhatsAppPage } from '@/lib/goatcounter'
 import { useWhatsappLink } from '@/lib/whatsapp'
 
 // Only values the enquiry form already offers. British curriculum has no single
@@ -53,6 +54,7 @@ export function PageShell({
 }) {
   const whatsappHref = useWhatsappLink()
   const page = useAnalyticsPage()
+  const routeId = useAnalyticsRouteId()
   const prefill = enquiryPrefill[page]
   return (
     <div className="min-h-screen">
@@ -128,6 +130,7 @@ export function PageShell({
                   <a href="#enquire">Send an enquiry</a>
                 </Button>
               </div>
+              <QuickChatLink placement={routeId} tone="on-primary" />
             </div>
           </div>
         </header>
