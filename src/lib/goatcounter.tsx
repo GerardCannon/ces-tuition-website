@@ -22,7 +22,12 @@ const pageByRouteId: Record<string, WhatsAppPage> = {
   'not-found': '404',
 }
 
-const AnalyticsPageContext = createContext<WhatsAppPage | null>(null)
+type AnalyticsContextValue = {
+  page: WhatsAppPage
+  routeId: string
+}
+
+const AnalyticsPageContext = createContext<AnalyticsContextValue | null>(null)
 
 export function pageForRoute(routeId: string): WhatsAppPage {
   const page = pageByRouteId[routeId]
@@ -40,13 +45,21 @@ export function AnalyticsPageProvider({ routeId, children }: { routeId: string; 
   useEffect(() => {
     bindGoatCounterClicks()
   }, [])
-  return <AnalyticsPageContext.Provider value={page}>{children}</AnalyticsPageContext.Provider>
+  return <AnalyticsPageContext.Provider value={{ page, routeId }}>{children}</AnalyticsPageContext.Provider>
+}
+
+function useAnalyticsContext() {
+  const value = useContext(AnalyticsPageContext)
+  if (!value) throw new Error('GoatCounter page is missing')
+  return value
 }
 
 export function useAnalyticsPage() {
-  const page = useContext(AnalyticsPageContext)
-  if (!page) throw new Error('GoatCounter page is missing')
-  return page
+  return useAnalyticsContext().page
+}
+
+export function useAnalyticsRouteId() {
+  return useAnalyticsContext().routeId
 }
 
 export function whatsappClick(page: WhatsAppPage, place: WhatsAppPlace, detail?: string) {
@@ -55,5 +68,14 @@ export function whatsappClick(page: WhatsAppPage, place: WhatsAppPlace, detail?:
   return {
     'data-goatcounter-click': `whatsapp-${page}-${place}${suffix}`,
     'data-goatcounter-title': `WhatsApp click: ${page} ${place}${titleDetail}`,
+  }
+}
+
+// Separate from whatsappClick so existing event ids stay as they are.
+// placement is "home-hero", "home-form", or a route id.
+export function quickChatClick(placement: string) {
+  return {
+    'data-goatcounter-click': `whatsapp-quick-chat-${placement}`,
+    'data-goatcounter-title': `WhatsApp click: quick chat ${placement}`,
   }
 }

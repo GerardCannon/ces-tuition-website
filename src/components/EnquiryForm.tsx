@@ -1,6 +1,7 @@
 import { FormEvent } from 'react'
 import { Button } from '@/components/ui/button'
 import { WhatsappLogo } from '@phosphor-icons/react'
+import { QuickChatLink } from '@/components/QuickChatLink'
 import { countWhatsappHomeForm } from '@/lib/bindGoatCounter'
 import { useAnalyticsPage, whatsappClick } from '@/lib/goatcounter'
 import { useWhatsappLink } from '@/lib/whatsapp'
@@ -89,6 +90,11 @@ export function EnquiryForm({
       <p className="text-sm text-muted-foreground text-center leading-relaxed">
         This opens WhatsApp with your details filled in. This website does not store the form.
       </p>
+      {page === 'home' && !embedded ? (
+        <p className="text-center">
+          <QuickChatLink placement="home-form" tone="on-light" />
+        </p>
+      ) : null}
     </form>
   )
 
