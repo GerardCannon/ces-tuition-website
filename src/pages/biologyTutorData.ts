@@ -20,7 +20,7 @@ export const biologyFaqs = [
   },
   {
     question: 'Which exam boards do you cover?',
-    answer: 'For biology we cover Edexcel and OxfordAQA at IGCSE, and Edexcel International A Level and OxfordAQA International A Level at A-level. We also teach IB biology in the MYP and the Diploma Programme, at both Higher Level and Standard Level. Send us the board on WhatsApp if you are unsure which one your school uses.',
+    answer: 'For biology we cover Edexcel and OxfordAQA at IGCSE, and Edexcel International A Level and OxfordAQA International A Level at A-level. We also teach IB biology in the MYP and in the Diploma Programme, where we cover both Higher Level and Standard Level. Send us the board on WhatsApp if you are unsure which one your school uses.',
   },
   {
     question: 'Can you help with an IB Diploma internal assessment?',
@@ -36,7 +36,7 @@ export const biologyFaqs = [
   },
   {
     question: 'Do you teach IB biology at Higher Level and Standard Level?',
-    answer: 'Yes. We teach both Higher Level and Standard Level, in the MYP and in the Diploma Programme.',
+    answer: 'Yes. We teach IB biology in the MYP and in the Diploma Programme, where we cover both Higher Level and Standard Level.',
   },
   {
     question: 'Do you teach MYP biology?',

@@ -105,7 +105,7 @@ export function PhysicsTutor() {
 
       <PageSection id="ib-physics" title="IB physics (MYP and Diploma)">
         <p>
-          We teach IB physics in the MYP and the Diploma Programme (DP). We teach both Higher Level and Standard Level.
+          We teach IB physics in the MYP and in the Diploma Programme, where we cover both Higher Level and Standard Level.
         </p>
         <p>
           In the DP, physics is taken at Higher Level or Standard Level, and students complete an internal assessment. Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about the MYP and the Diploma Programme.

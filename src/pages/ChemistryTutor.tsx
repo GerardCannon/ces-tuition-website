@@ -71,7 +71,7 @@ export function ChemistryTutor() {
 
       <PageSection id="ib-chemistry" title="IB chemistry (MYP and Diploma)" muted>
         <p>
-          We teach IB chemistry in the MYP and the Diploma Programme (DP). We teach both Higher Level and Standard Level.
+          We teach IB chemistry in the MYP and in the Diploma Programme, where we cover both Higher Level and Standard Level.
         </p>
         <p>
           In the DP, chemistry is taken at Higher Level or Standard Level, and students complete an internal assessment. Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about the MYP and the Diploma Programme.

@@ -93,7 +93,7 @@ export function BiologyTutor() {
 
       <PageSection id="ib-biology" title="IB biology (MYP and Diploma)">
         <p>
-          We teach IB biology in the MYP and the Diploma Programme (DP). We teach both Higher Level and Standard Level.
+          We teach IB biology in the MYP and in the Diploma Programme, where we cover both Higher Level and Standard Level.
         </p>
         <p>
           In the DP, biology is taken at Higher Level or Standard Level. Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about the MYP and the Diploma Programme.

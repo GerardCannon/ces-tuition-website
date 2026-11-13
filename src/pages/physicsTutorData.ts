@@ -20,7 +20,7 @@ export const physicsFaqs = [
   },
   {
     question: 'Which exam boards do you cover?',
-    answer: 'We teach students following Edexcel, Cambridge and OxfordAQA physics courses. Edexcel covers International GCSE and International A Level, Cambridge covers IGCSE and International AS and A Level, and OxfordAQA covers International GCSE and International AS and A-level. We also teach IB physics in the MYP and the Diploma Programme, at both Higher Level and Standard Level.',
+    answer: 'We teach students following Edexcel, Cambridge and OxfordAQA physics courses. Edexcel covers International GCSE and International A Level, Cambridge covers IGCSE and International AS and A Level, and OxfordAQA covers International GCSE and International AS and A-level. We also teach IB physics in the MYP and in the Diploma Programme, where we cover both Higher Level and Standard Level.',
   },
   {
     question: 'My child understands physics in class but struggles in tests. Can you help?',
@@ -36,7 +36,7 @@ export const physicsFaqs = [
   },
   {
     question: 'Do you teach IB physics at Higher Level and Standard Level?',
-    answer: 'Yes. We teach both Higher Level and Standard Level, in the MYP and in the Diploma Programme.',
+    answer: 'Yes. We teach IB physics in the MYP and in the Diploma Programme, where we cover both Higher Level and Standard Level.',
   },
   {
     question: 'Do you teach MYP physics?',

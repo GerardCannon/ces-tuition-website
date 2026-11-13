@@ -20,7 +20,7 @@ export const chemistryFaqs = [
   },
   {
     question: 'Which exam boards do you cover?',
-    answer: 'For chemistry we cover Edexcel at IGCSE, and at A-level Edexcel International A Level, Cambridge International AS and A Level, and OxfordAQA International AS and A Level. We also cover IB at MYP and Diploma level, at both Higher Level and Standard Level. Send us the board on WhatsApp if you are unsure which one your school uses.',
+    answer: 'For chemistry we cover Edexcel at IGCSE, and at A-level Edexcel International A Level, Cambridge International AS and A Level, and OxfordAQA International AS and A Level. We also teach IB chemistry in the MYP and in the Diploma Programme, where we cover both Higher Level and Standard Level. Send us the board on WhatsApp if you are unsure which one your school uses.',
   },
   {
     question: 'Does my child need to be good at maths for chemistry?',
@@ -28,7 +28,7 @@ export const chemistryFaqs = [
   },
   {
     question: 'Do you teach IB chemistry online?',
-    answer: 'Yes. We teach IB chemistry online at MYP and Diploma level, Higher Level and Standard Level.',
+    answer: 'Yes. We teach IB chemistry online in the MYP and in the Diploma Programme, where we cover both Higher Level and Standard Level.',
   },
   {
     question: 'Do you teach Edexcel IGCSE chemistry?',
@@ -40,7 +40,7 @@ export const chemistryFaqs = [
   },
   {
     question: 'Do you teach chemistry at Higher Level and Standard Level?',
-    answer: 'Yes. We teach both Higher Level and Standard Level, in the MYP and in the Diploma Programme.',
+    answer: 'Yes. We teach IB chemistry in the MYP and in the Diploma Programme, where we cover both Higher Level and Standard Level.',
   },
   {
     question: 'Do you teach MYP chemistry?',
