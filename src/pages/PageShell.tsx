@@ -60,7 +60,7 @@ export function PageShell({
     <div className="min-h-screen">
       <Navigation sectionBase="/" />
       <main>
-        <div className="bg-card border-b border-border pt-20 md:pt-24">
+        <div className="banner-offset-crumb bg-card border-b border-border">
           <div className="max-w-7xl mx-auto px-6 lg:px-8 py-3">
             <Breadcrumb>
               <BreadcrumbList>
@@ -115,7 +115,7 @@ export function PageShell({
                 >
                   <a href={whatsappHref()} {...whatsappClick(page, 'hero')} className="flex items-center gap-2">
                     <WhatsappLogo size={22} weight="fill" aria-hidden="true" className="shrink-0" />
-                    <span className="min-w-0">Book your free trial on WhatsApp</span>
+                    <span className="max-[359px]:min-w-0">Book your free trial on WhatsApp</span>
                   </a>
                 </Button>
                 <Button

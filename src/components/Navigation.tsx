@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { List, WhatsappLogo, X } from '@phosphor-icons/react'
+import { FreeLessonsBanner } from '@/components/FreeLessonsBanner'
 import { Logo } from '@/components/Logo'
 import { bindGoatCounterClicks, useAnalyticsPage, whatsappClick } from '@/lib/goatcounter'
 import { useWhatsappLink } from '@/lib/whatsapp'
@@ -27,7 +28,9 @@ export function Navigation({ sectionBase = '' }: { sectionBase?: string }) {
   }
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-border shadow-sm">
+    <>
+      <FreeLessonsBanner />
+      <nav className="site-nav fixed left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-border shadow-sm">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           <div className="flex-shrink-0">
@@ -110,6 +113,7 @@ export function Navigation({ sectionBase = '' }: { sectionBase?: string }) {
           </div>
         </div>
       )}
-    </nav>
+      </nav>
+    </>
   )
 }

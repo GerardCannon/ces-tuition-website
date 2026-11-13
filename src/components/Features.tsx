@@ -1,6 +1,7 @@
+import type { ReactNode } from 'react'
 import { ChatCircle, DeviceMobile, Gift, GraduationCap, Star, Users } from '@phosphor-icons/react'
 
-const features = [
+const features: { icon: typeof GraduationCap; title: string; description: ReactNode }[] = [
   {
     icon: GraduationCap,
     title: 'UK‑trained specialists',
@@ -24,7 +25,14 @@ const features = [
   {
     icon: Gift,
     title: 'Referral programme',
-    description: 'Ask us about our referral programme.',
+    description: (
+      <>
+        Earn free lessons when friends join.{' '}
+        <a href="#free-lessons" className="whitespace-nowrap font-semibold text-foreground underline underline-offset-4 hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:rounded-sm">
+          See how →
+        </a>
+      </>
+    ),
   },
   {
     icon: ChatCircle,
