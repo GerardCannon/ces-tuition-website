@@ -8,7 +8,7 @@ export function ChemistryTutor() {
   return (
     <PageShell
       crumbs={chemistryCrumbs}
-      title="Chemistry tutor for families in Dubai and the UAE"
+      title="Online IGCSE, A‑level and IB chemistry tutor for families in Dubai and the UAE"
       lede={
         <p>
           Chemistry builds on itself, so a gap in one topic can make the next one harder. If your child is finding chemistry difficult, or simply wants to feel more confident, we can help.
@@ -76,12 +76,30 @@ export function ChemistryTutor() {
         <p>
           In the DP, chemistry is taken at Higher Level or Standard Level, and students complete an internal assessment. Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about the MYP and the Diploma Programme.
         </p>
+        <div className="space-y-4">
+          <h3 className="text-xl font-bold text-foreground mb-2">How IB chemistry is assessed</h3>
+          <p>
+            In the Diploma Programme, 80% of the chemistry mark comes from external exams and 20% from an internal assessment. The internal assessment is one scientific investigation. The school teacher marks it and the IB checks it, and the investigation is your child's own work. Paper 1 is worth 36% and Paper 2 is worth 44%. At Standard Level, Paper 1 is 55 marks and lasts 1 hour 30 minutes, and Paper 2 is 50 marks and lasts 1 hour 30 minutes. At Higher Level, Paper 1 is 75 marks and lasts 2 hours, and Paper 2 is 90 marks and lasts 2 hours 30 minutes. Check your child's school for the exact guide it follows.
+          </p>
+          <p>
+            The times, marks and weightings are in the <a href="https://www.ibo.org/globalassets/new-structure/university-admission/pdfs/subject-guides/chemistry-guide.pdf" target="_blank" rel="noopener" className={linkClass}>IB chemistry guide</a> (first assessment 2025).
+          </p>
+        </div>
       </PageSection>
 
       <PageSection id="igcse-chemistry" title="IGCSE chemistry (Edexcel)">
         <p>
           We teach Edexcel IGCSE chemistry.
         </p>
+        <div className="space-y-4">
+          <h3 className="text-xl font-bold text-foreground mb-2">How Edexcel IGCSE chemistry is assessed</h3>
+          <p>
+            Edexcel International GCSE chemistry has a linear route and a modular route, and the content is the same on both. Students on the linear route sit two written papers: Paper 1 lasts 2 hours and is worth 61.1% of the International GCSE, and Paper 2 lasts 1 hour 15 minutes and is worth 38.9%. The modular route is only available to schools outside the UK. It has two units of 1 hour 40 minutes, each worth 50%, and each unit can be taken in any exam series. There is no coursework and no practical exam. The school chooses the route. Check your child's school for the exact specification it follows.
+          </p>
+          <p>
+            Both routes are set out in the <a href="https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/General/pearson-edexcel-international-gcse-science-guide.pdf" target="_blank" rel="noopener" className={linkClass}>Pearson International GCSE science guide</a>.
+          </p>
+        </div>
       </PageSection>
 
       <PageSection id="a-level-chemistry" title="A-level chemistry" muted>
@@ -91,6 +109,24 @@ export function ChemistryTutor() {
         <p>
           A-level chemistry goes into more depth than IGCSE, and the calculations get longer. You can read more about the move to A-level on our <a href="/a-level-tutor/" className={linkClass}>A-level page</a>.
         </p>
+        <div className="space-y-4">
+          <h3 className="text-xl font-bold text-foreground mb-2">How A-level chemistry is assessed</h3>
+          <p>
+            Edexcel International A Level chemistry is six written papers. Units 1 and 2 last 1 hour 30 minutes and are worth 20% each. Units 4 and 5 last 1 hour 45 minutes and are worth 20% each. Units 3 and 6 are written practical-skills papers of 1 hour 20 minutes, worth 10% each.
+          </p>
+          <p>
+            Cambridge International AS and A Level chemistry has five papers. These shares are of the A Level. Paper 1 lasts 1 hour 15 minutes and is worth 15.5%. Paper 2 lasts 1 hour 15 minutes and is worth 23%. Paper 3 is a 2-hour practical test worth 11.5%. Paper 4 lasts 2 hours and is worth 38.5%. Paper 5 lasts 1 hour 15 minutes and is worth 11.5%.
+          </p>
+          <p>
+            OxfordAQA International AS and A Level chemistry has five written papers. The two International AS papers last 1 hour 30 minutes and are worth 20% each. Two further papers last 1 hour 30 minutes and are worth 21% each. The written practical and synoptic paper lasts 1 hour 25 minutes and is worth 18%.
+          </p>
+          <p>
+            Your child's school decides the board. Check your child's school for the exact specification it follows.
+          </p>
+          <p>
+            Edexcel's units are in the <a href="https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Chemistry/2018/Specification-and-Sample-Assessment/International-A-Level-Chemistry-Spec.pdf" target="_blank" rel="noopener" className={linkClass}>International A Level Chemistry specification</a>. Cambridge's papers are in the <a href="https://www.cambridgeinternational.org/Images/664563-2025-2027-syllabus.pdf" target="_blank" rel="noopener" className={linkClass}>Cambridge International AS and A Level Chemistry syllabus</a> for 2025 to 2027. OxfordAQA's papers are on the <a href="https://www.oxfordaqa.com/qualification/international-as-and-a-level-chemistry-9620/" target="_blank" rel="noopener" className={linkClass}>International AS and A-level Chemistry (9620)</a> page.
+          </p>
+        </div>
       </PageSection>
 
       <PageSection title="Levels we teach">

@@ -37,6 +37,15 @@ const enquiryPrefill: Partial<Record<WhatsAppPage, { curriculum?: string; subjec
 export type PageCrumb = { name: string; path: string }
 export type FaqItem = { question: string; answer: ReactNode }
 
+// Visible FAQ text uses a non-breaking hyphen. JSON-LD is built from the
+// source strings, which keep the ordinary hyphen.
+export function withVisibleTrialHyphen<T extends FaqItem>(items: readonly T[]): T[] {
+  return items.map((item) => {
+    if (typeof item.answer !== 'string' || !item.answer.includes('30-minute')) return item
+    return { ...item, answer: item.answer.split('30-minute').join('30\u2011minute') }
+  })
+}
+
 export function PageShell({
   crumbs,
   title,

@@ -25,7 +25,7 @@ export const biologyFaqs = [
   },
   {
     question: 'Can you help with an IB Diploma internal assessment?',
-    answer: 'Yes. We can help your child understand what\'s expected and plan their time. The work they hand in is always their own.',
+    answer: 'Yes. We can help your child understand what\'s expected and plan their time. The work they hand in is always their own. The internal assessment is marked by your child\'s school teacher and checked by the IB; our help is with understanding what is expected and planning time.',
   },
   {
     question: 'Do you teach IGCSE biology online in the UAE?',
@@ -42,6 +42,22 @@ export const biologyFaqs = [
   {
     question: 'Do you teach MYP biology?',
     answer: 'Yes. We teach biology in the IB MYP and in the Diploma Programme (DP).',
+  },
+  {
+    question: 'How is IB biology assessed?',
+    answer: 'In the IB Diploma, 80% of the final mark comes from external exams and 20% from an internal assessment. Paper 1 is worth 36% and Paper 2 is worth 44%. At Standard Level both papers last 1 hour 30 minutes. At Higher Level, Paper 1 lasts 2 hours and Paper 2 lasts 2 hours 30 minutes.',
+  },
+  {
+    question: 'What is the difference between Standard Level and Higher Level biology papers?',
+    answer: 'Both levels have two papers. At Standard Level both papers are 1 hour 30 minutes. At Higher Level Paper 1 is 2 hours and Paper 2 is 2 hours 30 minutes. We teach both levels.',
+  },
+  {
+    question: 'How are Edexcel IGCSE biology exams structured?',
+    answer: 'There are two routes, and the content is the same. The linear route has Paper 1 (2 hours, 61.1% of the International GCSE) and Paper 2 (1 hour 15 minutes, 38.9%). The modular route, only available to schools outside the UK, has two units of 1 hour 40 minutes, each worth 50%, which can be taken in any exam series. There is no coursework and no practical exam. The school chooses the route.',
+  },
+  {
+    question: 'How is OxfordAQA International GCSE biology structured?',
+    answer: 'It is a linear International GCSE with two papers of 1 hour 30 minutes, each worth 50%. Either paper can test any part of the course.',
   },
   subjectRematchFaq('biology'),
 ]

@@ -47,6 +47,18 @@ export const chemistryFaqs = [
     question: 'Do you teach MYP chemistry?',
     answer: 'Yes. We teach chemistry in the IB MYP and in the Diploma Programme (DP).',
   },
+  {
+    question: 'How is IB chemistry assessed?',
+    answer: 'For IB Diploma chemistry, 80% of the mark is external exams and 20% is an internal assessment. That assessment is one scientific investigation. Paper 1 is worth 36% and Paper 2 is worth 44%. At Standard Level, Paper 1 is 55 marks and lasts 1 hour 30 minutes, and Paper 2 is 50 marks and lasts 1 hour 30 minutes. At Higher Level, Paper 1 is 75 marks and lasts 2 hours, and Paper 2 is 90 marks and lasts 2 hours 30 minutes.',
+  },
+  {
+    question: 'What is the difference between Standard Level and Higher Level chemistry papers?',
+    answer: 'Both levels have two papers. At Standard Level both last 1 hour 30 minutes: Paper 1 is 55 marks and Paper 2 is 50 marks. At Higher Level, Paper 1 lasts 2 hours and is 75 marks, and Paper 2 lasts 2 hours 30 minutes and is 90 marks. We teach both levels.',
+  },
+  {
+    question: 'How are Edexcel IGCSE chemistry exams structured?',
+    answer: 'Edexcel International GCSE chemistry can be linear or modular, and both routes use the same content. On the linear route, Paper 1 lasts 2 hours and is worth 61.1% of the International GCSE, and Paper 2 lasts 1 hour 15 minutes and is worth 38.9%. The modular route is only available to schools outside the UK. Its two units each last 1 hour 40 minutes and are worth 50%, and a unit can be taken in any exam series. There is no coursework and no practical exam. The school chooses the route.',
+  },
   subjectRematchFaq('chemistry'),
 ]
 
