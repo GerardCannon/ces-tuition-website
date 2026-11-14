@@ -1,5 +1,5 @@
 import { LevelEnquiry } from '@/components/LevelEnquiry'
-import { FaqSection, PageSection, PageShell } from '@/pages/PageShell.tsx'
+import { FaqSection, PageSection, PageShell, withVisibleTrialHyphen } from '@/pages/PageShell.tsx'
 import { ibMathsCrumbs, ibMathsFaqs } from '@/pages/ibMathsTutorData.ts'
 
 const linkClass = 'font-semibold text-foreground underline underline-offset-4 hover:text-primary'
@@ -92,7 +92,7 @@ export function IbMathsTutor() {
         />
       </PageSection>
 
-      <FaqSection items={ibMathsFaqs} />
+      <FaqSection items={withVisibleTrialHyphen(ibMathsFaqs)} />
     </PageShell>
   )
 }
