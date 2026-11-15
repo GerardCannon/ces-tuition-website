@@ -43,6 +43,22 @@ export const physicsFaqs = [
     question: 'Do you teach MYP physics?',
     answer: 'Yes. We teach physics in the IB MYP and in the Diploma Programme (DP).',
   },
+  {
+    question: 'How is IB physics assessed?',
+    answer: 'In the IB Diploma, 80% of the final physics mark comes from external exams and 20% from an internal assessment. The internal assessment is one scientific investigation, a written report of up to 3,000 words. Paper 1 is worth 36% and has multiple-choice questions (Paper 1A) and data-based questions (Paper 1B). Paper 2 is worth 44% and has short-answer and extended-response questions. At Standard Level both papers last 1 hour 30 minutes. At Higher Level, Paper 1 lasts 2 hours and Paper 2 lasts 2 hours 30 minutes.',
+  },
+  {
+    question: 'What is the difference between Standard Level and Higher Level physics papers?',
+    answer: 'Both levels have two papers. At Standard Level both papers are 1 hour 30 minutes. At Higher Level Paper 1 is 2 hours and Paper 2 is 2 hours 30 minutes. The weightings are the same at both levels: Paper 1 is 36% and Paper 2 is 44%. We teach both levels.',
+  },
+  {
+    question: 'How are IGCSE physics exams structured?',
+    answer: 'It depends on the board, and your child\'s school chooses the board and the route. Edexcel International GCSE physics can be linear or modular, with the same content on both. On the linear route Paper 1 lasts 2 hours and is worth 61.1%, and Paper 2 lasts 1 hour 15 minutes and is worth 38.9%. The modular route, only available to schools outside the UK, has two units of 1 hour 40 minutes, each worth 50%. Edexcel has no coursework and no practical exam. Cambridge IGCSE physics has Core and Extended content. Core students take Paper 1 (30%) and Paper 3 (50%), and Extended students take Paper 2 (30%) and Paper 4 (50%). All Cambridge students also take a practical paper worth 20%, either a practical test or an alternative to practical. OxfordAQA International GCSE physics is linear, with two papers of 1 hour 30 minutes, each worth 50%.',
+  },
+  {
+    question: 'How are A-level physics exams structured?',
+    answer: 'It depends on the board, and your child\'s school decides the board. Edexcel International A Level physics is six written papers. Units 1, 2, 4 and 5 are worth 20% each, and the two practical-skills papers, Units 3 and 6, are worth 10% each. Cambridge International AS and A Level physics has five papers, and these shares are of the A Level: Paper 1 is 15.5%, Paper 2 is 23%, Paper 3 (practical) is 11.5%, Paper 4 is 38.5% and Paper 5 is 11.5%. OxfordAQA International AS and A Level physics has five papers of 2 hours, each worth 20% of the A Level.',
+  },
   subjectRematchFaq('physics'),
 ]
 

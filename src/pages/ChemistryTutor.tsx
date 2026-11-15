@@ -1,5 +1,5 @@
 import { LevelEnquiry } from '@/components/LevelEnquiry'
-import { FaqSection, PageSection, PageShell } from '@/pages/PageShell.tsx'
+import { FaqSection, PageSection, PageShell, withVisibleTrialHyphen } from '@/pages/PageShell.tsx'
 import { chemistryCrumbs, chemistryFaqs } from '@/pages/chemistryTutorData.ts'
 
 const linkClass = 'font-semibold text-foreground underline underline-offset-4 hover:text-primary'
@@ -149,7 +149,7 @@ export function ChemistryTutor() {
       </PageSection>
 
       <FaqSection
-        items={chemistryFaqs.map((item) =>
+        items={withVisibleTrialHyphen(chemistryFaqs).map((item) =>
           item.question === 'Does my child need to be good at maths for chemistry?'
             ? {
                 question: item.question,
