@@ -33,12 +33,12 @@ This is a marketing landing page designed to inform prospective students and par
 - **Progression**: User scrolls → Sees key benefits with supporting details → Builds confidence in service quality
 - **Success criteria**: 4-6 feature highlights with icons and compelling copy
 
-### Pricing/Programs Section
-- **Functionality**: Display pricing tiers or program options
-- **Purpose**: Set expectations and help users self-select appropriate tier
-- **Trigger**: User scrolls to pricing area
-- **Progression**: User views pricing cards → Compares options → Selects preferred tier → Clicks CTA to sign up
-- **Success criteria**: Clear pricing cards with features, visual hierarchy showing recommended option
+### How it works
+- **Functionality**: Explain the three steps to start: book a free 30-minute trial, match a subject specialist, and confirm the price on WhatsApp. No prices or amounts are shown.
+- **Purpose**: Set expectations for how families start, without self-selecting a priced tier
+- **Trigger**: User scrolls to the How it works area, or follows a #how-it-works or legacy #pricing link
+- **Progression**: User reads the three steps and the first-lesson rematch line → Clicks WhatsApp or "Start with a free trial"
+- **Success criteria**: Clear three-step layout, WhatsApp CTA, trial button, rematch line; no amounts, no tier names
 
 ### Testimonials/Social Proof
 - **Functionality**: Display student/parent testimonials
@@ -98,7 +98,7 @@ Animations should feel purposeful and premium - subtle entrance animations for s
 
 **Components**:
 - **Button (shadcn)**: Primary CTAs with custom accent color, secondary variants for less prominent actions. Size variants for hero (lg) vs section CTAs (default)
-- **Card (shadcn)**: Service cards, pricing tiers, testimonials. Customize with subtle shadows and hover lift effect
+- **Card (shadcn)**: Service cards, How it works steps, testimonials. Customize with subtle shadows and hover lift effect
 - **Separator (shadcn)**: Visual breaks between major sections
 - **Avatar (shadcn)**: For testimonial author photos with fallback initials
 
@@ -106,7 +106,7 @@ Animations should feel purposeful and premium - subtle entrance animations for s
 - **Navigation Bar**: Custom component - sticky header with logo left, navigation center, CTA button right. Transparent on hero with backdrop blur, solid on scroll
 - **Hero Section**: Custom full-height section with gradient background and diagonal pattern overlay
 - **Feature Grid**: Custom 2x2 or 3x2 grid layout with icons from Phosphor
-- **Pricing Cards**: Based on Card component but with custom styling for "Popular" badge
+- **How it works steps**: Based on Card component; numbered steps, no prices or tier names
 - **Testimonial Carousel**: Simple grid or flexbox layout (could use embla-carousel if multiple slides needed)
 - **Footer**: Custom multi-column layout
 
@@ -136,7 +136,7 @@ Animations should feel purposeful and premium - subtle entrance animations for s
 - Navigation: Collapses to hamburger menu below md breakpoint with slide-in mobile menu
 - Hero: Headline font size reduces to 36px, single column layout
 - Service/Feature grids: Stack to single column on mobile, 2 columns on md, 3 columns on lg
-- Pricing cards: Vertical stack on mobile, horizontal row with scroll snap on tablet, grid on desktop
+- How it works steps: Vertical stack on mobile, three-column grid on tablet and desktop
 - Testimonials: Single column on mobile, 2-up on md, 3-up on lg
 - Footer: Single column stack on mobile, multi-column on md+
 - Padding reduction: Mobile uses py-12 instead of py-20 for sections
