@@ -4,7 +4,7 @@ import { bindGoatCounterClicks } from './bindGoatCounter.ts'
 export { bindGoatCounterClicks } from './bindGoatCounter.ts'
 
 export type WhatsAppPage = 'home' | 'british' | 'ib' | 'ibmaths' | 'american' | 'maths' | 'alevel' | 'chemistry' | 'physics' | 'biology' | 'english' | 'economics' | '404'
-export type WhatsAppPlace = 'header' | 'menu' | 'hero' | 'pricing' | 'form' | 'cta' | 'footer' | 'sticky' | 'level'
+export type WhatsAppPlace = 'header' | 'menu' | 'hero' | 'howitworks' | 'form' | 'cta' | 'footer' | 'sticky' | 'level'
 
 const pageByRouteId: Record<string, WhatsAppPage> = {
   home: 'home',

@@ -52,7 +52,7 @@ function wireMobileMenu() {
   const openIcon = button.innerHTML
   const page = analyticsPage()
   const headerLink = document.querySelector<HTMLAnchorElement>('a[data-goatcounter-click$="-header"]')
-  const desktopLinks = nav.querySelectorAll<HTMLAnchorElement>('a[href*="#services"], a[href*="#features"], a[href*="#pricing"], a[href*="#testimonials"]')
+  const desktopLinks = nav.querySelectorAll<HTMLAnchorElement>('a[href*="#services"], a[href*="#features"], a[href*="#how-it-works"], a[href*="#testimonials"]')
   let open = false
   let panel: HTMLDivElement | null = null
 

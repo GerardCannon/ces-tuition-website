@@ -9,7 +9,7 @@ import { useWhatsappLink } from '@/lib/whatsapp'
 const navLinks = [
   { label: 'Curricula', href: '#services' },
   { label: 'Why us', href: '#features' },
-  { label: 'Pricing', href: '#pricing' },
+  { label: 'How it works', href: '#how-it-works' },
   { label: 'Reviews', href: '#testimonials' },
 ]
 

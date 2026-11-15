@@ -7,7 +7,7 @@ import { WHATSAPP_DISPLAY, useWhatsappLink } from '@/lib/whatsapp'
 const quickLinks = [
   { label: 'Curricula', href: '#services' },
   { label: 'Why us', href: '#features' },
-  { label: 'Pricing', href: '#pricing' },
+  { label: 'How it works', href: '#how-it-works' },
   { label: 'Reviews', href: '#testimonials' },
   { label: 'Free trial', href: '#enquire' },
 ]
