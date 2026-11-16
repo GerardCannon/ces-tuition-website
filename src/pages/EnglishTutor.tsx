@@ -1,5 +1,5 @@
 import { LevelEnquiry } from '@/components/LevelEnquiry'
-import { FaqSection, PageSection, PageShell } from '@/pages/PageShell.tsx'
+import { FaqSection, PageSection, PageShell, withVisibleTrialHyphen } from '@/pages/PageShell.tsx'
 import { englishCrumbs, englishFaqs } from '@/pages/englishTutorData.ts'
 
 const linkClass = 'font-semibold text-foreground underline underline-offset-4 hover:text-primary'
@@ -94,7 +94,7 @@ export function EnglishTutor() {
         </p>
       </PageSection>
 
-      <FaqSection items={englishFaqs} />
+      <FaqSection items={withVisibleTrialHyphen(englishFaqs)} />
     </PageShell>
   )
 }

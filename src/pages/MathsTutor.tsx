@@ -1,6 +1,6 @@
 import { Card } from '@/components/ui/card'
 import { LevelEnquiry } from '@/components/LevelEnquiry'
-import { FaqSection, PageSection, PageShell } from '@/pages/PageShell.tsx'
+import { FaqSection, PageSection, PageShell, withVisibleTrialHyphen } from '@/pages/PageShell.tsx'
 import { mathsCrumbs, mathsFaqs } from '@/pages/mathsTutorData.ts'
 
 const boards = [
@@ -106,7 +106,7 @@ export function MathsTutor() {
         </p>
       </PageSection>
 
-      <FaqSection items={mathsFaqs} />
+      <FaqSection items={withVisibleTrialHyphen(mathsFaqs)} />
     </PageShell>
   )
 }
