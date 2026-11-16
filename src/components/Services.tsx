@@ -149,18 +149,20 @@ export function Services() {
               }`}
             >
               <div className="flex flex-col gap-4">
-                <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center">
-                  {service.graphic}
+                <div className="flex items-start gap-2.5">
+                  <div className="flex size-7 shrink-0 items-center justify-center rounded-full bg-accent/10 [&_svg]:h-[18px] [&_svg]:w-auto">
+                    {service.graphic}
+                  </div>
+                  <h3 className="min-w-0 text-balance text-xl font-bold leading-7 text-foreground">
+                    {service.href ? (
+                      <a href={service.href} className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">
+                        {service.title}
+                      </a>
+                    ) : (
+                      service.title
+                    )}
+                  </h3>
                 </div>
-                <h3 className="text-xl font-bold text-foreground">
-                  {service.href ? (
-                    <a href={service.href} className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">
-                      {service.title}
-                    </a>
-                  ) : (
-                    service.title
-                  )}
-                </h3>
                 <p className="text-muted-foreground leading-relaxed">
                   {service.description}
                 </p>
