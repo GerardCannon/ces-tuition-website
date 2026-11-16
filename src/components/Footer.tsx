@@ -27,7 +27,7 @@ export function Footer({ sectionBase = '' }: { sectionBase?: string }) {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div>
-            <Logo className="text-primary-foreground mb-4" />
+            <Logo variant="footer" className="mb-4 block h-auto w-[16.5rem] max-w-full" />
             <p className="text-primary-foreground leading-relaxed">
               CES Tuition is online tuition for families across the UAE, taught by UK‑trained subject specialists.
             </p>

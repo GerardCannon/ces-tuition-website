@@ -1,0 +1,19 @@
+{
+  "name": "CES Tuition",
+  "short_name": "CES Tuition",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#852e6d",
+  "background_color": "#fdf5ff",
+  "display": "standalone"
+}
