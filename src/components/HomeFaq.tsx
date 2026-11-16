@@ -1,6 +1,6 @@
 import { homeFaqs } from '@/components/homeFaqData'
-import { FaqSection } from '@/pages/PageShell'
+import { FaqSection, withVisibleTrialHyphen } from '@/pages/PageShell'
 
 export function HomeFaq() {
-  return <FaqSection items={homeFaqs} />
+  return <FaqSection items={withVisibleTrialHyphen(homeFaqs)} />
 }
