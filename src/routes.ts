@@ -110,8 +110,8 @@ const homeJsonLd: JsonLd = {
       '@id': orgId(canonicalUrl),
       name: 'CES Tuition',
       url: canonicalUrl('/'),
-      logo: 'https://www.cestuition.com/apple-touch-icon.png',
-      image: 'https://www.cestuition.com/apple-touch-icon.png',
+      logo: 'https://www.cestuition.com/logo-512.png',
+      image: 'https://www.cestuition.com/logo-512.png',
       email: 'Gerard@CannonEducationSolutions.com',
       telephone: '+971585041916',
       address: {

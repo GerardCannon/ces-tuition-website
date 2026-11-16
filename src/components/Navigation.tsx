@@ -33,9 +33,13 @@ export function Navigation({ sectionBase = '' }: { sectionBase?: string }) {
       <nav className="site-nav fixed left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-border shadow-sm">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <div className="flex-shrink-0">
-            <a href="/" className="text-primary hover:opacity-80 transition-opacity" aria-label="CES Tuition home">
-              <Logo />
+          <div className="min-w-0 flex-shrink-0">
+            <a
+              href="/"
+              className="block w-[calc(100vw-7.75rem)] max-w-[13.5rem] hover:opacity-80 transition-opacity md:mr-3 md:w-[8.5rem] md:max-w-[8.5rem] lg:w-[13rem] lg:max-w-[13rem] xl:w-[20rem] xl:max-w-none"
+              aria-label="CES Tuition home"
+            >
+              <Logo variant="header" className="block h-auto w-full" />
             </a>
           </div>
 
