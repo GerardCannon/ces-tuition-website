@@ -4,9 +4,3 @@ export const logoHeader = {
   width: 458,
   height: 103,
 } as const
-
-export const logoFooter = {
-  src: '/logo-footer.svg',
-  width: 458,
-  height: 103,
-} as const

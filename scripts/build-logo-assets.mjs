@@ -2,18 +2,15 @@
 // Swap an SVG in that folder, then run:
 //   node scripts/build-logo-assets.mjs
 //
-// Header: logo-horizontal-color.svg. Footer: logo-horizontal-white.svg.
-// Both are already transparent and include a 10-unit safety margin. The
-// published SVGs are cropped to the artwork so that margin does not shrink
-// the lockup inside the header and footer sizes.
+// Header and footer both use logo-horizontal-color.svg. The footer draws that
+// colour lockup on a light plate (green and orange are low contrast on the
+// plum footer). The source is transparent and includes a 10-unit safety
+// margin. The published SVG is cropped to the artwork so that margin does not
+// shrink the lockup inside the header and footer sizes.
 //
 // Favicon, apple-touch and manifest icons are the designer's finished files,
 // copied rather than redrawn. og-image.jpg is composited from the colour lockup.
 // logo-512.png is the finished icon-512.png (square, white tile).
-//
-// Footer stays white. On the plum footer #852E6D the white lockup is 8.05:1.
-// The reversed file is for navy backgrounds (orange tick 2.61:1 and green tip
-// 2.84:1 on this plum).
 
 import { spawnSync } from 'node:child_process'
 import fs from 'node:fs'
@@ -27,7 +24,6 @@ const sourceDir = path.join(root, 'brand', 'final')
 const publicDir = path.join(root, 'public')
 
 const HEADER_SOURCE = 'logo-horizontal-color.svg'
-const FOOTER_SOURCE = 'logo-horizontal-white.svg'
 
 const PLUM = '#852E6D'
 const TEAL = '#3DC6B1'
@@ -137,9 +133,7 @@ function copyTo(sourceName, publicName) {
 }
 
 const header = await artworkLockup(HEADER_SOURCE)
-const footer = await artworkLockup(FOOTER_SOURCE)
 write('logo-header.svg', header.svg)
-write('logo-footer.svg', footer.svg)
 
 copyTo('favicon.ico', 'favicon.ico')
 copyTo('favicon.svg', 'favicon.svg')
@@ -183,15 +177,9 @@ export const logoHeader = {
   width: ${header.width},
   height: ${header.height},
 } as const
-
-export const logoFooter = {
-  src: '/logo-footer.svg',
-  width: ${footer.width},
-  height: ${footer.height},
-} as const
 `
 fs.writeFileSync(path.join(root, 'src', 'components', 'logoAssets.ts'), assets)
-console.log(`src/components/logoAssets.ts header ${header.width}x${header.height} footer ${footer.width}x${footer.height}`)
+console.log(`src/components/logoAssets.ts header ${header.width}x${header.height}`)
 
 const ico = fs.readFileSync(path.join(publicDir, 'favicon.ico'))
 const count = ico.readUInt16LE(4)
