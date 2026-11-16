@@ -166,7 +166,7 @@ const ogSvg = `<?xml version="1.0" encoding="UTF-8"?>
   <rect x="${ogLogoLeft - platePadX}" y="${ogLogoTop - platePadY}" width="${ogLogoWidth + platePadX * 2}" height="${ogLogoHeight + platePadY * 2}" rx="18" fill="${WHITE}"/>
   <text x="88" y="318" fill="${WHITE}" font-family="Quicksand" font-weight="600" font-size="42">Online tuition for UAE families</text>
   <text x="88" y="378" fill="${WHITE}" font-family="Quicksand" font-weight="600" font-size="42">UK-trained subject specialists</text>
-  <text x="88" y="548" fill="${WHITE}" font-family="Quicksand" font-weight="500" font-size="26">GCSE · IGCSE · A-level · IB · American</text>
+  <text x="88" y="548" fill="${WHITE}" font-family="Quicksand" font-weight="500" font-size="26">IGCSE · A-level · IB · American</text>
 </svg>`
 const ogBase = await sharp(Buffer.from(ogSvg)).resize(ogWidth, ogHeight).png().toBuffer()
 write(
