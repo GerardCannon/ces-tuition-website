@@ -1,17 +1,19 @@
-// Rebuild every public logo raster from brand/alt-instagram-palette/.
-// Swap an SVG in that folder (same filename), then run:
+// Rebuild the public logo files from brand/final/.
+// Swap an SVG in that folder, then run:
 //   node scripts/build-logo-assets.mjs
 //
-// Footer lockup is FOOTER_SOURCE. Measured against the rendered plum footer
-// #852E6D (oklch(0.45 0.14 340)):
-//   #00B065 green pencil tip     2.84:1  fail
-//   #FF5B38 orange tick          2.61:1  fail
-//   #5FD39B light-green descriptor 4.32:1  below 4.5:1 for the small line
-//   #FFFFFF white                8.05:1  AAA
-// The colour-on-dark file keeps a green tip and a light-green descriptor, and
-// the orange tick fails as well, so the footer uses the all-white
-// logo-mono-on-dark.svg. Point FOOTER_SOURCE at logo-color-on-dark.svg to put
-// the colour-on-dark lockup back.
+// Header: logo-horizontal-color.svg. Footer: logo-horizontal-white.svg.
+// Both are already transparent and include a 10-unit safety margin. The
+// published SVGs are cropped to the artwork so that margin does not shrink
+// the lockup inside the header and footer sizes.
+//
+// Favicon, apple-touch and manifest icons are the designer's finished files,
+// copied rather than redrawn. og-image.jpg is composited from the colour lockup.
+// logo-512.png is the finished icon-512.png (square, white tile).
+//
+// Footer stays white. On the plum footer #852E6D the white lockup is 8.05:1.
+// The reversed file is for navy backgrounds (orange tick 2.61:1 and green tip
+// 2.84:1 on this plum).
 
 import { spawnSync } from 'node:child_process'
 import fs from 'node:fs'
@@ -21,14 +23,11 @@ import { fileURLToPath } from 'node:url'
 import wawoff2 from 'wawoff2'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
-const sourceDir = path.join(root, 'brand', 'alt-instagram-palette')
+const sourceDir = path.join(root, 'brand', 'final')
 const publicDir = path.join(root, 'public')
 
-const HEADER_SOURCE = 'logo-color-on-white.svg'
-const FOOTER_SOURCE = 'logo-mono-on-dark.svg'
-const SQUARE_SOURCE = 'logo-stacked-color-on-white.svg'
-const FAVICON_SOURCE = 'icon-color-on-white.svg'
-const FAVICON_SVG_SOURCE = 'icon-transparent.svg'
+const HEADER_SOURCE = 'logo-horizontal-color.svg'
+const FOOTER_SOURCE = 'logo-horizontal-white.svg'
 
 const PLUM = '#852E6D'
 const TEAL = '#3DC6B1'
@@ -58,27 +57,14 @@ async function prepareFonts() {
 
 function readSource(name) {
   const file = path.join(sourceDir, name)
-  if (!fs.existsSync(file)) throw new Error(`Missing source SVG: ${file}`)
-  return fs.readFileSync(file, 'utf8')
+  if (!fs.existsSync(file)) throw new Error(`Missing source file: ${file}`)
+  return fs.readFileSync(file)
 }
 
 function parseViewBox(svg) {
   const match = svg.match(/viewBox="\s*([-\d.]+)\s+([-\d.]+)\s+([-\d.]+)\s+([-\d.]+)\s*"/)
   if (!match) throw new Error('SVG is missing a viewBox')
   return { x: Number(match[1]), y: Number(match[2]), w: Number(match[3]), h: Number(match[4]) }
-}
-
-function stripFullBleedRect(svg) {
-  const box = parseViewBox(svg)
-  return svg.replace(/<rect\b[^>]*\/>/, (tag) => {
-    if (/stroke=/.test(tag)) return tag
-    const fill = tag.match(/fill="([^"]+)"/)?.[1]?.toUpperCase()
-    const width = Number(tag.match(/\bwidth="([^"]+)"/)?.[1])
-    const height = Number(tag.match(/\bheight="([^"]+)"/)?.[1])
-    const plate = fill === '#FFFFFF' || fill === '#FFF' || fill === '#0B2545'
-    const full = Math.abs(width - box.w) < 1.5 && Math.abs(height - box.h) < 1.5
-    return plate && full ? '' : tag
-  })
 }
 
 function setSvgBox(svg, viewBox, width, height) {
@@ -96,12 +82,11 @@ function setSvgBox(svg, viewBox, width, height) {
 
 await prepareFonts()
 const { default: sharp } = await import('sharp')
-const { default: pngToIco } = await import('png-to-ico')
 
-async function transparentLockup(fileName) {
-  const stripped = stripFullBleedRect(readSource(fileName))
-  const box = parseViewBox(stripped)
-  const raster = await sharp(Buffer.from(stripped), { density: 216 }).ensureAlpha().png().toBuffer()
+async function artworkLockup(fileName) {
+  const svg = readSource(fileName).toString('utf8')
+  const box = parseViewBox(svg)
+  const raster = await sharp(Buffer.from(svg), { density: 216 }).ensureAlpha().png().toBuffer()
   const meta = await sharp(raster).metadata()
   const { data, info } = await sharp(raster).ensureAlpha().raw().toBuffer({ resolveWithObject: true })
   let minX = info.width
@@ -128,17 +113,18 @@ async function transparentLockup(fileName) {
   const h = (maxY - minY + 1) / scaleY + pad * 2
   const width = Math.max(1, Math.round(w))
   const height = Math.max(1, Math.round(h))
-  const svg = setSvgBox(stripped, `${x.toFixed(2)} ${y.toFixed(2)} ${w.toFixed(2)} ${h.toFixed(2)}`, width, height)
-  return { svg, width, height }
+  return {
+    svg: setSvgBox(svg, `${x.toFixed(2)} ${y.toFixed(2)} ${w.toFixed(2)} ${h.toFixed(2)}`, width, height),
+    width,
+    height,
+  }
 }
 
-async function renderSvg(svg, width, height, { background } = {}) {
-  let pipeline = sharp(Buffer.from(svg), { density: 384 })
-  pipeline = pipeline.resize(width, height, {
-    fit: 'fill',
-    background: background ?? { r: 0, g: 0, b: 0, alpha: 0 },
-  })
-  return pipeline.png().toBuffer()
+async function renderSvg(svg, width, height) {
+  return sharp(Buffer.from(svg), { density: 384 })
+    .resize(width, height, { fit: 'fill', background: { r: 0, g: 0, b: 0, alpha: 0 } })
+    .png()
+    .toBuffer()
 }
 
 function write(file, data) {
@@ -146,57 +132,23 @@ function write(file, data) {
   console.log(`public/${file}`)
 }
 
-const header = await transparentLockup(HEADER_SOURCE)
-const footer = await transparentLockup(FOOTER_SOURCE)
-const stacked = await transparentLockup(SQUARE_SOURCE)
-write('logo-header.svg', header.svg)
-write('logo-footer.svg', footer.svg)
-write('favicon.svg', readSource(FAVICON_SVG_SOURCE))
-
-async function squareIcon(size) {
-  const svg = readSource(FAVICON_SOURCE).replace(/<svg\b[^>]*>/, (tag) =>
-    tag.replace(/\bwidth="[^"]+"/, `width="${size}"`).replace(/\bheight="[^"]+"/, `height="${size}"`),
-  )
-  return sharp(Buffer.from(svg)).resize(size, size).png().toBuffer()
+function copyTo(sourceName, publicName) {
+  write(publicName, readSource(sourceName))
 }
 
-const png16 = await squareIcon(16)
-const png32 = await squareIcon(32)
-const png48 = await squareIcon(48)
-write('favicon-16x16.png', png16)
-write('favicon-32x32.png', png32)
-write('favicon.ico', await pngToIco([png16, png32, png48]))
+const header = await artworkLockup(HEADER_SOURCE)
+const footer = await artworkLockup(FOOTER_SOURCE)
+write('logo-header.svg', header.svg)
+write('logo-footer.svg', footer.svg)
 
-const touchSize = 180
-const touchIcon = Math.round(touchSize * 0.68)
-const touchArt = await renderSvg(readSource(FAVICON_SVG_SOURCE), touchIcon, touchIcon)
-write(
-  'apple-touch-icon.png',
-  await sharp({
-    create: { width: touchSize, height: touchSize, channels: 4, background: WHITE },
-  })
-    .composite([{ input: touchArt, gravity: 'centre' }])
-    .png()
-    .toBuffer(),
-)
-
-write('android-chrome-192x192.png', await squareIcon(192))
-write('android-chrome-512x512.png', await squareIcon(512))
-
-const squareSide = 512
-const squarePad = 48
-const fittedW = squareSide - squarePad * 2
-const fittedH = Math.round(fittedW * (stacked.height / stacked.width))
-const stackedPng = await renderSvg(stacked.svg, fittedW, Math.min(fittedH, squareSide - squarePad * 2))
-write(
-  'logo-512.png',
-  await sharp({
-    create: { width: squareSide, height: squareSide, channels: 4, background: WHITE },
-  })
-    .composite([{ input: stackedPng, gravity: 'centre' }])
-    .png()
-    .toBuffer(),
-)
+copyTo('favicon.ico', 'favicon.ico')
+copyTo('favicon.svg', 'favicon.svg')
+copyTo('favicon-16.png', 'favicon-16x16.png')
+copyTo('favicon-32.png', 'favicon-32x32.png')
+copyTo('apple-touch-icon-180.png', 'apple-touch-icon.png')
+copyTo('icon-192.png', 'android-chrome-192x192.png')
+copyTo('icon-512.png', 'android-chrome-512x512.png')
+copyTo('icon-512.png', 'logo-512.png')
 
 const ogWidth = 1200
 const ogHeight = 630
@@ -249,12 +201,17 @@ for (let i = 0; i < count; i += 1) {
   const h = ico[6 + i * 16 + 1] || 256
   sizes.push(`${w}x${h}`)
 }
-if (sizes.join(',') !== '16x16,32x32,48x48') {
+if (!sizes.includes('16x16') || !sizes.includes('32x32')) {
   throw new Error(`favicon.ico sizes were ${sizes.join(', ')}`)
 }
 const ogMeta = await sharp(path.join(publicDir, 'og-image.jpg')).metadata()
 if (ogMeta.width !== 1200 || ogMeta.height !== 630) {
   throw new Error(`og-image.jpg is ${ogMeta.width}x${ogMeta.height}`)
 }
+const logo512 = await sharp(path.join(publicDir, 'logo-512.png')).metadata()
+if (logo512.width !== 512 || logo512.height !== 512) {
+  throw new Error(`logo-512.png is ${logo512.width}x${logo512.height}`)
+}
 console.log(`favicon.ico ${sizes.join(', ')}`)
 console.log('og-image.jpg 1200x630')
+console.log('logo-512.png 512x512')
