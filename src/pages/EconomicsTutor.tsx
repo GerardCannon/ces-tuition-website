@@ -104,7 +104,7 @@ export function EconomicsTutor() {
         <div className="space-y-4">
           <h3 className="text-xl font-bold text-foreground mb-2">How IGCSE economics is assessed</h3>
           <p>
-            Pearson Edexcel International GCSE economics is a linear qualification with two written examination papers. Paper 1 covers microeconomics and business economics, and Paper 2 covers macroeconomics and the global economy. The questions mix multiple-choice, short-answer, data response and open-ended questions, and the papers can be taken on paper or on screen.
+            Pearson Edexcel International GCSE economics is a linear qualification with two written examination papers. Paper 1 covers microeconomics and business economics, and Paper 2 covers macroeconomics and the global economy. The questions mix multiple-choice, short-answer, data response and open-ended questions.
           </p>
           <p>
             OxfordAQA International GCSE economics is a linear specification with two written examination papers. Paper 1 covers how markets work, and Paper 2 covers how economies work. The questions include multiple-choice, calculation, short and extended responses.

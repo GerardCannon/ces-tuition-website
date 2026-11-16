@@ -37,7 +37,7 @@ export const economicsFaqs = [
   },
   {
     question: 'How are IGCSE economics exams structured?',
-    answer: 'It depends on the board, and your child\'s school chooses the board. Pearson Edexcel International GCSE economics has two written papers. Paper 1 covers microeconomics and business economics, and Paper 2 covers macroeconomics and the global economy. The questions mix multiple-choice, short-answer, data response and open-ended questions, and the papers can be taken on paper or on screen. OxfordAQA International GCSE economics has two written papers. Paper 1 covers how markets work, and Paper 2 covers how economies work. The questions include multiple-choice, calculation, short and extended responses.',
+    answer: 'It depends on the board, and your child\'s school chooses the board. Pearson Edexcel International GCSE economics has two written papers. Paper 1 covers microeconomics and business economics, and Paper 2 covers macroeconomics and the global economy. The questions mix multiple-choice, short-answer, data response and open-ended questions. OxfordAQA International GCSE economics has two written papers. Paper 1 covers how markets work, and Paper 2 covers how economies work. The questions include multiple-choice, calculation, short and extended responses.',
   },
   {
     question: 'How are A-level economics exams structured?',
