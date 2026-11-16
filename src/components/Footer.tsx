@@ -1,6 +1,6 @@
 import { Envelope, MapPin, Phone, WhatsappLogo } from '@phosphor-icons/react'
 import { Separator } from '@/components/ui/separator'
-import { Logo } from '@/components/Logo'
+import { Logo, logoLockupClass } from '@/components/Logo'
 import { useAnalyticsPage, whatsappClick } from '@/lib/goatcounter'
 import { WHATSAPP_DISPLAY, useWhatsappLink } from '@/lib/whatsapp'
 
@@ -25,9 +25,9 @@ export function Footer({ sectionBase = '' }: { sectionBase?: string }) {
   return (
     <footer className="bg-primary text-primary-foreground pb-24 md:pb-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-[20rem_minmax(0,1fr)_minmax(0,1fr)_minmax(0,1fr)] gap-12 mb-12">
           <div>
-            <Logo variant="footer" className="mb-4 block h-auto w-[16.5rem] max-w-full" />
+            <Logo variant="footer" className={`mb-4 block h-auto ${logoLockupClass}`} />
             <p className="text-primary-foreground leading-relaxed">
               CES Tuition is online tuition for families across the UAE, taught by UK‑trained subject specialists.
             </p>

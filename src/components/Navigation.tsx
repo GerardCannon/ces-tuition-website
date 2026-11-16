@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { List, WhatsappLogo, X } from '@phosphor-icons/react'
 import { FreeLessonsBanner } from '@/components/FreeLessonsBanner'
-import { Logo } from '@/components/Logo'
+import { Logo, logoLockupClass } from '@/components/Logo'
 import { bindGoatCounterClicks, useAnalyticsPage, whatsappClick } from '@/lib/goatcounter'
 import { useWhatsappLink } from '@/lib/whatsapp'
 
@@ -36,10 +36,10 @@ export function Navigation({ sectionBase = '' }: { sectionBase?: string }) {
           <div className="min-w-0 flex-shrink-0">
             <a
               href="/"
-              className="block w-[calc(100vw-7.75rem)] max-w-[13.5rem] hover:opacity-80 transition-opacity md:mr-3 md:w-[8.5rem] md:max-w-[8.5rem] lg:w-[13rem] lg:max-w-[13rem] xl:w-[20rem] xl:max-w-none"
+              className={`block ${logoLockupClass} hover:opacity-80 transition-opacity md:mr-3`}
               aria-label="CES Tuition home"
             >
-              <Logo variant="header" className="block h-auto w-full" />
+              <Logo className="block h-auto w-full" />
             </a>
           </div>
 
