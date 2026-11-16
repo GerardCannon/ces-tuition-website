@@ -1,6 +1,7 @@
 import { Card } from '@/components/ui/card'
 import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import { Star } from '@phosphor-icons/react'
+import { googleRating } from '@/lib/googleRating'
 
 const testimonials = [
   {
@@ -59,6 +60,18 @@ export function Testimonials({ surface = 'muted' }: { surface?: 'muted' | 'plain
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground text-balance">
             38 five-star reviews on MyPrivateTutor
           </h2>
+          <p className="mt-4 text-balance text-lg leading-relaxed text-muted-foreground">
+            Rated {googleRating.rating} out of 5 on Google from {googleRating.count}{' '}
+            {googleRating.count === 1 ? 'review' : 'reviews'}.{' '}
+            <a
+              href={googleRating.url}
+              target="_blank"
+              rel="noopener"
+              className="inline-block min-h-6 font-semibold underline underline-offset-4 hover:text-foreground rounded-sm outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+            >
+              Read our Google reviews
+            </a>
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-start">
