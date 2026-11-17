@@ -26,7 +26,19 @@ export const mathsFaqs = [
   },
   {
     question: 'Do you teach A-level maths?',
-    answer: 'Yes. We teach A-level maths as well as IGCSE maths.',
+    answer: 'Yes. We teach A-level maths as well as IGCSE maths, for Edexcel International A Level, Cambridge International AS and A Level and OxfordAQA International AS and A Level.',
+  },
+  {
+    question: 'How are IGCSE maths exams structured?',
+    answer: 'It depends on the board, and your child\'s school chooses the board and the tier. Edexcel International GCSE maths has two 2-hour papers at Foundation or Higher tier, each worth 50%, with a calculator allowed in both. Cambridge IGCSE maths has a non-calculator paper and a calculator paper at each tier: 1 hour 30 minutes each at Core and 2 hours each at Extended. OxfordAQA International GCSE maths has two papers at Core (1 hour 30 minutes each) or Extension (2 hours each), with a calculator allowed in both.',
+  },
+  {
+    question: 'How are A-level maths exams structured?',
+    answer: 'It depends on the board. Edexcel International A Level maths is six papers of 1 hour 30 minutes: four pure and two applied. Cambridge International A Level maths is four papers: two pure papers worth 30% each and two applied papers worth 20% each. OxfordAQA International A Level maths is four papers: two AS papers worth 20% each, a pure paper worth 37.5% and a statistics or mechanics paper worth 22.5%.',
+  },
+  {
+    question: 'Is there a non-calculator paper in IGCSE maths?',
+    answer: 'Only with Cambridge. Cambridge IGCSE maths has a non-calculator paper at each tier: Paper 1 for Core and Paper 2 for Extended. Edexcel International GCSE and OxfordAQA International GCSE maths allow a calculator in every paper. If your child\'s school follows Cambridge, tell us and we\'ll include non-calculator practice in lessons.',
   },
   subjectRematchFaq('maths'),
 ]
