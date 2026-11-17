@@ -107,7 +107,7 @@ export function MathsTutor() {
         <div className="space-y-4">
           <h3 className="text-xl font-bold text-foreground mb-2">How IGCSE maths is assessed</h3>
           <p>
-            Edexcel International GCSE maths (Specification A) has two tiers, Foundation and Higher. Students sit two papers at the same tier, each lasting 2 hours and worth 50%, and a calculator is allowed in both. Foundation targets grades 5 to 1 and Higher targets grades 9 to 4.
+            Edexcel International GCSE maths (Specification A) has two tiers, Foundation and Higher. Students sit two papers at the same tier, each lasting 2 hours and worth 50%, and a calculator is allowed in both. Foundation targets grades 1 to 5 and Higher targets grades 4 to 9.
           </p>
           <p>
             Cambridge IGCSE maths has Core and Extended papers. Core students take Paper 1 (no calculator) and Paper 3 (calculator), each lasting 1 hour 30 minutes and worth 50%. Extended students take Paper 2 (no calculator) and Paper 4 (calculator), each lasting 2 hours and worth 50%. This structure applies to exams from 2025.
