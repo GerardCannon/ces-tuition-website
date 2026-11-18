@@ -31,7 +31,7 @@ export function Hero() {
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl text-white leading-relaxed max-w-2xl mx-auto">
-            IGCSE, A-level, IB MYP and IB Diploma (DP), and American curriculum, taught live online across all emirates. Free 30‑minute trial.
+            IGCSE, A-level, IB (MYP and Diploma) and American curriculum tuition, taught live online across all emirates. Free 30‑minute trial.
           </p>
 
           <ReviewMention>38 five-star reviews on MyPrivateTutor</ReviewMention>

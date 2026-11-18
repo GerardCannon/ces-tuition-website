@@ -21,7 +21,7 @@ export const ibFaqs = [
   },
   {
     question: 'Do you teach both the MYP and the DP?',
-    answer: 'Yes. We teach students from the middle years of the MYP through to the final two years of the DP.',
+    answer: 'Yes. We teach students throughout the MYP and both years of the DP.',
   },
   {
     question: 'How is the IB Diploma Programme assessed?',

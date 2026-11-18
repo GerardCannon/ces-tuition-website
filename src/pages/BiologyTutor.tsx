@@ -23,13 +23,13 @@ export function BiologyTutor() {
     >
       <PageSection title="Our lessons">
         <p>
-          We teach one-to-one online biology tuition, live, for students in Dubai, Abu Dhabi, Sharjah and across the UAE.
+          We offer live one-to-one online biology tuition for students in Dubai, Abu Dhabi, Sharjah and across the UAE.
         </p>
         <p>
           Your child has one-to-one biology lessons with our UK‑trained subject specialists on our interactive online whiteboard.
         </p>
         <p>
-          Our whiteboard replicates an in-person lesson, as we share a fully interactive digital school copybook with each student.
+          Our whiteboard feels like an in-person lesson, because we share a fully interactive digital copybook with each student.
         </p>
         <p>
           Lessons last one or two hours, whichever suits you, and are scheduled through our app.
@@ -46,7 +46,7 @@ export function BiologyTutor() {
         <div>
           <h3 className="text-xl font-bold text-foreground mb-2">A lot to learn</h3>
           <p>
-            From cell biology to genetics, ecology and the human body, the course is wide. We help your child break it into manageable sections and see how they link, which makes it easier to remember.
+            From cell biology to genetics, ecology and the human body, the course is wide. We help your child break the course into manageable sections and see how they link, which makes it all easier to remember.
           </p>
         </div>
         <div>
@@ -101,7 +101,7 @@ export function BiologyTutor() {
         <div className="space-y-4">
           <h3 className="text-xl font-bold text-foreground mb-2">How IB biology is assessed</h3>
           <p>
-            In the IB Diploma Programme, 80% of the final mark comes from external exams and 20% from an internal assessment. The internal assessment is a scientific investigation. It is marked by your child's school teacher and checked by the IB, and the work is always your child's own. The two exam papers are Paper 1 (36%: multiple-choice and data-based questions) and Paper 2 (44%). At Standard Level both papers last 1 hour 30 minutes. At Higher Level, Paper 1 lasts 2 hours and Paper 2 lasts 2 hours 30 minutes. Check your child's school for the exact guide it follows.
+            In the IB Diploma Programme, 80% of the final mark comes from external exams and 20% from an internal assessment. The internal assessment is a scientific investigation. It is marked by your child's teacher and checked by the IB, and the work must be your child's own. The two exam papers are Paper 1 (36%: multiple-choice and data-based questions) and Paper 2 (44%). At Standard Level, both papers last 1 hour 30 minutes. At Higher Level, Paper 1 lasts 2 hours and Paper 2 lasts 2 hours 30 minutes. Check with the school for the exact guide it follows.
           </p>
           <p>
             The paper times and weightings are in the <a href="https://www.ibo.org/globalassets/new-structure/university-admission/pdfs/subject-guides/biology-guide.pdf" target="_blank" rel="noopener" className={linkClass}>IB biology guide</a> (first assessment 2025).
@@ -116,7 +116,7 @@ export function BiologyTutor() {
         <div className="space-y-4">
           <h3 className="text-xl font-bold text-foreground mb-2">How IGCSE biology is assessed</h3>
           <p>
-            Edexcel International GCSE biology has two routes with the same content. On the linear route there are two written papers: Paper 1 (2 hours, 61.1% of the International GCSE) and Paper 2 (1 hour 15 minutes, 38.9%). On the modular route, which is only available to schools outside the UK, there are two units of 1 hour 40 minutes, each worth 50%, and they can be taken in any exam series. There is no coursework and no practical exam. OxfordAQA International GCSE biology is linear: two papers of 1 hour 30 minutes, each worth 50%, and either paper can test any part of the course. Your child's school decides the board and the route. Check your child's school for the exact specification it follows.
+            Edexcel International GCSE biology has two routes with the same content. On the linear route there are two written papers: Paper 1 (2 hours, 61.1% of the International GCSE) and Paper 2 (1 hour 15 minutes, 38.9%). On the modular route, which is only available to schools outside the UK, there are two units of 1 hour 40 minutes, each worth 50%, and they can be taken in any exam series. There is no coursework and no practical exam. OxfordAQA International GCSE biology is linear: two papers of 1 hour 30 minutes, each worth 50%, and either paper can test any part of the course. Your child's school decides the board and the route. Check with the school for the exact specification it follows.
           </p>
           <p>
             Edexcel's routes are in the <a href="https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/General/pearson-edexcel-international-gcse-science-guide.pdf" target="_blank" rel="noopener" className={linkClass}>Pearson International GCSE science guide</a>. OxfordAQA's papers are on the <a href="https://www.oxfordaqa.com/qualification/international-gcse-biology-9201/" target="_blank" rel="noopener" className={linkClass}>International GCSE Biology (9201)</a> page.
@@ -131,13 +131,13 @@ export function BiologyTutor() {
         <div className="space-y-4">
           <h3 className="text-xl font-bold text-foreground mb-2">How A-level biology is assessed</h3>
           <p>
-            Edexcel International A Level biology is six written papers. Units 1 and 2 each last 1 hour 30 minutes and are worth 20% of the International A Level. Unit 3, a practical-skills paper, lasts 1 hour 20 minutes and is worth 10%. Units 4 and 5 each last 1 hour 45 minutes and are worth 20%. Unit 6, the second practical-skills paper, lasts 1 hour 20 minutes and is worth 10%.
+            Edexcel International A Level biology has six written papers. Units 1 and 2 each last 1 hour 30 minutes and are worth 20% of the International A Level. Unit 3, a practical-skills paper, lasts 1 hour 20 minutes and is worth 10%. Units 4 and 5 each last 1 hour 45 minutes and are worth 20%. Unit 6, the second practical-skills paper, lasts 1 hour 20 minutes and is worth 10%.
           </p>
           <p>
-            OxfordAQA International A Level biology is five written papers. Each lasts 1 hour 30 minutes and is worth 20% of the International A Level.
+            OxfordAQA International A Level biology has five written papers. Each lasts 1 hour 30 minutes and is worth 20% of the International A Level.
           </p>
           <p>
-            Your child's school decides the board. Check your child's school for the exact specification it follows.
+            Your child's school decides the board. Check with the school for the exact specification it follows.
           </p>
           <p>
             Edexcel's units are in the <a href="https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Biology/2018/Specification-and-Sample-Assessment/International-A-Level-Biology-Spec.pdf" target="_blank" rel="noopener" className={linkClass}>International A Level Biology specification</a>. OxfordAQA's papers are on the <a href="https://www.oxfordaqa.com/qualification/international-as-and-a-level-biology-9610/" target="_blank" rel="noopener" className={linkClass}>International AS and A-level Biology (9610)</a> page.

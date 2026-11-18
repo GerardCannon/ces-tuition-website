@@ -23,13 +23,13 @@ export function PhysicsTutor() {
     >
       <PageSection title="Our lessons">
         <p>
-          We teach one-to-one online physics tuition, live, for students in Dubai, Abu Dhabi, Sharjah and across the UAE, on Edexcel, Cambridge and OxfordAQA courses.
+          We offer live one-to-one online physics tuition for students in Dubai, Abu Dhabi, Sharjah and across the UAE, for Edexcel, Cambridge and OxfordAQA courses.
         </p>
         <p>
           Your child has one-to-one physics lessons with our UK‑trained subject specialists on our interactive online whiteboard.
         </p>
         <p>
-          Our whiteboard replicates an in-person lesson, as we share a fully interactive digital school copybook with each student.
+          Our whiteboard feels like an in-person lesson, because we share a fully interactive digital copybook with each student.
         </p>
         <p>
           Lessons last one or two hours, whichever suits you, and are scheduled through our app.
@@ -52,7 +52,7 @@ export function PhysicsTutor() {
         <div>
           <h3 className="text-xl font-bold text-foreground mb-2">Ideas that are hard to picture</h3>
           <p>
-            Topics such as electricity, waves and forces can be difficult to imagine. On our whiteboard we draw diagrams step by step, so your child can see how it fits together.
+            Topics such as electricity, waves and forces can be difficult to imagine. On our whiteboard we draw diagrams step by step, so your child can see how the ideas fit together.
           </p>
         </div>
         <div>
@@ -77,7 +77,7 @@ export function PhysicsTutor() {
 
       <PageSection title="Levels we teach" muted>
         <p>
-          We teach physics at <a href="/curricula/british/" className={linkClass}>IGCSE</a> and A-level, and in the IB MYP and Diploma Programme (DP). Edexcel covers International GCSE and International A Level, Cambridge covers IGCSE and International AS and A Level, and OxfordAQA covers International GCSE and International AS and A Level.
+          We teach physics at <a href="/curricula/british/" className={linkClass}>IGCSE</a> and A-level, and in the IB MYP and Diploma Programme (DP). Edexcel offers International GCSE and International A Level, Cambridge offers IGCSE and International AS and A Level, and OxfordAQA offers International GCSE and International AS and A Level.
         </p>
         <LevelEnquiry
           levels={[
@@ -107,7 +107,7 @@ export function PhysicsTutor() {
             OxfordAQA International GCSE physics is linear: two papers of 1 hour 30 minutes, each worth 50%, and either paper can test any part of the course. There is no separate practical paper, because practical knowledge is assessed in these two papers.
           </p>
           <p>
-            Your child's school decides the board and the route. Check your child's school for the exact specification it follows.
+            Your child's school decides the board and the route. Check with the school for the exact specification it follows.
           </p>
           <p>
             Edexcel's routes are in the <a href="https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/General/pearson-edexcel-international-gcse-science-guide.pdf" target="_blank" rel="noopener" className={linkClass}>Pearson International GCSE science guide</a>. Cambridge's papers are on the <a href="https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-physics-0625/" target="_blank" rel="noopener" className={linkClass}>Cambridge IGCSE Physics (0625)</a> page. OxfordAQA's papers are on the <a href="https://www.oxfordaqa.com/qualification/international-gcse-physics-9203/" target="_blank" rel="noopener" className={linkClass}>International GCSE Physics (9203)</a> page.
@@ -122,19 +122,19 @@ export function PhysicsTutor() {
         <div className="space-y-4">
           <h3 className="text-xl font-bold text-foreground mb-2">How A-level physics is assessed</h3>
           <p>
-            Edexcel International A Level physics is six written papers. Units 1 and 2 each last 1 hour 30 minutes and are worth 20% of the International A Level. Unit 3, a practical-skills paper, lasts 1 hour 20 minutes and is worth 10%. Units 4 and 5 each last 1 hour 45 minutes and are worth 20%. Unit 6, the second practical-skills paper, lasts 1 hour 20 minutes and is worth 10%.
+            Edexcel International A Level physics has six written papers. Units 1 and 2 each last 1 hour 30 minutes and are worth 20% of the International A Level. Unit 3, a practical-skills paper, lasts 1 hour 20 minutes and is worth 10%. Units 4 and 5 each last 1 hour 45 minutes and are worth 20%. Unit 6, the second practical-skills paper, lasts 1 hour 20 minutes and is worth 10%.
           </p>
           <p>
-            Cambridge International AS and A Level physics has five papers. These shares are of the A Level. Paper 1 is multiple-choice, lasts 1 hour 15 minutes and is worth 15.5%. Paper 2 lasts 1 hour 15 minutes and is worth 23%. Paper 3 is a 2-hour practical paper worth 11.5%. Paper 4 lasts 2 hours and is worth 38.5%. Paper 5 is a planning, analysis and evaluation paper that lasts 1 hour 15 minutes and is worth 11.5%.
+            Cambridge International AS and A Level physics has five papers. The percentages are shares of the full A Level. Paper 1 is multiple-choice, lasts 1 hour 15 minutes and is worth 15.5%. Paper 2 lasts 1 hour 15 minutes and is worth 23%. Paper 3 is a 2-hour practical paper worth 11.5%. Paper 4 lasts 2 hours and is worth 38.5%. Paper 5 is a planning, analysis and evaluation paper that lasts 1 hour 15 minutes and is worth 11.5%.
           </p>
           <p>
             OxfordAQA International AS and A Level physics has five papers, each lasting 2 hours and worth 20% of the A Level. The two International AS papers come first. Three further papers follow, and the last of these, Physics in Practice, covers practical and analytical skills.
           </p>
           <p>
-            Your child's school decides the board. Check your child's school for the exact specification it follows.
+            Your child's school decides the board. Check with the school for the exact specification it follows.
           </p>
           <p>
-            Edexcel's units are in the <a href="https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Physics/2018/Specification%20and%20Sample%20Assessment/9781446957783_IAL_Physics_Iss3.pdf" target="_blank" rel="noopener" className={linkClass}>International A Level Physics Specification</a>. Cambridge's papers are on the <a href="https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-physics-9702/" target="_blank" rel="noopener" className={linkClass}>Cambridge International AS & A Level Physics (9702)</a> page. OxfordAQA's papers are on the <a href="https://www.oxfordaqa.com/qualification/international-as-and-a-level-physics-9630/" target="_blank" rel="noopener" className={linkClass}>International AS and A-level Physics (9630)</a> page.
+            Edexcel's units are in the <a href="https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Physics/2018/Specification%20and%20Sample%20Assessment/9781446957783_IAL_Physics_Iss3.pdf" target="_blank" rel="noopener" className={linkClass}>International A Level Physics specification</a>. Cambridge's papers are on the <a href="https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-physics-9702/" target="_blank" rel="noopener" className={linkClass}>Cambridge International AS & A Level Physics (9702)</a> page. OxfordAQA's papers are on the <a href="https://www.oxfordaqa.com/qualification/international-as-and-a-level-physics-9630/" target="_blank" rel="noopener" className={linkClass}>International AS and A-level Physics (9630)</a> page.
           </p>
         </div>
       </PageSection>
@@ -149,7 +149,7 @@ export function PhysicsTutor() {
         <div className="space-y-4">
           <h3 className="text-xl font-bold text-foreground mb-2">How IB physics is assessed</h3>
           <p>
-            In the IB Diploma Programme, 80% of the final physics mark comes from external exams and 20% from an internal assessment. The internal assessment is one scientific investigation, a written report of up to 3,000 words on a research question your child forms themselves. It is marked by your child's school teacher and checked by the IB, and the work is always your child's own. There are two exam papers. Paper 1 is worth 36% and has multiple-choice questions (Paper 1A) and data-based questions (Paper 1B). Paper 2 is worth 44% and has short-answer and extended-response questions. At Standard Level both papers last 1 hour 30 minutes. At Higher Level, Paper 1 lasts 2 hours and Paper 2 lasts 2 hours 30 minutes. Check your child's school for the exact guide it follows.
+            In the IB Diploma Programme, 80% of the final physics mark comes from external exams and 20% from an internal assessment. The internal assessment is one scientific investigation, a written report of up to 3,000 words on a research question your child forms themselves. It is marked by your child's teacher and checked by the IB, and the work must be your child's own. There are two exam papers. Paper 1 is worth 36% and has multiple-choice questions (Paper 1A) and data-based questions (Paper 1B). Paper 2 is worth 44% and has short-answer and extended-response questions. At Standard Level, both papers last 1 hour 30 minutes. At Higher Level, Paper 1 lasts 2 hours and Paper 2 lasts 2 hours 30 minutes. Check with the school for the exact guide it follows.
           </p>
           <p>
             The times and weightings are in the <a href="https://www.ibo.org/globalassets/new-structure/university-admission/pdfs/subject-guides/physics-guide.pdf" target="_blank" rel="noopener" className={linkClass}>IB physics guide</a> (first assessment 2025) and the IB's <a href="https://ibo.org/globalassets/new-structure/recognition/pdfs/dp_sciences_physics_subject-brief_jan_2022_e.pdf" target="_blank" rel="noopener" className={linkClass}>Sciences: Physics subject brief</a>.

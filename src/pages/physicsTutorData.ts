@@ -21,7 +21,7 @@ export const physicsFaqs = [
   },
   {
     question: 'Which exam boards do you cover?',
-    answer: 'We teach students following Edexcel, Cambridge and OxfordAQA physics courses. Edexcel covers International GCSE and International A Level, Cambridge covers IGCSE and International AS and A Level, and OxfordAQA covers International GCSE and International AS and A Level. We also teach IB physics in the MYP and in the Diploma Programme, where we cover both Higher Level and Standard Level.',
+    answer: 'We teach students following Edexcel, Cambridge and OxfordAQA physics courses. Edexcel offers International GCSE and International A Level, Cambridge offers IGCSE and International AS and A Level, and OxfordAQA offers International GCSE and International AS and A Level. We also teach IB physics in the MYP and in the Diploma Programme, where we cover both Higher Level and Standard Level.',
   },
   {
     question: 'My child understands physics in class but struggles in tests. Can you help?',
@@ -45,11 +45,11 @@ export const physicsFaqs = [
   },
   {
     question: 'How is IB physics assessed?',
-    answer: 'In the IB Diploma, 80% of the final physics mark comes from external exams and 20% from an internal assessment. The internal assessment is one scientific investigation, a written report of up to 3,000 words. Paper 1 is worth 36% and has multiple-choice questions (Paper 1A) and data-based questions (Paper 1B). Paper 2 is worth 44% and has short-answer and extended-response questions. At Standard Level both papers last 1 hour 30 minutes. At Higher Level, Paper 1 lasts 2 hours and Paper 2 lasts 2 hours 30 minutes.',
+    answer: 'In the IB Diploma, 80% of the final physics mark comes from external exams and 20% from an internal assessment. The internal assessment is one scientific investigation, a written report of up to 3,000 words. Paper 1 is worth 36% and has multiple-choice questions (Paper 1A) and data-based questions (Paper 1B). Paper 2 is worth 44% and has short-answer and extended-response questions. At Standard Level, both papers last 1 hour 30 minutes. At Higher Level, Paper 1 lasts 2 hours and Paper 2 lasts 2 hours 30 minutes.',
   },
   {
     question: 'What is the difference between Standard Level and Higher Level physics papers?',
-    answer: 'Both levels have two papers. At Standard Level both papers are 1 hour 30 minutes. At Higher Level Paper 1 is 2 hours and Paper 2 is 2 hours 30 minutes. The weightings are the same at both levels: Paper 1 is 36% and Paper 2 is 44%. We teach both levels.',
+    answer: 'Both levels have two papers. At Standard Level, both papers are 1 hour 30 minutes. At Higher Level, Paper 1 is 2 hours and Paper 2 is 2 hours 30 minutes. The weightings are the same at both levels: Paper 1 is 36% and Paper 2 is 44%. We teach both levels.',
   },
   {
     question: 'How are IGCSE physics exams structured?',
@@ -57,7 +57,7 @@ export const physicsFaqs = [
   },
   {
     question: 'How are A-level physics exams structured?',
-    answer: 'It depends on the board, and your child\'s school decides the board. Edexcel International A Level physics is six written papers. Units 1, 2, 4 and 5 are worth 20% each, and the two practical-skills papers, Units 3 and 6, are worth 10% each. Cambridge International AS and A Level physics has five papers, and these shares are of the A Level: Paper 1 is 15.5%, Paper 2 is 23%, Paper 3 (practical) is 11.5%, Paper 4 is 38.5% and Paper 5 is 11.5%. OxfordAQA International AS and A Level physics has five papers of 2 hours, each worth 20% of the A Level.',
+    answer: 'It depends on the board, and your child\'s school decides the board. Edexcel International A Level physics has six written papers. Units 1, 2, 4 and 5 are worth 20% each, and the two practical-skills papers, Units 3 and 6, are worth 10% each. Cambridge International AS and A Level physics has five papers, weighted as shares of the full A Level: Paper 1 is 15.5%, Paper 2 is 23%, Paper 3 (practical) is 11.5%, Paper 4 is 38.5% and Paper 5 is 11.5%. OxfordAQA International AS and A Level physics has five papers of 2 hours, each worth 20% of the A Level.',
   },
   subjectRematchFaq('physics'),
 ]

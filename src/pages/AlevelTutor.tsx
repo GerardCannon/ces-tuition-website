@@ -26,7 +26,7 @@ export function AlevelTutor() {
           Your child has one-to-one lessons with our UK‑trained subject specialists on our interactive online whiteboard.
         </p>
         <p>
-          Our whiteboard replicates an in-person lesson, as we share a fully interactive digital school copybook with each student.
+          Our whiteboard feels like an in-person lesson, because we share a fully interactive digital copybook with each student.
         </p>
         <p>
           Lessons last one or two hours, whichever suits you, and are scheduled through our app.
@@ -70,7 +70,7 @@ export function AlevelTutor() {
         <div>
           <h3 className="text-xl font-bold text-foreground mb-2">Exams in Year 12 and Year 13</h3>
           <p>
-            A-level is usually a two-year course. Depending on the exam board and school, your child may sit some exams at the end of Year 12, often called AS, or all of them at the end of Year 13.
+            A-level is usually a two-year course. Depending on the exam board and school, your child may sit some exams at the end of Year 12 (the AS stage) and the rest in Year 13, or sit them all at the end of Year 13.
           </p>
         </div>
         <div>
@@ -89,7 +89,7 @@ export function AlevelTutor() {
 
       <PageSection title="Subjects" muted>
         <p>
-          We teach a range of A-level subjects, such as <a href="/igcse-gcse-maths-tutor/#a-level-maths" className={linkClass}>maths</a>, <a href="/chemistry-tutor/#a-level-chemistry" className={linkClass}>chemistry</a>, <a href="/economics-tutor/#a-level-economics" className={linkClass}>economics</a>, <a href="/english-tutor/#a-level-english" className={linkClass}>English</a> and computer science. For the sciences, see our <a href="/physics-tutor/#a-level-physics" className={linkClass}>A-level physics tutor</a> page and our <a href="/biology-tutor/#a-level-biology" className={linkClass}>A-level biology</a> page. If your child's subject isn't listed, just ask us. You can read more about maths on our <a href="/igcse-gcse-maths-tutor/#a-level-maths" className={linkClass}>maths page</a>. We also teach the IB MYP and Diploma Programme (DP), which you can read about on our <a href="/curricula/ib/" className={linkClass}>IB page</a>.
+          We teach a range of A-level subjects, such as <a href="/igcse-gcse-maths-tutor/#a-level-maths" className={linkClass}>maths</a>, <a href="/chemistry-tutor/#a-level-chemistry" className={linkClass}>chemistry</a>, <a href="/physics-tutor/#a-level-physics" className={linkClass}>physics</a>, <a href="/biology-tutor/#a-level-biology" className={linkClass}>biology</a>, <a href="/economics-tutor/#a-level-economics" className={linkClass}>economics</a>, business studies, <a href="/english-tutor/#a-level-english" className={linkClass}>English</a> and computer science. If your child's subject isn't listed, just ask us. We also teach the IB MYP and Diploma Programme (DP), which you can read about on our <a href="/curricula/ib/" className={linkClass}>IB page</a>.
         </p>
       </PageSection>
 

@@ -56,7 +56,6 @@ export function Footer({ sectionBase = '' }: { sectionBase?: string }) {
                   </a>
                 </li>
               ))}
-              <li>One-to-one lessons</li>
             </ul>
           </div>
 
@@ -103,7 +102,7 @@ export function Footer({ sectionBase = '' }: { sectionBase?: string }) {
               Terms of Service
             </a>
             <a href="https://app.cestuition.com" className="hover:underline underline-offset-4 font-medium">
-              Portal Log in
+              Portal login
             </a>
           </div>
         </div>

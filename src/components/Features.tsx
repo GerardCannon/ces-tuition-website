@@ -20,7 +20,7 @@ const features: { icon: typeof GraduationCap; title: string; description: ReactN
   {
     icon: DeviceMobile,
     title: 'Tuition portal',
-    description: "Follow your child's progress and manage lessons in the CES portal.",
+    description: "Follow your child's progress and manage lessons in the CES app.",
   },
   {
     icon: Gift,
@@ -50,7 +50,7 @@ export function Features() {
             Why families choose CES Tuition
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-            One-to-one online lessons, with progress you can follow in the tuition portal.
+            One-to-one online lessons, with progress you can follow in the CES app.
           </p>
         </div>
 

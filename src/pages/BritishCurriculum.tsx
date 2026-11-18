@@ -45,10 +45,10 @@ export function BritishCurriculum() {
           Your child has one-to-one lessons with our UK‑trained subject specialists on our interactive online whiteboard.
         </p>
         <p>
-          Our whiteboard replicates an in-person lesson, as we share a fully interactive digital school copybook with each student.
+          Our whiteboard feels like an in-person lesson, because we share a fully interactive digital copybook with each student.
         </p>
         <p>
-          Lessons typically last one or two hours, as you prefer.
+          Lessons last one or two hours, whichever suits you, and are scheduled through our app.
         </p>
         <p>
           To get started, simply message us on WhatsApp and we’ll arrange a free 30‑minute trial lesson, so we can put your mind at ease.
@@ -85,7 +85,7 @@ export function BritishCurriculum() {
 
       <PageSection title="IGCSE subjects">
         <p>
-          We teach IGCSE <a href="/igcse-gcse-maths-tutor/#igcse-maths" className={linkClass}>maths</a> and <a href="/english-tutor/#igcse-english" className={linkClass}>English</a>. For the sciences, see our <a href="/chemistry-tutor/#igcse-chemistry" className={linkClass}>IGCSE chemistry tutor</a>, <a href="/physics-tutor/#igcse-physics" className={linkClass}>IGCSE physics tutor</a> and <a href="/biology-tutor/#igcse-biology" className={linkClass}>IGCSE biology tutor</a> pages, and we also teach <a href="/economics-tutor/#igcse-economics" className={linkClass}>economics</a>.
+          We teach IGCSE <a href="/igcse-gcse-maths-tutor/#igcse-maths" className={linkClass}>maths</a>, <a href="/english-tutor/#igcse-english" className={linkClass}>English</a> and <a href="/economics-tutor/#igcse-economics" className={linkClass}>economics</a>. For the sciences, see our <a href="/chemistry-tutor/#igcse-chemistry" className={linkClass}>IGCSE chemistry tutor</a>, <a href="/physics-tutor/#igcse-physics" className={linkClass}>IGCSE physics tutor</a> and <a href="/biology-tutor/#igcse-biology" className={linkClass}>IGCSE biology tutor</a> pages.
         </p>
         <p>
           If your child’s subject isn’t listed, just ask us. We also teach <a href="/a-level-tutor/" className={linkClass}>A-level</a>, and you can read about the IB MYP and Diploma Programme (DP) on our <a href="/curricula/ib/" className={linkClass}>IB page</a>.
