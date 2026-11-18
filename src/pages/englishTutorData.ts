@@ -33,7 +33,7 @@ export const englishFaqs = [
   },
   {
     question: 'How are IGCSE English exams structured?',
-    answer: 'It depends on the board, and your child\'s school chooses it. Edexcel International GCSE English Language A has a 2 hour 15 minute exam (60%), then a 1 hour 30 minute exam or coursework (40%), and English Language B is one 3-hour exam. Cambridge IGCSE First Language English has a 2-hour reading paper (50%), then a 2-hour writing paper or a coursework portfolio (50%). OxfordAQA International GCSE English Language has a 2-hour paper (60%), then a 2-hour paper or a non-exam project (40%). English Literature has its own papers with each board, and every student sits the same papers, as there are no tiers.',
+    answer: 'It depends on the board, and your child\'s school chooses it. Edexcel International GCSE English Language A has a 2-hour 15-minute exam (60%), then a 1-hour 30-minute exam or coursework (40%), and English Language B is one 3-hour exam. Cambridge IGCSE First Language English has a 2-hour reading paper (50%), then a 2-hour writing paper or a coursework portfolio (50%). OxfordAQA International GCSE English Language has a 2-hour paper (60%), then a 2-hour paper or a non-exam project (40%). English Literature has its own papers with each board, and every student sits the same papers, as there are no tiers.',
   },
   {
     question: 'How are A-level English exams structured?',

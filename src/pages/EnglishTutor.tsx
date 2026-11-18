@@ -95,15 +95,15 @@ export function EnglishTutor() {
             English Language is about reading unseen passages closely and writing for different purposes. English Literature is about studying set novels, plays and poems, and writing essays about them. Many schools enter students for both.
           </p>
           <p>
-            <strong className="text-foreground">Edexcel International GCSE.</strong> English Language A has a 2 hour 15 minute exam on non-fiction texts and transactional writing (60%). Students then take either a 1 hour 30 minute exam on poetry and prose texts and imaginative writing (40%), or coursework (40%). English Language B is a single 3-hour exam (100%). English Literature has a 2-hour exam on poetry and modern prose (60%). Students then take either a 1 hour 30 minute exam on modern drama and literary heritage texts (40%), or coursework (40%).
+            <strong className="text-foreground">Edexcel International GCSE.</strong> English Language A has a 2-hour 15-minute exam on non-fiction texts and transactional writing (60%). Students then take either a 1-hour 30-minute exam on poetry and prose texts and imaginative writing (40%), or coursework (40%). English Language B is a single 3-hour exam (100%). English Literature has a 2-hour exam on poetry and modern prose (60%). Students then take either a 1-hour 30-minute exam on modern drama and literary heritage texts (40%), or coursework (40%).
           </p>
           <p>
             <strong className="text-foreground">Cambridge IGCSE.</strong> First Language English has a 2-hour Reading paper (50%). Students then take either a 2-hour Directed Writing and Composition paper (50%), or a coursework portfolio (50%).{' '}
             {/* Cambridge 0475 2027/2028 sentence: review after Nov 2027 (wording must be trimmed once the 2027 papers end). */}
-            For exams from 2028, Literature in English has a 1 hour 30 minute Poetry and Prose paper (50%). Students then take either a 2-hour Drama and Unseen paper (50%), or coursework (50%). Both papers are open text. Students sitting Literature in 2027 follow the earlier structure. They take Paper 1 (1 hour 30 minutes, 50%) and either a 1 hour 30 minute Drama paper (50%), or a 45-minute Drama paper (25%) with an Unseen paper of 1 hour 15 minutes or coursework (25%).
+            For exams from 2028, Literature in English has a 1-hour 30-minute Poetry and Prose paper (50%). Students then take either a 2-hour Drama and Unseen paper (50%), or coursework (50%). Both papers are open text. Students sitting Literature in 2027 follow the earlier structure. They take Paper 1 (1 hour 30 minutes, 50%) and either a 1-hour 30-minute Drama paper (50%), or a 45-minute Drama paper (25%) with a 1-hour 15-minute Unseen paper or coursework (25%).
           </p>
           <p>
-            <strong className="text-foreground">OxfordAQA International GCSE.</strong> English Language has a 2-hour Literary Non-Fiction and Composition paper (60%). Students then take either a 2-hour Source-based Reading and Directed Writing paper (40%), or a non-exam assessment project (40%). English Literature has a 1 hour 30 minute Prose and Drama paper (40%). Students then take either a 2 hour 15 minute Poetry and Unseen Texts paper (60%), or a 1 hour 30 minute Poetry paper (40%) plus a non-exam assessment (20%).
+            <strong className="text-foreground">OxfordAQA International GCSE.</strong> English Language has a 2-hour Literary Non-Fiction and Composition paper (60%). Students then take either a 2-hour Source-based Reading and Directed Writing paper (40%), or a non-exam assessment project (40%). English Literature has a 1-hour 30-minute Prose and Drama paper (40%). Students then take either a 2-hour 15-minute Poetry and Unseen Texts paper (60%), or a 1-hour 30-minute Poetry paper (40%) plus a non-exam assessment (20%).
           </p>
           <p>
             IGCSE English papers are not tiered: every student sits the same papers. Each board also offers an optional speaking assessment, which is reported separately from the main grade. Your child's school decides the board and whether coursework is used. Check your child's school for the exact specification it follows.
@@ -127,7 +127,7 @@ export function EnglishTutor() {
             <strong className="text-foreground">Cambridge International AS and A Level.</strong> English Language has four papers. Paper 1 Reading (2 hours 15 minutes) and Paper 2 Writing (2 hours) make up the AS Level, at 50% each. Paper 3 Language Analysis and Paper 4 Language Topics (2 hours 15 minutes each) complete the A Level, and each of the four papers is worth 25% of it. Literature in English has four 2-hour papers, each worth 25% of the A Level. The AS Level is Paper 1 Drama and Poetry and Paper 2 Prose and Unseen, then the A Level adds Paper 3 Shakespeare and Drama and Paper 4 Pre- and Post-1900 Poetry and Prose. Cambridge also offers an AS Level in Language and Literature in English, with two 2-hour papers (Writing, and Drama, Poetry and Prose) worth 50% each.
           </p>
           <p>
-            <strong className="text-foreground">OxfordAQA International AS and A Level.</strong> English Language and English Literature have the same structure. The two International AS papers last 2 hours each and are each worth 20% of the International A Level. The first A2 paper lasts 2 hours and is worth 30%. For the last 30%, students sit either a 2 hour 30 minute exam or a non-exam assessment: a language investigation in English Language, or two essays in English Literature.
+            <strong className="text-foreground">OxfordAQA International AS and A Level.</strong> English Language and English Literature have the same structure. The two International AS papers last 2 hours each and are each worth 20% of the International A Level. The first A2 paper lasts 2 hours and is worth 30%. For the last 30%, students sit either a 2-hour 30-minute exam or a non-exam assessment: a language investigation in English Language, or two essays in English Literature.
           </p>
           <p>
             Your child's school decides the board and the options. Check your child's school for the exact specification it follows.
@@ -144,7 +144,14 @@ export function EnglishTutor() {
         </p>
       </PageSection>
 
-      <FaqSection items={withVisibleTrialHyphen(englishFaqs)} />
+      {/* Exam lengths keep an ordinary hyphen. The trial helper also rewrites "30-minute" inside "1-hour 30-minute exam". */}
+      <FaqSection
+        items={withVisibleTrialHyphen(englishFaqs).map((item) =>
+          typeof item.answer === 'string'
+            ? { ...item, answer: item.answer.split('30\u2011minute exam').join('30-minute exam') }
+            : item,
+        )}
+      />
     </PageShell>
   )
 }
