@@ -8,7 +8,7 @@ export const homeFaqs = [
   },
   {
     question: 'Can my child join from outside the UAE?',
-    answer: 'Yes. All our lessons are online, so families join us from the UK, Europe and all over Asia.',
+    answer: 'Yes. All our lessons are online, so families join us from the UK, the rest of Europe and across Asia.',
   },
   HOME_REMATCH_FAQ,
   {

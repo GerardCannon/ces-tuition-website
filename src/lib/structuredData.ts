@@ -60,7 +60,7 @@ export const ONLINE_CHANNEL = {
   '@type': 'ServiceChannel',
   name: 'Live online lessons',
   description:
-    'Lessons are live, one-to-one and online, so families also join from the UK, Europe and all over Asia.',
+    'Lessons are live, one-to-one and online, so families also join from the UK, the rest of Europe and across Asia.',
 }
 
 export const TRIAL_OFFER = {
