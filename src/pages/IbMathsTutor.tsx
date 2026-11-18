@@ -29,7 +29,7 @@ export function IbMathsTutor() {
           Your child has one-to-one maths lessons with our UK‑trained subject specialists on our interactive online whiteboard.
         </p>
         <p>
-          Our whiteboard replicates an in-person lesson, as we share a fully interactive digital school copybook with each student.
+          Our whiteboard feels like an in-person lesson, because we share a fully interactive digital copybook with each student.
         </p>
         <p>
           Lessons last one or two hours, whichever suits you, and are scheduled through our app.
@@ -46,7 +46,7 @@ export function IbMathsTutor() {
         <div>
           <h3 className="text-xl font-bold text-foreground mb-2">Filling gaps</h3>
           <p>
-            IB maths moves quickly, and a gap from an earlier year can make a new topic feel much harder. We find where your child is unsure and help them fill it before the class moves on.
+            IB maths moves quickly, and a gap from an earlier year can make a new topic feel much harder. We find the gaps and help your child fill them before the class moves on.
           </p>
         </div>
         <div>
@@ -87,7 +87,7 @@ export function IbMathsTutor() {
         </p>
         <LevelEnquiry
           heading="Book a free IB maths trial"
-          line="Tap below and WhatsApp opens with a message ready to send. Add your child's year group too, if you can. We reply within the hour to arrange your free 30‑minute trial."
+          line="Choose the button below and WhatsApp opens with a message ready to send. Add your child's year group too, if you can. We reply within the hour to arrange your free 30‑minute trial."
           levels={[{ id: 'ib', label: 'IB maths' }]}
         />
       </PageSection>

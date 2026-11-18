@@ -21,7 +21,7 @@ export const chemistryFaqs = [
   },
   {
     question: 'Which exam boards do you cover?',
-    answer: 'For chemistry we cover Edexcel at IGCSE, and at A-level Edexcel International A Level, Cambridge International AS and A Level, and OxfordAQA International AS and A Level. We also teach IB chemistry in the MYP and in the Diploma Programme, where we cover both Higher Level and Standard Level. Send us the board on WhatsApp if you are unsure which one your school uses.',
+    answer: 'For chemistry we cover Edexcel at IGCSE, and at A-level Edexcel International A Level, Cambridge International AS and A Level, and OxfordAQA International AS and A Level. We also teach IB chemistry in the MYP and in the Diploma Programme, where we cover both Higher Level and Standard Level. If you\'re not sure which board your child\'s school uses, message us on WhatsApp and we\'ll help you work it out.',
   },
   {
     question: 'Does my child need to be good at maths for chemistry?',
@@ -49,11 +49,11 @@ export const chemistryFaqs = [
   },
   {
     question: 'How is IB chemistry assessed?',
-    answer: 'For IB Diploma chemistry, 80% of the mark is external exams and 20% is an internal assessment. That assessment is one scientific investigation. Paper 1 is worth 36% and Paper 2 is worth 44%. At Standard Level, Paper 1 is 55 marks and lasts 1 hour 30 minutes, and Paper 2 is 50 marks and lasts 1 hour 30 minutes. At Higher Level, Paper 1 is 75 marks and lasts 2 hours, and Paper 2 is 90 marks and lasts 2 hours 30 minutes.',
+    answer: 'For IB Diploma chemistry, 80% of the mark comes from external exams and 20% from an internal assessment. That assessment is one scientific investigation. Paper 1 is worth 36% and Paper 2 is worth 44%. At Standard Level, Paper 1 is 55 marks and lasts 1 hour 30 minutes, and Paper 2 is 50 marks and lasts 1 hour 30 minutes. At Higher Level, Paper 1 is 75 marks and lasts 2 hours, and Paper 2 is 90 marks and lasts 2 hours 30 minutes.',
   },
   {
     question: 'What is the difference between Standard Level and Higher Level chemistry papers?',
-    answer: 'Both levels have two papers. At Standard Level both last 1 hour 30 minutes: Paper 1 is 55 marks and Paper 2 is 50 marks. At Higher Level, Paper 1 lasts 2 hours and is 75 marks, and Paper 2 lasts 2 hours 30 minutes and is 90 marks. We teach both levels.',
+    answer: 'Both levels have two papers. At Standard Level, both last 1 hour 30 minutes: Paper 1 is 55 marks and Paper 2 is 50 marks. At Higher Level, Paper 1 lasts 2 hours and is 75 marks, and Paper 2 lasts 2 hours 30 minutes and is 90 marks. We teach both levels.',
   },
   {
     question: 'How are Edexcel IGCSE chemistry exams structured?',

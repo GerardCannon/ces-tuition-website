@@ -107,7 +107,7 @@ function wireMobileMenu() {
     const portal = document.createElement('a')
     portal.href = 'https://app.cestuition.com'
     portal.className = 'block text-center text-sm font-medium text-muted-foreground hover:text-foreground py-3'
-    portal.textContent = 'Portal Log in'
+    portal.textContent = 'Portal login'
     portal.addEventListener('click', closeMenu)
     inner.append(portal)
 

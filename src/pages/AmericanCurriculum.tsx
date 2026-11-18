@@ -26,7 +26,7 @@ export function AmericanCurriculum() {
           Your child has one-to-one lessons with our UK‑trained subject specialists on our interactive online whiteboard.
         </p>
         <p>
-          Our whiteboard replicates an in-person lesson, as we share a fully interactive digital school copybook with each student.
+          Our whiteboard feels like an in-person lesson, because we share a fully interactive digital copybook with each student.
         </p>
         <p>
           Lessons last one or two hours, whichever suits you, and are scheduled through our app.
@@ -41,7 +41,7 @@ export function AmericanCurriculum() {
 
       <PageSection title="SAT preparation" muted>
         <p>
-          We help high school students prepare for the SAT. The test covers maths and reading and writing, and we work on both.
+          We help high school students prepare for the SAT. The test has two sections, Reading and Writing, and Math, and we work on both.
         </p>
         <p>
           In the first lessons, we talk through which kinds of questions your child finds hardest, then focus on those topics and practise SAT-style questions together. Your child can ask questions at any point, and we'll go through each step until it makes sense.

@@ -4,7 +4,7 @@ import type { ServiceInfo } from '../lib/structuredData.ts'
 export const mathsCrumbs = [
   { name: 'Home', path: '/' },
   { name: 'IGCSE and British curriculum', path: '/curricula/british/' },
-  { name: 'IGCSE maths', path: '/igcse-gcse-maths-tutor/' },
+  { name: 'IGCSE and A-level maths', path: '/igcse-gcse-maths-tutor/' },
 ]
 
 export const mathsFaqs = [
@@ -22,7 +22,7 @@ export const mathsFaqs = [
   },
   {
     question: 'Which exam boards do you cover for maths?',
-    answer: 'We teach Edexcel, Cambridge and OxfordAQA maths courses. OxfordAQA offers International GCSE and International AS and A Level maths.',
+    answer: 'We teach Edexcel, Cambridge and OxfordAQA maths courses at IGCSE and A-level.',
   },
   {
     question: 'Do you teach A-level maths?',
@@ -34,7 +34,7 @@ export const mathsFaqs = [
   },
   {
     question: 'How are A-level maths exams structured?',
-    answer: 'It depends on the board. Edexcel International A Level maths is six papers of 1 hour 30 minutes: four pure and two applied. Cambridge International A Level maths is four papers: two pure papers worth 30% each and two applied papers worth 20% each. OxfordAQA International A Level maths is four papers: two AS papers worth 20% each, a pure paper worth 37.5% and a statistics or mechanics paper worth 22.5%.',
+    answer: 'It depends on the board. Edexcel International A Level maths has six papers of 1 hour 30 minutes: four pure and two applied. Cambridge International A Level maths has four papers: two pure papers worth 30% each and two applied papers worth 20% each. OxfordAQA International A Level maths has four papers: two AS papers worth 20% each, a pure paper worth 37.5% and a statistics or mechanics paper worth 22.5%.',
   },
   {
     question: 'Is there a non-calculator paper in IGCSE maths?',

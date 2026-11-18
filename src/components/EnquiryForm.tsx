@@ -86,10 +86,10 @@ export function EnquiryForm({
         {...(page === 'home' ? {} : whatsappClick(page, 'form'))}
       >
         <WhatsappLogo size={22} weight="fill" aria-hidden="true" className="shrink-0" />
-        <span className="min-w-0">Book free trial on WhatsApp</span>
+        <span className="min-w-0">Book your free trial on WhatsApp</span>
       </Button>
       <p className="text-sm text-muted-foreground text-center leading-relaxed">
-        Free 30‑minute trial. We reply within the hour. This opens WhatsApp with your details filled in. This website does not store the form.
+        Free 30‑minute trial. We reply within the hour. This opens WhatsApp with your details filled in. This website doesn't store your details.
       </p>
       {page === 'home' && !embedded ? (
         <p className="text-center">

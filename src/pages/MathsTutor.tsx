@@ -42,10 +42,10 @@ export function MathsTutor() {
           Your child has one-to-one maths lessons with our UK‑trained subject specialists on our interactive online whiteboard.
         </p>
         <p>
-          Our whiteboard replicates an in-person lesson, as we share a fully interactive digital school copybook with each student.
+          Our whiteboard feels like an in-person lesson, because we share a fully interactive digital copybook with each student.
         </p>
         <p>
-          Lessons typically last one or two hours, as you prefer.
+          Lessons last one or two hours, whichever suits you, and are scheduled through our app.
         </p>
         <p>
           To get started, simply message us on WhatsApp and we’ll arrange a free 30‑minute trial lesson, so we can put your mind at ease.
@@ -116,7 +116,7 @@ export function MathsTutor() {
             OxfordAQA International GCSE maths has two tiers, Core (grades 1 to 5) and Extension (grades 4 to 9). Core students take Papers 1C and 2C, each lasting 1 hour 30 minutes. Extension students take Papers 1E and 2E, each lasting 2 hours. Each paper is worth 50%, and a scientific calculator is allowed in all of them.
           </p>
           <p>
-            All three are assessed by written exams only. Your child’s school decides the board and the tier. Check your child’s school for the exact specification it follows.
+            All three are assessed by written exams only. Your child’s school decides the board and the tier. Check with the school for the exact specification it follows.
           </p>
           <p>
             Edexcel’s papers are in the <a href="https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Mathematics%20A/2016/Specification%20and%20sample%20assessments/international-gcse-in-mathematics-spec-a.pdf" target="_blank" rel="noopener" className={linkClass}>International GCSE Mathematics A specification</a>. Cambridge’s papers are in the <a href="https://www.cambridgeinternational.org/Images/662466-2025-2027-syllabus.pdf" target="_blank" rel="noopener" className={linkClass}>Cambridge IGCSE Mathematics (0580) syllabus</a>. OxfordAQA’s papers are on the <a href="https://www.oxfordaqa.com/qualification/international-gcse-mathematics-9260/" target="_blank" rel="noopener" className={linkClass}>International GCSE Mathematics (9260)</a> page.
@@ -131,7 +131,7 @@ export function MathsTutor() {
         <div className="space-y-4">
           <h3 className="text-xl font-bold text-foreground mb-2">How A-level maths is assessed</h3>
           <p>
-            Edexcel International A Level maths is six papers, each lasting 1 hour 30 minutes and worth one sixth of the International A Level. Four are pure maths (P1 to P4) and two are applied papers in mechanics, statistics or decision maths. The International AS is the first three: P1, P2 and one applied paper.
+            Edexcel International A Level maths has six papers, each lasting 1 hour 30 minutes and worth one sixth of the International A Level. Four are pure maths (P1 to P4) and two are applied papers in mechanics, statistics or decision maths. The International AS is the first three: P1, P2 and one applied paper.
           </p>
           <p>
             Cambridge International AS and A Level maths has four papers for the A Level. Paper 1 and Paper 3 (pure maths) each last 1 hour 50 minutes and are worth 30%. Students then take either Paper 4 (mechanics) and Paper 5 (probability and statistics), or Paper 5 and Paper 6 (further probability and statistics); each lasts 1 hour 15 minutes and is worth 20%.
@@ -140,7 +140,7 @@ export function MathsTutor() {
             OxfordAQA International AS and A Level maths has four papers. The two AS papers, P1 (pure maths) and PSM1 (pure maths, statistics and mechanics), each last 1 hour 30 minutes and are worth 20% of the A Level. P2 (pure maths) lasts 2 hours 30 minutes and is worth 37.5%, and the last paper, statistics (S2) or mechanics (M2), lasts 1 hour 30 minutes and is worth 22.5%.
           </p>
           <p>
-            Your child’s school decides the board and the options. Check your child’s school for the exact specification it follows.
+            Your child’s school decides the board and the options. Check with the school for the exact specification it follows.
           </p>
           <p>
             Edexcel’s units are in the <a href="https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Mathematics/2018/Specification-and-Sample-Assessment/international-a-level-maths-spec.pdf" target="_blank" rel="noopener" className={linkClass}>International A Level Mathematics specification</a>. Cambridge’s papers are in the <a href="https://www.cambridgeinternational.org/Images/697427-2026-2027-syllabus.pdf" target="_blank" rel="noopener" className={linkClass}>Cambridge International AS & A Level Mathematics (9709) syllabus</a>. OxfordAQA’s papers are on the <a href="https://www.oxfordaqa.com/qualification/international-as-and-a-level-mathematics-9660/" target="_blank" rel="noopener" className={linkClass}>International AS and A Level Mathematics (9660)</a> page.
@@ -174,7 +174,7 @@ export function MathsTutor() {
 
       <PageSection title="Other subjects" muted>
         <p>
-          We also teach <a href="/english-tutor/" className={linkClass}>English</a>, <a href="/chemistry-tutor/" className={linkClass}>chemistry</a>, <a href="/physics-tutor/" className={linkClass}>physics</a>, <a href="/biology-tutor/" className={linkClass}>biology</a> and <a href="/economics-tutor/" className={linkClass}>economics</a>. See our <a href="/curricula/british/" className={linkClass}>IGCSE page</a> for the full list, or ask us on WhatsApp. We also teach <a href="/ib-maths-tutor/" className={linkClass}>IB maths</a> for MYP and Diploma Programme (DP) students.
+          We also teach <a href="/english-tutor/" className={linkClass}>English</a>, <a href="/chemistry-tutor/" className={linkClass}>chemistry</a>, <a href="/physics-tutor/" className={linkClass}>physics</a>, <a href="/biology-tutor/" className={linkClass}>biology</a> and <a href="/economics-tutor/" className={linkClass}>economics</a>. See our <a href="/curricula/british/" className={linkClass}>IGCSE page</a> for the full list, or ask us on WhatsApp. For MYP and Diploma Programme (DP) students, see our <a href="/ib-maths-tutor/" className={linkClass}>IB maths</a> page.
         </p>
       </PageSection>
 

@@ -25,7 +25,7 @@ export const americanFaqs = [
   },
   {
     question: 'How is the SAT structured?',
-    answer: "The SAT is taken digitally, in the College Board's Bluebook app, and has two sections: reading and writing, then maths. Each section is split into two modules, and the second module is harder or easier depending on how your child did in the first. The test takes 2 hours and 14 minutes in total, with a 10-minute break between the sections. We help your child get used to the format and practise both sections, so the real test feels familiar.",
+    answer: "The SAT is taken digitally, in the College Board's Bluebook app, and has two sections: reading and writing, then maths. Each section is split into two modules, and the second module is harder or easier depending on how your child did in the first. The test takes 2 hours and 14 minutes, plus a 10-minute break between the sections. We help your child get used to the format and practise both sections, so the real test feels familiar.",
   },
   {
     question: 'Which school subjects can you help with?',

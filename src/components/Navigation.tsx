@@ -60,7 +60,7 @@ export function Navigation({ sectionBase = '' }: { sectionBase?: string }) {
               href="https://app.cestuition.com"
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
-              Portal Log in
+              Portal login
             </a>
             <Button
               asChild
@@ -112,7 +112,7 @@ export function Navigation({ sectionBase = '' }: { sectionBase?: string }) {
               className="block text-center text-sm font-medium text-muted-foreground hover:text-foreground py-3"
               onClick={closeMenu}
             >
-              Portal Log in
+              Portal login
             </a>
           </div>
         </div>

@@ -64,8 +64,8 @@ export function HowItWorks() {
           </div>
 
           <p className="mx-auto mt-10 max-w-2xl text-balance text-center text-sm leading-relaxed text-muted-foreground sm:text-base">
-            <strong className="font-semibold">Our guarantee:</strong>
-            {" if the first paid lesson isn't the right fit, we'll switch to a new tutor straight away and that session won't be charged. This applies once per subject."}
+            <strong className="font-semibold">Not the right fit?</strong>
+            {" If the first paid lesson isn't right for your child, we'll switch to a new tutor straight away and you won't be charged for that lesson. This applies once per subject."}
           </p>
 
           <div className="mt-8 flex justify-center">

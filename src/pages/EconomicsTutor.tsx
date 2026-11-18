@@ -17,7 +17,7 @@ export function EconomicsTutor() {
       ctaTitle="Book your free 30‑minute trial"
       ctaBody={
         <p>
-          Send us your child's year group and which economics course they take on WhatsApp. We reply within the hour.
+          On WhatsApp, send us your child's year group and the economics course they take. We reply within the hour.
         </p>
       }
     >
@@ -29,7 +29,7 @@ export function EconomicsTutor() {
           Your child has one-to-one economics lessons with our UK‑trained subject specialists on our interactive online whiteboard.
         </p>
         <p>
-          Our whiteboard replicates an in-person lesson, as we share a fully interactive digital school copybook with each student.
+          Our whiteboard feels like an in-person lesson, because we share a fully interactive digital copybook with each student.
         </p>
         <p>
           Lessons last one or two hours, whichever suits you, and are scheduled through our app.
@@ -104,16 +104,16 @@ export function EconomicsTutor() {
         <div className="space-y-4">
           <h3 className="text-xl font-bold text-foreground mb-2">How IGCSE economics is assessed</h3>
           <p>
-            Pearson Edexcel International GCSE economics is a linear qualification with two written examination papers. Paper 1 covers microeconomics and business economics, and Paper 2 covers macroeconomics and the global economy. The questions mix multiple-choice, short-answer, data response and open-ended questions.
+            Edexcel International GCSE economics is a linear qualification with two written examination papers. Paper 1 covers microeconomics and business economics, and Paper 2 covers macroeconomics and the global economy. The questions mix multiple-choice, short-answer, data-response and open-ended questions.
           </p>
           <p>
-            OxfordAQA International GCSE economics is a linear specification with two written examination papers. Paper 1 covers how markets work, and Paper 2 covers how economies work. The questions include multiple-choice, calculation, short and extended responses.
+            OxfordAQA International GCSE economics is a linear specification with two written examination papers. Paper 1 covers how markets work, and Paper 2 covers how economies work. The papers include multiple-choice, calculation, short-answer and extended-response questions.
           </p>
           <p>
-            Your child's school decides the board. Check your child's school for the exact specification it follows.
+            Your child's school decides the board. Check with the school for the exact specification it follows.
           </p>
           <p>
-            Pearson's papers are in the <a href="https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Economics/2017/Specification%20and%20SAMS/international-gcse-spec-9781446942789.pdf" target="_blank" rel="noopener" className={linkClass}>International GCSE Economics specification</a>. OxfordAQA's papers are on the <a href="https://www.oxfordaqa.com/qualification/international-gcse-economics-9214/" target="_blank" rel="noopener" className={linkClass}>International GCSE Economics (9214)</a> page.
+            Edexcel's papers are in the <a href="https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Economics/2017/Specification%20and%20SAMS/international-gcse-spec-9781446942789.pdf" target="_blank" rel="noopener" className={linkClass}>International GCSE Economics specification</a>. OxfordAQA's papers are on the <a href="https://www.oxfordaqa.com/qualification/international-gcse-economics-9214/" target="_blank" rel="noopener" className={linkClass}>International GCSE Economics (9214)</a> page.
           </p>
         </div>
       </PageSection>
@@ -125,19 +125,19 @@ export function EconomicsTutor() {
         <div className="space-y-4">
           <h3 className="text-xl font-bold text-foreground mb-2">How A-level economics is assessed</h3>
           <p>
-            A-level economics is assessed by written exam papers. Your child's school decides the board and the specification. Check your child's school for the exact specification it follows.
+            A-level economics is assessed by written exam papers. Your child's school decides the board and the specification, so check with the school for the exact one it follows.
           </p>
         </div>
       </PageSection>
 
       <PageSection id="ib-economics" title="IB economics (MYP and Diploma)" muted>
         <p>
-          We teach IB economics live and online for students in Dubai, Abu Dhabi, Sharjah and across the UAE. In the IB Diploma Programme, economics is part of individuals and societies. In the IB Middle Years Programme (MYP), it can be part of individuals and societies. Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about the MYP and the Diploma Programme.
+          We teach IB economics live and online for students in Dubai, Abu Dhabi, Sharjah and across the UAE. Economics is part of individuals and societies in the IB Diploma Programme, and it can be part of individuals and societies in the IB Middle Years Programme (MYP). Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about the MYP and the Diploma Programme.
         </p>
         <div className="space-y-4">
           <h3 className="text-xl font-bold text-foreground mb-2">How IB economics is assessed</h3>
           <p>
-            In the IB Diploma Programme, economics is assessed with external examinations and an internal assessment. The internal assessment is a portfolio of three commentaries based on published extracts from the news media, using the key concepts as a lens. Check your child's school for the exact guide it follows.
+            In the IB Diploma Programme, economics is assessed with external examinations and an internal assessment. The internal assessment is a portfolio of three commentaries based on published extracts from the news media, using the key concepts as a lens. Check with the school for the exact guide it follows.
           </p>
           <p>
             The IB describes the course on its <a href="https://www.ibo.org/programmes/diploma-programme/curriculum/individuals-and-societies/economics/" target="_blank" rel="noopener" className={linkClass}>Diploma Programme economics</a> page.

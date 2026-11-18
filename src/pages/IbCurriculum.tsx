@@ -26,7 +26,7 @@ export function IbCurriculum() {
           Your child has one-to-one lessons with our UK‑trained subject specialists on our interactive online whiteboard.
         </p>
         <p>
-          Our whiteboard replicates an in-person lesson, as we share a fully interactive digital school copybook with each student.
+          Our whiteboard feels like an in-person lesson, because we share a fully interactive digital copybook with each student.
         </p>
         <p>
           Lessons last one or two hours, whichever suits you, and are scheduled through our app.
@@ -81,7 +81,7 @@ export function IbCurriculum() {
 
       <PageSection title="Subjects" muted>
         <p>
-          We teach a range of IB subjects in both the MYP and the DP, such as <a href="/ib-maths-tutor/" className={linkClass}>maths</a>, <a href="/physics-tutor/#ib-physics" className={linkClass}>IB physics</a>, <a href="/chemistry-tutor/#ib-chemistry" className={linkClass}>IB chemistry</a>, <a href="/biology-tutor/#ib-biology" className={linkClass}>IB biology</a>, <a href="/economics-tutor/#ib-economics" className={linkClass}>IB economics</a>, business management, <a href="/english-tutor/" className={linkClass}>English</a> and computer science. If your child's subject isn't listed, just ask us. We also teach the British curriculum, which you can read about on our <a href="/curricula/british/" className={linkClass}>British curriculum page</a>.
+          We teach a range of IB subjects in both the MYP and the DP, such as <a href="/ib-maths-tutor/" className={linkClass}>maths</a>, <a href="/physics-tutor/#ib-physics" className={linkClass}>physics</a>, <a href="/chemistry-tutor/#ib-chemistry" className={linkClass}>chemistry</a>, <a href="/biology-tutor/#ib-biology" className={linkClass}>biology</a>, <a href="/economics-tutor/#ib-economics" className={linkClass}>economics</a>, business management, <a href="/english-tutor/" className={linkClass}>English</a> and computer science. If your child's subject isn't listed, just ask us. We also teach the British curriculum, which you can read about on our <a href="/curricula/british/" className={linkClass}>British curriculum page</a>.
         </p>
       </PageSection>
 

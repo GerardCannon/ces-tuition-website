@@ -21,11 +21,11 @@ export const biologyFaqs = [
   },
   {
     question: 'Which exam boards do you cover?',
-    answer: 'For biology we cover Edexcel and OxfordAQA at IGCSE, and Edexcel International A Level and OxfordAQA International A Level at A-level. We also teach IB biology in the MYP and in the Diploma Programme, where we cover both Higher Level and Standard Level. Send us the board on WhatsApp if you are unsure which one your school uses.',
+    answer: 'For biology we cover Edexcel and OxfordAQA at IGCSE, and Edexcel International A Level and OxfordAQA International A Level at A-level. We also teach IB biology in the MYP and in the Diploma Programme, where we cover both Higher Level and Standard Level. If you\'re not sure which board your child\'s school uses, message us on WhatsApp and we\'ll help you work it out.',
   },
   {
     question: 'Can you help with an IB Diploma internal assessment?',
-    answer: 'Yes. We can help your child understand what\'s expected and plan their time. The work they hand in is always their own. The internal assessment is marked by your child\'s school teacher and checked by the IB; our help is with understanding what is expected and planning time.',
+    answer: 'Yes. We can help your child understand what\'s expected and plan their time. The internal assessment is marked by your child\'s teacher and checked by the IB, and the work they hand in is always their own.',
   },
   {
     question: 'Do you teach IGCSE biology online in the UAE?',
@@ -45,11 +45,11 @@ export const biologyFaqs = [
   },
   {
     question: 'How is IB biology assessed?',
-    answer: 'In the IB Diploma, 80% of the final mark comes from external exams and 20% from an internal assessment. Paper 1 is worth 36% and Paper 2 is worth 44%. At Standard Level both papers last 1 hour 30 minutes. At Higher Level, Paper 1 lasts 2 hours and Paper 2 lasts 2 hours 30 minutes.',
+    answer: 'In the IB Diploma, 80% of the final mark comes from external exams and 20% from an internal assessment. Paper 1 is worth 36% and Paper 2 is worth 44%. At Standard Level, both papers last 1 hour 30 minutes. At Higher Level, Paper 1 lasts 2 hours and Paper 2 lasts 2 hours 30 minutes.',
   },
   {
     question: 'What is the difference between Standard Level and Higher Level biology papers?',
-    answer: 'Both levels have two papers. At Standard Level both papers are 1 hour 30 minutes. At Higher Level Paper 1 is 2 hours and Paper 2 is 2 hours 30 minutes. We teach both levels.',
+    answer: 'Both levels have two papers. At Standard Level, both papers are 1 hour 30 minutes. At Higher Level, Paper 1 is 2 hours and Paper 2 is 2 hours 30 minutes. We teach both levels.',
   },
   {
     question: 'How are Edexcel IGCSE biology exams structured?',
