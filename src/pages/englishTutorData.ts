@@ -13,7 +13,7 @@ export const englishFaqs = [
   },
   {
     question: 'We don\'t live in the UAE. Can my child still have lessons?',
-    answer: 'Yes. All our lessons are online, so families join us from the UK, Europe and all over Asia.',
+    answer: 'Yes. All our lessons are online, so families join us from the UK, the rest of Europe and across Asia.',
   },
   {
     question: 'Do you teach families in Dubai, Abu Dhabi and Sharjah?',
@@ -33,15 +33,15 @@ export const englishFaqs = [
   },
   {
     question: 'How are IGCSE English exams structured?',
-    answer: 'It depends on the board, and your child\'s school chooses it. Edexcel International GCSE English Language A has a 2-hour 15-minute exam (60%), then a 1-hour 30-minute exam or coursework (40%), and English Language B is one 3-hour exam. Cambridge IGCSE First Language English has a 2-hour reading paper (50%), then a 2-hour writing paper or a coursework portfolio (50%). OxfordAQA International GCSE English Language has a 2-hour paper (60%), then a 2-hour paper or a non-exam project (40%). English Literature has its own papers with each board, and every student sits the same papers, as there are no tiers.',
+    answer: 'It depends on the board, which your child\'s school chooses. Edexcel International GCSE English Language A has a 2-hour 15-minute exam (60%), then a 1-hour 30-minute exam or coursework (40%), and English Language B is one 3-hour exam. Cambridge IGCSE First Language English has a 2-hour Reading paper (50%), then a 2-hour Directed Writing and Composition paper or a coursework portfolio. OxfordAQA International GCSE English Language has a 2-hour paper (60%), then a 2-hour paper or a non-exam project (40%). English Literature has its own papers with each board. None of these exams is tiered, so every student sits the same papers.',
   },
   {
     question: 'How are A-level English exams structured?',
-    answer: 'It depends on the board. Edexcel International A Level English Language and English Literature each have four exams worth 25% each. Cambridge International A Level English Language and Literature in English each have four papers worth 25% each, two at AS Level and two at A Level. OxfordAQA International A Level English Language and English Literature have two AS papers worth 20% each and two A2 parts worth 30% each, and the last one can be an exam or a non-exam assessment.',
+    answer: 'It depends on the board. Edexcel International A Level English Language and English Literature each have four exams, each worth 25%. Cambridge International A Level English Language and Literature in English each have four papers, each worth 25%, two at AS Level and two at A Level. OxfordAQA International A Level English Language and English Literature have two AS papers worth 20% each and two A2 parts worth 30% each, and the last one can be an exam or a non-exam assessment.',
   },
   {
     question: 'Can my child do coursework instead of an exam?',
-    answer: 'With some courses, yes, and the school makes that choice. All three boards offer a coursework option in IGCSE English Language and English Literature, and OxfordAQA offers one in the final part of its International A Levels. The work must be your child\'s own, and the school sets the rules on how much help is allowed. We help your child build the reading, planning and writing skills it needs.',
+    answer: 'With some courses, yes, and the school makes that choice. All three boards offer a coursework option in IGCSE English Language and English Literature, and OxfordAQA offers one in the final part of its International A Levels. The work must be your child\'s own, and the school sets the rules on how much help is allowed. We help your child build the reading, planning and writing skills that coursework needs.',
   },
   subjectRematchFaq('English'),
 ]
