@@ -28,6 +28,10 @@ export const ibFaqs = [
     answer: 'In most DP subjects, the main assessment is a set of written exams at the end of the two-year programme. Most subjects also include internal assessment, such as an investigation, lab work or an oral, which is marked in school and then moderated by the IB. Each subject is graded from 1 to 7, and the extended essay and theory of knowledge together can add up to three extra points, so the highest possible total is 45. We help your child prepare for their exam papers and plan their internal assessments well ahead of the deadlines.',
   },
   {
+    question: 'How is the MYP assessed?',
+    answer: 'MYP eAssessment grades each assessed subject from 1 to 7. On-screen examinations last up to 2 hours. Schools choose whether students take eAssessment. Every student in the final year of the MYP takes part in the personal project.',
+  },
+  {
     question: 'Can you help with internal assessments?',
     answer: 'Yes. We can help your child understand what\'s expected and plan their time. The work they hand in is always their own.',
   },

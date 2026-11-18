@@ -138,6 +138,30 @@ export function EnglishTutor() {
         </div>
       </PageSection>
 
+      <PageSection id="ib-english" title="IB English (MYP and Diploma)">
+        <p>
+          We teach IB English in the MYP and in the Diploma Programme, where we cover both Higher Level and Standard Level.
+        </p>
+        <p>
+          In the Diploma Programme, English is taken as Language A: Language and Literature or Language A: Literature. Our <a href="/curricula/ib/" className={linkClass}>IB page</a> explains more about the MYP and the Diploma Programme.
+        </p>
+        <div className="space-y-4">
+          <h3 className="text-xl font-bold text-foreground mb-2">How IB English is assessed</h3>
+          <p>
+            <strong className="text-foreground">Language A: Language and Literature.</strong> At Standard Level, Paper 1 is a guided textual analysis lasting 1 hour 15 minutes and worth 35%, and Paper 2 is a comparative essay lasting 1 hour 45 minutes and worth 35%. The individual oral lasts 15 minutes and is worth 30%. At Higher Level, Paper 1 lasts 2 hours 15 minutes and is worth 35%, and Paper 2 lasts 1 hour 45 minutes and is worth 25%. Higher Level students also submit an essay of 1,200 to 1,500 words, worth 20%, and the individual oral is worth 20%.
+          </p>
+          <p>
+            <strong className="text-foreground">Language A: Literature.</strong> Students are assessed with two examination papers, one on an unseen literary passage and one comparative essay on two works studied, and with an oral. Higher Level students also write an essay of 1,200 to 1,500 words on one work studied.
+          </p>
+          <p>
+            Check with the school for the exact guide it follows.
+          </p>
+          <p>
+            Language and Literature assessment is set out in the IB Language A: language and literature guide (first assessment 2026). The courses are described on the IB Language A: language and literature and Language A: literature pages.
+          </p>
+        </div>
+      </PageSection>
+
       <PageSection title="Where to begin" muted>
         <p>
           When you message us, it helps to tell us your child's year group, the exam board and what they find hardest, such as reading, essays or timed writing. If you're not sure of the board, your child's school will be able to tell you, or we can work it out together.

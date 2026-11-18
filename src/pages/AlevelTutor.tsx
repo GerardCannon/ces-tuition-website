@@ -52,6 +52,7 @@ export function AlevelTutor() {
         <LevelEnquiry
           levels={[
             { id: 'maths', label: 'A-level maths' },
+            { id: 'chemistry', label: 'A-level chemistry' },
             { id: 'physics', label: 'A-level physics' },
             { id: 'biology', label: 'A-level biology' },
             { id: 'economics', label: 'A-level economics' },

@@ -21,7 +21,7 @@ export const chemistryFaqs = [
   },
   {
     question: 'Which exam boards do you cover?',
-    answer: 'For chemistry we cover Edexcel at IGCSE, and at A-level Edexcel International A Level, Cambridge International AS and A Level, and OxfordAQA International AS and A Level. We also teach IB chemistry in the MYP and in the Diploma Programme, where we cover both Higher Level and Standard Level. If you\'re not sure which board your child\'s school uses, message us on WhatsApp and we\'ll help you work it out.',
+    answer: 'For chemistry we cover Edexcel, Cambridge and OxfordAQA at IGCSE and at A-level. Edexcel offers International GCSE and International A Level, Cambridge offers IGCSE and International AS and A Level, and OxfordAQA offers International GCSE and International AS and A Level. We also teach IB chemistry in the MYP and in the Diploma Programme, where we cover both Higher Level and Standard Level. If you\'re not sure which board your child\'s school uses, message us on WhatsApp and we\'ll help you work it out.',
   },
   {
     question: 'Does my child need to be good at maths for chemistry?',
@@ -32,8 +32,8 @@ export const chemistryFaqs = [
     answer: 'Yes. We teach IB chemistry online in the MYP and in the Diploma Programme, where we cover both Higher Level and Standard Level.',
   },
   {
-    question: 'Do you teach Edexcel IGCSE chemistry?',
-    answer: 'Yes. At IGCSE we teach Edexcel chemistry.',
+    question: 'Do you teach IGCSE chemistry?',
+    answer: 'Yes. At IGCSE we teach Edexcel International GCSE, Cambridge IGCSE and OxfordAQA International GCSE chemistry.',
   },
   {
     question: 'Do you teach A-level chemistry?',
@@ -58,6 +58,14 @@ export const chemistryFaqs = [
   {
     question: 'How are Edexcel IGCSE chemistry exams structured?',
     answer: 'Edexcel International GCSE chemistry can be linear or modular, and both routes use the same content. On the linear route, Paper 1 lasts 2 hours and is worth 61.1% of the International GCSE, and Paper 2 lasts 1 hour 15 minutes and is worth 38.9%. The modular route is only available to schools outside the UK. Its two units each last 1 hour 40 minutes and are worth 50%, and a unit can be taken in any exam series. There is no coursework and no practical exam. The school chooses the route.',
+  },
+  {
+    question: 'How is Cambridge IGCSE chemistry assessed?',
+    answer: 'Cambridge IGCSE chemistry has Core and Extended content. Core students take Paper 1 (multiple-choice, 45 minutes, 30%) and Paper 3 (theory, 1 hour 15 minutes, 50%). Extended students take Paper 2 (multiple-choice, 45 minutes, 30%) and Paper 4 (theory, 1 hour 15 minutes, 50%). Every student also takes one practical paper worth 20%: either Paper 5, a practical test of 1 hour 15 minutes, or Paper 6, an alternative to practical of 1 hour.',
+  },
+  {
+    question: 'How is OxfordAQA International GCSE chemistry assessed?',
+    answer: 'It is a linear International GCSE with two papers of 1 hour 30 minutes, each worth 50%. Either paper can test any part of the course. Practical knowledge is assessed in these two papers.',
   },
   subjectRematchFaq('chemistry'),
 ]

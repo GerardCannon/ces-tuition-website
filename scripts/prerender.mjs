@@ -193,7 +193,7 @@ const homeWords = wordCount(homeHtml)
 if (homeWords < 500) {
   throw new Error(`Home page raw HTML has only ${homeWords} body words. The prerender did not include the page.`)
 }
-for (const phrase of ['UK\u2011trained subject specialists', 'Book your free trial on WhatsApp', 'Sharjah Media City']) {
+for (const phrase of ['UK\u2011trained subject specialists', 'Book your free trial on WhatsApp', 'Al Mtsannid Suburb - Sharjah - United Arab Emirates']) {
   if (!bodyText(homeHtml).includes(phrase)) {
     throw new Error(`Home page raw HTML is missing "${phrase}"`)
   }

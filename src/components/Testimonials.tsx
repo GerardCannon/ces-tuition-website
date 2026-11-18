@@ -7,27 +7,27 @@ const testimonials = [
   {
     name: 'Parent',
     initials: 'P',
-    content: 'My son was struggling with maths for a long time, his grades improved massively after just a few sessions and he gained a lot of confidence in the subject. Gerard uses lots of good resources and gives clear explanations. He was also good at keeping me up to date with my son\'s progress and areas he needed to practice more.',
+    content: 'My son was struggling with maths for a long time; his grades improved massively after just a few sessions and he gained a lot of confidence in the subject. Gerard uses lots of good resources and gives clear explanations. He was also good at keeping me up to date with my son\'s progress and areas he needed to practise more.',
   },
   {
     name: 'Amna, parent',
     initials: 'A',
-    content: 'My son struggles with dyslexia and ADHD. Gerard has provided me with great tutor who gets my son to focus in online lessons in a way that he could not do before. I am thankful for how things are now progressing.',
+    content: 'My son struggles with dyslexia and ADHD. Gerard has provided me with a great tutor who gets my son to focus in online lessons in a way that he could not do before. I am thankful for how things are now progressing.',
   },
   {
     name: 'Peter, parent',
     initials: 'P',
-    content: 'Mikela\'s business and chemistry tutors are really great. I am very happy with their subject knowledge and they are always ready to go that extra bit in order to give her the understanding she needs. Having previously had only an okay experience with online lessons I was hesitant to commit to more but the caliber of these online lessons make it a no brainer. Absolutely superb tuition. Easy 5 stars',
+    content: 'Mikela\'s business and chemistry tutors are really great. I am very happy with their subject knowledge and they are always ready to go that extra bit in order to give her the understanding she needs. Having previously had only an okay experience with online lessons I was hesitant to commit to more but the calibre of these online lessons makes it a no-brainer. Absolutely superb tuition. Easy 5 stars.',
   },
   {
     name: 'Mark, parent',
     initials: 'M',
-    content: 'Patient, super knowledgeable and very facilitating. I currently use them for physics, chemistry and mathematics and I am soon to add biology. From day 1 they provided my son with a clear path to making progress and I have been super happy with my son\'s progress ever since. You really do get what you pay for in this city and so I wholeheartedly recommend',
+    content: 'Patient, super knowledgeable and very facilitating. I currently use them for physics, chemistry and mathematics and I am soon to add biology. From day 1 they provided my son with a clear path to making progress and I have been super happy with my son\'s progress ever since. You really do get what you pay for in this city and so I wholeheartedly recommend.',
   },
   {
     name: 'Margaritte, parent',
     initials: 'M',
-    content: 'Last year, Gerard introduced me to some excellent tutors, and thanks to his team\'s hard work, my daughter passed all but one of her subjects - an incredible outcome considering the continuous challenges she faces with her learning ability. I feel confident and relieved knowing she\'s in the right hands this year.',
+    content: 'Last year, Gerard introduced me to some excellent tutors, and thanks to his team\'s hard work, my daughter passed all but one of her subjects – an incredible outcome considering the continuous challenges she faces with her learning ability. I feel confident and relieved knowing she\'s in the right hands this year.',
   },
   {
     name: 'Sebastian, parent',

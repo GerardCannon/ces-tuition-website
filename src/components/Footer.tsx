@@ -83,7 +83,7 @@ export function Footer({ sectionBase = '' }: { sectionBase?: string }) {
               <li className="flex items-start gap-3">
                 <MapPin size={20} className="flex-shrink-0 mt-1" aria-hidden="true" />
                 <span className="text-primary-foreground">
-                  Registered office: Sharjah Media City (Shams), Sharjah. Lessons are live online across all emirates.
+                  Registered office: Al Mtsannid Suburb - Sharjah - United Arab Emirates. Lessons are live online across all emirates.
                 </span>
               </li>
             </ul>

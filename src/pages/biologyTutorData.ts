@@ -21,7 +21,7 @@ export const biologyFaqs = [
   },
   {
     question: 'Which exam boards do you cover?',
-    answer: 'For biology we cover Edexcel and OxfordAQA at IGCSE, and Edexcel International A Level and OxfordAQA International A Level at A-level. We also teach IB biology in the MYP and in the Diploma Programme, where we cover both Higher Level and Standard Level. If you\'re not sure which board your child\'s school uses, message us on WhatsApp and we\'ll help you work it out.',
+    answer: 'For biology we cover Edexcel, Cambridge and OxfordAQA at IGCSE and at A-level. Edexcel offers International GCSE and International A Level, Cambridge offers IGCSE and International AS and A Level, and OxfordAQA offers International GCSE and International A Level. We also teach IB biology in the MYP and in the Diploma Programme, where we cover both Higher Level and Standard Level. If you\'re not sure which board your child\'s school uses, message us on WhatsApp and we\'ll help you work it out.',
   },
   {
     question: 'Can you help with an IB Diploma internal assessment?',
@@ -58,6 +58,14 @@ export const biologyFaqs = [
   {
     question: 'How is OxfordAQA International GCSE biology structured?',
     answer: 'It is a linear International GCSE with two papers of 1 hour 30 minutes, each worth 50%. Either paper can test any part of the course.',
+  },
+  {
+    question: 'How is Cambridge IGCSE biology assessed?',
+    answer: 'Cambridge IGCSE biology has Core and Extended content. Core students take Paper 1 (multiple-choice, 45 minutes, 30%) and Paper 3 (theory, 1 hour 15 minutes, 50%). Extended students take Paper 2 (multiple-choice, 45 minutes, 30%) and Paper 4 (theory, 1 hour 15 minutes, 50%). Every student also takes one practical paper worth 20%: either Paper 5, a practical test of 1 hour 15 minutes, or Paper 6, an alternative to practical of 1 hour.',
+  },
+  {
+    question: 'How is Cambridge International AS and A Level biology assessed?',
+    answer: 'Cambridge International AS and A Level biology has five papers. The percentages are shares of the full A Level. Paper 1 is multiple-choice, lasts 1 hour 15 minutes and is worth 15.5%. Paper 2 lasts 1 hour 15 minutes and is worth 23%. Paper 3 is a 2-hour practical paper worth 11.5%. Paper 4 lasts 2 hours and is worth 38.5%. Paper 5 is a planning, analysis and evaluation paper that lasts 1 hour 15 minutes and is worth 11.5%.',
   },
   subjectRematchFaq('biology'),
 ]

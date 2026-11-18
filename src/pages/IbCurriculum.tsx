@@ -81,7 +81,25 @@ export function IbCurriculum() {
 
       <PageSection title="Subjects" muted>
         <p>
-          We teach a range of IB subjects in both the MYP and the DP, such as <a href="/ib-maths-tutor/" className={linkClass}>maths</a>, <a href="/physics-tutor/#ib-physics" className={linkClass}>physics</a>, <a href="/chemistry-tutor/#ib-chemistry" className={linkClass}>chemistry</a>, <a href="/biology-tutor/#ib-biology" className={linkClass}>biology</a>, <a href="/economics-tutor/#ib-economics" className={linkClass}>economics</a>, business management, <a href="/english-tutor/" className={linkClass}>English</a> and computer science. If your child's subject isn't listed, just ask us. We also teach the British curriculum, which you can read about on our <a href="/curricula/british/" className={linkClass}>British curriculum page</a>.
+          We teach a range of IB subjects in both the MYP and the DP, such as <a href="/ib-maths-tutor/" className={linkClass}>maths</a>, <a href="/physics-tutor/#ib-physics" className={linkClass}>physics</a>, <a href="/chemistry-tutor/#ib-chemistry" className={linkClass}>chemistry</a>, <a href="/biology-tutor/#ib-biology" className={linkClass}>biology</a>, <a href="/economics-tutor/#ib-economics" className={linkClass}>economics</a>, business management, <a href="/english-tutor/#ib-english" className={linkClass}>English</a> and computer science. If your child's subject isn't listed, just ask us. We also teach the British curriculum, which you can read about on our <a href="/curricula/british/" className={linkClass}>British curriculum page</a>.
+        </p>
+      </PageSection>
+
+      <PageSection id="how-the-ib-is-assessed" title="How the IB is assessed">
+        <div>
+          <h3 className="text-xl font-bold text-foreground mb-2">Diploma Programme</h3>
+          <p>
+            Diploma Programme students take six subjects. Each subject is graded from 1 to 7, with 7 the highest. Each student takes at least three subjects at Higher Level and at most four, and the rest at Standard Level. Students also complete the extended essay, theory of knowledge, and creativity, activity, service (CAS). The extended essay and theory of knowledge together can contribute up to 3 additional points, so the highest diploma score is 45. CAS does not add points.
+          </p>
+        </div>
+        <div>
+          <h3 className="text-xl font-bold text-foreground mb-2">Middle Years Programme</h3>
+          <p>
+            In the MYP, eAssessment grades each assessed subject from 1 to 7. On-screen examinations last up to 2 hours. Schools choose whether students take eAssessment. Every student in the final year of the MYP takes part in the personal project.
+          </p>
+        </div>
+        <p>
+          Diploma Programme subject choices are on the IB DP curriculum page. How the diploma is scored is on the IB understanding DP assessment page, and the 45-point total is on the <a href="https://www.ibo.org/about-the-ib/what-it-means-to-be-an-ib-student/recognizing-student-achievement/about-assessment/dp-passing-criteria/" target="_blank" rel="noopener" className={linkClass}>DP passing criteria</a> page. MYP grades are on the IB grading and awards page, and eAssessment is on the IB MYP passing criteria page.
         </p>
       </PageSection>
 
