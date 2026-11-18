@@ -40,6 +40,14 @@ export const englishFaqs = [
     answer: 'It depends on the board. Edexcel International A Level English Language and English Literature each have four exams, each worth 25%. Cambridge International A Level English Language and Literature in English each have four papers, each worth 25%, two at AS Level and two at A Level. OxfordAQA International A Level English Language and English Literature have two AS papers worth 20% each and two A2 parts worth 30% each, and the last one can be an exam or a non-exam assessment.',
   },
   {
+    question: 'How is IB English assessed?',
+    answer: 'In the Diploma Programme, Language A: Language and Literature has two papers and an individual oral. At Standard Level, Paper 1 lasts 1 hour 15 minutes and is worth 35%, Paper 2 lasts 1 hour 45 minutes and is worth 35%, and the individual oral lasts 15 minutes and is worth 30%. At Higher Level, Paper 1 lasts 2 hours 15 minutes and is worth 35%, Paper 2 lasts 1 hour 45 minutes and is worth 25%, an essay of 1,200 to 1,500 words is worth 20%, and the individual oral is worth 20%. Language A: Literature is assessed with two examination papers, an oral, and, at Higher Level, an essay of 1,200 to 1,500 words.',
+  },
+  {
+    question: 'Do you teach IB English at Higher Level and Standard Level?',
+    answer: 'Yes. We teach IB English in the MYP and in the Diploma Programme, at Higher Level and Standard Level, for Language A: Language and Literature and Language A: Literature.',
+  },
+  {
     question: 'Can my child do coursework instead of an exam?',
     answer: 'With some courses, yes, and the school makes that choice. All three boards offer a coursework option in IGCSE English Language and English Literature, and OxfordAQA offers one in the final part of its International A Levels. The work must be your child\'s own, and the school sets the rules on how much help is allowed. We help your child build the reading, planning and writing skills that coursework needs.',
   },

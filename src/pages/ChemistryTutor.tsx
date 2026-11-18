@@ -87,17 +87,26 @@ export function ChemistryTutor() {
         </div>
       </PageSection>
 
-      <PageSection id="igcse-chemistry" title="IGCSE chemistry (Edexcel)">
+      <PageSection id="igcse-chemistry" title="IGCSE chemistry">
         <p>
-          We teach Edexcel IGCSE chemistry.
+          We teach IGCSE chemistry for Edexcel, Cambridge and OxfordAQA, live and online, for students in Dubai, Abu Dhabi, Sharjah and across the UAE.
         </p>
         <div className="space-y-4">
-          <h3 className="text-xl font-bold text-foreground mb-2">How Edexcel IGCSE chemistry is assessed</h3>
+          <h3 className="text-xl font-bold text-foreground mb-2">How IGCSE chemistry is assessed</h3>
           <p>
-            Edexcel International GCSE chemistry has a linear route and a modular route, and the content is the same on both. Students on the linear route sit two written papers: Paper 1 lasts 2 hours and is worth 61.1% of the International GCSE, and Paper 2 lasts 1 hour 15 minutes and is worth 38.9%. The modular route is only available to schools outside the UK. It has two units of 1 hour 40 minutes, each worth 50%, and each unit can be taken in any exam series. There is no coursework and no practical exam. The school chooses the route. Check with the school for the exact specification it follows.
+            Edexcel International GCSE chemistry has a linear route and a modular route, and the content is the same on both. Students on the linear route sit two written papers: Paper 1 lasts 2 hours and is worth 61.1% of the International GCSE, and Paper 2 lasts 1 hour 15 minutes and is worth 38.9%. The modular route is only available to schools outside the UK. It has two units of 1 hour 40 minutes, each worth 50%, and each unit can be taken in any exam series. There is no coursework and no practical exam.
           </p>
           <p>
-            Both routes are set out in the <a href="https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/General/pearson-edexcel-international-gcse-science-guide.pdf" target="_blank" rel="noopener" className={linkClass}>Pearson International GCSE science guide</a>.
+            Cambridge IGCSE chemistry has Core and Extended content. Core students take Paper 1 (multiple-choice, 45 minutes, 30%) and Paper 3 (theory, 1 hour 15 minutes, 50%). Extended students take Paper 2 (multiple-choice, 45 minutes, 30%) and Paper 4 (theory, 1 hour 15 minutes, 50%). Every student also takes one practical paper worth 20%: either Paper 5, a practical test of 1 hour 15 minutes, or Paper 6, an alternative to practical of 1 hour.
+          </p>
+          <p>
+            OxfordAQA International GCSE chemistry is linear: two papers of 1 hour 30 minutes, each worth 50%, and either paper can test any part of the course. Practical knowledge is assessed in these two papers.
+          </p>
+          <p>
+            Your child's school decides the board and the route. Check with the school for the exact specification it follows.
+          </p>
+          <p>
+            Edexcel's routes are in the <a href="https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/General/pearson-edexcel-international-gcse-science-guide.pdf" target="_blank" rel="noopener" className={linkClass}>Pearson International GCSE science guide</a>. Cambridge's papers are on the <a href="https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-chemistry-0620/" target="_blank" rel="noopener" className={linkClass}>Cambridge IGCSE Chemistry (0620)</a> page. OxfordAQA's papers are on the <a href="https://www.oxfordaqa.com/qualification/international-gcse-chemistry-9202/" target="_blank" rel="noopener" className={linkClass}>International GCSE Chemistry (9202)</a> page.
           </p>
         </div>
       </PageSection>
@@ -134,7 +143,7 @@ export function ChemistryTutor() {
           We teach chemistry at <a href="/curricula/british/" className={linkClass}>IGCSE</a> and A-level, and in the IB MYP and Diploma Programme (DP).
         </p>
         <p>
-          At IGCSE we teach Edexcel chemistry, and at A-level we teach Edexcel International A Level, Cambridge International AS and A Level, and OxfordAQA International AS and A Level chemistry. We also teach IB chemistry in the MYP and the Diploma Programme.
+          At IGCSE we teach Edexcel International GCSE, Cambridge IGCSE and OxfordAQA International GCSE chemistry, and at A-level we teach Edexcel International A Level, Cambridge International AS and A Level, and OxfordAQA International AS and A Level chemistry. We also teach IB chemistry in the MYP and the Diploma Programme.
         </p>
         <LevelEnquiry
           levels={[

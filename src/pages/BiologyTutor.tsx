@@ -111,27 +111,30 @@ export function BiologyTutor() {
 
       <PageSection id="igcse-biology" title="IGCSE biology for UAE students" muted>
         <p>
-          At IGCSE we teach Edexcel and OxfordAQA biology, live and online, for students in Dubai, Abu Dhabi, Sharjah and across the UAE.
+          At IGCSE we teach Edexcel, Cambridge and OxfordAQA biology, live and online, for students in Dubai, Abu Dhabi, Sharjah and across the UAE.
         </p>
         <div className="space-y-4">
           <h3 className="text-xl font-bold text-foreground mb-2">How IGCSE biology is assessed</h3>
           <p>
-            Edexcel International GCSE biology has two routes with the same content. On the linear route there are two written papers: Paper 1 (2 hours, 61.1% of the International GCSE) and Paper 2 (1 hour 15 minutes, 38.9%). On the modular route, which is only available to schools outside the UK, there are two units of 1 hour 40 minutes, each worth 50%, and they can be taken in any exam series. There is no coursework and no practical exam. OxfordAQA International GCSE biology is linear: two papers of 1 hour 30 minutes, each worth 50%, and either paper can test any part of the course. Your child's school decides the board and the route. Check with the school for the exact specification it follows.
+            Edexcel International GCSE biology has two routes with the same content. On the linear route there are two written papers: Paper 1 (2 hours, 61.1% of the International GCSE) and Paper 2 (1 hour 15 minutes, 38.9%). On the modular route, which is only available to schools outside the UK, there are two units of 1 hour 40 minutes, each worth 50%, and they can be taken in any exam series. There is no coursework and no practical exam. Cambridge IGCSE biology has Core and Extended content. Core students take Paper 1 (multiple-choice, 45 minutes, 30%) and Paper 3 (theory, 1 hour 15 minutes, 50%). Extended students take Paper 2 (multiple-choice, 45 minutes, 30%) and Paper 4 (theory, 1 hour 15 minutes, 50%). Every student also takes one practical paper worth 20%: either Paper 5, a practical test of 1 hour 15 minutes, or Paper 6, an alternative to practical of 1 hour. OxfordAQA International GCSE biology is linear: two papers of 1 hour 30 minutes, each worth 50%, and either paper can test any part of the course. Your child's school decides the board and the route. Check with the school for the exact specification it follows.
           </p>
           <p>
-            Edexcel's routes are in the <a href="https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/General/pearson-edexcel-international-gcse-science-guide.pdf" target="_blank" rel="noopener" className={linkClass}>Pearson International GCSE science guide</a>. OxfordAQA's papers are on the <a href="https://www.oxfordaqa.com/qualification/international-gcse-biology-9201/" target="_blank" rel="noopener" className={linkClass}>International GCSE Biology (9201)</a> page.
+            Edexcel's routes are in the <a href="https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/General/pearson-edexcel-international-gcse-science-guide.pdf" target="_blank" rel="noopener" className={linkClass}>Pearson International GCSE science guide</a>. Cambridge's papers are on the <a href="https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-biology-0610/" target="_blank" rel="noopener" className={linkClass}>Cambridge IGCSE Biology (0610)</a> page. OxfordAQA's papers are on the <a href="https://www.oxfordaqa.com/qualification/international-gcse-biology-9201/" target="_blank" rel="noopener" className={linkClass}>International GCSE Biology (9201)</a> page.
           </p>
         </div>
       </PageSection>
 
       <PageSection id="a-level-biology" title="A-level biology">
         <p>
-          At A-level we teach Edexcel International A Level and OxfordAQA International A Level biology. You can read more about A-level on our <a href="/a-level-tutor/" className={linkClass}>A-level page</a>.
+          At A-level we teach Edexcel International A Level, Cambridge International AS and A Level, and OxfordAQA International A Level biology. You can read more about A-level on our <a href="/a-level-tutor/" className={linkClass}>A-level page</a>.
         </p>
         <div className="space-y-4">
           <h3 className="text-xl font-bold text-foreground mb-2">How A-level biology is assessed</h3>
           <p>
             Edexcel International A Level biology has six written papers. Units 1 and 2 each last 1 hour 30 minutes and are worth 20% of the International A Level. Unit 3, a practical-skills paper, lasts 1 hour 20 minutes and is worth 10%. Units 4 and 5 each last 1 hour 45 minutes and are worth 20%. Unit 6, the second practical-skills paper, lasts 1 hour 20 minutes and is worth 10%.
+          </p>
+          <p>
+            Cambridge International AS and A Level biology has five papers. The percentages are shares of the full A Level. Paper 1 is multiple-choice, lasts 1 hour 15 minutes and is worth 15.5%. Paper 2 lasts 1 hour 15 minutes and is worth 23%. Paper 3 is a 2-hour practical paper worth 11.5%. Paper 4 lasts 2 hours and is worth 38.5%. Paper 5 is a planning, analysis and evaluation paper that lasts 1 hour 15 minutes and is worth 11.5%.
           </p>
           <p>
             OxfordAQA International A Level biology has five written papers. Each lasts 1 hour 30 minutes and is worth 20% of the International A Level.
@@ -140,7 +143,7 @@ export function BiologyTutor() {
             Your child's school decides the board. Check with the school for the exact specification it follows.
           </p>
           <p>
-            Edexcel's units are in the <a href="https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Biology/2018/Specification-and-Sample-Assessment/International-A-Level-Biology-Spec.pdf" target="_blank" rel="noopener" className={linkClass}>International A Level Biology specification</a>. OxfordAQA's papers are on the <a href="https://www.oxfordaqa.com/qualification/international-as-and-a-level-biology-9610/" target="_blank" rel="noopener" className={linkClass}>International AS and A-level Biology (9610)</a> page.
+            Edexcel's units are in the <a href="https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Biology/2018/Specification-and-Sample-Assessment/International-A-Level-Biology-Spec.pdf" target="_blank" rel="noopener" className={linkClass}>International A Level Biology specification</a>. Cambridge's papers are on the <a href="https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-biology-9700/" target="_blank" rel="noopener" className={linkClass}>Cambridge International AS and A Level Biology (9700)</a> page. OxfordAQA's papers are on the <a href="https://www.oxfordaqa.com/qualification/international-as-and-a-level-biology-9610/" target="_blank" rel="noopener" className={linkClass}>International AS and A-level Biology (9610)</a> page.
           </p>
         </div>
       </PageSection>

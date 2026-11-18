@@ -116,7 +116,7 @@ const homeJsonLd: JsonLd = {
       telephone: '+971585041916',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Sharjah Media City',
+        streetAddress: 'Al Mtsannid Suburb',
         addressLocality: 'Sharjah',
         addressCountry: 'AE',
       },

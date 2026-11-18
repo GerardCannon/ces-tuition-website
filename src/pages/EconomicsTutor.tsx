@@ -107,25 +107,40 @@ export function EconomicsTutor() {
             Edexcel International GCSE economics is a linear qualification with two written examination papers. Paper 1 covers microeconomics and business economics, and Paper 2 covers macroeconomics and the global economy. The questions mix multiple-choice, short-answer, data-response and open-ended questions.
           </p>
           <p>
+            Cambridge IGCSE economics has two written papers. For exams in 2026, Paper 1 is multiple choice and lasts 45 minutes (30%), and Paper 2 is structured questions and lasts 2 hours 15 minutes (70%). For exams from 2027, Paper 1 lasts 1 hour (30%) and Paper 2 lasts 2 hours (70%).
+          </p>
+          <p>
             OxfordAQA International GCSE economics is a linear specification with two written examination papers. Paper 1 covers how markets work, and Paper 2 covers how economies work. The papers include multiple-choice, calculation, short-answer and extended-response questions.
           </p>
           <p>
             Your child's school decides the board. Check with the school for the exact specification it follows.
           </p>
           <p>
-            Edexcel's papers are in the <a href="https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Economics/2017/Specification%20and%20SAMS/international-gcse-spec-9781446942789.pdf" target="_blank" rel="noopener" className={linkClass}>International GCSE Economics specification</a>. OxfordAQA's papers are on the <a href="https://www.oxfordaqa.com/qualification/international-gcse-economics-9214/" target="_blank" rel="noopener" className={linkClass}>International GCSE Economics (9214)</a> page.
+            Edexcel's papers are in the <a href="https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Economics/2017/Specification%20and%20SAMS/international-gcse-spec-9781446942789.pdf" target="_blank" rel="noopener" className={linkClass}>International GCSE Economics specification</a>. Cambridge's papers are on the <a href="https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-economics-0455/" target="_blank" rel="noopener" className={linkClass}>Cambridge IGCSE Economics (0455)</a> page. OxfordAQA's papers are on the <a href="https://www.oxfordaqa.com/qualification/international-gcse-economics-9214/" target="_blank" rel="noopener" className={linkClass}>International GCSE Economics (9214)</a> page.
           </p>
         </div>
       </PageSection>
 
       <PageSection id="a-level-economics" title="A-level economics">
         <p>
-          A-level economics moves from the basic ideas to longer essays quite quickly. For more on the step up to A-level, see our <a href="/a-level-tutor/" className={linkClass}>A-level page</a>.
+          At A-level we teach Edexcel International A Level, Cambridge International AS and A Level, and OxfordAQA International AS and A Level economics. A-level economics moves from the basic ideas to longer essays quite quickly. For more on the step up to A-level, see our <a href="/a-level-tutor/" className={linkClass}>A-level page</a>.
         </p>
         <div className="space-y-4">
           <h3 className="text-xl font-bold text-foreground mb-2">How A-level economics is assessed</h3>
           <p>
-            A-level economics is assessed by written exam papers. Your child's school decides the board and the specification, so check with the school for the exact one it follows.
+            Edexcel International A Level economics has four written papers, each worth 25% of the International A Level. Units 1 and 2 each last 1 hour 45 minutes. Units 3 and 4 each last 2 hours.
+          </p>
+          <p>
+            Cambridge International AS and A Level economics has four papers. The percentages are shares of the full A Level. Paper 1 is multiple choice, lasts 1 hour and is worth 17%. Paper 2 lasts 2 hours and is worth 33%. Paper 3 is multiple choice, lasts 1 hour 15 minutes and is worth 17%. Paper 4 lasts 2 hours and is worth 33%.
+          </p>
+          <p>
+            OxfordAQA International AS and A Level economics has four written papers. The two International AS papers each last 1 hour 45 minutes and are worth 20% of the A Level. Two further papers each last 2 hours and are worth 30%.
+          </p>
+          <p>
+            Your child's school decides the board. Check with the school for the exact specification it follows.
+          </p>
+          <p>
+            Edexcel's units are in the <a href="https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Economics/2018/Specification-and-Sample-Assessment/International-A-Level-Economics-spec.pdf" target="_blank" rel="noopener" className={linkClass}>International A Level Economics specification</a>. Cambridge's papers are on the <a href="https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-economics-9708/" target="_blank" rel="noopener" className={linkClass}>Cambridge International AS and A Level Economics (9708)</a> page. OxfordAQA's papers are on the <a href="https://www.oxfordaqa.com/qualification/international-as-and-a-level-economics-9640/" target="_blank" rel="noopener" className={linkClass}>International AS and A-level Economics (9640)</a> page.
           </p>
         </div>
       </PageSection>

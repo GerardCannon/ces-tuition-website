@@ -75,7 +75,7 @@ export function BritishCurriculum() {
           levels={[
             { id: 'igcse-gcse-maths', label: 'IGCSE maths' },
             { id: 'igcse-gcse-english', label: 'IGCSE English' },
-            { id: 'igcse-chemistry', label: 'Edexcel IGCSE chemistry' },
+            { id: 'igcse-chemistry', label: 'IGCSE chemistry' },
             { id: 'igcse-gcse-physics', label: 'IGCSE physics' },
             { id: 'igcse-gcse-biology', label: 'IGCSE biology' },
             { id: 'igcse-gcse-economics', label: 'IGCSE economics' },

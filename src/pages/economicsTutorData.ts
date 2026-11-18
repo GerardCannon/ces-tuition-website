@@ -29,7 +29,7 @@ export const economicsFaqs = [
   },
   {
     question: 'Which exam boards do you cover?',
-    answer: 'At IGCSE we teach Edexcel International GCSE economics and OxfordAQA International GCSE economics. We also teach economics in the IB MYP and the IB Diploma Programme. Tell us which exam board your child\'s school uses, and our lessons will follow that course.',
+    answer: 'At IGCSE and at A-level we teach Edexcel, Cambridge and OxfordAQA. Edexcel offers International GCSE and International A Level, Cambridge offers IGCSE and International AS and A Level, and OxfordAQA offers International GCSE and International AS and A Level. We also teach economics in the IB MYP and the IB Diploma Programme. Tell us which exam board your child\'s school uses, and our lessons will follow that course.',
   },
   {
     question: 'How is IB economics assessed?',
@@ -37,11 +37,11 @@ export const economicsFaqs = [
   },
   {
     question: 'How are IGCSE economics exams structured?',
-    answer: 'It depends on the board, and your child\'s school chooses the board. Edexcel International GCSE economics has two written papers. Paper 1 covers microeconomics and business economics, and Paper 2 covers macroeconomics and the global economy. The questions mix multiple-choice, short-answer, data-response and open-ended questions. OxfordAQA International GCSE economics has two written papers. Paper 1 covers how markets work, and Paper 2 covers how economies work. The papers include multiple-choice, calculation, short-answer and extended-response questions.',
+    answer: 'It depends on the board, and your child\'s school chooses the board. Edexcel International GCSE economics has two written papers. Paper 1 covers microeconomics and business economics, and Paper 2 covers macroeconomics and the global economy. The questions mix multiple-choice, short-answer, data-response and open-ended questions. Cambridge IGCSE economics has two written papers. For exams in 2026, Paper 1 lasts 45 minutes and is worth 30%, and Paper 2 lasts 2 hours 15 minutes and is worth 70%. For exams from 2027, Paper 1 lasts 1 hour and is worth 30%, and Paper 2 lasts 2 hours and is worth 70%. OxfordAQA International GCSE economics has two written papers. Paper 1 covers how markets work, and Paper 2 covers how economies work. The papers include multiple-choice, calculation, short-answer and extended-response questions.',
   },
   {
     question: 'How are A-level economics exams structured?',
-    answer: 'A-level economics is assessed by written exam papers. Your child\'s school decides the board and the specification, so check with the school for the exact one it follows.',
+    answer: 'It depends on the board, and your child\'s school decides the board. Edexcel International A Level economics has four written papers, each worth 25% of the International A Level. Units 1 and 2 each last 1 hour 45 minutes, and Units 3 and 4 each last 2 hours. Cambridge International AS and A Level economics has four papers, weighted as shares of the full A Level: Paper 1 is 17%, Paper 2 is 33%, Paper 3 is 17% and Paper 4 is 33%. OxfordAQA International AS and A Level economics has two International AS papers of 1 hour 45 minutes, each worth 20% of the A Level, and two further papers of 2 hours, each worth 30%.',
   },
   subjectRematchFaq('economics'),
 ]
