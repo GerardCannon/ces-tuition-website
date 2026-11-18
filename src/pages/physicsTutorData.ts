@@ -13,7 +13,7 @@ export const physicsFaqs = [
   },
   {
     question: 'We don\'t live in the UAE. Can my child still have lessons?',
-    answer: 'Yes. All our lessons are online, so families join us from the UK, Europe and all over Asia.',
+    answer: 'Yes. All our lessons are online, so families join us from the UK, the rest of Europe and across Asia.',
   },
   {
     question: 'Do you teach families in Dubai, Abu Dhabi and Sharjah?',
