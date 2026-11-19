@@ -1,7 +1,20 @@
+import { WhatsappLogo } from '@phosphor-icons/react'
+import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { LevelEnquiry } from '@/components/LevelEnquiry'
+import { useAnalyticsPage, whatsappClick } from '@/lib/goatcounter'
+import { whatsappUrl } from '@/lib/whatsapp'
 import { FaqSection, PageSection, PageShell, withVisibleTrialHyphen } from '@/pages/PageShell.tsx'
 import { mathsCrumbs, mathsFaqs } from '@/pages/mathsTutorData.ts'
+
+const TES_YEAR_7_SAMPLER_URL =
+  'https://www.tes.com/teaching-resource/year-7-maths-sampler-ks3-practice-questions-with-answers-13671715'
+
+const SAMPLER_WHATSAPP_MESSAGE =
+  "Hi Gerard, we've tried the Year 7 maths sampler and I'd like to talk about how my child got on."
+
+const checkupButtonClass =
+  'h-12 w-full min-w-0 max-w-full px-6 text-base font-semibold tracking-wide sm:w-auto sm:text-lg max-sm:h-auto max-sm:min-h-12 max-sm:whitespace-normal max-sm:py-3 max-sm:text-center max-[359px]:h-auto max-[359px]:min-h-12 max-[359px]:whitespace-normal max-[359px]:py-3 max-[359px]:text-center'
 
 const boards = [
   {
@@ -21,6 +34,7 @@ const boards = [
 const linkClass = 'font-semibold text-foreground underline underline-offset-4 hover:text-primary'
 
 export function MathsTutor() {
+  const page = useAnalyticsPage()
   return (
     <PageShell
       crumbs={mathsCrumbs}
@@ -56,6 +70,48 @@ export function MathsTutor() {
         <p>
           You don’t need to be confident with maths yourself. Just tell us what the school has said, or which topics your child finds hardest. Your child can ask questions at any point, and we’ll go through each step of a method until it makes sense.
         </p>
+      </PageSection>
+
+      <PageSection id="free-check-up" title="A free maths check-up">
+        <p>
+          If you would like to see how your child is getting on before you get in touch, you can try our free Year 7 maths sampler. Year 7 is the first year of UK secondary school (ages 11 to 12, Key Stage 3). It is a short practice pack, and a useful check before IGCSE. Tes also describes it as useful for IGCSE Foundation preparation. You may need a free Tes account to download it.
+        </p>
+        <div className="flex w-full max-w-full flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center">
+          <Button
+            asChild
+            size="lg"
+            className={['bg-accent text-accent-foreground hover:bg-accent/90', checkupButtonClass].join(' ')}
+          >
+            <a
+              href={TES_YEAR_7_SAMPLER_URL}
+              target="_blank"
+              rel="noopener"
+              data-goatcounter-click="tes-sampler-click-maths"
+              data-goatcounter-title="Tes sampler click: maths"
+              className="flex min-w-0 items-center justify-center gap-2"
+            >
+              <span className="min-w-0">Try the free Year 7 maths sampler</span>
+            </a>
+          </Button>
+          <p className="w-full sm:basis-full">
+            When you have had a look, message us on WhatsApp and we can talk through how your child got on. We reply within the hour.
+          </p>
+          <Button
+            asChild
+            size="lg"
+            variant="outline"
+            className={['text-foreground', checkupButtonClass].join(' ')}
+          >
+            <a
+              href={whatsappUrl(SAMPLER_WHATSAPP_MESSAGE)}
+              {...whatsappClick(page, 'checkup')}
+              className="flex min-w-0 items-center justify-center gap-2"
+            >
+              <WhatsappLogo size={22} weight="fill" aria-hidden="true" className="shrink-0" />
+              <span className="min-w-0">Message us on WhatsApp</span>
+            </a>
+          </Button>
+        </div>
       </PageSection>
 
       <PageSection title="How we help with maths" muted>

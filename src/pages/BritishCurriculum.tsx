@@ -120,6 +120,9 @@ export function BritishCurriculum() {
         <p>
           Maths has a few extra options, such as different levels of exam paper, depending on the exam board. You can read more on our <a href="/igcse-gcse-maths-tutor/" className={linkClass}>IGCSE and A-level maths page</a>.
         </p>
+        <p>
+          There is also a free Year 7 maths sampler, if you would like a short check-up before IGCSE. You can find it on our <a href="/igcse-gcse-maths-tutor/#free-check-up" className={linkClass}>maths page</a>.
+        </p>
       </PageSection>
 
       <FaqSection items={withVisibleTrialHyphen(britishFaqs)} />
