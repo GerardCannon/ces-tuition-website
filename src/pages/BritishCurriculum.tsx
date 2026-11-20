@@ -88,7 +88,7 @@ export function BritishCurriculum() {
           We teach IGCSE <a href="/igcse-gcse-maths-tutor/#igcse-maths" className={linkClass}>maths</a>, <a href="/english-tutor/#igcse-english" className={linkClass}>English</a> and <a href="/economics-tutor/#igcse-economics" className={linkClass}>economics</a>. For the sciences, see our <a href="/chemistry-tutor/#igcse-chemistry" className={linkClass}>IGCSE chemistry tutor</a>, <a href="/physics-tutor/#igcse-physics" className={linkClass}>IGCSE physics tutor</a> and <a href="/biology-tutor/#igcse-biology" className={linkClass}>IGCSE biology tutor</a> pages.
         </p>
         <p>
-          If your child’s subject isn’t listed, just ask us. We also teach <a href="/a-level-tutor/" className={linkClass}>A-level</a>, and you can read about the IB MYP and Diploma Programme (DP) on our <a href="/curricula/ib/" className={linkClass}>IB page</a>.
+          If your child’s subject isn’t listed, just ask us. We also teach <a href="/a-level-tutor/" className={linkClass}>A-level</a>, you can read about the IB MYP and Diploma Programme (DP) on our <a href="/curricula/ib/" className={linkClass}>IB page</a>, and about American curriculum and SAT lessons on our <a href="/curricula/american/" className={linkClass}>American curriculum page</a>.
         </p>
       </PageSection>
 
