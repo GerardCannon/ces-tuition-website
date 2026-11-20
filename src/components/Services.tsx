@@ -109,6 +109,7 @@ const services: {
     graphic: <UsFlag />,
     links: [
       { href: '/curricula/american/', label: 'American curriculum and SAT tutor' },
+      { href: '/curricula/american/#sat', label: 'SAT preparation' },
     ],
   },
   {

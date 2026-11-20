@@ -39,7 +39,34 @@ export function AmericanCurriculum() {
         </p>
       </PageSection>
 
-      <PageSection title="SAT preparation" muted>
+      <PageSection title="How we help with the SAT" muted>
+        <div>
+          <h3 className="text-xl font-bold text-foreground mb-2">Reading short passages</h3>
+          <p>
+            Each Reading and Writing question comes with its own short passage. We practise reading carefully, working out what the question is really asking, and ruling out the wrong answers.
+          </p>
+        </div>
+        <div>
+          <h3 className="text-xl font-bold text-foreground mb-2">Grammar and punctuation</h3>
+          <p>
+            Some questions test grammar and punctuation. We go over the rules your child finds hardest and practise spotting what needs to change.
+          </p>
+        </div>
+        <div>
+          <h3 className="text-xl font-bold text-foreground mb-2">Using the calculator well</h3>
+          <p>
+            A calculator is allowed for the whole Math section. We practise when it helps, and when it is quicker to work something out by hand.
+          </p>
+        </div>
+        <div>
+          <h3 className="text-xl font-bold text-foreground mb-2">Working to the clock</h3>
+          <p>
+            Each part of the test is timed. We practise answering at a steady pace, so your child isn't rushing the last questions.
+          </p>
+        </div>
+      </PageSection>
+
+      <PageSection id="sat" title="SAT preparation">
         <p>
           We help high school students prepare for the SAT. The test has two sections, Reading and Writing, and Math, and we work on both.
         </p>
@@ -49,9 +76,28 @@ export function AmericanCurriculum() {
         <p>
           If you know when your child plans to sit the SAT, tell us, so we can plan lessons around that date.
         </p>
+        <div className="space-y-4">
+          <h3 className="text-xl font-bold text-foreground mb-2">How the SAT is assessed</h3>
+          {/* Re-check the SAT facts against the College Board every year. */}
+          <p>
+            The SAT is taken digitally, in the College Board's Bluebook app. It has two sections, and each section is split into two timed modules. The second module is harder or easier depending on how your child did in the first.
+          </p>
+          <p>
+            <strong className="text-foreground">Reading and Writing.</strong> 64 minutes, in two 32-minute modules, with 54 questions. Each question has a short passage, or a pair of short passages, and one multiple-choice question. The questions cover understanding what a text says, how it is put together, grammar and punctuation, and improving a piece of writing.
+          </p>
+          <p>
+            <strong className="text-foreground">Math.</strong> 70 minutes, in two 35-minute modules, with 44 questions. Most questions are multiple choice; for some, your child types in the answer. The topics are algebra, advanced math, problem-solving and data analysis, and geometry and trigonometry. A calculator can be used for the whole section: the Desmos calculator built into Bluebook, or an approved handheld calculator.
+          </p>
+          <p>
+            There is a 10-minute break between the two sections, and the test takes 2 hours and 14 minutes in total. Each section is scored from 200 to 800, so the total score is from 400 to 1600.
+          </p>
+          <p>
+            The College Board sets out the structure on its <a href="https://satsuite.collegeboard.org/sat/whats-on-the-test/structure" target="_blank" rel="noopener" className={linkClass}>How the SAT Is Structured</a> page.
+          </p>
+        </div>
       </PageSection>
 
-      <PageSection title="School subjects">
+      <PageSection id="school-subjects" title="School subjects" muted>
         <p>
           We also help with school subjects, such as maths or English. Lessons typically follow what your child is learning at school. Some parents come to us after a disappointing grade; others want their child to feel better prepared for an upcoming test.
         </p>
@@ -60,7 +106,7 @@ export function AmericanCurriculum() {
         </p>
       </PageSection>
 
-      <PageSection title="Where to begin" muted>
+      <PageSection title="Where to begin">
         <p>
           You don't need to plan everything at once. Start with whatever concerns you most, whether that's a school subject or the SAT.
         </p>
@@ -81,7 +127,7 @@ export function AmericanCurriculum() {
         />
       </PageSection>
 
-      <PageSection title="Other curricula">
+      <PageSection title="Other curricula" muted>
         <p>
           We also teach the British curriculum and the IB MYP and Diploma Programme (DP), which you can read about on our <a href="/curricula/british/" className={linkClass}>British curriculum page</a> and our <a href="/curricula/ib/" className={linkClass}>IB page</a>.
         </p>

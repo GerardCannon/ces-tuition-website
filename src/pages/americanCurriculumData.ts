@@ -31,6 +31,18 @@ export const americanFaqs = [
     question: 'Which school subjects can you help with?',
     answer: "We help with a range of school subjects, such as maths and English. Message us on WhatsApp with your child's subject and grade, and we'll let you know how we can help.",
   },
+  {
+    question: 'How is the SAT scored?',
+    answer: 'Each of the two sections, Reading and Writing and Math, is scored from 200 to 800. The two section scores are added together, so the total score is from 400 to 1600.',
+  },
+  {
+    question: 'Can my child use a calculator in the SAT?',
+    answer: 'Yes, for the whole Math section. The Bluebook app has a Desmos calculator built in, and students can bring an approved handheld calculator instead. In lessons, your child can practise with whichever one they plan to use.',
+  },
+  {
+    question: 'What should I tell you when I message about the SAT?',
+    answer: "Tell us your child's grade, when they plan to sit the SAT if you know, and which section they find harder. If they have a score from a practice test, that helps too. We reply within the hour.",
+  },
   subjectRematchFaq('American curriculum'),
 ]
 
