@@ -79,3 +79,13 @@ export function quickChatClick(placement: string) {
     'data-goatcounter-title': `WhatsApp click: quick chat ${placement}`,
   }
 }
+
+export type HomePickSubject = 'maths' | 'english' | 'chemistry' | 'physics' | 'biology' | 'economics' | 'ibmaths' | 'alevel' | 'sat'
+
+// Home hero subject picker. Shows which subject page home visitors choose.
+export function homePickClick(subject: HomePickSubject, label: string) {
+  return {
+    'data-goatcounter-click': `home-pick-${subject}`,
+    'data-goatcounter-title': `Home subject pick: ${label}`,
+  }
+}
