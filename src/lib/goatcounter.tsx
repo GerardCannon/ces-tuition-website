@@ -89,3 +89,13 @@ export function homePickClick(subject: HomePickSubject, label: string) {
     'data-goatcounter-title': `Home subject pick: ${label}`,
   }
 }
+
+export type FooterContact = 'email' | 'phone'
+
+// Footer email and phone links; plain ids so they read the same on every page.
+export function footerContactClick(contact: FooterContact) {
+  return {
+    'data-goatcounter-click': `footer-${contact}`,
+    'data-goatcounter-title': `Footer click: ${contact}`,
+  }
+}

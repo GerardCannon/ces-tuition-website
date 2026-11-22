@@ -1,7 +1,7 @@
 import { Envelope, MapPin, Phone, WhatsappLogo } from '@phosphor-icons/react'
 import { Separator } from '@/components/ui/separator'
 import { Logo, logoLockupClass } from '@/components/Logo'
-import { useAnalyticsPage, whatsappClick } from '@/lib/goatcounter'
+import { footerContactClick, useAnalyticsPage, whatsappClick } from '@/lib/goatcounter'
 import { WHATSAPP_DISPLAY, useWhatsappLink } from '@/lib/whatsapp'
 
 const quickLinks = [
@@ -64,13 +64,13 @@ export function Footer({ sectionBase = '' }: { sectionBase?: string }) {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <Envelope size={20} className="flex-shrink-0 mt-1" aria-hidden="true" />
-                <a href="mailto:Gerard@CannonEducationSolutions.com" className="text-primary-foreground hover:underline underline-offset-4 break-all">
+                <a href="mailto:Gerard@CannonEducationSolutions.com" {...footerContactClick('email')} className="text-primary-foreground hover:underline underline-offset-4 break-all">
                   Gerard@CannonEducationSolutions.com
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <Phone size={20} className="flex-shrink-0 mt-1" aria-hidden="true" />
-                <a href="tel:+971585041916" className="text-primary-foreground hover:underline underline-offset-4">
+                <a href="tel:+971585041916" {...footerContactClick('phone')} className="text-primary-foreground hover:underline underline-offset-4">
                   {WHATSAPP_DISPLAY}
                 </a>
               </li>
