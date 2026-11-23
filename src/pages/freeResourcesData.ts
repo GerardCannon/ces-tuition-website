@@ -48,6 +48,20 @@ export const freeResources: readonly FreeResource[] = [
     thumb: '/downloads/thumbs/year-7-maths-sampler.webp',
     added: '2026-11-23',
   },
+  {
+    slug: 'year-8-expanding-and-factorising',
+    title: 'Year 8 Expanding and Factorising',
+    year: 8,
+    subject: 'Maths',
+    note: 'Key Stage 3, ages 12 to 13.',
+    inside:
+      'Inside: key ideas and 30 questions from Bronze to Gold on collecting like terms, expanding and factorising single brackets, with a double-bracket stretch. Full answers on page 2.',
+    pages: 2,
+    sizeLabel: '0.3 MB',
+    file: '/downloads/year-8-expanding-and-factorising-ces-tuition.pdf',
+    thumb: '/downloads/thumbs/year-8-expanding-and-factorising.webp',
+    added: '2026-11-23',
+  },
 ]
 
 // Every thumbnail is 480x680 so cards line up and reserve their space.
