@@ -1,5 +1,6 @@
 import { LevelEnquiry } from '@/components/LevelEnquiry'
 import { Card } from '@/components/ui/card'
+import { freeResourcesLinkClick } from '@/lib/goatcounter'
 import { FaqSection, PageSection, PageShell, withVisibleTrialHyphen } from '@/pages/PageShell.tsx'
 import { britishCrumbs, britishFaqs } from '@/pages/britishCurriculumData.ts'
 
@@ -121,7 +122,7 @@ export function BritishCurriculum() {
           Maths has a few extra options, such as different levels of exam paper, depending on the exam board. You can read more on our <a href="/igcse-gcse-maths-tutor/" className={linkClass}>IGCSE and A-level maths page</a>.
         </p>
         <p>
-          There is also a free Year 7 maths sampler, if you would like a short check-up before IGCSE. You can find it on our <a href="/igcse-gcse-maths-tutor/#free-check-up" className={linkClass}>maths page</a>.
+          There are also free maths worksheets for Years 7 to 13, sorted by school year, with full answers. You can find them on our <a href="/free-resources/" {...freeResourcesLinkClick('british')} className={linkClass}>free resources page</a>.
         </p>
       </PageSection>
 
