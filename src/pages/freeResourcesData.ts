@@ -62,6 +62,80 @@ export const freeResources: readonly FreeResource[] = [
     thumb: '/downloads/thumbs/year-8-expanding-and-factorising.webp',
     added: '2026-11-23',
   },
+  {
+    slug: 'year-9-straight-line-graphs',
+    title: 'Year 9 Straight-line Graphs',
+    year: 9,
+    subject: 'Maths',
+    note: 'Key Stage 3, ages 13 to 14.',
+    inside:
+      'Inside: 24 questions on y = mx + c, covering tables of values and plotting, gradient and y-intercept, gradient from two points, matching equations to lines and parallel lines. Full answers on page 2.',
+    pages: 2,
+    sizeLabel: '0.2 MB',
+    file: '/downloads/year-9-straight-line-graphs-ces-tuition.pdf',
+    thumb: '/downloads/thumbs/year-9-straight-line-graphs.webp',
+    added: '2026-11-23',
+  },
+  {
+    slug: 'year-10-linear-equations-and-inequalities',
+    title: 'Year 10 Linear Equations and Inequalities',
+    year: 10,
+    subject: 'Maths',
+    examBoards: ['Cambridge', 'Edexcel', 'OxfordAQA'],
+    note: 'IGCSE Maths.',
+    inside:
+      'Inside: solving equations with brackets, unknowns on both sides and fractions, forming equations, solving inequalities, number lines and integer solutions, plus an exam-style question. Full answers on page 2.',
+    pages: 2,
+    sizeLabel: '0.3 MB',
+    file: '/downloads/year-10-linear-equations-and-inequalities-ces-tuition.pdf',
+    thumb: '/downloads/thumbs/year-10-linear-equations-and-inequalities.webp',
+    added: '2026-11-23',
+  },
+  {
+    slug: 'year-11-trigonometry',
+    title: 'Year 11 Trigonometry',
+    year: 11,
+    subject: 'Maths',
+    examBoards: ['Cambridge', 'Edexcel', 'OxfordAQA'],
+    note: 'IGCSE Maths.',
+    inside:
+      'Inside: key formulae, a worked example and 17 questions on right-angled trigonometry (SOH CAH TOA), the sine rule, the cosine rule and the area of a triangle, ending with an exam-style bearings question. Full answers on page 2.',
+    pages: 2,
+    sizeLabel: '0.4 MB',
+    file: '/downloads/year-11-trigonometry-ces-tuition.pdf',
+    thumb: '/downloads/thumbs/year-11-trigonometry.webp',
+    added: '2026-11-23',
+  },
+  {
+    slug: 'year-12-equations-and-inequalities',
+    title: 'Year 12 Equations and Inequalities',
+    year: 12,
+    subject: 'Maths',
+    examBoards: ['Cambridge', 'Edexcel', 'OxfordAQA'],
+    note: 'International A Level Maths.',
+    inside:
+      'Inside: worked examples and 20 questions on simultaneous equations, linear and quadratic inequalities, set notation, regions and the discriminant. Full answers on page 2.',
+    pages: 2,
+    sizeLabel: '0.3 MB',
+    file: '/downloads/year-12-equations-and-inequalities-ces-tuition.pdf',
+    thumb: '/downloads/thumbs/year-12-equations-and-inequalities.webp',
+    added: '2026-11-23',
+  },
+  {
+    slug: 'year-13-functions',
+    title: 'Year 13 Functions',
+    year: 13,
+    subject: 'Maths',
+    examBoards: ['Cambridge', 'Edexcel', 'OxfordAQA'],
+    note: 'International A Level Maths.',
+    inside:
+      'Inside: worked examples and 24 questions on domain and range, one-one and many-one functions, composite and inverse functions, and modulus graphs and equations, ending with an exam-style question. Full answers on page 2.',
+    pages: 2,
+    sizeLabel: '0.2 MB',
+    file: '/downloads/year-13-functions-ces-tuition.pdf',
+    thumb: '/downloads/thumbs/year-13-functions.webp',
+    added: '2026-11-23',
+  },
 ]
 
 // Every thumbnail is 480x680 so cards line up and reserve their space.
@@ -89,8 +163,8 @@ export const stages: readonly Stage[] = [
   { id: 'a-level', title: 'International A Level (Years 12–13)', years: [12, 13] },
 ]
 
-// UAE grade is one below the UK year: Year 7 is Grade 6.
-export const yearLabel = (year: SchoolYear) => `Year ${year} (Grade ${year - 1})`
+// British-style school years only (no UAE grade mapping).
+export const yearLabel = (year: SchoolYear) => `Year ${year}`
 export const yearAnchor = (year: SchoolYear) => `year-${year}`
 
 const boardOrder: readonly ExamBoard[] = ['Cambridge', 'Edexcel', 'OxfordAQA']

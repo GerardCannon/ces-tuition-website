@@ -97,7 +97,7 @@ export function FreeResources() {
       title="Free resources by year"
       lede={
         <p>
-          Printable practice for your child, sorted by school year and UAE grade. Every resource is free to download, with no sign-up. Then message us on WhatsApp and we can talk through how your child got on.
+          Printable practice for your child, sorted by school year. Every resource is free to download, with no sign-up. Then message us on WhatsApp and we can talk through how your child got on.
         </p>
       }
       ctaTitle="When you've had a look"
