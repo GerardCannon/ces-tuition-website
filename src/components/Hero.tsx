@@ -2,7 +2,6 @@ import { Button } from '@/components/ui/button'
 import { WhatsappLogo } from '@phosphor-icons/react'
 import { QuickChatLink } from '@/components/QuickChatLink'
 import { RematchLine } from '@/components/RematchLine'
-import { GoogleRatingMention } from '@/components/GoogleRatingMention'
 import { ReviewMention } from '@/components/ReviewMention'
 import { HomeSubjectPicker } from '@/components/HomeSubjectPicker'
 import { useAnalyticsPage, whatsappClick } from '@/lib/goatcounter'
@@ -59,7 +58,6 @@ export function Hero() {
               <a href="#enquire">Send your child's details</a>
             </Button>
           </div>
-          <GoogleRatingMention />
           <p className="text-sm sm:text-base text-white leading-relaxed text-balance max-w-2xl mx-auto">
             We reply within the hour. Your free 30‑minute trial is with a UK‑trained specialist.
           </p>
