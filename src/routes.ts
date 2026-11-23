@@ -308,7 +308,7 @@ export const routes: SiteRoute[] = [
     sitemap: true,
     head: socialHead({
       title: 'Free resources by school year for UAE families | CES Tuition',
-      description: 'Free printable practice from CES Tuition, sorted by school year. Download it, then message us on WhatsApp to talk it through.',
+      description: 'Free printable practice from CES Tuition, sorted by school year. Download it, and feel free to message us on WhatsApp to talk it through.',
       path: '/free-resources/',
       jsonLd: breadcrumbJsonLd(freeResourcesCrumbs, canonicalUrl),
     }),

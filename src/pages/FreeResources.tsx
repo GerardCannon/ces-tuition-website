@@ -100,13 +100,13 @@ export function FreeResources() {
       badge="Free · no sign-up"
       lede={
         <p>
-          Printable practice for your child, sorted by school year. Every resource is free to download, with no sign-up. Then message us on WhatsApp and we can talk through how your child got on.
+          Printable practice for your child, sorted by school year. Every resource is free to download, with no sign-up. Feel free to message us on WhatsApp and we can talk through how your child got on.
         </p>
       }
       ctaTitle="When you've had a look"
       ctaBody={
         <p>
-          Message us on WhatsApp and we can talk through how your child got on. We reply within the hour.
+          Feel free to message us on WhatsApp and we can talk through how your child got on. We reply within the hour.
         </p>
       }
     >
