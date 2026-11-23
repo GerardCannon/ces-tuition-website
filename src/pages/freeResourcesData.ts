@@ -89,8 +89,8 @@ export const stages: readonly Stage[] = [
   { id: 'a-level', title: 'International A Level (Years 12–13)', years: [12, 13] },
 ]
 
-// UAE grade is one below the UK year: Year 7 is Grade 6.
-export const yearLabel = (year: SchoolYear) => `Year ${year} (Grade ${year - 1})`
+// British-style school years only (no UAE grade mapping).
+export const yearLabel = (year: SchoolYear) => `Year ${year}`
 export const yearAnchor = (year: SchoolYear) => `year-${year}`
 
 const boardOrder: readonly ExamBoard[] = ['Cambridge', 'Edexcel', 'OxfordAQA']
