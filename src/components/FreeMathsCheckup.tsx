@@ -28,7 +28,7 @@ export function FreeMathsCheckup() {
               className={['bg-accent text-accent-foreground hover:bg-accent/90', checkupButtonClass].join(' ')}
             >
               <a
-                href="/free-resources/"
+                href="/free-resources/#year-7"
                 {...freeResourcesLinkClick('home')}
                 className="flex min-w-0 items-center justify-center gap-2"
               >
