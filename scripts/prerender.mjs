@@ -204,6 +204,30 @@ for (const phrase of ['Page not found', 'Back to the home page', 'Book your free
   }
 }
 
+// Free resources: every download and thumbnail must exist, each event must be
+// unique, and the size shown on the card must match the file.
+const resourcesPage = pages.find((page) => page.route.id === 'free-resources')
+if (resourcesPage) {
+  const html = resourcesPage.html.replaceAll('<!-- -->', '')
+  const cards = [...html.matchAll(/<a href="(\/downloads\/[^"]+\.pdf)" download=""[^>]*data-goatcounter-click="(free-download-[a-z0-9-]+)"/g)]
+  if (cards.length === 0) throw new Error('Free resources page has no downloads')
+  const events = cards.map((card) => card[2])
+  const duplicate = events.find((event, index) => events.indexOf(event) !== index)
+  if (duplicate) throw new Error(`Free resources: duplicate download event ${duplicate}`)
+  const sizes = [...html.matchAll(/PDF · \d+ pages · ([\d.]+) MB/g)].map((match) => match[1])
+  if (sizes.length !== cards.length) throw new Error('Free resources: every card needs a "PDF · N pages · X MB" line')
+  cards.forEach((card, index) => {
+    const file = path.join(distDir, card[1])
+    if (!fs.existsSync(file)) throw new Error(`Free resources: missing ${card[1]}`)
+    const actual = (fs.statSync(file).size / 1_000_000).toFixed(1)
+    if (actual !== sizes[index]) throw new Error(`Free resources: ${card[1]} is ${actual} MB but the card says ${sizes[index]} MB`)
+  })
+  for (const thumb of html.matchAll(/<img src="(\/downloads\/thumbs\/[^"]+)"/g)) {
+    if (!fs.existsSync(path.join(distDir, thumb[1]))) throw new Error(`Free resources: missing ${thumb[1]}`)
+  }
+  console.log(`free-resources: ${cards.length} download${cards.length === 1 ? '' : 's'} checked`)
+}
+
 const lastmod = new Date().toISOString().slice(0, 10)
 const sitemapRoutes = renderedRoutes.filter((route) => route.sitemap)
 if (sitemapRoutes.some((route) => route.id === 'not-found' || !route.loc)) {
