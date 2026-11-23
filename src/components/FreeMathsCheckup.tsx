@@ -35,7 +35,7 @@ export function FreeMathsCheckup() {
               </a>
             </Button>
             <p className="w-full text-lg leading-relaxed text-muted-foreground sm:basis-full md:text-xl">
-              Have a look, then message us on WhatsApp and we can talk through how your child got on. We reply within the hour.
+              Have a look. Feel free to message us on WhatsApp and we can talk through how your child got on. We reply within the hour.
             </p>
             <Button
               asChild

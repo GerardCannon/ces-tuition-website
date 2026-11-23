@@ -87,7 +87,7 @@ export function MathsTutor() {
             </a>
           </Button>
           <p className="w-full sm:basis-full">
-            Have a look, then message us on WhatsApp and we can talk through how your child got on. We reply within the hour.
+            Have a look. Feel free to message us on WhatsApp and we can talk through how your child got on. We reply within the hour.
           </p>
           <Button
             asChild
