@@ -91,6 +91,21 @@ export const freeResources: readonly FreeResource[] = [
     thumb: '/downloads/thumbs/year-10-linear-equations-and-inequalities.webp',
     added: '2026-11-23',
   },
+  {
+    slug: 'year-11-trigonometry',
+    title: 'Year 11 Trigonometry',
+    year: 11,
+    subject: 'Maths',
+    examBoards: ['Cambridge', 'Edexcel', 'OxfordAQA'],
+    note: 'IGCSE Maths.',
+    inside:
+      'Inside: key formulae, a worked example and 17 questions on right-angled trigonometry (SOH CAH TOA), the sine rule, the cosine rule and the area of a triangle, ending with an exam-style bearings question. Full answers on page 2.',
+    pages: 2,
+    sizeLabel: '0.4 MB',
+    file: '/downloads/year-11-trigonometry-ces-tuition.pdf',
+    thumb: '/downloads/thumbs/year-11-trigonometry.webp',
+    added: '2026-11-23',
+  },
 ]
 
 // Every thumbnail is 480x680 so cards line up and reserve their space.
