@@ -109,9 +109,9 @@ export function freeDownloadClick(slug: string, title: string) {
   }
 }
 
-export type FreeResourcesPlace = 'home' | 'maths'
+export type FreeResourcesPlace = 'home' | 'maths' | 'british'
 
-// Home and maths-page links to /free-resources/.
+// Home, maths-page and British-curriculum links to /free-resources/.
 export function freeResourcesLinkClick(place: FreeResourcesPlace) {
   return {
     'data-goatcounter-click': `free-resources-click-${place}`,

@@ -6,9 +6,7 @@ import { freeResourcesLinkClick, useAnalyticsPage, whatsappClick } from '@/lib/g
 import { whatsappUrl } from '@/lib/whatsapp'
 import { FaqSection, PageSection, PageShell, withVisibleTrialHyphen } from '@/pages/PageShell.tsx'
 import { mathsCrumbs, mathsFaqs } from '@/pages/mathsTutorData.ts'
-
-const SAMPLER_WHATSAPP_MESSAGE =
-  "Hi Gerard, we've tried the Year 7 maths sampler and I'd like to talk about how my child got on."
+import { FREE_RESOURCES_WHATSAPP_MESSAGE } from '@/pages/freeResourcesData.ts'
 
 const checkupButtonClass =
   'h-12 w-full min-w-0 max-w-full px-6 text-base font-semibold tracking-wide sm:w-auto sm:text-lg max-sm:h-auto max-sm:min-h-12 max-sm:whitespace-normal max-sm:py-3 max-sm:text-center max-[359px]:h-auto max-[359px]:min-h-12 max-[359px]:whitespace-normal max-[359px]:py-3 max-[359px]:text-center'
@@ -69,9 +67,9 @@ export function MathsTutor() {
         </p>
       </PageSection>
 
-      <PageSection id="free-check-up" title="A free maths check-up">
+      <PageSection id="free-check-up" title="Free maths worksheets">
         <p>
-          If you would like to see how your child is getting on before you get in touch, you can try our free Year 7 maths sampler. Year 7 is the first year of UK secondary school (ages 11 to 12, Key Stage 3). It is a short practice pack, and a useful check before IGCSE.
+          Free printable maths practice for Years 7 to 13, sorted by school year, with full answers.
         </p>
         <div className="flex w-full max-w-full flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center">
           <Button
@@ -80,15 +78,15 @@ export function MathsTutor() {
             className={['bg-accent text-accent-foreground hover:bg-accent/90', checkupButtonClass].join(' ')}
           >
             <a
-              href="/free-resources/#year-7"
+              href="/free-resources/"
               {...freeResourcesLinkClick('maths')}
               className="flex min-w-0 items-center justify-center gap-2"
             >
-              <span className="min-w-0">Try the free Year 7 maths sampler</span>
+              <span className="min-w-0">See free maths resources</span>
             </a>
           </Button>
           <p className="w-full sm:basis-full">
-            When you have had a look, message us on WhatsApp and we can talk through how your child got on. We reply within the hour.
+            Have a look, then message us on WhatsApp and we can talk through how your child got on. We reply within the hour.
           </p>
           <Button
             asChild
@@ -97,7 +95,7 @@ export function MathsTutor() {
             className={['text-foreground', checkupButtonClass].join(' ')}
           >
             <a
-              href={whatsappUrl(SAMPLER_WHATSAPP_MESSAGE)}
+              href={whatsappUrl(FREE_RESOURCES_WHATSAPP_MESSAGE)}
               {...whatsappClick(page, 'checkup')}
               className="flex min-w-0 items-center justify-center gap-2"
             >
