@@ -8,7 +8,8 @@ export function PhysicsTutor() {
   return (
     <PageShell
       crumbs={physicsCrumbs}
-      title="Online IGCSE, A‑level and IB physics tutor for families in Dubai and the UAE"
+      title="Online IGCSE, International A Level and IB physics tutor for families in Dubai and the UAE"
+      titleAccent="physics tutor"
       lede={
         <p>
           Physics asks students to understand an idea, use maths and explain their answer in words, often in the same question. If your child is finding physics difficult, or simply wants to feel more confident, we can help.
@@ -115,7 +116,7 @@ export function PhysicsTutor() {
         </div>
       </PageSection>
 
-      <PageSection id="a-level-physics" title="A-level physics" muted>
+      <PageSection id="a-level-physics" title="International A Level physics" muted>
         <p>
           A-level physics uses more maths than IGCSE, and topics such as mechanics are taken further. For more on the step up to A-level, see our <a href="/a-level-tutor/" className={linkClass}>A-level page</a>.
         </p>

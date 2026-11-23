@@ -9,6 +9,7 @@ export function IbMathsTutor() {
     <PageShell
       crumbs={ibMathsCrumbs}
       title="Online IB maths tutor for MYP and Diploma students in Dubai and the UAE"
+      titleAccent="IB maths tutor"
       lede={
         <p>
           IB maths can feel like a big step up. Our lessons follow the course your child is studying at school, whether they need to catch up or want to aim for a higher grade.

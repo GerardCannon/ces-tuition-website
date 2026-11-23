@@ -8,7 +8,8 @@ export function ChemistryTutor() {
   return (
     <PageShell
       crumbs={chemistryCrumbs}
-      title="Online IGCSE, A‑level and IB chemistry tutor for families in Dubai and the UAE"
+      title="Online IGCSE, International A Level and IB chemistry tutor for families in Dubai and the UAE"
+      titleAccent="chemistry tutor"
       lede={
         <p>
           Chemistry builds on itself, so a gap in one topic can make the next one harder. If your child is finding chemistry difficult, or simply wants to feel more confident, we can help.
@@ -111,7 +112,7 @@ export function ChemistryTutor() {
         </div>
       </PageSection>
 
-      <PageSection id="a-level-chemistry" title="A-level chemistry" muted>
+      <PageSection id="a-level-chemistry" title="International A Level chemistry" muted>
         <p>
           At A-level we teach Edexcel International A Level, Cambridge International AS and A Level, and OxfordAQA International AS and A Level chemistry.
         </p>

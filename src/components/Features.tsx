@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react'
 import { ChatCircle, DeviceMobile, Gift, GraduationCap, Star, Users } from '@phosphor-icons/react'
+import { Accent } from '@/lib/headingAccent'
 
 const features: { icon: typeof GraduationCap; title: string; description: ReactNode }[] = [
   {
@@ -47,7 +48,7 @@ export function Features() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">
-            Why families choose CES Tuition
+            <Accent text="Why families choose CES Tuition" word="CES Tuition" tone="purple" />
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
             One-to-one online lessons, with progress you can follow in the CES app.

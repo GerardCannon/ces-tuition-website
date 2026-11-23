@@ -2,6 +2,7 @@ import { Card } from '@/components/ui/card'
 import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import { Star } from '@phosphor-icons/react'
 import { googleRating } from '@/lib/googleRating'
+import { Accent } from '@/lib/headingAccent'
 
 const testimonials = [
   {
@@ -58,7 +59,7 @@ export function Testimonials({ surface = 'muted' }: { surface?: 'muted' | 'plain
             <Stars size={28} label="Rated 5 out of 5 stars" />
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground text-balance">
-            38 five-star reviews on MyPrivateTutor
+            <Accent text="38 five-star reviews on MyPrivateTutor" word="five-star reviews" tone="purple" />
           </h2>
           <p className="mt-4 text-balance text-lg leading-relaxed text-muted-foreground">
             Rated {googleRating.rating} out of 5 on Google from {googleRating.count}{' '}

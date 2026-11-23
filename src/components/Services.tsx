@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react'
 import { Card } from '@/components/ui/card'
 import { ChalkboardTeacher, Exam } from '@phosphor-icons/react'
+import { Accent } from '@/lib/headingAccent'
 
 function IbGlobe() {
   return (
@@ -83,7 +84,7 @@ const services: {
   links?: { href: string; label: string }[]
 }[] = [
   {
-    title: 'British curriculum: IGCSE and A-level',
+    title: 'British curriculum: IGCSE and International A Level',
     description: 'Live online lessons for IGCSE and A-level courses with a subject specialist, including exam practice.',
     graphic: <UkFlag />,
     links: [
@@ -130,7 +131,7 @@ export function Services() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">
-            Curricula we teach
+            <Accent text="Curricula we teach" word="Curricula" tone="purple" />
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
             British, IB (MYP and DP) and American curricula, all taught live online.
@@ -176,7 +177,7 @@ export function Services() {
                         </a>
                       </li>
                     ))}
-                    {service.title === 'British curriculum: IGCSE and A-level' ? (
+                    {service.title === 'British curriculum: IGCSE and International A Level' ? (
                       <li>
                         <a href="/chemistry-tutor/#igcse-chemistry" className="font-semibold text-foreground underline underline-offset-4 hover:text-primary">IGCSE chemistry tutor</a>
                         {', '}

@@ -8,7 +8,8 @@ export function AlevelTutor() {
   return (
     <PageShell
       crumbs={alevelCrumbs}
-      title="A-level tuition for families in Dubai and the UAE"
+      title="International A Level tuition for families in Dubai and the UAE"
+      titleAccent="International A Level"
       lede={
         <p>
           Many families in the UAE choose A-levels for the final two years of school. If your child is finding a subject difficult, or simply wants to feel more confident, we can help.
@@ -61,7 +62,7 @@ export function AlevelTutor() {
         />
       </PageSection>
 
-      <PageSection title="A-level: Year 12 and Year 13">
+      <PageSection title="International A Level: Year 12 and Year 13">
         <div>
           <h3 className="text-xl font-bold text-foreground mb-2">The step up from IGCSE</h3>
           <p>

@@ -9,6 +9,7 @@ export function IbCurriculum() {
     <PageShell
       crumbs={ibCrumbs}
       title="Online IB MYP and Diploma tuition for families in Dubai and across the UAE"
+      titleAccent="IB MYP and Diploma"
       lede={
         <p>
           Many families in the UAE follow the International Baccalaureate (IB), from the Middle Years Programme (MYP) through to the Diploma Programme (DP). If your child is finding a subject difficult, or simply wants to feel more confident, we can help.

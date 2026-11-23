@@ -8,7 +8,8 @@ export function BiologyTutor() {
   return (
     <PageShell
       crumbs={biologyCrumbs}
-      title="Online IGCSE, A‑level and IB biology tutor for families in Dubai and the UAE"
+      title="Online IGCSE, International A Level and IB biology tutor for families in Dubai and the UAE"
+      titleAccent="biology tutor"
       lede={
         <p>
           Biology covers a lot of ground, and good answers depend on understanding the ideas and using the right words. If your child is finding biology difficult, or simply wants to feel more confident, we can help.
@@ -124,7 +125,7 @@ export function BiologyTutor() {
         </div>
       </PageSection>
 
-      <PageSection id="a-level-biology" title="A-level biology">
+      <PageSection id="a-level-biology" title="International A Level biology">
         <p>
           At A-level we teach Edexcel International A Level, Cambridge International AS and A Level, and OxfordAQA International A Level biology. You can read more about A-level on our <a href="/a-level-tutor/" className={linkClass}>A-level page</a>.
         </p>
