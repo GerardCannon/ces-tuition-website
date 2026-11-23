@@ -106,6 +106,21 @@ export const freeResources: readonly FreeResource[] = [
     thumb: '/downloads/thumbs/year-11-trigonometry.webp',
     added: '2026-11-23',
   },
+  {
+    slug: 'year-12-equations-and-inequalities',
+    title: 'Year 12 Equations and Inequalities',
+    year: 12,
+    subject: 'Maths',
+    examBoards: ['Cambridge', 'Edexcel', 'OxfordAQA'],
+    note: 'International A Level Maths.',
+    inside:
+      'Inside: worked examples and 20 questions on simultaneous equations, linear and quadratic inequalities, set notation, regions and the discriminant. Full answers on page 2.',
+    pages: 2,
+    sizeLabel: '0.3 MB',
+    file: '/downloads/year-12-equations-and-inequalities-ces-tuition.pdf',
+    thumb: '/downloads/thumbs/year-12-equations-and-inequalities.webp',
+    added: '2026-11-23',
+  },
 ]
 
 // Every thumbnail is 480x680 so cards line up and reserve their space.
