@@ -13,7 +13,6 @@ import { EnquiryForm } from '@/components/EnquiryForm'
 import { Footer } from '@/components/Footer'
 import { Navigation } from '@/components/Navigation'
 import { QuickChatLink } from '@/components/QuickChatLink'
-import { GoogleRatingMention } from '@/components/GoogleRatingMention'
 import { ReviewMention } from '@/components/ReviewMention'
 import { Testimonials } from '@/components/Testimonials'
 import { WhatsAppBar } from '@/components/WhatsAppBar'
@@ -149,7 +148,6 @@ export function PageShell({
                   <a href="#enquire">Send your child's details</a>
                 </Button>
               </div>
-              <GoogleRatingMention />
               <p className="text-sm sm:text-base text-white leading-relaxed text-balance max-w-2xl mx-auto">
                 We reply within the hour. Your free 30‑minute trial is with a UK‑trained specialist.
               </p>

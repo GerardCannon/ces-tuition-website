@@ -71,6 +71,7 @@ export function Testimonials({ surface = 'muted' }: { surface?: 'muted' | 'plain
               className="inline-block min-h-6 font-semibold underline underline-offset-4 hover:text-foreground rounded-sm outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
             >
               Read our Google reviews
+              <span className="sr-only"> (opens in a new tab)</span>
             </a>
           </p>
         </div>
