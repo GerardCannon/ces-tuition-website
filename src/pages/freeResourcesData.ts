@@ -62,6 +62,20 @@ export const freeResources: readonly FreeResource[] = [
     thumb: '/downloads/thumbs/year-8-expanding-and-factorising.webp',
     added: '2026-11-23',
   },
+  {
+    slug: 'year-9-straight-line-graphs',
+    title: 'Year 9 Straight-line Graphs',
+    year: 9,
+    subject: 'Maths',
+    note: 'Key Stage 3, ages 13 to 14.',
+    inside:
+      'Inside: 24 questions on y = mx + c, covering tables of values and plotting, gradient and y-intercept, gradient from two points, matching equations to lines and parallel lines. Full answers on page 2.',
+    pages: 2,
+    sizeLabel: '0.2 MB',
+    file: '/downloads/year-9-straight-line-graphs-ces-tuition.pdf',
+    thumb: '/downloads/thumbs/year-9-straight-line-graphs.webp',
+    added: '2026-11-23',
+  },
 ]
 
 // Every thumbnail is 480x680 so cards line up and reserve their space.
