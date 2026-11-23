@@ -1,6 +1,6 @@
 import { homeFaqs } from './components/homeFaqData.ts'
 import { pageForRoute } from './lib/goatcounter.tsx'
-import { AREA_SERVED, faqAndBreadcrumbJsonLd, orgId, serviceNode, withService, type ServiceInfo } from './lib/structuredData.ts'
+import { AREA_SERVED, breadcrumbJsonLd, faqAndBreadcrumbJsonLd, orgId, serviceNode, withService, type ServiceInfo } from './lib/structuredData.ts'
 import { WHATSAPP_GREETING } from './lib/whatsapp.tsx'
 import { americanCrumbs, americanFaqs, americanService } from './pages/americanCurriculumData.ts'
 import { alevelCrumbs, alevelFaqs, alevelService } from './pages/alevelTutorData.ts'
@@ -13,6 +13,7 @@ import { ibCrumbs, ibFaqs, ibService } from './pages/ibCurriculumData.ts'
 import { ibMathsCrumbs, ibMathsFaqs, ibMathsService } from './pages/ibMathsTutorData.ts'
 import { mathsCrumbs, mathsFaqs, mathsService } from './pages/mathsTutorData.ts'
 import { physicsCrumbs, physicsFaqs, physicsService } from './pages/physicsTutorData.ts'
+import { FREE_RESOURCES_WHATSAPP_MESSAGE, freeResourcesCrumbs } from './pages/freeResourcesData.ts'
 
 export const SITE_ORIGIN = 'https://www.cestuition.com'
 const OG_IMAGE = `${SITE_ORIGIN}/og-image.jpg`
@@ -300,6 +301,18 @@ export const routes: SiteRoute[] = [
       jsonLd: withService(faqAndBreadcrumbJsonLd(economicsFaqs, economicsCrumbs, canonicalUrl), economicsService, '/economics-tutor/', canonicalUrl),
     }),
     whatsappMessage: "Hi Gerard, I'd like to ask about economics tuition for my child.",
+  },
+  {
+    id: 'free-resources',
+    path: '/free-resources/',
+    sitemap: true,
+    head: socialHead({
+      title: 'Free maths resources for UAE families | CES Tuition',
+      description: 'Free printable maths practice from CES Tuition, with worked examples and answers. Download it, then message us on WhatsApp to talk it through.',
+      path: '/free-resources/',
+      jsonLd: breadcrumbJsonLd(freeResourcesCrumbs, canonicalUrl),
+    }),
+    whatsappMessage: FREE_RESOURCES_WHATSAPP_MESSAGE,
   },
   {
     id: 'not-found',

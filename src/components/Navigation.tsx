@@ -99,6 +99,13 @@ export function Navigation({ sectionBase = '' }: { sectionBase?: string }) {
               </a>
             ))}
             <a
+              href="/free-resources/"
+              className="block text-foreground hover:text-primary transition-colors duration-200 font-medium py-3"
+              onClick={closeMenu}
+            >
+              Free resources
+            </a>
+            <a
               href={whatsappHref()}
               {...whatsappClick(page, 'menu')}
               className="flex items-center justify-center gap-2 mt-3 min-h-12 rounded-lg bg-accent px-3 text-center text-accent-foreground font-semibold"
