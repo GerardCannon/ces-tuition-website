@@ -3,7 +3,7 @@ import { bindGoatCounterClicks } from './bindGoatCounter.ts'
 
 export { bindGoatCounterClicks } from './bindGoatCounter.ts'
 
-export type WhatsAppPage = 'home' | 'british' | 'ib' | 'ibmaths' | 'american' | 'maths' | 'alevel' | 'chemistry' | 'physics' | 'biology' | 'english' | 'economics' | '404'
+export type WhatsAppPage = 'home' | 'british' | 'ib' | 'ibmaths' | 'american' | 'maths' | 'alevel' | 'chemistry' | 'physics' | 'biology' | 'english' | 'economics' | 'resources' | '404'
 export type WhatsAppPlace = 'header' | 'menu' | 'hero' | 'howitworks' | 'form' | 'cta' | 'footer' | 'sticky' | 'level' | 'checkup'
 
 const pageByRouteId: Record<string, WhatsAppPage> = {
@@ -19,6 +19,7 @@ const pageByRouteId: Record<string, WhatsAppPage> = {
   'english-tutor': 'english',
   'ib-maths-tutor': 'ibmaths',
   'economics-tutor': 'economics',
+  'free-resources': 'resources',
   'not-found': '404',
 }
 
@@ -97,5 +98,23 @@ export function footerContactClick(contact: FooterContact) {
   return {
     'data-goatcounter-click': `footer-${contact}`,
     'data-goatcounter-title': `Footer click: ${contact}`,
+  }
+}
+
+// Free resources page downloads, one id per pack: free-download-<slug>.
+export function freeDownloadClick(slug: string, title: string) {
+  return {
+    'data-goatcounter-click': `free-download-${slug}`,
+    'data-goatcounter-title': `Free download: ${title}`,
+  }
+}
+
+export type FreeResourcesPlace = 'home' | 'maths'
+
+// Home and maths-page links to /free-resources/.
+export function freeResourcesLinkClick(place: FreeResourcesPlace) {
+  return {
+    'data-goatcounter-click': `free-resources-click-${place}`,
+    'data-goatcounter-title': `Free resources click: ${place}`,
   }
 }

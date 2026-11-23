@@ -86,6 +86,14 @@ function wireMobileMenu() {
       inner.append(anchor)
     }
 
+    // Same item as the React menu in Navigation.tsx.
+    const resources = document.createElement('a')
+    resources.href = '/free-resources/'
+    resources.className = 'block text-foreground hover:text-primary transition-colors duration-200 font-medium py-3'
+    resources.textContent = 'Free resources'
+    resources.addEventListener('click', closeMenu)
+    inner.append(resources)
+
     const whatsapp = document.createElement('a')
     whatsapp.href = headerLink.href
     whatsapp.setAttribute('data-goatcounter-click', `whatsapp-${page}-menu`)

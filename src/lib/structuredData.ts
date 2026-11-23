@@ -34,6 +34,24 @@ export function faqAndBreadcrumbJsonLd(
   }
 }
 
+// Breadcrumb only, for pages with no FAQ (the free resources page).
+export function breadcrumbJsonLd(crumbs: readonly Crumb[], absoluteUrl: (path: string) => string) {
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: crumbs.map((crumb, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          name: crumb.name,
+          item: absoluteUrl(crumb.path),
+        })),
+      },
+    ],
+  }
+}
+
 export type ServiceInfo = {
   name: string
   serviceType: string

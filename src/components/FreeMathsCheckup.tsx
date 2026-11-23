@@ -1,10 +1,7 @@
 import { WhatsappLogo } from '@phosphor-icons/react'
 import { Button } from '@/components/ui/button'
-import { useAnalyticsPage, whatsappClick } from '@/lib/goatcounter'
+import { freeResourcesLinkClick, useAnalyticsPage, whatsappClick } from '@/lib/goatcounter'
 import { whatsappUrl } from '@/lib/whatsapp'
-
-const TES_YEAR_7_SAMPLER_URL =
-  'https://www.tes.com/teaching-resource/year-7-maths-sampler-ks3-practice-questions-with-answers-13671715'
 
 const SAMPLER_WHATSAPP_MESSAGE =
   "Hi Gerard, we've tried the Year 7 maths sampler and I'd like to talk about how my child got on."
@@ -31,11 +28,8 @@ export function FreeMathsCheckup() {
               className={['bg-accent text-accent-foreground hover:bg-accent/90', checkupButtonClass].join(' ')}
             >
               <a
-                href={TES_YEAR_7_SAMPLER_URL}
-                target="_blank"
-                rel="noopener"
-                data-goatcounter-click="tes-sampler-click-home"
-                data-goatcounter-title="Tes sampler click: home"
+                href="/free-resources/"
+                {...freeResourcesLinkClick('home')}
                 className="flex min-w-0 items-center justify-center gap-2"
               >
                 <span className="min-w-0">Try the free Year 7 maths sampler</span>

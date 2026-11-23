@@ -12,6 +12,9 @@ const quickLinks = [
   { label: 'Free trial', href: '#enquire' },
 ]
 
+// Page links in Quick links; not section anchors, so no sectionBase.
+const quickPageLinks = [{ label: 'Free resources', href: '/free-resources/' }]
+
 const curriculaLinks = [
   { label: 'IGCSE', href: '/curricula/british/' },
   { label: 'A-level', href: '/a-level-tutor/' },
@@ -39,6 +42,13 @@ export function Footer({ sectionBase = '' }: { sectionBase?: string }) {
               {quickLinks.map((link) => (
                 <li key={link.href}>
                   <a href={`${sectionBase}${link.href}`} className="text-primary-foreground hover:underline underline-offset-4">
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+              {quickPageLinks.map((link) => (
+                <li key={link.href}>
+                  <a href={link.href} className="text-primary-foreground hover:underline underline-offset-4">
                     {link.label}
                   </a>
                 </li>

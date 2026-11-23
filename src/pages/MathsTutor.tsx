@@ -2,13 +2,10 @@ import { WhatsappLogo } from '@phosphor-icons/react'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { LevelEnquiry } from '@/components/LevelEnquiry'
-import { useAnalyticsPage, whatsappClick } from '@/lib/goatcounter'
+import { freeResourcesLinkClick, useAnalyticsPage, whatsappClick } from '@/lib/goatcounter'
 import { whatsappUrl } from '@/lib/whatsapp'
 import { FaqSection, PageSection, PageShell, withVisibleTrialHyphen } from '@/pages/PageShell.tsx'
 import { mathsCrumbs, mathsFaqs } from '@/pages/mathsTutorData.ts'
-
-const TES_YEAR_7_SAMPLER_URL =
-  'https://www.tes.com/teaching-resource/year-7-maths-sampler-ks3-practice-questions-with-answers-13671715'
 
 const SAMPLER_WHATSAPP_MESSAGE =
   "Hi Gerard, we've tried the Year 7 maths sampler and I'd like to talk about how my child got on."
@@ -74,7 +71,7 @@ export function MathsTutor() {
 
       <PageSection id="free-check-up" title="A free maths check-up">
         <p>
-          If you would like to see how your child is getting on before you get in touch, you can try our free Year 7 maths sampler. Year 7 is the first year of UK secondary school (ages 11 to 12, Key Stage 3). It is a short practice pack, and a useful check before IGCSE. Tes also describes it as useful for IGCSE Foundation preparation. You may need a free Tes account to download it.
+          If you would like to see how your child is getting on before you get in touch, you can try our free Year 7 maths sampler. Year 7 is the first year of UK secondary school (ages 11 to 12, Key Stage 3). It is a short practice pack, and a useful check before IGCSE.
         </p>
         <div className="flex w-full max-w-full flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center">
           <Button
@@ -83,11 +80,8 @@ export function MathsTutor() {
             className={['bg-accent text-accent-foreground hover:bg-accent/90', checkupButtonClass].join(' ')}
           >
             <a
-              href={TES_YEAR_7_SAMPLER_URL}
-              target="_blank"
-              rel="noopener"
-              data-goatcounter-click="tes-sampler-click-maths"
-              data-goatcounter-title="Tes sampler click: maths"
+              href="/free-resources/"
+              {...freeResourcesLinkClick('maths')}
               className="flex min-w-0 items-center justify-center gap-2"
             >
               <span className="min-w-0">Try the free Year 7 maths sampler</span>

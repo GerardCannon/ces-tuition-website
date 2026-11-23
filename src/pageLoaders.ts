@@ -6,6 +6,7 @@ import { BritishCurriculum } from './pages/BritishCurriculum.tsx'
 import { ChemistryTutor } from './pages/ChemistryTutor.tsx'
 import { EconomicsTutor } from './pages/EconomicsTutor.tsx'
 import { EnglishTutor } from './pages/EnglishTutor.tsx'
+import { FreeResources } from './pages/FreeResources.tsx'
 import { Home } from './pages/Home.tsx'
 import { IbCurriculum } from './pages/IbCurriculum.tsx'
 import { IbMathsTutor } from './pages/IbMathsTutor.tsx'
@@ -29,5 +30,6 @@ export const pages: Record<string, ComponentType> = {
   'english-tutor': EnglishTutor,
   'economics-tutor': EconomicsTutor,
   'ib-maths-tutor': IbMathsTutor,
+  'free-resources': FreeResources,
   'not-found': NotFound,
 }
