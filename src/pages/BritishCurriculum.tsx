@@ -26,6 +26,7 @@ export function BritishCurriculum() {
     <PageShell
       crumbs={britishCrumbs}
       title="Online IGCSE and British curriculum tuition for families in Dubai and the UAE"
+      titleAccent="IGCSE and British curriculum"
       lede={
         <p>
           Many schools in the UAE teach the IGCSE. If your child is finding a subject difficult, or wants to feel more confident, we can help.

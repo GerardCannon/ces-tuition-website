@@ -6,6 +6,7 @@ import { RematchLine } from '@/components/RematchLine'
 import { countWhatsappHomeForm } from '@/lib/bindGoatCounter'
 import { useAnalyticsPage, whatsappClick } from '@/lib/goatcounter'
 import { useWhatsappLink } from '@/lib/whatsapp'
+import { Accent } from '@/lib/headingAccent'
 
 const fieldClass = 'w-full rounded-lg border border-input bg-background px-3 py-2.5 text-base text-foreground outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]'
 
@@ -107,7 +108,7 @@ export function EnquiryForm({
         <div className="max-w-xl mx-auto">
           <div className="text-center mb-8">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">
-              Book your free 30‑minute trial
+              <Accent text="Book your free 30‑minute trial" word="free 30‑minute trial" tone="purple" />
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Tell us your child's curriculum, subject and year group. WhatsApp opens with your message ready to send. We reply within the hour to arrange your free 30‑minute trial. This page does not create an account.

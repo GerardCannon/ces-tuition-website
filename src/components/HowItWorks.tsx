@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { useAnalyticsPage, whatsappClick } from '@/lib/goatcounter'
 import { useWhatsappLink } from '@/lib/whatsapp'
+import { Accent } from '@/lib/headingAccent'
 
 const steps = [
   {
@@ -30,7 +31,7 @@ export function HowItWorks() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto mb-12 max-w-3xl text-center md:mb-16">
             <h2 className="mb-6 text-3xl font-bold text-foreground sm:text-4xl md:text-5xl">
-              How it works
+              <Accent text="How it works" word="works" tone="purple" />
             </h2>
             <p className="text-lg leading-relaxed md:text-xl">
               <a

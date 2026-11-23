@@ -8,7 +8,8 @@ export function EconomicsTutor() {
   return (
     <PageShell
       crumbs={economicsCrumbs}
-      title="Online IGCSE, A‑level and IB economics tutor for families in Dubai and the UAE"
+      title="Online IGCSE, International A Level and IB economics tutor for families in Dubai and the UAE"
+      titleAccent="economics tutor"
       lede={
         <p>
           Economics asks students to explain, draw and argue, not just remember. If your child is new to the subject or finds it hard to turn what they know into clear written answers, we can help.
@@ -121,7 +122,7 @@ export function EconomicsTutor() {
         </div>
       </PageSection>
 
-      <PageSection id="a-level-economics" title="A-level economics">
+      <PageSection id="a-level-economics" title="International A Level economics">
         <p>
           At A-level we teach Edexcel International A Level, Cambridge International AS and A Level, and OxfordAQA International AS and A Level economics. A-level economics moves from the basic ideas to longer essays quite quickly. For more on the step up to A-level, see our <a href="/a-level-tutor/" className={linkClass}>A-level page</a>.
         </p>

@@ -1,6 +1,7 @@
 import { WhatsappLogo } from '@phosphor-icons/react'
 import { Button } from '@/components/ui/button'
 import { whatsappUrl } from '@/lib/whatsapp'
+import { Accent } from '@/lib/headingAccent'
 
 const FREE_LESSONS_MESSAGE = "Hi, I'd like to know how to earn free lessons with CES."
 
@@ -12,7 +13,7 @@ export function FreeLessons() {
     <section id="free-lessons" className="scroll-mt-24 bg-background py-16 md:py-24">
       <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
         <h2 className="mb-6 text-balance text-3xl font-bold text-foreground sm:text-4xl md:text-5xl">
-          How CES families earn free lessons
+          <Accent text="How CES families earn free lessons" word="free lessons" tone="purple" />
         </h2>
         <p className="mb-8 text-lg leading-relaxed text-muted-foreground md:text-xl">
           {FREE_LESSONS_BODY}

@@ -8,7 +8,8 @@ export function EnglishTutor() {
   return (
     <PageShell
       crumbs={englishCrumbs}
-      title="Online IGCSE, A‑level and IB English tutor for families in Dubai and the UAE"
+      title="Online IGCSE, International A Level and IB English tutor for families in Dubai and the UAE"
+      titleAccent="English tutor"
       lede={
         <p>
           Strong reading and writing help in every subject, not only in English lessons. If your child is finding English difficult, or simply wants to feel more confident, we can help.
@@ -114,7 +115,7 @@ export function EnglishTutor() {
         </div>
       </PageSection>
 
-      <PageSection id="a-level-english" title="A-level English">
+      <PageSection id="a-level-english" title="International A Level English">
         <p>
           A-level English goes into more depth than IGCSE, with longer essays and wider reading. For more on the step up to A-level, see our <a href="/a-level-tutor/" className={linkClass}>A-level page</a>.
         </p>

@@ -33,7 +33,8 @@ export function MathsTutor() {
   return (
     <PageShell
       crumbs={mathsCrumbs}
-      title="Online IGCSE and A-level maths tutor for families in Dubai and the UAE"
+      title="Online IGCSE and International A Level maths tutor for families in Dubai and the UAE"
+      titleAccent="maths tutor"
       lede={
         <p>
           Maths is often the subject parents worry about most. Our lessons follow the course your child is studying at school, whether they need to catch up or want to aim for a higher grade.
@@ -172,7 +173,7 @@ export function MathsTutor() {
         </div>
       </PageSection>
 
-      <PageSection id="a-level-maths" title="A-level maths" muted>
+      <PageSection id="a-level-maths" title="International A Level maths" muted>
         <p>
           A-level maths builds on IGCSE algebra and moves on to pure maths such as calculus, alongside statistics or mechanics. For more on the step up to A-level, see our <a href="/a-level-tutor/" className={linkClass}>A-level page</a>.
         </p>

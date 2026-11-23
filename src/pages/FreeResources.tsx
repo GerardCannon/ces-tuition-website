@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { freeDownloadClick } from '@/lib/goatcounter'
 import { PageSection, PageShell } from '@/pages/PageShell.tsx'
+import { SectionTitle } from '@/lib/headingAccent'
 import {
   SHOW_COMING_SOON,
   THUMB_HEIGHT,
@@ -95,6 +96,8 @@ export function FreeResources() {
     <PageShell
       crumbs={freeResourcesCrumbs}
       title="Free resources by year"
+      titleAccent="Free"
+      badge="Free · no sign-up"
       lede={
         <p>
           Printable practice for your child, sorted by school year. Every resource is free to download, with no sign-up. Then message us on WhatsApp and we can talk through how your child got on.
@@ -145,7 +148,7 @@ export function FreeResources() {
             .map((stage) => (
               <div key={stage.id} id={stage.id} className="scroll-mt-28 mb-14 last:mb-0">
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-8 text-balance text-center">
-                  {stage.title}
+                  <SectionTitle text={stage.title} />
                 </h2>
                 {stage.filled.map((year) => (
                   <section key={year} id={yearAnchor(year)} aria-labelledby={`${yearAnchor(year)}-heading`} className="scroll-mt-28 mb-12 last:mb-0">

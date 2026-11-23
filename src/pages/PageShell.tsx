@@ -19,6 +19,7 @@ import { Testimonials } from '@/components/Testimonials'
 import { WhatsAppBar } from '@/components/WhatsAppBar'
 import { useAnalyticsPage, useAnalyticsRouteId, whatsappClick, type WhatsAppPage } from '@/lib/goatcounter'
 import { useWhatsappLink } from '@/lib/whatsapp'
+import { Accent, SectionTitle } from '@/lib/headingAccent'
 
 // Only values the enquiry form already offers. British curriculum has no single
 // option, and the maths page covers IGCSE and A-level, so those stay blank.
@@ -54,9 +55,13 @@ export function PageShell({
   children,
   ctaTitle,
   ctaBody,
+  titleAccent,
+  badge,
 }: {
   crumbs: readonly PageCrumb[]
   title: string
+  titleAccent?: string
+  badge?: string
   lede: ReactNode
   children: ReactNode
   ctaTitle: string
@@ -108,8 +113,15 @@ export function PageShell({
           </div>
           <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-14 md:py-20 text-center">
             <div className="max-w-4xl mx-auto space-y-5 md:space-y-6">
+              {badge ? (
+                <p className="flex justify-center">
+                  <span className="inline-block rounded-full bg-secondary px-3 py-1 text-[13px] font-semibold uppercase tracking-wider text-secondary-foreground">
+                    {badge}
+                  </span>
+                </p>
+              ) : null}
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight text-balance">
-                {title}
+                <Accent text={title} word={titleAccent} tone="gold" />
               </h1>
               {lede ? (
                 <div className="text-base sm:text-lg md:text-xl text-white leading-relaxed max-w-2xl mx-auto space-y-4">
@@ -153,7 +165,7 @@ export function PageShell({
         <section className="py-16 md:py-24 bg-primary text-primary-foreground">
           <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center space-y-6">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white text-balance">
-              {ctaTitle}
+              <Accent text={ctaTitle} word="free 30‑minute trial" tone="gold" />
             </h2>
             <div className="text-base sm:text-lg text-white leading-relaxed space-y-4">
               {ctaBody}
@@ -192,8 +204,10 @@ export function PageSection({
   muted = false,
   extra,
   id,
+  titleAccent,
 }: {
   title: string
+  titleAccent?: string
   children: ReactNode
   muted?: boolean
   extra?: ReactNode
@@ -203,7 +217,7 @@ export function PageSection({
     <section className={`py-16 md:py-24 ${muted ? 'bg-muted/30' : 'bg-background'}`}>
       <div className="max-w-3xl mx-auto px-6 lg:px-8">
         <h2 id={id} className={`text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance${id ? ' scroll-mt-24' : ''}`}>
-          {title}
+          <SectionTitle text={title} word={titleAccent} />
         </h2>
         <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
           {children}
@@ -219,7 +233,7 @@ export function FaqSection({ items }: { items: readonly FaqItem[] }) {
     <section className="py-16 md:py-24 bg-muted/30">
       <div className="max-w-3xl mx-auto px-6 lg:px-8">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-10 text-balance">
-          Questions parents ask
+          <SectionTitle text="Questions parents ask" />
         </h2>
         <div className="space-y-8">
           {items.map((item) => (

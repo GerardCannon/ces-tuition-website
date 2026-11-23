@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button'
 import { freeResourcesLinkClick, useAnalyticsPage, whatsappClick } from '@/lib/goatcounter'
 import { whatsappUrl } from '@/lib/whatsapp'
 import { FREE_RESOURCES_WHATSAPP_MESSAGE } from '@/pages/freeResourcesData.ts'
+import { Accent } from '@/lib/headingAccent'
 
 const checkupButtonClass =
   'h-12 w-full min-w-0 max-w-full px-6 text-base font-semibold tracking-wide sm:w-auto sm:text-lg max-sm:h-auto max-sm:min-h-12 max-sm:whitespace-normal max-sm:py-3 max-sm:text-center max-[359px]:h-auto max-[359px]:min-h-12 max-[359px]:whitespace-normal max-[359px]:py-3 max-[359px]:text-center'
@@ -14,7 +15,7 @@ export function FreeMathsCheckup() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="mb-6 text-balance text-3xl font-bold text-foreground sm:text-4xl md:text-5xl">
-            Free maths worksheets
+            <Accent text="Free maths worksheets" word="Free" tone="purple" />
           </h2>
           <p className="text-lg leading-relaxed text-muted-foreground md:text-xl">
             Free printable maths practice for Years 7 to 13, sorted by school year, with full answers.
