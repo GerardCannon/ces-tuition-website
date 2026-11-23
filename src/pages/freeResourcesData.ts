@@ -121,6 +121,21 @@ export const freeResources: readonly FreeResource[] = [
     thumb: '/downloads/thumbs/year-12-equations-and-inequalities.webp',
     added: '2026-11-23',
   },
+  {
+    slug: 'year-13-functions',
+    title: 'Year 13 Functions',
+    year: 13,
+    subject: 'Maths',
+    examBoards: ['Cambridge', 'Edexcel', 'OxfordAQA'],
+    note: 'International A Level Maths.',
+    inside:
+      'Inside: worked examples and 24 questions on domain and range, one-one and many-one functions, composite and inverse functions, and modulus graphs and equations, ending with an exam-style question. Full answers on page 2.',
+    pages: 2,
+    sizeLabel: '0.2 MB',
+    file: '/downloads/year-13-functions-ces-tuition.pdf',
+    thumb: '/downloads/thumbs/year-13-functions.webp',
+    added: '2026-11-23',
+  },
 ]
 
 // Every thumbnail is 480x680 so cards line up and reserve their space.
