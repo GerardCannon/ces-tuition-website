@@ -76,6 +76,21 @@ export const freeResources: readonly FreeResource[] = [
     thumb: '/downloads/thumbs/year-9-straight-line-graphs.webp',
     added: '2026-11-23',
   },
+  {
+    slug: 'year-10-linear-equations-and-inequalities',
+    title: 'Year 10 Linear Equations and Inequalities',
+    year: 10,
+    subject: 'Maths',
+    examBoards: ['Cambridge', 'Edexcel', 'OxfordAQA'],
+    note: 'IGCSE Maths.',
+    inside:
+      'Inside: solving equations with brackets, unknowns on both sides and fractions, forming equations, solving inequalities, number lines and integer solutions, plus an exam-style question. Full answers on page 2.',
+    pages: 2,
+    sizeLabel: '0.3 MB',
+    file: '/downloads/year-10-linear-equations-and-inequalities-ces-tuition.pdf',
+    thumb: '/downloads/thumbs/year-10-linear-equations-and-inequalities.webp',
+    added: '2026-11-23',
+  },
 ]
 
 // Every thumbnail is 480x680 so cards line up and reserve their space.
