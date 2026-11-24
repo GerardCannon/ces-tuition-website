@@ -1,7 +1,8 @@
-import { DownloadSimple } from '@phosphor-icons/react'
+import { DownloadSimple, WhatsappLogo } from '@phosphor-icons/react'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
-import { freeDownloadClick } from '@/lib/goatcounter'
+import { freeDownloadClick, whatsappClick } from '@/lib/goatcounter'
+import { whatsappUrl } from '@/lib/whatsappUrl.ts'
 import { PageSection, PageShell } from '@/pages/PageShell.tsx'
 import { SectionTitle } from '@/lib/headingAccent'
 import {
@@ -27,6 +28,11 @@ const subjectLinks = [
   { label: 'IB', href: '/curricula/ib/' },
   { label: 'American curriculum', href: '/curricula/american/' },
 ]
+
+// Prefill for the per-sheet WhatsApp link; uses the entry title exactly.
+function sheetWhatsAppMessage(title: string) {
+  return `Hi, I've just downloaded your free ${title} sheet and I'd like to ask about tuition.`
+}
 
 function ResourceCard({ resource }: { resource: FreeResource }) {
   const related = {
@@ -78,6 +84,14 @@ function ResourceCard({ resource }: { resource: FreeResource }) {
               <span className="min-w-0">Download free PDF</span>
             </a>
           </Button>
+          <a
+            href={whatsappUrl(sheetWhatsAppMessage(resource.title))}
+            {...whatsappClick('resources', 'card', resource.slug)}
+            className={`${linkClass} inline-flex min-h-11 items-center justify-center gap-2 self-center text-center`}
+          >
+            <WhatsappLogo size={20} weight="fill" aria-hidden="true" className="shrink-0" />
+            <span>Ask about this sheet on WhatsApp</span>
+          </a>
           <a href={related.href} className={`${linkClass} inline-flex min-h-8 items-center self-center`}>
             {related.label}
           </a>
