@@ -103,7 +103,10 @@ export function Footer({ sectionBase = '' }: { sectionBase?: string }) {
         <Separator className="bg-primary-foreground/30 mb-8" />
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-primary-foreground text-sm">
-          <p>© {new Date().getFullYear()} CES Tuition. All rights reserved.</p>
+          <div className="text-center md:text-left">
+            <p>© {new Date().getFullYear()} CES Tuition. All rights reserved.</p>
+            <p className="mt-1 text-xs">CES Tuition is a trading name of Cannon Education Solutions LLC.</p>
+          </div>
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
             <a href="https://app.cestuition.com/privacy-policy" className="hover:underline underline-offset-4">
               Privacy Policy
