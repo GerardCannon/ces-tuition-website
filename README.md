@@ -38,13 +38,13 @@ Routes live in `src/routes.ts`. That list is the source for the prerendered HTML
 }
 ```
 
-3. Run `npm run build`. The route is written to `dist/curricula/british/index.html` with the rendered page inside `#root`, and the URL is added to `dist/sitemap.xml` with a `lastmod` of the build date (UTC). `public/robots.txt` already points at `https://www.cestuition.com/sitemap.xml`.
+3. Run `npm run build`. The route is written to `dist/curricula/british/index.html` with the rendered page inside `#root`, and the URL is added to `dist/sitemap.xml`. `public/robots.txt` already points at `https://www.cestuition.com/sitemap.xml`.
 
 Do not add a second HTML entry for Vite. One client bundle hydrates every page. The prerender stamps `data-route` on `<html>` so the 404 document, which GitHub Pages serves at whatever URL was missing, still hydrates as the not-found page.
 
 The home page `<head>` is the block already in `index.html`, including its JSON-LD. The build copies those tags through unchanged and fails if they disagree with the `head` object on the `home` route. Change `index.html` and that object together. Set `robots: 'noindex'` and `sitemap: false` for a page that should not be indexed. Leave `path` off `socialHead` when the page should not declare a canonical URL, which is what the 404 page does.
 
-`lastmod` is the UTC date of the build, not a hand-edited date. A page is omitted from the sitemap when `sitemap` is false.
+The sitemap has no `lastmod`, because the build date would not show when a page's content really changed. A page is omitted from the sitemap when `sitemap` is false.
 
 ## Not in this repo
 

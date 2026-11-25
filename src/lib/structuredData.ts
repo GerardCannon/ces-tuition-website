@@ -52,6 +52,33 @@ export function breadcrumbJsonLd(crumbs: readonly Crumb[], absoluteUrl: (path: s
   }
 }
 
+// Breadcrumb, CollectionPage and the Organization reference, for the free resources page.
+// No ratings, prices or offers.
+export function collectionPageJsonLd(
+  crumbs: readonly Crumb[],
+  page: { path: string; name: string; description: string },
+  absoluteUrl: (path: string) => string,
+) {
+  const base = breadcrumbJsonLd(crumbs, absoluteUrl)
+  const url = absoluteUrl(page.path)
+  return {
+    ...base,
+    '@graph': [
+      ...base['@graph'],
+      {
+        '@type': 'CollectionPage',
+        '@id': `${url}#page`,
+        name: page.name,
+        description: page.description,
+        url,
+        inLanguage: 'en-GB',
+        publisher: { '@id': orgId(absoluteUrl) },
+      },
+      orgRefNode(absoluteUrl),
+    ],
+  }
+}
+
 export type ServiceInfo = {
   name: string
   serviceType: string

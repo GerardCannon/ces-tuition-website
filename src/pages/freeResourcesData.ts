@@ -461,6 +461,21 @@ export const subjectPages: Record<Subject, { href: string; label: string }> = {
   Economics: { href: '/economics-tutor/', label: 'Economics lessons' },
 }
 
+// Card link for a resource. Maths cards name the level by year: IGCSE for
+// Years 7 to 11, International A Level for Years 12 and 13.
+export function relatedLink(resource: FreeResource) {
+  if (resource.relatedHref && resource.relatedLabel) return { href: resource.relatedHref, label: resource.relatedLabel }
+  if (resource.subject === 'Maths') {
+    return resource.year >= 12
+      ? { href: '/igcse-gcse-maths-tutor/#a-level-maths', label: 'International A Level maths tutor' }
+      : { href: '/igcse-gcse-maths-tutor/', label: 'IGCSE maths tutor' }
+  }
+  return {
+    href: resource.relatedHref ?? subjectPages[resource.subject].href,
+    label: resource.relatedLabel ?? subjectPages[resource.subject].label,
+  }
+}
+
 export type Stage = { id: string; title: string; years: readonly SchoolYear[] }
 
 export const stages: readonly Stage[] = [
