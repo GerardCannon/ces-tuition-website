@@ -228,13 +228,12 @@ if (resourcesPage) {
   console.log(`free-resources: ${cards.length} download${cards.length === 1 ? '' : 's'} checked`)
 }
 
-const lastmod = new Date().toISOString().slice(0, 10)
 const sitemapRoutes = renderedRoutes.filter((route) => route.sitemap)
 if (sitemapRoutes.some((route) => route.id === 'not-found' || !route.loc)) {
   throw new Error('Sitemap includes a route that should be excluded')
 }
 const urls = sitemapRoutes
-  .map((route) => `  <url>\n    <loc>${route.loc.replace(/&/g, '&amp;')}</loc>\n    <lastmod>${lastmod}</lastmod>\n  </url>`)
+  .map((route) => `  <url>\n    <loc>${route.loc.replace(/&/g, '&amp;')}</loc>\n  </url>`)
   .join('\n')
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`
 fs.writeFileSync(path.join(distDir, 'sitemap.xml'), sitemap)
@@ -248,4 +247,4 @@ if (!homePage) throw new Error('Missing the written home page')
 for (const page of pages) {
   console.log(`${page.route.loc ?? page.route.id} -> dist/${page.route.output} (${wordCount(page.html)} body words)`)
 }
-console.log(`sitemap.xml ${lastmod} (${sitemapRoutes.length} url${sitemapRoutes.length === 1 ? '' : 's'})`)
+console.log(`sitemap.xml (${sitemapRoutes.length} url${sitemapRoutes.length === 1 ? '' : 's'})`)

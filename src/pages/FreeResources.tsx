@@ -11,9 +11,9 @@ import {
   THUMB_WIDTH,
   examBoardsLabel,
   freeResourcesCrumbs,
+  relatedLink,
   resourcesForYear,
   stages,
-  subjectPages,
   yearAnchor,
   yearLabel,
   type FreeResource,
@@ -24,6 +24,12 @@ const linkClass = 'font-semibold text-foreground underline underline-offset-4 ho
 const subjectLinks = [
   { label: 'IGCSE maths', href: '/igcse-gcse-maths-tutor/' },
   { label: 'IB maths', href: '/ib-maths-tutor/' },
+  { label: 'International A Level tutor', href: '/a-level-tutor/' },
+  { label: 'IGCSE chemistry tutor', href: '/chemistry-tutor/' },
+  { label: 'IGCSE physics tutor', href: '/physics-tutor/' },
+  { label: 'IGCSE biology tutor', href: '/biology-tutor/' },
+  { label: 'English tutor', href: '/english-tutor/' },
+  { label: 'Economics tutor', href: '/economics-tutor/' },
   { label: 'British curriculum', href: '/curricula/british/' },
   { label: 'IB', href: '/curricula/ib/' },
   { label: 'American curriculum', href: '/curricula/american/' },
@@ -35,10 +41,7 @@ function sheetWhatsAppMessage(title: string) {
 }
 
 function ResourceCard({ resource }: { resource: FreeResource }) {
-  const related = {
-    href: resource.relatedHref ?? subjectPages[resource.subject].href,
-    label: resource.relatedLabel ?? subjectPages[resource.subject].label,
-  }
+  const related = relatedLink(resource)
   const boards = examBoardsLabel(resource.examBoards)
   return (
     <Card className="h-full overflow-hidden p-0 gap-0">

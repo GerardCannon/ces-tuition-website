@@ -1,6 +1,6 @@
 import { homeFaqs } from './components/homeFaqData.ts'
 import { pageForRoute } from './lib/goatcounter.tsx'
-import { AREA_SERVED, breadcrumbJsonLd, faqAndBreadcrumbJsonLd, orgId, serviceNode, withService, type ServiceInfo } from './lib/structuredData.ts'
+import { AREA_SERVED, collectionPageJsonLd, faqAndBreadcrumbJsonLd, orgId, serviceNode, withService, type ServiceInfo } from './lib/structuredData.ts'
 import { WHATSAPP_GREETING } from './lib/whatsapp.tsx'
 import { americanCrumbs, americanFaqs, americanService } from './pages/americanCurriculumData.ts'
 import { alevelCrumbs, alevelFaqs, alevelService } from './pages/alevelTutorData.ts'
@@ -17,6 +17,9 @@ import { FREE_RESOURCES_WHATSAPP_MESSAGE, freeResourcesCrumbs } from './pages/fr
 
 export const SITE_ORIGIN = 'https://www.cestuition.com'
 const OG_IMAGE = `${SITE_ORIGIN}/og-image.jpg`
+
+const FREE_RESOURCES_DESCRIPTION =
+  'Free printable maths practice by school year, Year 7 to Year 13, for families in Dubai, Abu Dhabi and the UAE. Download free, then message us on WhatsApp.'
 
 export type JsonLd = Record<string, unknown>
 
@@ -308,9 +311,13 @@ export const routes: SiteRoute[] = [
     sitemap: true,
     head: socialHead({
       title: 'Free resources by school year for UAE families | CES Tuition',
-      description: 'Free printable practice from CES Tuition, sorted by school year. Download it, and feel free to message us on WhatsApp to talk it through.',
+      description: FREE_RESOURCES_DESCRIPTION,
       path: '/free-resources/',
-      jsonLd: breadcrumbJsonLd(freeResourcesCrumbs, canonicalUrl),
+      jsonLd: collectionPageJsonLd(
+        freeResourcesCrumbs,
+        { path: '/free-resources/', name: 'Free resources by school year', description: FREE_RESOURCES_DESCRIPTION },
+        canonicalUrl,
+      ),
     }),
     whatsappMessage: FREE_RESOURCES_WHATSAPP_MESSAGE,
   },
