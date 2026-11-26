@@ -442,6 +442,20 @@ export const freeResources: readonly FreeResource[] = [
     thumb: '/downloads/thumbs/year-13-differentiation.webp',
     added: '2026-11-23',
   },
+  {
+    slug: 'year-9-similarity-and-enlargement',
+    title: 'Year 9 Similarity and Enlargement',
+    year: 9,
+    subject: 'Maths',
+    note: 'Key Stage 3, ages 13 to 14.',
+    inside:
+      'Inside: key ideas and 28 questions on scale factors, similar shapes, enlarging points and shapes, area and volume scale factors, maps and models, and reasoning. Full answers on page 3.',
+    pages: 3,
+    sizeLabel: '0.3 MB',
+    file: '/downloads/year-9-similarity-and-enlargement-ces-tuition.pdf',
+    thumb: '/downloads/thumbs/year-9-similarity-and-enlargement.webp',
+    added: '2026-11-26',
+  },
 ]
 
 // Every thumbnail is 480x680 so cards line up and reserve their space.
