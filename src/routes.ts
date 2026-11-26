@@ -118,6 +118,10 @@ const homeJsonLd: JsonLd = {
       image: 'https://www.cestuition.com/logo-512.png',
       email: 'Gerard@CannonEducationSolutions.com',
       telephone: '+971585041916',
+      sameAs: [
+        'https://www.instagram.com/cannoneducationsolutions/',
+        'https://www.google.com/maps?cid=7943937497189879081',
+      ],
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Al Mtsannid Suburb',
