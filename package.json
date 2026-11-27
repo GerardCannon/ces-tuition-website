@@ -8,6 +8,7 @@
         "kill": "fuser -k 5000/tcp",
         "build": "tsc -b --noCheck && vite build && vite build --ssr src/entry-server.tsx && node scripts/prerender.mjs",
         "build:logos": "node scripts/build-logo-assets.mjs",
+        "build:og": "node scripts/build-og-images.mjs",
         "lint": "eslint .",
         "optimize": "vite optimize",
         "preview": "vite preview"
