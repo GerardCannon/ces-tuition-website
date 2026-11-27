@@ -16,7 +16,13 @@ import { physicsCrumbs, physicsFaqs, physicsService } from './pages/physicsTutor
 import { FREE_RESOURCES_WHATSAPP_MESSAGE, freeResourcesCrumbs } from './pages/freeResourcesData.ts'
 
 export const SITE_ORIGIN = 'https://www.cestuition.com'
+// Fallback share image (the 404 page, and any page without its own).
 const OG_IMAGE = `${SITE_ORIGIN}/og-image.jpg`
+
+// Page share images, built by scripts/build-og-images.mjs into public/og/.
+function ogImage(id: string) {
+  return `${SITE_ORIGIN}/og/${id}.jpg`
+}
 
 const FREE_RESOURCES_DESCRIPTION =
   'Free printable maths practice by school year, Year 7 to Year 13, for families in Dubai, Abu Dhabi and the UAE. Download free, then message us on WhatsApp.'
@@ -76,6 +82,8 @@ export function socialHead(input: {
   description: string
   path?: string
   robots?: string
+  // Full URL of the page's share image. Defaults to OG_IMAGE.
+  image?: string
   jsonLd?: JsonLd
 }): RouteHead {
   const canonical = input.path ? canonicalUrl(input.path) : undefined
@@ -88,13 +96,13 @@ export function socialHead(input: {
     ogUrl: canonical,
     ogTitle: input.title,
     ogDescription: input.description,
-    ogImage: OG_IMAGE,
+    ogImage: input.image ?? OG_IMAGE,
     ogImageWidth: '1200',
     ogImageHeight: '630',
     twitterCard: 'summary_large_image',
     twitterTitle: input.title,
     twitterDescription: input.description,
-    twitterImage: OG_IMAGE,
+    twitterImage: input.image ?? OG_IMAGE,
     jsonLd: input.jsonLd,
   }
 }
@@ -166,13 +174,13 @@ export const routes: SiteRoute[] = [
       ogUrl: 'https://www.cestuition.com/',
       ogTitle: 'CES Tuition: UK-trained online tutors for UAE families',
       ogDescription: 'IGCSE, A-level, IB (MYP and Diploma) and American curriculum tuition, taught live online across all emirates. Free 30-minute trial.',
-      ogImage: OG_IMAGE,
+      ogImage: ogImage('home'),
       ogImageWidth: '1200',
       ogImageHeight: '630',
       twitterCard: 'summary_large_image',
       twitterTitle: 'CES Tuition: UK-trained online tutors for UAE families',
       twitterDescription: 'IGCSE, A-level, IB (MYP and Diploma) and American curriculum tuition, taught live online across all emirates. Free 30-minute trial.',
-      twitterImage: OG_IMAGE,
+      twitterImage: ogImage('home'),
       jsonLd: homeJsonLd,
     },
     whatsappMessage: WHATSAPP_GREETING,
@@ -185,6 +193,7 @@ export const routes: SiteRoute[] = [
       title: 'IGCSE tutor in Dubai, British curriculum | CES Tuition',
       description: 'One-to-one online IGCSE lessons for families in Dubai, Abu Dhabi and the UAE, with UK-trained subject specialists. Free 30-minute trial.',
       path: '/curricula/british/',
+      image: ogImage('british-curriculum'),
       jsonLd: withService(faqAndBreadcrumbJsonLd(britishFaqs, britishCrumbs, canonicalUrl), britishService, '/curricula/british/', canonicalUrl),
     }),
     whatsappMessage: "Hi Gerard, I'd like to ask about British curriculum tuition for my child.",
@@ -197,6 +206,7 @@ export const routes: SiteRoute[] = [
       title: 'Online IB tuition (MYP & Diploma), Dubai & UAE | CES Tuition',
       description: 'One-to-one online tuition for IB MYP and Diploma Programme students in Dubai, Abu Dhabi and the UAE, with UK-trained subject specialists. Free 30-minute trial.',
       path: '/curricula/ib/',
+      image: ogImage('ib'),
       jsonLd: withService(faqAndBreadcrumbJsonLd(ibFaqs, ibCrumbs, canonicalUrl), ibService, '/curricula/ib/', canonicalUrl),
     }),
     whatsappMessage: "Hi Gerard, I'd like to ask about IB tuition for my child.",
@@ -209,6 +219,7 @@ export const routes: SiteRoute[] = [
       title: 'Online American curriculum tuition, Dubai & UAE | CES Tuition',
       description: 'One-to-one online tuition for American curriculum students in Dubai, Abu Dhabi and across the UAE, including SAT prep. Free 30-minute trial on WhatsApp.',
       path: '/curricula/american/',
+      image: ogImage('american-curriculum'),
       jsonLd: withService(faqAndBreadcrumbJsonLd(americanFaqs, americanCrumbs, canonicalUrl), americanService, '/curricula/american/', canonicalUrl),
     }),
     whatsappMessage: "Hi Gerard, I'd like to ask about American curriculum or SAT tuition for my child.",
@@ -221,6 +232,7 @@ export const routes: SiteRoute[] = [
       title: 'IGCSE and A-level maths tutor, Dubai | CES Tuition',
       description: 'One-to-one online maths lessons for IGCSE and A-level students in Dubai, Abu Dhabi and the UAE, with UK-trained subject specialists. Free 30-minute trial.',
       path: '/igcse-gcse-maths-tutor/',
+      image: ogImage('igcse-gcse-maths-tutor'),
       jsonLd: withService(faqAndBreadcrumbJsonLd(mathsFaqs, mathsCrumbs, canonicalUrl), mathsService, '/igcse-gcse-maths-tutor/', canonicalUrl),
     }),
     whatsappMessage: "Hi Gerard, I'd like to ask about maths tuition for my child.",
@@ -233,6 +245,7 @@ export const routes: SiteRoute[] = [
       title: 'Online A-level tutor in Dubai and Abu Dhabi | CES Tuition',
       description: 'One-to-one online A-level lessons for Year 12 and 13 students in Dubai, Abu Dhabi and across the UAE, with UK-trained subject specialists. Free 30-minute trial.',
       path: '/a-level-tutor/',
+      image: ogImage('a-level-tutor'),
       jsonLd: withService(faqAndBreadcrumbJsonLd(alevelFaqs, alevelCrumbs, canonicalUrl), alevelService, '/a-level-tutor/', canonicalUrl),
     }),
     whatsappMessage: "Hi Gerard, I'd like to ask about A-level tuition for my child.",
@@ -245,6 +258,7 @@ export const routes: SiteRoute[] = [
       title: 'Online chemistry tutor Dubai: IGCSE, A-level, IB | CES Tuition',
       description: 'One-to-one chemistry lessons, live online, for IGCSE, A-level, IB MYP and Diploma students in Dubai, Abu Dhabi and the UAE. Free 30-minute trial.',
       path: '/chemistry-tutor/',
+      image: ogImage('chemistry-tutor'),
       jsonLd: withService(faqAndBreadcrumbJsonLd(chemistryFaqs, chemistryCrumbs, canonicalUrl), chemistryService, '/chemistry-tutor/', canonicalUrl),
     }),
     whatsappMessage: "Hi Gerard, I'd like to ask about chemistry tuition for my child.",
@@ -257,6 +271,7 @@ export const routes: SiteRoute[] = [
       title: 'Online physics tutor Dubai: IGCSE, A-level, IB | CES Tuition',
       description: 'One-to-one physics lessons, live online, for IGCSE, A-level, IB MYP and Diploma students in Dubai, Abu Dhabi and the UAE. Free 30-minute trial.',
       path: '/physics-tutor/',
+      image: ogImage('physics-tutor'),
       jsonLd: withService(faqAndBreadcrumbJsonLd(physicsFaqs, physicsCrumbs, canonicalUrl), physicsService, '/physics-tutor/', canonicalUrl),
     }),
     whatsappMessage: "Hi Gerard, I'd like to ask about physics tuition for my child.",
@@ -269,6 +284,7 @@ export const routes: SiteRoute[] = [
       title: 'Online biology tutor Dubai: IGCSE, A-level, IB | CES Tuition',
       description: 'One-to-one biology lessons, live online, for IGCSE, A-level, IB MYP and Diploma students in Dubai, Abu Dhabi and the UAE. Free 30-minute trial.',
       path: '/biology-tutor/',
+      image: ogImage('biology-tutor'),
       jsonLd: withService(faqAndBreadcrumbJsonLd(biologyFaqs, biologyCrumbs, canonicalUrl), biologyService, '/biology-tutor/', canonicalUrl),
     }),
     whatsappMessage: "Hi Gerard, I'd like to ask about biology tuition for my child.",
@@ -281,6 +297,7 @@ export const routes: SiteRoute[] = [
       title: 'IGCSE, A-level and IB English tutor, Dubai | CES Tuition',
       description: 'One-to-one English lessons, live online, for IGCSE, A-level, IB MYP and Diploma students in Dubai, Abu Dhabi and the UAE. Free 30-minute trial.',
       path: '/english-tutor/',
+      image: ogImage('english-tutor'),
       jsonLd: withService(faqAndBreadcrumbJsonLd(englishFaqs, englishCrumbs, canonicalUrl), englishService, '/english-tutor/', canonicalUrl),
     }),
     whatsappMessage: "Hi Gerard, I'd like to ask about English tuition for my child.",
@@ -293,6 +310,7 @@ export const routes: SiteRoute[] = [
       title: 'Online IB maths tutor in Dubai and Abu Dhabi | CES Tuition',
       description: 'One-to-one online IB maths lessons for MYP and Diploma students in Dubai, Abu Dhabi, Sharjah and the UAE, with UK-trained specialists. Free 30-minute trial.',
       path: '/ib-maths-tutor/',
+      image: ogImage('ib-maths-tutor'),
       jsonLd: withService(faqAndBreadcrumbJsonLd(ibMathsFaqs, ibMathsCrumbs, canonicalUrl), ibMathsService, '/ib-maths-tutor/', canonicalUrl),
     }),
     whatsappMessage: "Hi Gerard, I'd like to ask about IB maths tuition for my child.",
@@ -305,6 +323,7 @@ export const routes: SiteRoute[] = [
       title: 'IGCSE, A-level and IB economics tutor, Dubai | CES Tuition',
       description: 'One-to-one online economics lessons for IGCSE, A-level, IB MYP and DP students in Dubai, Abu Dhabi and the UAE, with UK-trained tutors. Free 30-minute trial.',
       path: '/economics-tutor/',
+      image: ogImage('economics-tutor'),
       jsonLd: withService(faqAndBreadcrumbJsonLd(economicsFaqs, economicsCrumbs, canonicalUrl), economicsService, '/economics-tutor/', canonicalUrl),
     }),
     whatsappMessage: "Hi Gerard, I'd like to ask about economics tuition for my child.",
@@ -317,6 +336,7 @@ export const routes: SiteRoute[] = [
       title: 'Free resources by school year for UAE families | CES Tuition',
       description: FREE_RESOURCES_DESCRIPTION,
       path: '/free-resources/',
+      image: ogImage('free-resources'),
       jsonLd: collectionPageJsonLd(
         freeResourcesCrumbs,
         { path: '/free-resources/', name: 'Free resources by school year', description: FREE_RESOURCES_DESCRIPTION },
