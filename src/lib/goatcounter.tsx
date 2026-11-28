@@ -109,6 +109,14 @@ export function freeDownloadClick(slug: string, title: string) {
   }
 }
 
+// Year links on /free-resources/: the hero picker and the jump menu.
+export function freeYearClick(year: number, place: 'hero' | 'jump') {
+  return {
+    'data-goatcounter-click': `free-year-${year}-${place}`,
+    'data-goatcounter-title': `Free resources year link: Year ${year} ${place}`,
+  }
+}
+
 export type FreeResourcesPlace = 'home' | 'maths' | 'british'
 
 // Home, maths-page and British-curriculum links to /free-resources/.

@@ -1,7 +1,7 @@
 import { DownloadSimple, WhatsappLogo } from '@phosphor-icons/react'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
-import { freeDownloadClick, whatsappClick } from '@/lib/goatcounter'
+import { freeDownloadClick, freeYearClick, whatsappClick } from '@/lib/goatcounter'
 import { whatsappUrl } from '@/lib/whatsappUrl.ts'
 import { PageSection, PageShell } from '@/pages/PageShell.tsx'
 import { SectionTitle } from '@/lib/headingAccent'
@@ -108,6 +108,7 @@ export function FreeResources() {
   const filledStages = stages
     .map((stage) => ({ ...stage, filled: stage.years.filter((year) => resourcesForYear(year).length > 0) }))
   const menuStages = filledStages.filter((stage) => SHOW_COMING_SOON || stage.filled.length > 0)
+  const heroYears = filledStages.flatMap((stage) => stage.filled)
 
   return (
     <PageShell
@@ -119,6 +120,26 @@ export function FreeResources() {
         <p>
           Printable practice for your child, sorted by school year. Every resource is free to download, with no sign-up. Feel free to message us on WhatsApp and we can talk through how your child got on.
         </p>
+      }
+      heroPicker={
+        <nav aria-labelledby="hero-year-heading">
+          <h2 id="hero-year-heading" className="text-lg sm:text-xl font-semibold text-white mb-3">
+            Choose your child's year
+          </h2>
+          <ul className="flex flex-wrap justify-center gap-2 sm:gap-3 max-w-3xl mx-auto">
+            {heroYears.map((year) => (
+              <li key={year} className="w-[calc(25%-0.375rem)] sm:w-auto">
+                <a
+                  href={`#${yearAnchor(year)}`}
+                  {...freeYearClick(year, 'hero')}
+                  className="flex min-h-11 items-center justify-center rounded-full bg-white px-3 sm:px-5 text-sm sm:text-base font-semibold text-primary whitespace-nowrap hover:bg-white/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                >
+                  {yearLabel(year)}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
       }
       ctaTitle="When you've had a look"
       ctaBody={
@@ -143,7 +164,7 @@ export function FreeResources() {
                       .map((year) =>
                         stage.filled.includes(year) ? (
                           <li key={year}>
-                            <a href={`#${yearAnchor(year)}`} className={`${linkClass} inline-flex min-h-8 items-center`}>
+                            <a href={`#${yearAnchor(year)}`} {...freeYearClick(year, 'jump')} className={`${linkClass} inline-flex min-h-8 items-center`}>
                               {yearLabel(year)}
                             </a>
                           </li>

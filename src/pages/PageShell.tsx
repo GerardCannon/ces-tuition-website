@@ -56,6 +56,7 @@ export function PageShell({
   ctaBody,
   titleAccent,
   badge,
+  heroPicker,
 }: {
   crumbs: readonly PageCrumb[]
   title: string
@@ -65,6 +66,8 @@ export function PageShell({
   children: ReactNode
   ctaTitle: string
   ctaBody: ReactNode
+  /** Shown under the title instead of the hero's two trial buttons. Only /free-resources/ sets it. */
+  heroPicker?: ReactNode
 }) {
   const whatsappHref = useWhatsappLink()
   const page = useAnalyticsPage()
@@ -122,32 +125,35 @@ export function PageShell({
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight text-balance">
                 <Accent text={title} word={titleAccent} tone="gold" />
               </h1>
+              {heroPicker}
               {lede ? (
                 <div className="text-base sm:text-lg md:text-xl text-white leading-relaxed max-w-2xl mx-auto space-y-4">
                   {lede}
                 </div>
               ) : null}
               <ReviewMention>38 five-star reviews on MyPrivateTutor</ReviewMention>
-              <div className="flex flex-col sm:flex-row gap-3 justify-center items-center pt-2">
-                <Button
-                  asChild
-                  size="lg"
-                  className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold tracking-wide text-base sm:text-lg px-6 h-12 w-full sm:w-auto max-[359px]:h-auto max-[359px]:min-h-12 max-[359px]:whitespace-normal max-[359px]:text-center max-[359px]:py-3"
-                >
-                  <a href={whatsappHref()} {...whatsappClick(page, 'hero')} className="flex items-center gap-2">
-                    <WhatsappLogo size={22} weight="fill" aria-hidden="true" className="shrink-0" />
-                    <span className="max-[359px]:min-w-0">Book your free trial on WhatsApp</span>
-                  </a>
-                </Button>
-                <Button
-                  asChild
-                  size="lg"
-                  variant="outline"
-                  className="bg-transparent hover:bg-white/15 text-white border-white/70 font-medium tracking-wide text-base sm:text-lg px-6 h-12 w-full sm:w-auto"
-                >
-                  <a href="#enquire">Send your child's details</a>
-                </Button>
-              </div>
+              {heroPicker ? null : (
+                <div className="flex flex-col sm:flex-row gap-3 justify-center items-center pt-2">
+                  <Button
+                    asChild
+                    size="lg"
+                    className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold tracking-wide text-base sm:text-lg px-6 h-12 w-full sm:w-auto max-[359px]:h-auto max-[359px]:min-h-12 max-[359px]:whitespace-normal max-[359px]:text-center max-[359px]:py-3"
+                  >
+                    <a href={whatsappHref()} {...whatsappClick(page, 'hero')} className="flex items-center gap-2">
+                      <WhatsappLogo size={22} weight="fill" aria-hidden="true" className="shrink-0" />
+                      <span className="max-[359px]:min-w-0">Book your free trial on WhatsApp</span>
+                    </a>
+                  </Button>
+                  <Button
+                    asChild
+                    size="lg"
+                    variant="outline"
+                    className="bg-transparent hover:bg-white/15 text-white border-white/70 font-medium tracking-wide text-base sm:text-lg px-6 h-12 w-full sm:w-auto"
+                  >
+                    <a href="#enquire">Send your child's details</a>
+                  </Button>
+                </div>
+              )}
               <p className="text-sm sm:text-base text-white leading-relaxed text-balance max-w-2xl mx-auto">
                 We reply within the hour. Your free 30‑minute trial is with a UK‑trained specialist.
               </p>
